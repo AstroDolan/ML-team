@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 // Definir el tamaño de la cuadrícula
-#define N 10
+#define N 9
 
 // Estructura para representar un par de coordenadas (x, y)
 typedef struct {
@@ -28,7 +28,46 @@ bool isValid(Pair visited[], int size, Pair pt) {
            !isVisited(visited, size, pt);
 }
 
-int main() {
+void printPath(Pair path[], int size){
+    for(int it = 0; it < size; it++){
+        printf("(%d, %d) -> ", path[it].first, path[it].second);
+    }
+    printf("MID");
+}
+
+// For searching in all 4 direction
+int row[] = {-1, 1, 0, 0};
+int col[] = { 0, 0, -1, 1};
+
+// Coordinates of 4 corners of matrix
+int _row[] = { 0, 0, N-1, N-1};
+int _col[] = { 0, N-1, 0, N-1};
+
+
+void findPathInMazeUtil(int maze[N][N], Pair path[], Pair visited[], Pair curr[], int *sizepath,
+            int *sizevisited){
+    if(curr -> first == N/2 && curr->second == N/2){
+        printPath(path, *sizepath);
+        return;
+    }
+
+    for(int i=0; i < 4; i++){
+        int n = maze[curr->first][curr->second];
+
+        int x = curr->first + row[i]*n;
+        int y = curr->second + col[i]*n;
+
+        Pair next[] = {x,y};
+        
+        if(isValid(visited, *sizevisited, next[x,y])){
+            
+            addVisited();
+        }
+    }
+}
+
+
+int main(){
     // Array de puntos visitados
     Pair visited[100];
     int visitedSize = 0;
@@ -42,6 +81,6 @@ int main() {
     } else {
         printf("El punto no es válido.\n");
     }
-
+    //findPathInMaze(maze);
     return 0;
 }
