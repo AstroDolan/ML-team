@@ -28,6 +28,22 @@ bool isValid(Pair visited[], int size, Pair pt) {
            !isVisited(visited, size, pt);
 }
 
+//REVISAR SI AQUI ES NECESARIO USAR *SIZE EN VEZ DE SIZE
+void addVisited(Pair visited[], int *size, Pair pt){
+    visited[*size] = pt;
+    (*size)++;
+}
+
+void removeVisited(Pair visited[], int *size, Pair pt){
+    for(int i=0; i < *size; i++){
+        if(visited[i].first == pt.first && visited[i].second == pt.second){
+            visited[i] = visited[(*size)-1];
+            (*size)--;
+        }
+    }
+}
+
+
 void printPath(Pair path[], int size){
     for(int it = 0; it < size; it++){
         printf("(%d, %d) -> ", path[it].first, path[it].second);
@@ -44,9 +60,11 @@ int _row[] = { 0, 0, N-1, N-1};
 int _col[] = { 0, N-1, 0, N-1};
 
 
-void findPathInMazeUtil(int maze[N][N], Pair path[], Pair visited[], Pair curr[], int *sizepath,
+void findPathInMazeUtil(int maze[N][N], 
+            Pair path[], Pair visited[], 
+            Pair curr[], int *sizepath,
             int *sizevisited){
-    if(curr -> first == N/2 && curr->second == N/2){
+    if(curr->first == N/2 && curr->second == N/2){
         printPath(path, *sizepath);
         return;
     }
@@ -57,11 +75,24 @@ void findPathInMazeUtil(int maze[N][N], Pair path[], Pair visited[], Pair curr[]
         int x = curr->first + row[i]*n;
         int y = curr->second + col[i]*n;
 
-        Pair next[] = {x,y};
+        Pair next = {x,y};
         
-        if(isValid(visited, *sizevisited, next[x,y])){
-            
-            addVisited();
+        if(isValid(visited, *sizevisited, next)){
+
+            //Marcamos la celda como visitada
+            addVisited(visited, sizevisited, next);
+
+            //Agregamos la celda al path actual
+            path[*sizepath] = next;
+            (*sizepath)++;
+
+            //Llamamos recursivamente a la funcion para la celda siguiente
+            findPathInMazeUtil(maze, path, visited, sizepath, sizevisited, &next);
+
+            //Retrocedemos una celda. Aqui funciona el backtracking
+            (*sizepath)--;
+            removeVisited(visited, sizevisited, next);
+            return;
         }
     }
 }
