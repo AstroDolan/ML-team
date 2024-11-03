@@ -81,6 +81,7 @@ int main(){
     } else {
         printf("El punto no es válido.\n");
     }
+    //
     //findPathInMaze(maze);
     return 0;
 }
