@@ -4,13 +4,33 @@
 
 // Definir el tamaño de la cuadrícula
 #define N 9
-
-// Estructura para representar un par de coordenadas (x, y)
+#define MAX_SIZE 100 // Tamaño máximo para `path` y `visited`
 typedef struct {
     int first;
     int second;
 } Pair;
 
+int _row[] = {0, 0, N - 1, N - 1};
+int _col[] = {0, N - 1, 0, N - 1};
+
+
+//REVISAR SI AQUI ES NECESARIO USAR *SIZE EN VEZ DE SIZE
+void addVisited(Pair visited[], int *size, Pair pt){
+    if(*size < MAX_SIZE){
+        visited[*size] = pt;
+        (*size)++;
+    }
+}
+
+void removeVisited(Pair visited[], int *size, Pair pt){
+    for(int i=0; i < *size; i++){
+        if(visited[i].first == pt.first && visited[i].second == pt.second){
+            visited[i] = visited[(*size)-1];
+            (*size)--;
+            break;
+        }
+    }
+}
 // Función para comprobar si un punto está en el conjunto de visitados
 bool isVisited(Pair visited[], int size, Pair pt) {
     for (int i = 0; i < size; i++) {
@@ -28,46 +48,26 @@ bool isValid(Pair visited[], int size, Pair pt) {
            !isVisited(visited, size, pt);
 }
 
-//REVISAR SI AQUI ES NECESARIO USAR *SIZE EN VEZ DE SIZE
-void addVisited(Pair visited[], int *size, Pair pt){
-    visited[*size] = pt;
-    (*size)++;
-}
 
-void removeVisited(Pair visited[], int *size, Pair pt){
-    for(int i=0; i < *size; i++){
-        if(visited[i].first == pt.first && visited[i].second == pt.second){
-            visited[i] = visited[(*size)-1];
-            (*size)--;
-        }
-    }
-}
-
-
-void printPath(Pair path[], int size){
-    for(int it = 0; it < size; it++){
+void printPath(Pair path[], int sizepath){
+    for(int it = 0; it < sizepath; it++){
         printf("(%d, %d) -> ", path[it].first, path[it].second);
     }
-    printf("MID");
+    printf("MID\n");
 }
-
-// For searching in all 4 direction
-int row[] = {-1, 1, 0, 0};
-int col[] = { 0, 0, -1, 1};
-
-// Coordinates of 4 corners of matrix
-int _row[] = { 0, 0, N-1, N-1};
-int _col[] = { 0, N-1, 0, N-1};
-
 
 void findPathInMazeUtil(int maze[N][N], 
             Pair path[], Pair visited[], 
-            Pair curr[], int *sizepath,
+            Pair *curr, int *sizepath,
             int *sizevisited){
     if(curr->first == N/2 && curr->second == N/2){
         printPath(path, *sizepath);
         return;
     }
+
+    // For searching in all 4 direction
+    int row[] = {-1, 1, 0, 0};
+    int col[] = {0, 0, -1, 1};
 
     for(int i=0; i < 4; i++){
         int n = maze[curr->first][curr->second];
@@ -83,36 +83,67 @@ void findPathInMazeUtil(int maze[N][N],
             addVisited(visited, sizevisited, next);
 
             //Agregamos la celda al path actual
-            path[*sizepath] = next;
-            (*sizepath)++;
-
+            if(*sizepath < MAX_SIZE){
+                path[*sizepath] = next;
+                (*sizepath)++;
+            }
+            
             //Llamamos recursivamente a la funcion para la celda siguiente
-            findPathInMazeUtil(maze, path, visited, sizepath, sizevisited, &next);
+            findPathInMazeUtil(maze, path, visited, &next, sizepath, sizevisited);
 
             //Retrocedemos una celda. Aqui funciona el backtracking
             (*sizepath)--;
             removeVisited(visited, sizevisited, next);
-            return;
         }
     }
 }
 
+void findPathInMaze(int maze[N][N]){
+    Pair path[MAX_SIZE];
+    int sizepath = 0;
+
+    Pair visited[MAX_SIZE];
+    int sizevisited = 0;
+
+    for(int i=0; i<4; i++){
+        int x = _row[i];
+        int y = _col[i];
+    
+        Pair pt = {x,y};
+
+        //Marcamos la celda como visitada
+        addVisited(visited, &sizevisited, pt);
+
+        //Agregamos la celda al path actual
+        if(sizepath < MAX_SIZE){
+            path[sizepath] = pt;
+            (sizepath)++;
+        }
+        
+        //Llamamos recursivamente a la funcion para la celda siguiente
+        findPathInMazeUtil(maze, path, visited, &pt, &sizepath, &sizevisited);
+
+        //Retrocedemos una celda. Aqui funciona el backtracking
+        (sizepath)--;
+        removeVisited(visited, &sizevisited, pt);
+    }
+}
 
 int main(){
     // Array de puntos visitados
-    Pair visited[100];
-    int visitedSize = 0;
+    int maze[N][N] =
+	{
+		{ 3, 5, 4, 4, 7, 3, 4, 6, 3 },
+		{ 6, 7, 5, 6, 6, 2, 6, 6, 2 },
+		{ 3, 3, 4, 3, 2, 5, 4, 7, 2 },
+		{ 6, 5, 5, 1, 2, 3, 6, 5, 6 },
+		{ 3, 3, 4, 3, 0, 1, 4, 3, 4 },
+		{ 3, 5, 4, 3, 2, 2, 3, 3, 5 },
+		{ 3, 5, 4, 3, 2, 6, 4, 4, 3 },
+		{ 3, 5, 1, 3, 7, 5, 3, 6, 4 },
+		{ 6, 2, 4, 3, 4, 5, 4, 5, 1 }
+	};
 
-    // Ejemplo de punto a verificar
-    Pair pt = {5, 5};
-
-    // Verificar si el punto es válido
-    if (isValid(visited, visitedSize, pt)) {
-        printf("El punto es válido.\n");
-    } else {
-        printf("El punto no es válido.\n");
-    }
-    //
-    //findPathInMaze(maze);
+	findPathInMaze(maze);
     return 0;
 }
