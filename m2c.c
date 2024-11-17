@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Definir el tamaño de la cuadrícula
+
 #define N 3
-#define MAX_SIZE 10 // Tamaño máximo para `path` y `visited`
+#define MAX_SIZE 10 //Tamaño máximo para path y visited
 typedef struct {
     int first;
     int second;
@@ -14,7 +14,6 @@ int _row[] = {0, 0, N - 1, N - 1};
 int _col[] = {0, N - 1, 0, N - 1};
 
 
-//REVISAR SI AQUI ES NECESARIO USAR *SIZE EN VEZ DE SIZE
 void addVisited(Pair visited[], int *size, Pair pt){
     if(*size < MAX_SIZE){
         visited[*size] = pt;
