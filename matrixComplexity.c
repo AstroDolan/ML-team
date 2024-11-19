@@ -111,7 +111,7 @@ int main(){
         perror("Error al establecer el límite de memoria");
         return 1;
     }
-    
+    //
     int dim = N; //Esto depende de mis matrices de entrada en el main
 
     int A[50][50] = 
