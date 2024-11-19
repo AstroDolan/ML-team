@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <sys/resource.h>
 #define N 50 //N varia segun el input de la matriz del main
 
 /*
@@ -101,7 +102,16 @@ void print_pointer(int dim, int *C){
 
 int main(){
     
+    struct rlimit limit;
 
+    limit.rlim_cur = 1024 * 1024 * 1024;  // 1 GB en bytes
+    limit.rlim_max = 1024 * 1024 * 1024;  // 1 GB en bytes
+
+    if (setrlimit(RLIMIT_AS, &limit) != 0) {
+        perror("Error al establecer el límite de memoria");
+        return 1;
+    }
+    
     int dim = N; //Esto depende de mis matrices de entrada en el main
 
     int A[50][50] = 
