@@ -24,7 +24,7 @@ void fillMatrix(int dim, int maze[dim][dim]){
     int i, j;
     for(i = 0; i < dim; i++){
         for(j = 0; j < dim; j++){
-            maze[i][j] = 1 + rand() % (dim-1);
+            maze[i][j] = 1 + rand() % 9; //1 + rand() % (dim-1)
         }
     }
 }
