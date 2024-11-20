@@ -14,11 +14,11 @@ void print_colrow(int dim, int C[dim][dim]);
 int matrixMulti_pointer(int dim, int *A, int *B, int *C);
 void print_pointer(int dim, int *C);
 
-//Estas funciones acceden a las matrices
+//Estas funciones acceden a una posicion aleatoria de las matrices
 int read_rowcol(int dim, int C[dim][dim]);
-/*int read_colrow();
-int read_pointer();
-*/
+//int read_colrow();
+//int read_pointer();
+
 
 //Multiplicacion fila-columna
 int matrixMulti_rowcol(int dim, int A[dim][dim], int B[dim][dim], int C[dim][dim]){
@@ -70,7 +70,7 @@ int matrixMulti_pointer(int dim, int *A, int *B, int *C){
              
 void print_rowcol(int dim, int C[dim][dim]){
     int i, j;
-    printf("\nMatriz resultante de filas-columnas: \n");
+    printf("Matriz resultante de filas-columnas: \n");
     for(i = 0; i < dim; i++){
         for(j = 0; j < dim; j++){
             printf("%d ", C[i][j]);
@@ -113,10 +113,10 @@ int main(){
     srand(time(NULL));
     struct rlimit limit;
 
-    limit.rlim_cur = 1024 * 1024 * 1024;  // 1 GB en bytes
-    limit.rlim_max = 1024 * 1024 * 1024;  // 1 GB en bytes
+    limit.rlim_cur = 1024 * 1024 * 1024;// 1GB en bytes
+    limit.rlim_max = 1024 * 1024 * 1024;
     if(setrlimit(RLIMIT_AS, &limit) != 0){
-        perror("Error al establecer el límite de memoria");
+        perror("Error para fijar un limite de RAM");
     }
     
     int dim = N; //Esto depende de mis matrices de entrada en el main
@@ -734,16 +734,16 @@ int main(){
     clock_t t1, t11; 
     t1 = clock();
     matrixMulti_rowcol(dim, A, B, C);
-    print_rowcol(dim, C);
+    //print_rowcol(dim, C);
     t1 = clock() - t1;
     double time_taken1 = ((double)t1)/CLOCKS_PER_SEC;
-    printf("La multiplicacion de matrices por fila-columna tomo %f segundos en ser ejecutada. \n", time_taken1);
+    printf("\nLa multiplicacion de matrices por fila-columna tomo %f segundos en ser ejecutada. \n", time_taken1);
     
     t11 = clock();
     read_rowcol(dim, C);
     t11 = clock() - t11;
     double time_taken11 = ((double)t11)/CLOCKS_PER_SEC;
-    printf("El acceder a la una posicion aleatoria de la matriz tomo %f segundos.\n", time_taken11);
+    printf("\nEl acceder a la una posicion aleatoria de la matriz tomo %f segundos.\n", time_taken11);
 
 
 
@@ -753,13 +753,13 @@ int main(){
     //print_colrow(dim, C);
     t2 = clock() - t2;
     double time_taken2 = ((double)t2)/CLOCKS_PER_SEC;
-    printf("La multiplicacion de matrices por columna-fila tomo %f segundos en ser ejecutada. \n", time_taken2);
+    printf("\nLa multiplicacion de matrices por columna-fila tomo %f segundos en ser ejecutada. \n", time_taken2);
 
     t22 = clock();
     //read_colrow(dim, C);
     t22 = clock() - t22;
     double time_taken22 = ((double)t22)/CLOCKS_PER_SEC;
-    printf("El acceder a la una posicion aleatoria de la matriz tomo %f segundos.\n", time_taken22);
+    printf("\nEl acceder a la una posicion aleatoria de la matriz tomo %f segundos.\n", time_taken22);
 
 
 
@@ -769,13 +769,13 @@ int main(){
     //print_pointer(dim, *C);
     t3 = clock() - t3;
     double time_taken3 = ((double)t3)/CLOCKS_PER_SEC;
-    printf("La multiplicacion de matrices con punteros tomo %f segundos en ser ejecutada. \n", time_taken3);
+    printf("\nLa multiplicacion de matrices con punteros tomo %f segundos en ser ejecutada. \n", time_taken3);
 
     t33 = clock();
     //read_pointer(dim, C);
     t33 = clock() - t33;
     double time_taken33 = ((double)t33)/CLOCKS_PER_SEC;
-    printf("El acceder a la una posicion aleatoria de la matriz tomo %f segundos.\n", time_taken33);
+    printf("\nEl acceder a la una posicion aleatoria de la matriz tomo %f segundos.\n", time_taken33);
 
     return 0;
 }
