@@ -16,9 +16,12 @@ void print_pointer(int dim, int *C);
 
 //Estas funciones acceden a una posicion aleatoria de las matrices
 int read_rowcol(int dim, int C[dim][dim]);
-//int read_colrow();
+int read_colrow(int dim, int C[dim][dim]);
 //int read_pointer();
 
+
+////////////////////////////////////////////////////////////////////
+         //FUNCIONES PARA MULTIPLICAR MATRICES A Y B//
 
 //Multiplicacion fila-columna
 int matrixMulti_rowcol(int dim, int A[dim][dim], int B[dim][dim], int C[dim][dim]){
@@ -102,10 +105,32 @@ void print_pointer(int dim, int *C){
 }
 
 int read_rowcol(int dim, int C[dim][dim]){
+    clock_t t11;
+    t11 = clock();
     int rand_row = 1 + rand() % (dim - 1);
     int rand_col = 1 + rand() % (dim - 1);
-    printf("\nAcceder a una posicion aleatoria de valores C[%d][%d] es: %d\n", 
+    printf("\nAcceder a una posicion aleatoria de valores C[%d][%d] es: %d", 
     rand_row, rand_col, C[rand_row][rand_col]);
+
+    t11 = clock() - t11;
+    double time_taken11 = ((double)t11)/CLOCKS_PER_SEC;
+    printf(" con un tiempo de %f segundos\n", time_taken11);
+
+    return 0;
+}
+
+int read_colrow(int dim, int C[dim][dim]){
+    clock_t t22;
+    t22 = clock();
+    int rand_row = 1 + rand() % (dim - 1);
+    int rand_col = 1 + rand() % (dim - 1);
+    printf("\nAcceder a una posicion aleatoria de valores C[%d][%d] es: %d", 
+    rand_row, rand_col, C[rand_row][rand_col]);
+
+    t22 = clock() - t22;
+    double time_taken22 = ((double)t22)/CLOCKS_PER_SEC;
+    printf(" con un tiempo de %f segundos\n", time_taken22);
+
     return 0;
 }
 
@@ -738,14 +763,8 @@ int main(){
     t1 = clock() - t1;
     double time_taken1 = ((double)t1)/CLOCKS_PER_SEC;
     printf("\nLa multiplicacion de matrices por fila-columna tomo %f segundos en ser ejecutada. \n", time_taken1);
-    
-    t11 = clock();
     read_rowcol(dim, C);
-    t11 = clock() - t11;
-    double time_taken11 = ((double)t11)/CLOCKS_PER_SEC;
-    printf("\nEl acceder a la una posicion aleatoria de la matriz tomo %f segundos.\n", time_taken11);
-
-
+    
 
     clock_t t2, t22;
     t2 = clock();
@@ -754,13 +773,8 @@ int main(){
     t2 = clock() - t2;
     double time_taken2 = ((double)t2)/CLOCKS_PER_SEC;
     printf("\nLa multiplicacion de matrices por columna-fila tomo %f segundos en ser ejecutada. \n", time_taken2);
-
-    t22 = clock();
-    //read_colrow(dim, C);
-    t22 = clock() - t22;
-    double time_taken22 = ((double)t22)/CLOCKS_PER_SEC;
-    printf("\nEl acceder a la una posicion aleatoria de la matriz tomo %f segundos.\n", time_taken22);
-
+    read_colrow(dim, C);
+    
 
 
     clock_t t3, t33;
