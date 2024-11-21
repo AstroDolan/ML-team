@@ -2,9 +2,9 @@
 #include <sys/resource.h>
 #include <stdlib.h>
 #include <time.h>
-#define N 300 //N varia segun el input de la matriz del main
+#define N 300 //N varia segun el input de la matriz declarada en el main
 
-//Aqui declaramos las funciones de multiplicacion basica fila-columna y columna-fila
+//Funciones de multiplicacion basica fila-columna y columna-fila
 int matrixMulti_rowcol(int dim, int A[dim][dim], int B[dim][dim], int C[dim][dim]);
 int matrixMulti_colrow(int dim, int A[dim][dim], int B[dim][dim], int C[dim][dim]);
 void print_rowcol(int dim, int C[dim][dim]);
@@ -14,10 +14,10 @@ void print_colrow(int dim, int C[dim][dim]);
 int matrixMulti_pointer(int dim, int *A, int *B, int *C);
 void print_pointer(int dim, int *C);
 
-//Estas funciones acceden a una posicion aleatoria de las matrices
-int read_rowcol(int dim, int C[dim][dim]);
-int read_colrow(int dim, int C[dim][dim]);
-//int read_pointer();
+//Estas funciones acceden a una posicion aleatoria de las matrices resultantes
+void read_rowcol(int dim, int C[dim][dim]);
+void read_colrow(int dim, int C[dim][dim]);
+void read_pointer(int dim, int *C);
 
 
 ////////////////////////////////////////////////////////////////////
@@ -104,7 +104,11 @@ void print_pointer(int dim, int *C){
     }
 }
 
-int read_rowcol(int dim, int C[dim][dim]){
+////////////////////////////////////////////////////////////////////
+      //FUNCIONES PARA ACCEDER ALEATORIAMENTE A UNA POSICION//
+
+
+void read_rowcol(int dim, int C[dim][dim]){
     clock_t t11;
     t11 = clock();
     int rand_row = 1 + rand() % (dim - 1);
@@ -115,11 +119,9 @@ int read_rowcol(int dim, int C[dim][dim]){
     t11 = clock() - t11;
     double time_taken11 = ((double)t11)/CLOCKS_PER_SEC;
     printf(" con un tiempo de %f segundos\n", time_taken11);
-
-    return 0;
 }
 
-int read_colrow(int dim, int C[dim][dim]){
+void read_colrow(int dim, int C[dim][dim]){
     clock_t t22;
     t22 = clock();
     int rand_row = 1 + rand() % (dim - 1);
@@ -130,9 +132,21 @@ int read_colrow(int dim, int C[dim][dim]){
     t22 = clock() - t22;
     double time_taken22 = ((double)t22)/CLOCKS_PER_SEC;
     printf(" con un tiempo de %f segundos\n", time_taken22);
-
-    return 0;
 }
+
+void read_pointer(int dim, int *C){
+    clock_t t33;
+    t33 = clock();
+    int rand_i = 1 + rand() % (dim - 1);
+    int rand_j = 1 + rand() % (dim - 1);
+    printf("\nAcceder a una posicion aleatoria de valores C[%d][%d] es: %d", 
+    rand_i, rand_j, *(C + rand_i * dim + rand_j));
+
+    t33 = clock() - t33;
+    double time_taken33 = ((double)t33)/CLOCKS_PER_SEC;
+    printf(" con un tiempo de %f segundos\n", time_taken33);
+}
+
 
 int main(){
     srand(time(NULL));
@@ -762,7 +776,7 @@ int main(){
     //print_rowcol(dim, C);
     t1 = clock() - t1;
     double time_taken1 = ((double)t1)/CLOCKS_PER_SEC;
-    printf("\nLa multiplicacion de matrices por fila-columna tomo %f segundos en ser ejecutada. \n", time_taken1);
+    printf("\nLa multiplicacion de matrices por fila-columna tomo %f segundos en ser ejecutada.", time_taken1);
     read_rowcol(dim, C);
     
 
@@ -772,7 +786,7 @@ int main(){
     //print_colrow(dim, C);
     t2 = clock() - t2;
     double time_taken2 = ((double)t2)/CLOCKS_PER_SEC;
-    printf("\nLa multiplicacion de matrices por columna-fila tomo %f segundos en ser ejecutada. \n", time_taken2);
+    printf("\nLa multiplicacion de matrices por columna-fila tomo %f segundos en ser ejecutada.", time_taken2);
     read_colrow(dim, C);
     
 
@@ -783,13 +797,8 @@ int main(){
     //print_pointer(dim, *C);
     t3 = clock() - t3;
     double time_taken3 = ((double)t3)/CLOCKS_PER_SEC;
-    printf("\nLa multiplicacion de matrices con punteros tomo %f segundos en ser ejecutada. \n", time_taken3);
-
-    t33 = clock();
-    //read_pointer(dim, C);
-    t33 = clock() - t33;
-    double time_taken33 = ((double)t33)/CLOCKS_PER_SEC;
-    printf("\nEl acceder a la una posicion aleatoria de la matriz tomo %f segundos.\n", time_taken33);
-
+    printf("\nLa multiplicacion de matrices con punteros tomo %f segundos en ser ejecutada.", time_taken3);
+    read_pointer(dim, *C);
+    
     return 0;
 }
