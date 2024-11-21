@@ -14,7 +14,7 @@ M400 ****************************
 M500 int 1-300 o 1-100 **********
 Ver si es necesario seguir con M600 y M700
 
-Se debe compilar tres veces por Mx y validar con 5 compilaciones M_inicial
+Se debe compilar tres veces por Mx y validar con 3 compilaciones M_inicial
 Las compilaciones deben tener por nombre mCx, x = N
 M400.txt funciona para mC400
 
