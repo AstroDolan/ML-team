@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 
-#define N 3
-#define MAX_SIZE 10 //Tamaño máximo para path y visited
+#define N 21
+#define MAX_SIZE 150 //Tamaño máximo para path y visited
 typedef struct {
     int first;
     int second;
@@ -130,13 +130,9 @@ void findPathInMaze(int maze[N][N]){
 
 int main(){
     // Array de puntos visitados
- 
-    int maze[3][3] = 
-    {
-    { 1, 2, 2 },
-    { 2, 1, 1 },
-    { 1, 1, 2 },
-    };
+    //Se debe poner la matriz de M21.txt
+    int maze[21][21] = 
+    
 	findPathInMaze(maze);
     return 0;
 }
