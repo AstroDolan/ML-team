@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 //En ese codigo se cambia el bool por int 0 y 1 para simular booleanos
-#define N 9
-#define MAX_SIZE 30 //Tamaño máximo para path y visited
+#define N 7
+#define MAX_SIZE 49 //Tamaño máximo para path y visited
 
 int size = 0;
 
@@ -19,7 +19,7 @@ void fillMatrix(int dim, int maze[dim][dim]){
     int i, j;
     for(i = 0; i < dim; i++){
         for(j = 0; j < dim; j++){
-            maze[i][j] = 1 + rand() % (dim-1); //1 + rand() % (dim-1)
+            maze[i][j] = 1 + rand() % 2; //1 + rand() % (dim-1)
         }
     }
 }
