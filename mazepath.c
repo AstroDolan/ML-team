@@ -1,10 +1,12 @@
-#include <stdbool.h> // para usar el tipo bool, true, y false
 #include <stdio.h>
 #include <stdlib.h>
 
+//En ese codigo se cambia el bool por int 0 y 1 para simular booleanos
+#define N 305
+#define MAX_SIZE 27257 //Tamaño máximo para path y visited
 
-#define N 21
-#define MAX_SIZE 150 //Tamaño máximo para path y visited
+int size = 0;
+
 typedef struct {
     int first;
     int second;
@@ -13,6 +15,14 @@ typedef struct {
 int _row[] = {0, 0, N - 1, N - 1};
 int _col[] = {0, N - 1, 0, N - 1};
 
+void fillMatrix(int dim, int maze[dim][dim]){
+    int i, j;
+    for(i = 0; i < dim; i++){
+        for(j = 0; j < dim; j++){
+            maze[i][j] = 1 + rand() % (dim - 1); //1 + rand() % (dim-1)
+        }
+    }
+}
 
 void addVisited(Pair visited[], int *size, Pair pt){
     if(*size < MAX_SIZE){
@@ -31,17 +41,17 @@ void removeVisited(Pair visited[], int *size, Pair pt){
     }
 }
 // Función para comprobar si un punto está en el conjunto de visitados
-bool isVisited(Pair visited[], int size, Pair pt) {
+int isVisited(Pair visited[], int size, Pair pt) {
     for (int i = 0; i < size; i++) {
         if (visited[i].first == pt.first && visited[i].second == pt.second) {
-            return true;
+            return 1;
         }
     }
-    return false;
+    return 0;
 }
 
 // Función para verificar si un punto es válido
-bool isValid(Pair visited[], int size, Pair pt) {
+int isValid(Pair visited[], int size, Pair pt) {
     return (pt.first >= 0) && (pt.first < N) &&
            (pt.second >= 0) && (pt.second < N) &&
            !isVisited(visited, size, pt);
@@ -130,9 +140,11 @@ void findPathInMaze(int maze[N][N]){
 
 int main(){
     // Array de puntos visitados
-    //Se debe poner la matriz de M21.txt
-    int maze[21][21] = 
-    
+    int dim = N;
+    int maze[dim][dim];
+
+    fillMatrix(dim, maze);
+
 	findPathInMaze(maze);
     return 0;
 }
