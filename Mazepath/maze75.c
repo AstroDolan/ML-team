@@ -1,16 +1,16 @@
-/**************************************************************************
-* Uso de Backtracking Para Encontrar Caminos en una Matriz Cuadrada       *
-* Desde la Celda Esquina Hasta el Centro en Lenguaje C                    * 
-*                                                                         *
-* Programador: Dylan Jara Carvajal                                        *
-* Fecha: 23/12/2024                                                       *
-*                                                                         *
-* Compilacion: gcc -o maze.exe maze.c.                                    *
-* Ejecucion con perf:                                                     *
-* perf stat -e task-clock,cycles,instructions,power/energy-pkg/ ./maze    *    
+/*************************************************************************
+* Uso de Backtracking Para Encontrar Caminos en una Matriz Cuadrada      *
+* Desde la Celda Esquina Hasta el Centro en Lenguaje C                   * 
+*                                                                        *
+* Programador: Dylan Jara Carvajal                                       *
+* Fecha: 23/12/2024                                                      *
+*                                                                        *
+* Compilacion: gcc -o maze75.exe maze75.c:                               *
+* Ejecucion con perf:                                                    *
+* perf stat -e task-clock,cycles,instructions,power/energy-pkg/ ./maze75 *
 *                                                                        *
 * Optimizacion con -O2 y -O3:                                            *
-* gcc -Oi -o maze.exe maze.c                                         *
+* gcc -Oi -o maze75.exe maze75.c                                         *
 * (Donde i=2,3). Luego se debe usar perf nuevamente                      *
 *                                                                        *
 *************************************************************************/
@@ -18,8 +18,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 305 //Al intentar con 305, el codigo no funciona.
-#define MAX_SIZE 27257 //Tamaño máximo para path y visited
+#define N 75
+#define MAX_SIZE 1505 //Tamaño máximo para path y visited
 
 int size = 0;
 
