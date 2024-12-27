@@ -5,17 +5,23 @@
 * Programador: Dylan Jara Carvajal                                        *
 * Fecha: 23/12/2024                                                       *
 *                                                                         *
-* Compilacion: gcc -o maze105.exe maze105.c                               *
+* Compilacion: gcc -o maze305.exe maze305.c                               *
 * Ejecucion con perf:                                                     *
-* perf stat -e task-clock,cycles,instructions,power/energy-pkg/ ./maze105 *
+* perf stat -e task-clock,cycles,instructions,power/energy-pkg/ ./maze305 *    
 *                                                                         *
+* Optimizacion con -O2 y -O3:                                             *
+* gcc -Oi -o maze305.exe maze305.c                                        *
+* (Donde i=2,3). Luego se debe usar perf nuevamente                       *
+*                                                                         *
+* Dadas las dimensiones de la matriz, este codigo no deberia ejecutarse   *
+* de manera correcta                                                      *
 **************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 105
-#define MAX_SIZE 7505 //Tamaño máximo para path y visited
+#define N 305 //Al intentar con 305, el codigo no funciona.
+#define MAX_SIZE 46513 //Tamaño máximo para path y visited
 
 int size = 0;
 
@@ -31,7 +37,7 @@ void fillMatrix(int dim, int maze[dim][dim]){
     int i, j;
     for(i = 0; i < dim; i++){
         for(j = 0; j < dim; j++){
-            maze[i][j] = 1 + rand() % 5; //Para esta prueba se usan numero entre 1 y 5
+            maze[i][j] = 1 + rand() % (dim - 1); //1 + rand() % (dim-1)
         }
     }
 }
