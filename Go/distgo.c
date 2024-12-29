@@ -5,7 +5,7 @@ Autor: Dylan Jara Carvajal
 
 #include <stdio.h>
 #include <stdlib.h>
-//#include "mpi.h"
+#include "mpi.h"
 
 
 #define EMPTY     0
@@ -24,6 +24,7 @@ Autor: Dylan Jara Carvajal
 #define SIMBOLIC  'S'
 #define TEXTUAL   'T'
 
+MPI_Status status; //Debe ir esto?
 
 struct GOCell {
 
