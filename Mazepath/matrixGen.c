@@ -1,3 +1,13 @@
+/***************************************************************************
+* Codigo generador de matrices cuadradas para experimentos computacionales *
+*                                                                          * 
+* Programador: Dylan Jara Carvajal                                         *
+* Fecha: 23/12/2024                                                        *
+*                                                                          *
+* Compilacion: gcc -o matrixGen.exe matrixGen.c                            *    
+*                                                                          *
+***************************************************************************/
+
 #include<stdlib.h>
 #include<stdio.h>
 #include<time.h>
