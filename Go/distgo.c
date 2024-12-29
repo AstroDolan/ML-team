@@ -5,7 +5,7 @@ Autor: Dylan Jara Carvajal
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "mpi.h"
+//#include "mpi.h"
 
 
 #define EMPTY     0
