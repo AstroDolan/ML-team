@@ -34,7 +34,12 @@ struct Queue *InitQueue(unsigned int size) {
    struct Queue *q;
 
    q = calloc(1, sizeof(struct Queue));
+   if (q == NULL) return NULL;
    q->memarea = calloc(size, sizeof(unsigned int));
+   if (q->memarea == NULL) {
+   free(q);
+   return NULL;
+   }
    q->qsize = size;
    return q;
 }
@@ -48,13 +53,11 @@ unsigned char StatusQueue(struct Queue *q) {
 }
 
 void EnQueue(struct Queue *q, unsigned int pos) {
-   
    q->end = (q->end + 1) % q->qsize;
    q->memarea[q->end] = pos;
 }
 
 void DeQueue(struct Queue *q, unsigned int *pos) {
-   
    q->begin = (q->begin + 1) % q->qsize;
    *pos = q->memarea[q->begin];
 }
@@ -72,13 +75,14 @@ unsigned int Owner(unsigned int e, unsigned int statusarea) {
 unsigned int Analyze(struct GOCell **goboard, unsigned int size, unsigned int x, unsigned int y, struct Queue *q, unsigned int statusarea) {
    unsigned int pos;
    
-   if (goboard[x][y].statuscell == UNVISITED)
-      if (goboard[x][y].element == NOCHIP){
+   if (goboard[x][y].statuscell == UNVISITED) {
+      if (goboard[x][y].element == NOCHIP) {
          pos = x * size + y;
          EnQueue(q, pos);
-      } 
-      else
+      } else {
          statusarea = Owner(goboard[x][y].element, statusarea);
+      }
+   }
    return statusarea;
 }
 
@@ -115,7 +119,7 @@ void Process(struct GOCell **goboard, unsigned int n, int rank, int size) {
 
     int start = (n / size) * rank + 1;
     int end = (n / size) * (rank + 1);
-    if (rank == size - 1) end = n - 2;
+    if (rank == size - 1) end = n - 1;
 
     for (i = start; i <= end; i++) {
        for (j = 1; j <= n - 2; j++) {
@@ -128,6 +132,10 @@ void Process(struct GOCell **goboard, unsigned int n, int rank, int size) {
           }
        }
     }
+
+    free(lregion);
+    free(q->memarea);
+    free(q);
 }
 
 void ReadGOBoard(struct GOCell **goboard, unsigned int n, int rank, int size) {
@@ -141,12 +149,11 @@ void ReadGOBoard(struct GOCell **goboard, unsigned int n, int rank, int size) {
             if (rank == 0) {
                 scanf("%1d", &goboard[i][j].element);
             }
-            MPI_Bcast(&goboard[i][j].element, 1, MPI_INT, 0, MPI_COMM_WORLD);
+            MPI_Bcast(&goboard[i][j].element, 1, MPI_UNSIGNED_CHAR, 0, MPI_COMM_WORLD);
             goboard[i][j].statuscell = UNVISITED;
         }
     }
 }
-
 
 int main(int argc, char *argv[]) {
     int rank, size, a;
@@ -157,7 +164,15 @@ int main(int argc, char *argv[]) {
     unsigned int n, i;
     struct GOCell **goboard;
 
-    if (rank == 0) scanf("%d", &n);
+    if (rank == 0) {
+        FILE *file = fopen(argv[1], "r");
+        if (file == NULL) {
+            fprintf(stderr, "Error al abrir el archivo\n");
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
+        fscanf(file, "%d", &n);
+        fclose(file);
+    }
     MPI_Bcast(&n, 1, MPI_UNSIGNED, 0, MPI_COMM_WORLD);
 
     goboard = calloc(n + 2, sizeof(struct GOCell *));
@@ -165,7 +180,18 @@ int main(int argc, char *argv[]) {
         goboard[i] = calloc(n + 2, sizeof(struct GOCell));
 
     if (rank == 0) {
-        ReadGOBoard(goboard, n, rank, size);
+        FILE *file = fopen(argv[1], "r");
+        if (file == NULL) {
+            fprintf(stderr, "Error al abrir el archivo\n");
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
+        fscanf(file, "%d", &n); // Leer el tamaño del tablero nuevamente
+        for (i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                fscanf(file, "%1d", &goboard[i][j].element);
+            }
+        }
+        fclose(file);
         for (int dest = 1; dest < size; dest++) {
             for (i = 0; i < n + 2; i++) {
                 MPI_Send(goboard[i], (n + 2) * sizeof(struct GOCell), MPI_BYTE, dest, 0, MPI_COMM_WORLD);
@@ -186,6 +212,11 @@ int main(int argc, char *argv[]) {
     } else {
         MPI_Send(&a, 1, MPI_UNSIGNED, 0, 1, MPI_COMM_WORLD);
     }
+
+    for (i = 0; i < n + 2; i++) {
+        free(goboard[i]);
+    }
+    free(goboard);
 
     MPI_Finalize();
     return 0;
