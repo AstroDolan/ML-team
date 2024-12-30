@@ -124,7 +124,7 @@ unsigned int Analyze(struct GOCell **goboard, unsigned int size, unsigned int x,
 int AnNeighb(struct GOCell **goboard, unsigned int size, struct Queue *q, unsigned int *lregion, unsigned int *statusarea) {
 
    unsigned int a, x, y, pos;
-
+   
    a = 0;
    while (StatusQueue(q) != EMPTY) {
       DeQueue(q,&pos);
