@@ -34,12 +34,7 @@ struct Queue *InitQueue(unsigned int size) {
    struct Queue *q;
 
    q = calloc(1, sizeof(struct Queue));
-   if (q == NULL) return NULL;
    q->memarea = calloc(size, sizeof(unsigned int));
-   if (q->memarea == NULL) {
-   free(q);
-   return NULL;
-   }
    q->qsize = size;
    return q;
 }
@@ -105,6 +100,7 @@ int AnNeighb(struct GOCell **goboard, unsigned int size, struct Queue *q, unsign
           *statusarea = Analyze(goboard, size, x, y - 1, q, *statusarea);
        }
     }
+    printf("Proceso %d: AnNeighb encontró %d celdas\n", a);
     return a;
 }
 
@@ -119,7 +115,9 @@ void Process(struct GOCell **goboard, unsigned int n, int rank, int size) {
 
     int start = (n / size) * rank + 1;
     int end = (n / size) * (rank + 1);
-    if (rank == size - 1) end = n - 1;
+    if (rank == size - 1) end = n - 2;
+
+    printf("Proceso %d: Procesando filas desde %d hasta %d\n", rank, start, end);
 
     for (i = start; i <= end; i++) {
        for (j = 1; j <= n - 2; j++) {
@@ -129,6 +127,8 @@ void Process(struct GOCell **goboard, unsigned int n, int rank, int size) {
              a = AnNeighb(goboard, n, q, lregion, &statusarea);
              MPI_Send(&a, 1, MPI_UNSIGNED, 0, 1, MPI_COMM_WORLD);
              messages_sent++;
+             printf("Proceso %d: Enviando mensaje con valor %d\n", rank, a);
+             printf("Area = %d Owner = %d\n", a, statusarea);
           }
        }
     }
@@ -136,6 +136,30 @@ void Process(struct GOCell **goboard, unsigned int n, int rank, int size) {
     free(lregion);
     free(q->memarea);
     free(q);
+}
+
+void PrintBoard(struct GOCell **goboard, unsigned int n) {
+    for (unsigned int i = 1; i <= n; i++) {
+        for (unsigned int j = 1; j <= n; j++) {
+            printf("%d,%d ", goboard[i][j].element, goboard[i][j].statuscell);
+        }
+        printf("\n");
+    }
+}
+
+void PrintBoardSymbols(struct GOCell **goboard, unsigned int n) {
+    for (unsigned int i = 1; i <= n; i++) {
+        for (unsigned int j = 1; j <= n; j++) {
+            if (goboard[i][j].element == CHIP1) {
+                printf("*");
+            } else if (goboard[i][j].element == CHIP2) {
+                printf("O");
+            } else {
+                printf("%d", goboard[i][j].statuscell);
+            }
+        }
+        printf("\n");
+    }
 }
 
 void ReadGOBoard(struct GOCell **goboard, unsigned int n, int rank, int size) {
@@ -156,7 +180,7 @@ void ReadGOBoard(struct GOCell **goboard, unsigned int n, int rank, int size) {
 }
 
 int main(int argc, char *argv[]) {
-    int rank, size, a;
+    int rank, size, a = 0; // Inicializar 'a' a 0
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
@@ -203,14 +227,22 @@ int main(int argc, char *argv[]) {
         }
     }
 
+    printf("Proceso %d: Iniciando procesamiento\n", rank);
     Process(goboard, n + 2, rank, size);
+    printf("Proceso %d: Procesamiento terminado\n", rank);
 
     if (rank == 0) {
         for (int i = 1; i < size; i++) {
             MPI_Recv(&a, 1, MPI_UNSIGNED, i, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            printf("Proceso 0: Recibido mensaje con valor %d de proceso %d\n", a, i);
         }
+        printf("Tablero final:\n");
+        PrintBoard(goboard, n);
+        printf("\nTablero con símbolos:\n");
+        PrintBoardSymbols(goboard, n);
     } else {
         MPI_Send(&a, 1, MPI_UNSIGNED, 0, 1, MPI_COMM_WORLD);
+        printf("Proceso %d: Enviado mensaje con valor %d al proceso 0\n", rank, a);
     }
 
     for (i = 0; i < n + 2; i++) {

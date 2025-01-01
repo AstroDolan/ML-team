@@ -48,18 +48,27 @@ void PrintGOBoard(struct GOCell **goboard, unsigned int n, int rank, int size, c
     }
 }
 
-void ProcessRegion(struct GOCell **subboard, unsigned int rows, unsigned int cols, unsigned int rank) {
-    // Simple processing simulation (e.g., counting elements)
-    unsigned int chip1_count = 0, chip2_count = 0;
-
+void CountChips(struct GOCell **subboard, unsigned int rows, unsigned int cols, unsigned int *chip1_count, unsigned int *chip2_count) {
     for (unsigned int i = 0; i < rows; ++i) {
         for (unsigned int j = 0; j < cols; ++j) {
-            if (subboard[i][j].element == CHIP1) chip1_count++;
-            if (subboard[i][j].element == CHIP2) chip2_count++;
+            if (subboard[i][j].element == CHIP1) (*chip1_count)++;
+            if (subboard[i][j].element == CHIP2) (*chip2_count)++;
         }
     }
+}
 
-    printf("Process %d: CHIP1=%d, CHIP2=%d\n", rank, chip1_count, chip2_count);
+void ProcessRegion(struct GOCell **subboard, unsigned int rows, unsigned int cols, unsigned int rank) {
+    unsigned int chip1_count = 0, chip2_count = 0;
+
+    CountChips(subboard, rows, cols, &chip1_count, &chip2_count);
+
+    unsigned int total_chip1, total_chip2;
+    MPI_Reduce(&chip1_count, &total_chip1, 1, MPI_UNSIGNED, MPI_SUM, 0, MPI_COMM_WORLD);
+    MPI_Reduce(&chip2_count, &total_chip2, 1, MPI_UNSIGNED, MPI_SUM, 0, MPI_COMM_WORLD);
+
+    if (rank == 0) {
+        printf("Total CHIP1=%d, CHIP2=%d\n", total_chip1, total_chip2);
+    }
 }
 
 int main(int argc, char *argv[]) {
@@ -78,7 +87,6 @@ int main(int argc, char *argv[]) {
     }
 
     char partition_mode = argv[1][2];
-    char output_mode = argv[2][2];
     const char *filename = argv[3];
 
     unsigned int n;
@@ -93,8 +101,9 @@ int main(int argc, char *argv[]) {
         fclose(file);
 
         goboard = malloc(n * sizeof(struct GOCell *));
-        for (unsigned int i = 0; i < n; ++i) {
-            goboard[i] = malloc(n * sizeof(struct GOCell));
+        goboard[0] = malloc(n * n * sizeof(struct GOCell));
+        for (unsigned int i = 1; i < n; ++i) {
+            goboard[i] = goboard[0] + i * n;
         }
         ReadGOBoard(goboard, n, filename);
     }
@@ -108,39 +117,20 @@ int main(int argc, char *argv[]) {
     MPI_Type_contiguous(3, MPI_UNSIGNED_CHAR, &MPI_GOCell);
     MPI_Type_commit(&MPI_GOCell);
 
-    struct GOCell **subboard = malloc(local_rows * sizeof(struct GOCell *));
-    for (unsigned int i = 0; i < local_rows; ++i) {
-        subboard[i] = malloc(local_cols * sizeof(struct GOCell));
-    }
+    struct GOCell *subboard = malloc(local_rows * local_cols * sizeof(struct GOCell));
 
-    if (partition_mode == 'H') {
-        for (unsigned int i = 0; i < local_rows; ++i) {
-            MPI_Scatter(goboard ? goboard[i] : NULL, local_cols, MPI_GOCell,
-                        subboard[i], local_cols, MPI_GOCell, 0, MPI_COMM_WORLD);
-        }
-    } else if (partition_mode == 'V') {
-        for (unsigned int i = 0; i < n; ++i) {
-            MPI_Scatter(goboard ? goboard[i] : NULL, local_cols, MPI_GOCell,
-                        subboard[i], local_cols, MPI_GOCell, 0, MPI_COMM_WORLD);
-        }
-    }
+    MPI_Scatter(&goboard[0][0], local_rows * n, MPI_GOCell, subboard, local_rows * n, MPI_GOCell, 0, MPI_COMM_WORLD);
 
-    ProcessRegion(subboard, local_rows, local_cols, rank);
+    ProcessRegion((struct GOCell **) &subboard, local_rows, local_cols, rank);
 
-    PrintGOBoard(subboard, local_rows, rank, size, partition_mode);
-
-    for (unsigned int i = 0; i < local_rows; ++i) {
-        free(subboard[i]);
-    }
     free(subboard);
 
     if (rank == 0) {
-        for (unsigned int i = 0; i < n; ++i) {
-            free(goboard[i]);
-        }
+        free(goboard[0]);
         free(goboard);
     }
 
+    MPI_Type_free(&MPI_GOCell);
     MPI_Finalize();
     return 0;
 }

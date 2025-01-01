@@ -156,7 +156,7 @@ void Process(struct GOCell **goboard, unsigned int n) {
 
    unsigned int i, j, a, pos, *lregion, x, y;
    unsigned int statusarea;
-   struct QUEUE *q;
+   struct Queue *q;
 
    q = InitQueue(n * n);
    lregion = calloc(n * n + 1,sizeof(unsigned int));
