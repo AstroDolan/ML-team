@@ -104,8 +104,9 @@ void Process(struct GOCell **goboard, unsigned int n, int rank, int size) {
    lregion = calloc(n * n + 1,sizeof(unsigned int));
    statusarea = NOTHING;
    
-   unsigned int start_row = rank * (n / size);
-   unsigned int end_row = (rank == size - 1) ? n : start_row + (n / size);
+   unsigned int rows_per_process = n / size;
+   unsigned int start_row = rank * rows_per_process + 1;
+   unsigned int end_row = (rank == size - 1) ? n + 1 : start_row + rows_per_process;
    
    for (i = start_row; i < end_row; i++) {
       for (j = 1; j <= n - 2; j++) {
@@ -113,7 +114,9 @@ void Process(struct GOCell **goboard, unsigned int n, int rank, int size) {
             pos = i * n + j;
             EnQueue(q,pos);
             a = AnNeighb(goboard,n,q,lregion,&statusarea);
-            printf("Process %d -> Area = %d Owner = %d\n", rank, a, statusarea);
+            if (a > 0) {
+                printf("Process %d -> Area = %d Owner = %d\n", rank, a, statusarea);
+            }
             for (pos = 1; pos <= lregion[0]; pos++) {
                x = lregion[pos] / n;
                y = lregion[pos] % n;
@@ -123,6 +126,10 @@ void Process(struct GOCell **goboard, unsigned int n, int rank, int size) {
          }
       }
    }
+
+   MPI_Gather(&goboard[start_row][0], (end_row - start_row) * (n + 2) * sizeof(struct GOCell), MPI_BYTE,
+              &goboard[0][0], (end_row - start_row) * (n + 2) * sizeof(struct GOCell), MPI_BYTE,
+              0, MPI_COMM_WORLD);
 }
 
 void ReadGOBoard(struct GOCell **goboard, unsigned int n) {
