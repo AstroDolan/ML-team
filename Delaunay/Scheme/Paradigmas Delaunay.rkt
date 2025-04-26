@@ -1,5 +1,59 @@
 #lang racket
 
+; || Funciones de lectura de un .csv ||
+(define (split str sep)
+  (define (loop chars acc current)
+    (cond
+      ((null? chars)
+       (reverse (cons (list->string (reverse current)) acc)))
+      ((char=? (car chars) sep)
+       (loop (cdr chars) (cons (list->string (reverse current)) acc) '()))
+      (else
+       (loop (cdr chars) acc (cons (car chars) current)))))
+  (loop (string->list str) '() '()))
+
+(define (leer-csv archivo)
+  (call-with-input-file archivo
+    (lambda (in)
+      (let loop ((linea (read-line in))
+                 (resultado '()))
+        (if (eof-object? linea)
+            (reverse resultado)
+            (let ((campos (map string->number (split linea #\,))))
+              (loop (read-line in) (cons campos resultado))))))))
+
+
+(define (leer-puntos-ruta ruta)
+  (call-with-input-file ruta
+    (lambda (in)
+      (let loop ((linea (read-line in)) ; saltar encabezado
+                 (acum '()))
+        (let ((siguiente (read-line in))) ; leer nueva línea
+          (if (eof-object? siguiente)
+              (reverse acum)
+              (let* ((partes (split siguiente #\,)))
+                (if (= (length partes) 3)
+                    (let ((x (string->number (list-ref partes 0)))
+                          (y (string->number (list-ref partes 1)))
+                          (z (string->number (list-ref partes 2))))
+                      (if (= z 1)
+                          (loop siguiente (cons (list x y) acum))
+                          (loop siguiente acum)))
+                    (loop siguiente acum))))))))) ; <- HAY UN PARÉNTESIS DEMÁS AQUÍ
+
+
+
+
+(define (escribir-csv ruta datos)
+  (call-with-output-file ruta
+    (lambda (out)
+      (for-each
+       (lambda (fila)
+         (fprintf out "~a\n"
+                  (string-join (map number->string (flatten fila)) ",")))
+       datos))
+    #:exists 'replace))
+
 ;||--- obj (1) valid-Delaunay --- ||
 
 (define (cuadrado x) (* x x))
@@ -137,13 +191,18 @@
          exteriores)))
 
 
+; || Main ||
 
-;Cosas que faltan : lectura archivo csv (condicones si existe archivo, etc)
-;                   Filtrar solo los puntos tipo R y transformarlos a formato (x y)
-;                   Función principal que genera las 3 salidas
-;                   salidas formato csv: -a) Lista de aristas (edges-delaunay.csv)
-;                                        -b) Centros de triángulos (centers.csv)
-;                                        -c) Centros de aristas exteriores (centers-convex-hull.csv)
-; 
+(define (main)
+  (define puntos (leer-puntos-ruta "puntosPrueba.csv"))
+  (define triangulos (delaunay-triangles puntos))
+  (define aristas (foldr append '() (map aristas-de-triangulo triangulos)))
+  (define centros (triangle-centers triangulos))
+  (define centros-exteriores (exterior-edge-centers triangulos))
 
+  ;; Guardar a archivos
+  (escribir-csv "edges-delaunay.csv" aristas)
+  (escribir-csv "centers.csv" centros)
+  (escribir-csv "centers-convex-hull.csv" centros-exteriores))
 
+(main)
