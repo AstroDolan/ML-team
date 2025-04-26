@@ -22,24 +22,24 @@
             (let ((campos (map string->number (split linea #\,))))
               (loop (read-line in) (cons campos resultado))))))))
 
-
 (define (leer-puntos-ruta ruta)
   (call-with-input-file ruta
     (lambda (in)
-      (let loop ((linea (read-line in)) ; saltar encabezado
+      (let loop ((linea (read-line in)) ; salto xyz 
                  (acum '()))
-        (let ((siguiente (read-line in))) ; leer nueva línea
+        (let ((siguiente (read-line in))) ; se lee la linea nueva
           (if (eof-object? siguiente)
               (reverse acum)
-              (let* ((partes (split siguiente #\,)))
+              (let* ((partes (split siguiente #\,))) ; separo por coma
                 (if (= (length partes) 3)
                     (let ((x (string->number (list-ref partes 0)))
                           (y (string->number (list-ref partes 1)))
-                          (z (string->number (list-ref partes 2))))
-                      (if (= z 1)
+                          (z (list-ref partes 2))) ; z es un string
+                      (if (and x y (string=? z "R")) ; z debe ser "R" para punto valido
                           (loop siguiente (cons (list x y) acum))
                           (loop siguiente acum)))
-                    (loop siguiente acum))))))))) ; <- HAY UN PARÉNTESIS DEMÁS AQUÍ
+                    (loop siguiente acum)))))))))
+
 
 
 
