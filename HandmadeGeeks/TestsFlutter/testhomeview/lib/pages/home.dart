@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _searchField(),
-          SizedBox(height: 40),
+          SizedBox(height: 40,),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -32,6 +32,12 @@ class HomePage extends StatelessWidget {
               Container(
                 height: 150,
                 color: Colors.purple.withValues(alpha: 0.1),
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      );
+                  },
+                  ),
               ),
             ],
           ),
