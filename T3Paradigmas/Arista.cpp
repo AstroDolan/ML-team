@@ -1,4 +1,4 @@
-#include "Arista.h" ,
+#include "Arista.h"
 
 Arista::Arista() : p1(), p2() {}
 
@@ -11,7 +11,7 @@ bool Arista::operator==(const Arista& otra) const {
 }
 
 bool Arista::operator<(const Arista& otra) const {
-    // Orden lexicográfico (asegura que set<Arista> funcione bien)
+    // Orden lexicogrï¿½fico (asegura que set<Arista> funcione bien)
     if (p1 != otra.p1) return p1 < otra.p1;
     return p2 < otra.p2;
 }

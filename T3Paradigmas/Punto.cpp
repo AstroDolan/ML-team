@@ -10,8 +10,10 @@ double Punto::calcularDistancia(const Punto& otro) const {
 }
 
 bool Punto::operator==(const Punto& otro) const {
-    return x == otro.x && y == otro.y;
+    const double epsilon = 1e-6;
+    return std::abs(x - otro.x) < epsilon && std::abs(y - otro.y) < epsilon;
 }
+
 
 bool Punto::operator<(const Punto& otro) const {
     return (x != otro.x) ? (x < otro.x) : (y < otro.y);
