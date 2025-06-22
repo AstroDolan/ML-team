@@ -19,19 +19,33 @@ bool Triangulo::tienePunto(const Punto& p) const {
     return false;
 }
 
+#include <array>
+#include <algorithm>
+
 bool Triangulo::operator<(const Triangulo& otro) const {
-    for (int i = 0; i < 3; ++i) {
-        if (puntos[i] != otro.puntos[i])
-            return puntos[i] < otro.puntos[i];
-    }
-    return false;
+    std::array<Punto, 3> a = {puntos[0], puntos[1], puntos[2]};
+    std::array<Punto, 3> b = {otro.puntos[0], otro.puntos[1], otro.puntos[2]};
+    std::sort(a.begin(), a.end());
+    std::sort(b.begin(), b.end());
+    return a < b;
 }
 
+
+#include <algorithm> // para std::count
+
 bool Triangulo::operator==(const Triangulo& otro) const {
-    return puntos[0] == otro.puntos[0] &&
-           puntos[1] == otro.puntos[1] &&
-           puntos[2] == otro.puntos[2];
+    int count = 0;
+    for (const auto& p : puntos) {
+        for (const auto& q : otro.puntos) {
+            if (p == q) {
+                count++;
+                break;
+            }
+        }
+    }
+    return count == 3;
 }
+
 
 bool Triangulo::operator!=(const Triangulo& otro) const {
     return !(*this == otro);
