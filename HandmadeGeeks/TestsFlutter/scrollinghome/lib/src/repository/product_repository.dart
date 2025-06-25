@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:developer';
 import 'package:scrollinghome/src/network/network.dart';
 import 'package:scrollinghome/src/res/endpoints.dart';
@@ -22,6 +23,7 @@ class ProductRepository {
     final response = await _networkHandler.getRequest(url: url);
     if(response!=null){
       log(response.body);
+      final jsonData = jsonDecode(response.body);
     } else {
       log("Error fetching products");
     }
