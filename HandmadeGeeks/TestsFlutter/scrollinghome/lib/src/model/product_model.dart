@@ -53,31 +53,41 @@ class Welcome {
         required this.thumbnail,
     });
 
-    factory Welcome.fromJson(Map<String, dynamic> json) => Welcome(
-        id: json["id"],
-        title: json["title"],
-        description: json["description"],
-        category: json["category"],
-        price: json["price"]?.toDouble(),
-        discountPercentage: json["discountPercentage"]?.toDouble(),
-        rating: json["rating"]?.toDouble(),
-        stock: json["stock"],
-        tags: List<String>.from(json["tags"].map((x) => x)),
-        brand: json["brand"],
-        sku: json["sku"],
-        weight: json["weight"],
-        dimensions: Dimensions.fromJson(json["dimensions"]),
-        warrantyInformation: json["warrantyInformation"],
-        shippingInformation: json["shippingInformation"],
-        availabilityStatus: json["availabilityStatus"],
-        reviews: List<Review>.from(json["reviews"].map((x) => Review.fromJson(x))),
-        returnPolicy: json["returnPolicy"],
-        minimumOrderQuantity: json["minimumOrderQuantity"],
-        meta: Meta.fromJson(json["meta"]),
-        images: List<String>.from(json["images"].map((x) => x)),
-        thumbnail: json["thumbnail"],
-    );
-
+factory Welcome.fromJson(Map<String, dynamic> json) => Welcome(
+  id: json["id"] ?? 0,
+  title: json["title"] ?? "Sin título",
+  description: json["description"] ?? "Sin descripción",
+  category: json["category"] ?? "N/A",
+  price: (json["price"] ?? 0).toDouble(),
+  discountPercentage: (json["discountPercentage"] ?? 0).toDouble(),
+  rating: (json["rating"] ?? 0).toDouble(),
+  stock: json["stock"] ?? 0,
+  tags: List<String>.from(json["tags"] ?? []),
+  brand: json["brand"] ?? "Marca desconocida",
+  sku: json["sku"] ?? "SKU desconocido",
+  weight: json["weight"] ?? 0,
+  dimensions: json["dimensions"] != null
+      ? Dimensions.fromJson(json["dimensions"])
+      : Dimensions(width: 0, height: 0, depth: 0),
+  warrantyInformation: json["warrantyInformation"] ?? "",
+  shippingInformation: json["shippingInformation"] ?? "",
+  availabilityStatus: json["availabilityStatus"] ?? "Desconocido",
+  reviews: json["reviews"] != null
+      ? List<Review>.from(json["reviews"].map((x) => Review.fromJson(x)))
+      : [],
+  returnPolicy: json["returnPolicy"] ?? "",
+  minimumOrderQuantity: json["minimumOrderQuantity"] ?? 1,
+  meta: json["meta"] != null
+      ? Meta.fromJson(json["meta"])
+      : Meta(
+          createdAt: DateTime.now(),
+          updatedAt: DateTime.now(),
+          barcode: "",
+          qrCode: "",
+        ),
+  images: List<String>.from(json["images"] ?? []),
+  thumbnail: json["thumbnail"] ?? "https://via.placeholder.com/300",
+);
     Map<String, dynamic> toJson() => {
         "id": id,
         "title": title,

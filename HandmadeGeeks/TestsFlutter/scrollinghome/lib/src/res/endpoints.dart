@@ -1,6 +1,6 @@
 class Endpoints {
   const Endpoints._();
 
-  static productUrl({ required int skip, int limit=10 }) => 
+  static String productUrl({ required int skip, int limit = 20 }) => 
   "https://dummyjson.com/products?limit=$limit&skip=$skip";
 }

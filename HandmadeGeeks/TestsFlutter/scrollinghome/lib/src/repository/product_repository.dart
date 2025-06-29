@@ -6,7 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:scrollinghome/src/model/product_model.dart';
 
 
-final ProductRepositoryProvider = Provider((ref) {
+final productRepositoryProvider = Provider((ref) {
   final networkHandler = ref.watch(networkHandlerProvider);
   return ProductRepository(networkHandler: networkHandler);
 });

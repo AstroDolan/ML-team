@@ -3,7 +3,7 @@ import 'package:scrollinghome/src/repository/product_repository.dart';
 import 'package:scrollinghome/src/state/product_list_state.dart';
 
 final productControllerProvider = StateNotifierProvider<ProductListController, ProductListState>((ref){
-  final repository = ref.watch(ProductRepositoryProvider);
+  final repository = ref.watch(productRepositoryProvider);
   return ProductListController(repository: repository);
 });
 
