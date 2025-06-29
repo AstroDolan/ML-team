@@ -28,19 +28,19 @@ class _MainScaffoldState extends State<MainScaffold> {
     });
   }
 
-/*  void _onCartPressed() {
+    void _onCartPressed() {
     // Aquí puedes navegar al carrito o mostrar un snackbar por ahora
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Carrito aún no implementado')),
     );
-  }*/
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
         controller: searchController,
-        //onCartPressed: _onCartPressed,
+        onCartPressed: _onCartPressed,
       ),
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
