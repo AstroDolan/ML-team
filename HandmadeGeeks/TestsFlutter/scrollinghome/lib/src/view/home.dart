@@ -8,9 +8,6 @@ class HomeView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Handmade Geeks"),
-      ),
       body: const ProductList(),
       backgroundColor: Colors.white,
     );

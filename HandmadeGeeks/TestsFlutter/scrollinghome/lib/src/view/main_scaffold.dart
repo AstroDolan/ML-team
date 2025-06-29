@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:scrollinghome/src/view/home.dart';
+import 'package:scrollinghome/src/view/widgets/custom_app_bar.dart';
 
 class MainScaffold extends StatefulWidget {
   const MainScaffold({super.key});
@@ -12,12 +13,13 @@ class MainScaffold extends StatefulWidget {
 
 class _MainScaffoldState extends State<MainScaffold> {
   int _selectedIndex = 0;
+  final searchController = TextEditingController();
 
-  // Aquí defines las pantallas que vas a mostrar
   final List<Widget> _pages = const [
-    HomeView(),                  // index 0
-    Center(child: Text('Favoritos')), // index 1
-    Center(child: Text('Perfil')),    // index 2
+    HomeView(),
+    Center(child: Text('La Belen es tan pero tan watona que')),
+    Center(child: Text('no cabe en un sola pantalla')),
+    Center(child: Text('PERSONAAAAAAAAAAA')),
   ];
 
   void _onItemTapped(int index) {
@@ -26,9 +28,20 @@ class _MainScaffoldState extends State<MainScaffold> {
     });
   }
 
+/*  void _onCartPressed() {
+    // Aquí puedes navegar al carrito o mostrar un snackbar por ahora
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Carrito aún no implementado')),
+    );
+  }*/
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppBar(
+        controller: searchController,
+        //onCartPressed: _onCartPressed,
+      ),
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
@@ -36,18 +49,10 @@ class _MainScaffoldState extends State<MainScaffold> {
         selectedItemColor: Colors.deepPurple,
         unselectedItemColor: Colors.grey,
         items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Inicio',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favoritos',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Perfil',
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Inicio'),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_checkout), label: 'Carrito'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Perfil'),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Configuración'),
         ],
       ),
     );
