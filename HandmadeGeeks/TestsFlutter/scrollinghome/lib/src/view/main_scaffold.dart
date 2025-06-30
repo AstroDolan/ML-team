@@ -1,6 +1,8 @@
 // lib/src/view/main_scaffold.dart
 
 import 'package:flutter/material.dart';
+import 'package:scrollinghome/src/view/MiPerfil.dart';
+import 'package:scrollinghome/src/view/MiTienda.dart';
 import 'package:scrollinghome/src/view/cart_view.dart';
 import 'package:scrollinghome/src/view/home.dart';
 import 'package:scrollinghome/src/view/widgets/custom_app_bar.dart';
@@ -19,22 +21,15 @@ class _MainScaffoldState extends State<MainScaffold> {
   final List<Widget> _pages = const [
     HomeView(),
     CartView(),
+    MiTienda(),
+    MiPerfil(),
     //Center(child: Text('La Belen es tan pero tan watona que')),
-    Center(child: Text('no cabe en un sola pantalla')),
-    Center(child: Text('PERSONAAAAAAAAAAA')),
   ];
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
-  }
-
-    void _onCartPressed() {
-    // Aquí puedes navegar al carrito o mostrar un snackbar por ahora
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Carrito aún no implementado')),
-    );
   }
 
   @override
