@@ -1,12 +1,72 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:scrollinghome/src/provider/followed_provider.dart';
+import 'package:scrollinghome/src/view/detalle_producto.dart';
 
-class FollowedPage extends StatefulWidget {
+class FollowedPage extends ConsumerWidget {
   const FollowedPage({super.key});
 
   @override
-  State<FollowedPage> createState() => _FollowedPageState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    final followed = ref.watch(followedProvider);
 
+    return Scaffold(
+      appBar: AppBar(title: const Text("Productos Seguidos")),
+      body: followed.isEmpty
+          ? const Center(child: Text("No estás siguiendo productos"))
+          : ListView.builder(
+              padding: const EdgeInsets.all(10),
+              itemCount: followed.length,
+              itemBuilder: (context, index) {
+                final producto = followed[index];
+
+                return Container(
+                  margin: const EdgeInsets.symmetric(vertical: 6),
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 241, 249, 255),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 7,
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => DetalleProducto(producto: producto),
+                              ),
+                            );
+                          },
+                          child: Text(producto.title),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: OutlinedButton(
+                          onPressed: () {
+                            ref.read(followedProvider.notifier).removeFollow(producto.id);
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text('Dejaste de seguir: ${producto.title}')),
+                            );
+                          },
+                          style: OutlinedButton.styleFrom(
+                            backgroundColor: Colors.red,
+                            foregroundColor: Colors.white,
+                          ),
+                          child: const Text("Dejar de seguir", style: TextStyle(fontSize: 12)),
+                        ),
+                      )
+                    ],
+                  ),
+                );
+              },
+            ),
+    );
+  }
+}
 class _FollowedPageState extends State<FollowedPage> {
   final List<String> seguidos = [
     'Asignar',

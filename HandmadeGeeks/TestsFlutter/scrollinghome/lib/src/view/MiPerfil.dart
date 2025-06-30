@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'MiTienda.dart';
-import 'Seguidos.dart';
+import 'seguidos.dart';
 import 'Deseados.dart';
 
 class MiPerfil extends StatelessWidget {

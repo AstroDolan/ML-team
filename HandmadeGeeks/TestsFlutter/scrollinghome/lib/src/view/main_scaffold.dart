@@ -1,8 +1,7 @@
-// lib/src/view/main_scaffold.dart
-
 import 'package:flutter/material.dart';
 import 'package:scrollinghome/src/view/MiPerfil.dart';
 import 'package:scrollinghome/src/view/MiTienda.dart';
+import 'package:scrollinghome/src/view/Seguidos.dart';
 import 'package:scrollinghome/src/view/cart_view.dart';
 import 'package:scrollinghome/src/view/home.dart';
 import 'package:scrollinghome/src/view/widgets/custom_app_bar.dart';
@@ -21,7 +20,7 @@ class _MainScaffoldState extends State<MainScaffold> {
   final List<Widget> _pages = const [
     HomeView(),
     CartView(),
-    MiTienda(),
+    FollowedPage(),
     MiPerfil(),
     //Center(child: Text('La Belen es tan pero tan watona que')),
   ];

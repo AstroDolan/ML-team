@@ -1,16 +1,92 @@
-// lib/src/view/widgets/product_list_tile.dart
-
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:scrollinghome/src/model/product_model.dart';
-import 'package:scrollinghome/src/view/detalle_producto.dart'; // Asegúrate de importar correctamente
+import 'package:scrollinghome/src/provider/followed_provider.dart';
+import 'package:scrollinghome/src/view/detalle_producto.dart';
 
-class ProductListTile extends StatefulWidget {
+class ProductListTile extends ConsumerWidget {
   const ProductListTile({super.key, required this.product});
-
   final Welcome product;
 
   @override
-  State<ProductListTile> createState() => _ProductListTileState();
+  Widget build(BuildContext context, WidgetRef ref) {
+    final isFollowed = ref.watch(followedProvider).any((p) => p.id == product.id);
+    final size = MediaQuery.of(context).size;
+
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => DetalleProducto(producto: product),
+          ),
+        );
+      },
+      child: Container(
+        height: size.height,
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Stack(
+              alignment: Alignment.topRight,
+              children: [
+                Center(
+                  child: Image.network(
+                    product.thumbnail,
+                    height: 250,
+                    fit: BoxFit.contain,
+                  ),
+                ),
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: GestureDetector(
+                    onTap: () {
+                      ref.read(followedProvider.notifier).toggleFollow(product);
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: isFollowed ? Colors.red : Colors.white,
+                        border: Border.all(
+                          color: isFollowed ? Colors.red : Colors.black,
+                          width: 1.5,
+                        ),
+                      ),
+                      padding: const EdgeInsets.all(6),
+                      child: Icon(
+                        isFollowed ? Icons.favorite : Icons.favorite_border,
+                        color: isFollowed ? Colors.white : Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            Text(
+              product.title,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              "\$${product.price}",
+              style: const TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
 class _ProductListTileState extends State<ProductListTile> {
