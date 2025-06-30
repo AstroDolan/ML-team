@@ -1,16 +1,14 @@
 // lib/src/view/widgets/custom_app_bar.dart
 
 import 'package:flutter/material.dart';
-import 'package:scrollinghome/src/view/cart_view.dart';
-
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final TextEditingController controller;
-  final VoidCallback onCartPressed;
+  //final VoidCallback onCartPressed;
 
   const CustomAppBar({
     super.key,
     required this.controller,
-    required this.onCartPressed,
+    //required this.onCartPressed,
   });
 
   @override
@@ -35,7 +33,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 0),
         ),
       ),
-      actions: [
+      /*actions: [
         IconButton(
           icon: const Icon(Icons.shopping_cart),
           onPressed: () {
@@ -45,7 +43,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             );
           },
         )
-      ],
+      ],*/
     );
   }
 }

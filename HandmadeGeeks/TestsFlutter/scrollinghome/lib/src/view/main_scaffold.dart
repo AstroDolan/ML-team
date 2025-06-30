@@ -1,6 +1,7 @@
 // lib/src/view/main_scaffold.dart
 
 import 'package:flutter/material.dart';
+import 'package:scrollinghome/src/view/cart_view.dart';
 import 'package:scrollinghome/src/view/home.dart';
 import 'package:scrollinghome/src/view/widgets/custom_app_bar.dart';
 
@@ -17,7 +18,8 @@ class _MainScaffoldState extends State<MainScaffold> {
 
   final List<Widget> _pages = const [
     HomeView(),
-    Center(child: Text('La Belen es tan pero tan watona que')),
+    CartView(),
+    //Center(child: Text('La Belen es tan pero tan watona que')),
     Center(child: Text('no cabe en un sola pantalla')),
     Center(child: Text('PERSONAAAAAAAAAAA')),
   ];
@@ -40,7 +42,7 @@ class _MainScaffoldState extends State<MainScaffold> {
     return Scaffold(
       appBar: CustomAppBar(
         controller: searchController,
-        onCartPressed: _onCartPressed,
+        //onCartPressed: _onCartPressed,
       ),
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
