@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'MiTienda.dart';
-import 'seguidos.dart';
+import 'Seguidos.dart';
 import 'Deseados.dart';
 
 class MiPerfil extends StatelessWidget {
@@ -10,7 +10,7 @@ class MiPerfil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Nombre del usuario'),
+        title: const Text('Mi Perfil'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -21,16 +21,16 @@ class MiPerfil extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 45,
-                  backgroundImage: AssetImage('lib/imagenes/dylan.png'),
+                  backgroundImage: AssetImage('lib/assets/dylan.png'),
                 ),
                 const SizedBox(width: 16),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
-                    Text('Nombre del usuario', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                    Text('Correo'),
-                    Text('Teléfono'),
-                    Text('Dirección'),
+                    Text('AstroDolan', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                    Text('dylan.jara@usach.cl'),
+                    Text('+569 1234 5678'),
+                    Text('Irlanda 8972, Santiago'),
                  ],
                 ),
               ],
