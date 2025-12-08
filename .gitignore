@@ -1,5 +1,6 @@
-PyNN
-settings.json
-Projecto Galaxias/GalaxyZoo/
-C:\Users\djara\Documents\ML-team\Modelos-DL\Projecto Galaxias\GalaxyZoo\
-Modelos-DL\Projecto Galaxias/GalaxyZoo/
+# Ignorar carpeta completa con espacios
+!Modelos-DL/Projecto Galaxias/TestGalaxias.ipynb
+Modelos-DL/Projecto Galaxias/GalaxyZoo/
+# Opcional: ignorar subcarpetas concretas
+Modelos-DL/Projecto Galaxias/GalaxyZoo/images_test_rev1/
+Modelos-DL/Projecto Galaxias/GalaxyZoo/images_training_rev1/
