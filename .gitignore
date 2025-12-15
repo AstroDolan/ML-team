@@ -1,3 +1,13 @@
+Modelos-DL\Galaxy Zoo
+C:\Users\djara\Documents\ML-team\Modelos-DL\Galaxy Zoo
+Modelos-DL\Galaxy Zoo\images_training_rev1
+C:\Users\djara\Documents\ML-team\Modelos-DL\Galaxy Zoo\images_training_rev1
+ML-Team/Modelos-DL/GalaxyZoo/images_test_rev1/
+Modelos-DL/GalaxyZoo/*
+
+Modelos-DL\Galaxy Zoo\images_test_rev1\
+C:\Users\djara\Documents\ML-team\Modelos-DL\Galaxy Zoo\images_test_rev1\
+C:\Users\djara\Documents\ML-team\Modelos-DL\Galaxy Zoo\images_training_rev1\
 # Ignorar carpeta completa con espacios
 !Modelos-DL/Projecto Galaxias/TestGalaxias.ipynb
 Modelos-DL/Projecto Galaxias/GalaxyZoo/
@@ -5,9 +15,5 @@ Modelos-DL/Projecto Galaxias/GalaxyZoo/
 Modelos-DL/Projecto Galaxias/GalaxyZoo/images_test_rev1/
 Modelos-DL/Projecto Galaxias/GalaxyZoo/images_training_rev1/
 
-ML-Team/Modelos-DL/GalaxyZoo/images_test_rev1/
-Modelos-DL/GalaxyZoo/*
-
-Modelos-DL\Galaxy Zoo\images_test_rev1\
-C:\Users\djara\Documents\ML-team\Modelos-DL\Galaxy Zoo\images_test_rev1\
-C:\Users\djara\Documents\ML-team\Modelos-DL\Galaxy Zoo\images_training_rev1\
+NN
+Galaxy
