@@ -1,0 +1,130 @@
+\documentclass{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
+\usepackage{graphicx,listings,stackengine}
+
+% dummy text; remove it when working on this template
+\usepackage{lipsum}
+
+\author{Brian Gonzalez, Dylan Jara}
+\title{GAX-Kepler: Identificador de morfologia de galaxias mediante el uso de redes neuronales convolucionales}
+\subtitle{}
+\institute{
+    Universidad de Santiago de Chile
+}
+\date{\today}
+\usepackage{Ritsumeikan}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{ccnuMainColor}{RGB}{57,64,73}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{ccnuMainColor},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \vspace*{-0.6cm}
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[keepaspectratio, scale=0.1]{pic/Usach S1.png}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}    
+\tableofcontents[sectionstyle=show,
+subsectionstyle=show/shaded/hide,
+subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+
+
+%//////////////////////////////////////////////////////%
+\section{Introducción}
+
+\subsection{Planteamiento}
+\begin{frame}{Introducción al problema}
+    \begin{itemize}
+        \item<1-> Usaremos una CNN con time series. Hay que aprender de eso
+        \item<2-> Dataset de kepler, con curvas de luz
+        \item<3-> Se debe explicar exoplanetas, curvas de luz. Las CNN se explican en metodologia
+    \end{itemize}
+\end{frame}
+
+\subsection{Justificacion}
+\begin{frame}{¿De qué nos sirve?}
+    \begin{itemize}
+        \item This growing catalog of exoplanets has challenged the uniqueness of our solar system and informed theories of planet formation (Johnson, 2009).
+        \item Basicamente facilita la exploracion espacial. Y esto ayuda a entender mejor el universo y el origen de la vida
+    \end{itemize}
+\end{frame}
+
+
+%/////////////////////////////////////////////////////%
+\section{Estado del arte}
+
+\subsection{Charles Williams Bachman}
+\begin{frame}{Definiciones}
+    \begin{block}{Dominio}
+        Debe ir descubrimiento de exoplanetas con kepler y otras misiones
+    \end{block}
+    \begin{block}{Esquema de Relación}
+        Deteccion usando IA
+    \end{block}
+    \begin{block}{Relación}
+        Clasificacion usando redes neuronales
+    \end{block}
+\end{frame}
+
+\begin{frame}{Ejemplo de una imagen}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=6cm, height=6cm]{pic/google-relacional.jpg}
+        \caption{Tablas de Clientes y Pedidos (Google Cloud)}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+
+%///////////////////////////////////////////////////%
+\section{Hipótesis}
+\subsection{¿Qué queremos lograr?}
+aaa
+
+
+%/////////////////////////////////////////////%
+\section{Metodología}
+\subsection{Arquitectura de la red}
+aaa
+
+
+%/////////////////////////////////////////////%
+\section{Conclusiones}
+\begin{frame}
+    \begin{enumerate}
+        \item Las bases de datos son esenciales en nuestra vida
+        \item No son perfectas y necesitan manejo especializado
+        \item Perdurarán hasta mucho tiempo más
+    \end{enumerate}
+\end{frame}
+
+\end{document}
