@@ -479,6 +479,12 @@ INPUT PresGalaxy.toc
 INPUT ./PresGalaxy.toc
 INPUT ./PresGalaxy.toc
 INPUT PresGalaxy.toc
+INPUT ./PresGalaxy.toc
+INPUT ./PresGalaxy.toc
+INPUT PresGalaxy.toc
+INPUT ./PresGalaxy.toc
+INPUT ./PresGalaxy.toc
+INPUT PresGalaxy.toc
 OUTPUT PresGalaxy.nav
 OUTPUT PresGalaxy.toc
 OUTPUT PresGalaxy.snm

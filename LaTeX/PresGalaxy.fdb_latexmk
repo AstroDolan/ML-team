@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1765817994.14927 "/home/saintsaens/Documents/ML-team/LaTeX/PresGalaxy.tex" "PresGalaxy.pdf" "PresGalaxy" 1765817996.75661 0
-  "/home/saintsaens/Documents/ML-team/LaTeX/PresGalaxy.tex" 1765817993.97027 3640 3c0cde16b65c44bd46407bf670dd2fb3 ""
+["pdflatex"] 1765919479.62095 "/home/saintsaens/Documents/ML-team/LaTeX/PresGalaxy.tex" "PresGalaxy.pdf" "PresGalaxy" 1765919482.81196 0
+  "/home/saintsaens/Documents/ML-team/LaTeX/PresGalaxy.tex" 1765919479.52202 5595 0eb8bcf99ee703f80d11d3cbedacc31e ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1755987285 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecss0500.tfm" 1755987285 3584 3cb5b0e5e7e89823423413806ab1d938 ""
@@ -234,11 +234,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1765811997 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765811919 2008255 035bdce6b9f0836cc653838d157d0b61 ""
-  "PresGalaxy.aux" 1765817996.68258 5519 c130047b82ec3a21bafa87716df13d57 "pdflatex"
-  "PresGalaxy.nav" 1765817996.68358 3335 cd33cacc12c6043db071a5410bcf6257 "pdflatex"
-  "PresGalaxy.out" 1765817996.68358 1306 f95ca4dcd6276f01ced3ad80f64cd723 "pdflatex"
-  "PresGalaxy.tex" 1765817993.97027 3640 3c0cde16b65c44bd46407bf670dd2fb3 ""
-  "PresGalaxy.toc" 1765817996.68358 554 be38db222563ea52e0b43f8f098f2931 "pdflatex"
+  "PresGalaxy.aux" 1765919482.73972 6532 5e8dfdc96bce01bcf371e7879f8fa80f "pdflatex"
+  "PresGalaxy.nav" 1765919482.74037 3983 774c52256d4ca654e5c14cc2e5bbfbcd "pdflatex"
+  "PresGalaxy.out" 1765919482.74037 1447 4c4b6347c7ef450fae2ccce8cb9c8754 "pdflatex"
+  "PresGalaxy.tex" 1765919479.52202 5595 0eb8bcf99ee703f80d11d3cbedacc31e ""
+  "PresGalaxy.toc" 1765919482.74037 638 81ad1f713dd01d24f4c94a31456a79de "pdflatex"
   "Ritsumeikan.sty" 1764262552.34364 3600 6744405656ec3565a6e6bc37339a0924 ""
   "pic/Usach S1.png" 1764262552.34364 30155 26d92907ca4e1c4b33bf343f3bf17c65 ""
   "pic/google-relacional.jpg" 1764262552.34464 82784 1329bce9716885e8c9f202ba9b2b0b68 ""

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.12.15)  15 DEC 2025 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.12.15)  16 DEC 2025 18:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -924,7 +924,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 \c@lstlisting=\count396
  (./PresGalaxy.nav)
-<pic/Usach S1.png, id=105, 1103.12125pt x 348.30125pt>
+<pic/Usach S1.png, id=125, 1103.12125pt x 348.30125pt>
 File: pic/Usach S1.png Graphic file (type png)
 <use pic/Usach S1.png>
 Package pdftex.def Info: pic/Usach S1.png  used on input line 51.
@@ -994,7 +994,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 [12
 
 ]
-<pic/google-relacional.jpg, id=930, 973.6375pt x 1003.75pt>
+<pic/google-relacional.jpg, id=1098, 973.6375pt x 1003.75pt>
 File: pic/google-relacional.jpg Graphic file (type jpg)
 <use pic/google-relacional.jpg>
 Package pdftex.def Info: pic/google-relacional.jpg  used on input line 105.
@@ -1043,6 +1043,26 @@ Overfull \vbox (12.0pt too high) has occurred while \output is active []
 
 [21
 
+] (./PresGalaxy.toc)
+
+[22
+
+]
+Overfull \vbox (96.61241pt too high) detected at line 145
+ []
+
+
+
+[23
+
+] (./PresGalaxy.toc)
+
+[24
+
+]
+
+[25
+
 ]
 \tf@nav=\write6
 \openout6 = `PresGalaxy.nav'.
@@ -1059,21 +1079,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `PresGalaxy.out' has not changed.
-(rerunfilecheck)             Checksum: F95CA4DCD6276F01CED3AD80F64CD723;1306.
+(rerunfilecheck)             Checksum: 4C4B6347C7EF450FAE2CCCE8CB9C8754;1447.
  ) 
 Here is how much of TeX's memory you used:
- 29636 strings out of 475171
- 587539 string characters out of 5767094
- 1046387 words of memory out of 5000000
- 51992 multiletter control sequences out of 15000+600000
+ 29666 strings out of 475171
+ 587831 string characters out of 5767094
+ 1051536 words of memory out of 5000000
+ 52008 multiletter control sequences out of 15000+600000
  570677 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,20n,123p,447b,798s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb>
-Output written on PresGalaxy.pdf (21 pages, 260782 bytes).
+Output written on PresGalaxy.pdf (25 pages, 284298 bytes).
 PDF statistics:
- 1547 PDF objects out of 1728 (max. 8388607)
- 1106 compressed objects within 12 object streams
- 54 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2147 PDF objects out of 2487 (max. 8388607)
+ 1483 compressed objects within 15 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 179 words of extra memory for PDF output out of 10000 (max. 10000000)
 

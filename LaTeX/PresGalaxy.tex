@@ -59,14 +59,14 @@ subsubsectionstyle=show/shaded/hide]
 
 
 %//////////////////////////////////////////////////////%
-\section{Introducción}
+\section{Introducción} %Dylan%
 
 \subsection{Planteamiento}
 \begin{frame}{Introducción al problema}
     \begin{itemize}
-        \item<1-> Usaremos una CNN con time series. Hay que aprender de eso
-        \item<2-> Dataset de kepler, con curvas de luz
-        \item<3-> Se debe explicar exoplanetas, curvas de luz. Las CNN se explican en metodologia
+        \item<1-> Usaremos una CNN que categoriza 37 clases
+        \item<2-> Dataset de galaxy zoo, con probs de clase por id
+        \item<3-> Se debe explicar las galaxias y sus categorias. Las CNN se explican en metodologia
     \end{itemize}
 \end{frame}
 
@@ -80,18 +80,18 @@ subsubsectionstyle=show/shaded/hide]
 
 
 %/////////////////////////////////////////////////////%
-\section{Estado del arte}
+\section{Estado del arte} %Dylan%
 
-\subsection{Charles Williams Bachman}
+\subsection{Tipos de galaxias} %Brian%
 \begin{frame}{Definiciones}
     \begin{block}{Dominio}
-        Debe ir descubrimiento de exoplanetas con kepler y otras misiones
+        Debe ir categorizacion de galaxias con galaxy zoo
     \end{block}
     \begin{block}{Esquema de Relación}
         Deteccion usando IA
     \end{block}
     \begin{block}{Relación}
-        Clasificacion usando redes neuronales
+        Clasificacion multicategorica pero con binary-ce usando redes neuronales
     \end{block}
 \end{frame}
 
@@ -106,19 +106,46 @@ subsubsectionstyle=show/shaded/hide]
 
 
 %///////////////////////////////////////////////////%
-\section{Hipótesis}
+\section{Hipótesis} %Brian%
 \subsection{¿Qué queremos lograr?}
 aaa
 
 
 %/////////////////////////////////////////////%
-\section{Metodología}
+\section{Metodología} %Brian
 \subsection{Arquitectura de la red}
 aaa
 
+\section{Ideas Futuras}
+\begin{frame}
+    \begin{itemize}
+        \item Usar GPU para entrenar mas rapido
+        \item Divide y venceras para distribuir
+        \item Usar la CNN para trapasar a un Decision Tree o Random Forest
+        \item Galaxy Zoo is a citizen science project which provides a visual morphological classification for nearly one million galaxies in its first phase (Galaxy Zoo 1) distinguishing elliptical from spiral galaxies.
+        \item 
+    \end{itemize}
+\end{frame}
+
+\section{Refs}
+\begin{frame}
+    \begin{itemize}
+        \item We use scikit-learn (Pedregosa et al., 2011) python library to perform the experiments and procedures reported in this Section
+        \item For a further analysis on the problem with two classes, we use the Receiver Operating Characteristic (ROC) curve and the Area Under the ROC
+        curve (AUC, Bradley, 1997)
+        \item Reducir la cantidad de clases existentes para disminuir la no-linealidad de los datos
+        \item Throughout this work, we use Galaxy Zoo (Lintott et al., 2008, 2011; Willett et al., 2013) 
+        classification as supervision and validation (ground truth) to our classification models.
+        \item Several authors (Abraham et al., 1996; Conselice et al., 2000; Conselice, 2003; Lotz et al., 2004) studied and presented resultsabout 
+        objective galaxy morphology measures with Concentration, Asymmetry, Smoothness, Gini, and M20 (CASGM system).
+        \item The main purpose of this investigation is to answer the question “How to morphologically classify galaxies using Galaxy Zoo 
+        (Lintott et al., 2008, 2011; Willett et al., 2013) classification through non-parametric features and Machine Learning methods?”
+        \item Deep Convolutional Neural Network (CNN) is a well-established methodology to classify images (Goodfellow et al., 2016).
+    \end{itemize}
+\end{frame}
 
 %/////////////////////////////////////////////%
-\section{Conclusiones}
+\section{Conclusiones} %Brian - Dylan
 \begin{frame}
     \begin{enumerate}
         \item Las bases de datos son esenciales en nuestra vida

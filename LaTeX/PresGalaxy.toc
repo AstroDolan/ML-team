@@ -2,9 +2,11 @@
 \beamer@subsectionintoc {1}{1}{Planteamiento}{4}{0}{1}
 \beamer@subsectionintoc {1}{2}{Justificacion}{8}{0}{1}
 \beamer@sectionintoc {2}{Estado del arte}{10}{0}{2}
-\beamer@subsectionintoc {2}{1}{Charles Williams Bachman}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Tipos de galaxias}{11}{0}{2}
 \beamer@sectionintoc {3}{Hipótesis}{14}{0}{3}
 \beamer@subsectionintoc {3}{1}{¿Qué queremos lograr?}{15}{0}{3}
 \beamer@sectionintoc {4}{Metodología}{16}{0}{4}
 \beamer@subsectionintoc {4}{1}{Arquitectura de la red}{18}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{19}{0}{5}
+\beamer@sectionintoc {5}{Ideas Futuras}{19}{0}{5}
+\beamer@sectionintoc {6}{Refs}{22}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{24}{0}{7}
