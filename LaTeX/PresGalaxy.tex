@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
 
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
@@ -61,12 +62,13 @@ subsubsectionstyle=show/shaded/hide]
 %//////////////////////////////////////////////////////%
 \section{Introducción} %Dylan%
 
-\subsection{Planteamiento}
-\begin{frame}{Introducción al problema}
+\subsection{Introducción al problema}
+\begin{frame}{Dataset Galaxy Zoo}
     \begin{itemize}
-        \item<1-> Usaremos una CNN que categoriza 37 clases
-        \item<2-> Dataset de galaxy zoo, con probs de clase por id
-        \item<3-> Se debe explicar las galaxias y sus categorias. Las CNN se explican en metodologia
+        \item<1-> En este trabajo, usamos Galaxy Zoo (Lintott et al., 2008, 2011; Willett et al., 2013) para la clasificacion y validacion de nuestros modelos de clasificacion.
+        \item<2-> El projecto original Galaxy Zoo fue lanzado en julio de 2007 y obtuvo mas de 100,000 voluntarios en sus primeros diez dias.
+        \item<3-> Los voluntarios clasificaron imagenes del Sloan Digital Sky Survey (SDSS) de galaxias en seis categorias: eliptica, espiral en sentido horario, espiral en sentido antihorario, edge-on , estrella/no lo se, o fusion de galaxias.
+        \item<4-> 
     \end{itemize}
 \end{frame}
 
