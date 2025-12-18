@@ -1,14 +1,12 @@
 \documentclass{beamer}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
-\usepackage[spanish]{babel}
+\usepackage{apacite}
+\usepackage[spanish,provide=*]{babel}
 
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
 \usepackage{graphicx,listings,stackengine}
-
-% dummy text; remove it when working on this template
-\usepackage{lipsum}
 
 \author{Brian Gonzalez, Dylan Jara}
 \title{GAX-Kepler: Identificador de morfologia de galaxias mediante el uso de redes neuronales convolucionales}
@@ -65,10 +63,10 @@ subsubsectionstyle=show/shaded/hide]
 \subsection{Introducción al problema}
 \begin{frame}{Dataset Galaxy Zoo}
     \begin{itemize}
+        \item <1->Una galaxia es un entorno en el cual las estrellas nacen y mueren, y las galaxias lejanas son faros luminosos que nos permiten explorar el universo lejano. \cite{SILK2001337}
         \item<1-> En este trabajo, usamos Galaxy Zoo (Lintott et al., 2008, 2011; Willett et al., 2013) para la clasificacion y validacion de nuestros modelos de clasificacion.
         \item<2-> El projecto original Galaxy Zoo fue lanzado en julio de 2007 y obtuvo mas de 100,000 voluntarios en sus primeros diez dias.
-        \item<3-> Los voluntarios clasificaron imagenes del Sloan Digital Sky Survey (SDSS) de galaxias en seis categorias: eliptica, espiral en sentido horario, espiral en sentido antihorario, edge-on , estrella/no lo se, o fusion de galaxias.
-        \item<4-> 
+        \item<3-> Los voluntarios clasificaron imagenes del Sloan Digital Sky Survey (SDSS) de galaxias en seis categorias: eliptica, espiral en sentido horario, espiral en sentido antihorario, edge-on , estrella/no lo se, o fusion de galaxias. 
     \end{itemize}
 \end{frame}
 
@@ -80,10 +78,10 @@ subsubsectionstyle=show/shaded/hide]
     \end{itemize}
 \end{frame}
 
-
+\subsection{Estado del arte} %Dylan%
 %/////////////////////////////////////////////////////%
-\section{Estado del arte} %Dylan%
 
+\section{Descripcion de datos de estudio} %Buraian
 \subsection{Tipos de galaxias} %Brian%
 \begin{frame}{Definiciones}
     \begin{block}{Dominio}
@@ -106,6 +104,13 @@ subsubsectionstyle=show/shaded/hide]
     \end{figure}
 \end{frame}
 
+\subsection{Analisis preliminar y exploratorio de los datos}
+\begin{frame}
+    \begin{itemize}
+        \item Se uso data augmentation para rotar las imagenes
+    \end{itemize}
+\end{frame}
+
 
 %///////////////////////////////////////////////////%
 \section{Hipótesis} %Brian%
@@ -114,11 +119,16 @@ aaa
 
 
 %/////////////////////////////////////////////%
-\section{Metodología} %Brian
+\section{Esquema Metodologico} %Brian
+\subsection{Preprocesamiento de datos}
+
+
+\section{Metodología} %Buraian
 \subsection{Arquitectura de la red}
 aaa
 
-\section{Ideas Futuras}
+
+\section{Ideas Futuras} %Dylan
 \begin{frame}
     \begin{itemize}
         \item Usar GPU para entrenar mas rapido
@@ -129,7 +139,7 @@ aaa
     \end{itemize}
 \end{frame}
 
-\section{Refs}
+\section{Refs} %Quitar porque sirven para traduccion
 \begin{frame}
     \begin{itemize}
         \item We use scikit-learn (Pedregosa et al., 2011) python library to perform the experiments and procedures reported in this Section
@@ -154,6 +164,11 @@ aaa
         \item No son perfectas y necesitan manejo especializado
         \item Perdurarán hasta mucho tiempo más
     \end{enumerate}
+\end{frame}
+
+\begin{frame}{References}
+    \bibliographystyle{apacite}
+    \bibliography{PresGalaxy.bib}
 \end{frame}
 
 \end{document}
