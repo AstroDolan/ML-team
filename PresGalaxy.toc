@@ -1,0 +1,17 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {1}{Introducción}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introducción al problema}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Justificacion}{6}{0}{1}
+\beamer@subsectionintoc {1}{3}{Estado del arte}{7}{0}{1}
+\beamer@sectionintoc {2}{Descripcion de datos de estudio}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Tipos de galaxias}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Analisis preliminar y exploratorio de los datos}{9}{0}{2}
+\beamer@sectionintoc {3}{Hipótesis}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{¿Qué queremos lograr?}{10}{0}{3}
+\beamer@sectionintoc {4}{Esquema Metodologico}{10}{0}{4}
+\beamer@subsectionintoc {4}{1}{Preprocesamiento de datos}{10}{0}{4}
+\beamer@sectionintoc {5}{Metodología}{10}{0}{5}
+\beamer@subsectionintoc {5}{1}{Arquitectura de la red}{10}{0}{5}
+\beamer@sectionintoc {6}{Ideas Futuras}{10}{0}{6}
+\beamer@sectionintoc {7}{Refs}{12}{0}{7}
+\beamer@sectionintoc {8}{Conclusiones}{13}{0}{8}

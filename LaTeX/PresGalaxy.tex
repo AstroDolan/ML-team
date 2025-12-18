@@ -1,15 +1,22 @@
 \documentclass{beamer}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
-\usepackage{apacite}
 \usepackage[spanish,provide=*]{babel}
+% Cargar apacite después de babel para citas autor-año correctas
+\usepackage{apacite}
 
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
 \usepackage{graphicx,listings,stackengine}
+% Manejo robusto de nombres de archivo con espacios y rutas de imágenes
+\usepackage{grffile}
+\graphicspath{{pic/}}
+
+\renewcommand{\APACrefbtitle}[2]{#1}       % Muestra solo el título 
+\renewcommand{\APACrefYearMonthDay}[3]{#1} % Muestra solo el año (omite mes/día)
 
 \author{Brian Gonzalez, Dylan Jara}
-\title{GAX-Kepler: Identificador de morfologia de galaxias mediante el uso de redes neuronales convolucionales}
+\title{GAX-Kepler: Clasificador de morfología galáctica mediante el uso de redes neuronales convolucionales}
 \subtitle{}
 \institute{
     Universidad de Santiago de Chile
@@ -36,139 +43,219 @@
     frame=shadowbox,
 }
 
+\renewcommand{\APACrefbtitle}[2]{#1} % Muestra solo el título
+\renewcommand{\APACrefYearMonthDay}[3]{#1} % Muestra solo el año
+\renewcommand{\APACrefnote}[1]{} % Elimina las notas
 
 \begin{document}
 
 \begin{frame}
     \titlepage
     \vspace*{-0.6cm}
-    \begin{figure}[htpb]
+    \begin{figure}
         \begin{center}
-            \includegraphics[keepaspectratio, scale=0.1]{pic/Usach S1.png}
+                % Ajuste de tamaño más visible y uso de \graphicspath
+                \includegraphics[keepaspectratio, width=0.25\textwidth]{Usach S1.png}
         \end{center}
     \end{figure}
 \end{frame}
 
-\begin{frame}    
-\tableofcontents[sectionstyle=show,
-subsectionstyle=show/shaded/hide,
-subsubsectionstyle=show/shaded/hide]
+% Restaurar la tabla de contenidos y corregir el problema de 'Referencias32'
+\begin{frame}
+    \tableofcontents[sectionstyle=show, subsectionstyle=show/shaded/hide]
 \end{frame}
-
-
 
 %//////////////////////////////////////////////////////%
 \section{Introducción} %Dylan%
-
 \subsection{Introducción al problema}
 \begin{frame}{Dataset Galaxy Zoo}
     \begin{itemize}
         \item <1->Una galaxia es un entorno en el cual las estrellas nacen y mueren, y las galaxias lejanas son faros luminosos que nos permiten explorar el universo lejano. \cite{SILK2001337}
-        \item<1-> En este trabajo, usamos Galaxy Zoo (Lintott et al., 2008, 2011; Willett et al., 2013) para la clasificacion y validacion de nuestros modelos de clasificacion.
+        \item<1-> En este trabajo, usamos Galaxy Zoo \cite{lintott2008galaxy,willett2013galaxy} para la clasificacion y validacion de nuestros modelos de clasificacion.
         \item<2-> El projecto original Galaxy Zoo fue lanzado en julio de 2007 y obtuvo mas de 100,000 voluntarios en sus primeros diez dias.
-        \item<3-> Los voluntarios clasificaron imagenes del Sloan Digital Sky Survey (SDSS) de galaxias en seis categorias: eliptica, espiral en sentido horario, espiral en sentido antihorario, edge-on , estrella/no lo se, o fusion de galaxias. 
+        \item<3-> Los voluntarios clasificaron imagenes del Sloan Digital Sky Survey (SDSS) de galaxias en seis categorias: eliptica, espiral en sentido horario, 
+        espiral en sentido antihorario, edge-on , estrella/no lo se, o fusion de galaxias. 
     \end{itemize}
 \end{frame}
 
 \subsection{Justificacion}
 \begin{frame}{¿De qué nos sirve?}
     \begin{itemize}
-        \item This growing catalog of exoplanets has challenged the uniqueness of our solar system and informed theories of planet formation (Johnson, 2009).
-        \item Basicamente facilita la exploracion espacial. Y esto ayuda a entender mejor el universo y el origen de la vida
+        \item La clasificacion morfologica de galaxias es fundamental para entender la formacion y evolucion de las galaxias.
+        \item Basicamente facilita la exploracion espacial. Y esto ayuda a entender mejor el universo y el origen de la vida.
+        \item 
     \end{itemize}
 \end{frame}
 
 \subsection{Estado del arte} %Dylan%
-%/////////////////////////////////////////////////////%
-
-\section{Descripcion de datos de estudio} %Buraian
-\subsection{Tipos de galaxias} %Brian%
-\begin{frame}{Definiciones}
-    \begin{block}{Dominio}
-        Debe ir categorizacion de galaxias con galaxy zoo
-    \end{block}
-    \begin{block}{Esquema de Relación}
-        Deteccion usando IA
-    \end{block}
-    \begin{block}{Relación}
-        Clasificacion multicategorica pero con binary-ce usando redes neuronales
-    \end{block}
-\end{frame}
-
-\begin{frame}{Ejemplo de una imagen}
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=6cm, height=6cm]{pic/google-relacional.jpg}
-        \caption{Tablas de Clientes y Pedidos (Google Cloud)}
-        \label{fig:enter-label}
-    \end{figure}
-\end{frame}
-
-\subsection{Analisis preliminar y exploratorio de los datos}
-\begin{frame}
+\begin{frame}{Estado del arte}
     \begin{itemize}
-        \item Se uso data augmentation para rotar las imagenes
+        \item<1->La clasificacion morfologica de galaxias es una pieza clave de informacion para definir muestras de galaxias con el objetivo de 
+        estudiar la estructura a gran escala del universo. \cite{barchi2020machine}
+        \item<2-> Muchos autores \cite{10.1093/mnras/279.3.L47, conselice2000asymmetry} han estudiado y presentado resultados sobre medidas objetivas de morfologia de 
+        galaxias con Concentracion, Asimetria, Suavidad, Gini y M20 (sistema CASGM).
+        \item<3-> Las Redes convolucionales profundas (CNN) son una metodología bien establecida para clasificar imágenes \cite{goodfellow2016deep}.
     \end{itemize}
+\end{frame}
+
+ 
+%/////////////////////////////////////////////////////%
+\section{Tipos de galaxias} %Brian%
+\begin{frame}{Tipos de galaxias}
+
+\makebox[\textwidth][c]{%
+\begin{minipage}{0.9\textwidth}
+\centering
+
+\begin{minipage}{0.28\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{pic/M61espiral.jpg}
+
+    \vspace{0.2cm}
+    \textbf{Galaxia Espiral}\\
+    Galaxia espiral M61. Cúmulo de Virgo.
+\end{minipage}
+\hfill
+\begin{minipage}{0.28\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{pic/M32eliptica.jpg}
+
+    \vspace{0.2cm}
+    \textbf{Galaxia Elíptica}\\
+    Galaxia elíptica Messier 32. Constelación de Andrómeda.
+\end{minipage}
+\hfill
+\begin{minipage}{0.28\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{pic/UGC4459.jpg}
+
+    \vspace{0.2cm}
+    \textbf{Galaxia Irregular}\\
+    Galaxia enana UGC 4459. Constelación Osa Mayor.
+\end{minipage}
+
+\end{minipage}
+}
+\end{frame}
+
+
+%/////////////////////////////////////////////%
+\section{Descripción de los datos de estudio}
+\begin{frame}[plain]{}
+    \makebox[\textwidth][c]{%
+        \includegraphics[width=1\textwidth]{pic/ArbolGalaxy.png}
+    }
+\end{frame}
+
+\begin{frame}[plain]{Probabilidades de Q4}
+    \makebox[\textwidth][c]{%
+        \includegraphics[width=1\textwidth]{pic/outputQ4.png}
+    }
+\end{frame}
+
+\begin{frame}[plain]{Probabilidades de Q11}
+    \makebox[\textwidth][c]{%
+        \includegraphics[width=1.1\textwidth]{pic/outputQ11.png}
+    }
 \end{frame}
 
 
 %///////////////////////////////////////////////////%
 \section{Hipótesis} %Brian%
 \subsection{¿Qué queremos lograr?}
-aaa
+\begin{frame}{¿Qué queremos lograr?}
+    \begin{itemize}
+        \item Una red neuronal convolucional que pueda aprender representaciones jerárquicas de imágenes de galaxias y predecir de manera efectiva las probabilidades de sus características morfológicas con un bajo error cuadrático medio % menor a 0.007. >:D
+    \end{itemize}
+\end{frame}
+
 
 
 %/////////////////////////////////////////////%
-\section{Esquema Metodologico} %Brian
-\subsection{Preprocesamiento de datos}
-
-
 \section{Metodología} %Buraian
 \subsection{Arquitectura de la red}
-aaa
+\begin{frame}{Arquitectura del Modelo CNN}
+\footnotesize
+\begin{table}
+\centering
+\begin{tabular}{l c r}
+\toprule
+\textbf{Capa (tipo)} & \textbf{Forma de salida} & \textbf{Parámetros} \\
+\midrule
+Input (Sequential) & $(64, 64, 3)$ & 0 \\
 
+Conv2D (64 filtros) & $(62, 62, 64)$ & 1,792 \\
+Batch Normalization & $(62, 62, 64)$ & 256 \\
+MaxPooling2D & $(31, 31, 64)$ & 0 \\
 
-\section{Ideas Futuras} %Dylan
-\begin{frame}
-    \begin{itemize}
-        \item Usar GPU para entrenar mas rapido
-        \item Divide y venceras para distribuir
-        \item Usar la CNN para trapasar a un Decision Tree o Random Forest
-        \item Galaxy Zoo is a citizen science project which provides a visual morphological classification for nearly one million galaxies in its first phase (Galaxy Zoo 1) distinguishing elliptical from spiral galaxies.
-        \item 
-    \end{itemize}
+Conv2D (128 filtros) & $(29, 29, 128)$ & 73,856 \\
+Batch Normalization & $(29, 29, 128)$ & 512 \\
+MaxPooling2D & $(14, 14, 128)$ & 0 \\
+
+Conv2D (256 filtros) & $(12, 12, 256)$ & 295,168 \\
+Batch Normalization & $(12, 12, 256)$ & 1,024 \\
+MaxPooling2D & $(6, 6, 256)$ & 0 \\
+\midrule
+
+\bottomrule
+\end{tabular}
+\end{table}
 \end{frame}
 
-\section{Refs} %Quitar porque sirven para traduccion
-\begin{frame}
-    \begin{itemize}
-        \item We use scikit-learn (Pedregosa et al., 2011) python library to perform the experiments and procedures reported in this Section
-        \item For a further analysis on the problem with two classes, we use the Receiver Operating Characteristic (ROC) curve and the Area Under the ROC
-        curve (AUC, Bradley, 1997)
-        \item Reducir la cantidad de clases existentes para disminuir la no-linealidad de los datos
-        \item Throughout this work, we use Galaxy Zoo (Lintott et al., 2008, 2011; Willett et al., 2013) 
-        classification as supervision and validation (ground truth) to our classification models.
-        \item Several authors (Abraham et al., 1996; Conselice et al., 2000; Conselice, 2003; Lotz et al., 2004) studied and presented resultsabout 
-        objective galaxy morphology measures with Concentration, Asymmetry, Smoothness, Gini, and M20 (CASGM system).
-        \item The main purpose of this investigation is to answer the question “How to morphologically classify galaxies using Galaxy Zoo 
-        (Lintott et al., 2008, 2011; Willett et al., 2013) classification through non-parametric features and Machine Learning methods?”
-        \item Deep Convolutional Neural Network (CNN) is a well-established methodology to classify images (Goodfellow et al., 2016).
-    \end{itemize}
+
+\begin{frame}{Arquitectura del Modelo CNN II}
+\footnotesize
+\begin{table}
+\centering
+\begin{tabular}{l c r}
+\toprule
+\textbf{Capa (tipo)} & \textbf{Forma de salida} & \textbf{Parámetros} \\
+\midrule
+
+GlobalAveragePooling2D & (None, 256) & 0 \\
+Dense & (None, 256) & 65,792 \\
+Dropout & (None, 256) & 0 \\
+Dense (Output) & (None, 37) & 9,509 \\
+\midrule
+\textbf{Total params} &  & \textbf{447,909} \\
+Trainable params &  & 447,013 \\
+Non-trainable params &  & 896 \\
+\bottomrule
+\end{tabular}
+\end{table}
 \end{frame}
+
+\begin{frame}[plain]{Esquema Metodológico}
+    \makebox[\textwidth][c]{%
+        \includegraphics[width=1.1\textwidth]{EsqMet.png}
+    }
+\end{frame}
+
 
 %/////////////////////////////////////////////%
-\section{Conclusiones} %Brian - Dylan
-\begin{frame}
+\section{Conclusiones e Ideas Futuras} %Brian - Dylan
+\begin{frame}{Ideas Futuras}
+    \begin{itemize}
+        \item Usar GPU para entrenar más rápido.
+        \item Método Divide y vencerás para distribuir.
+        \item Usar la CNN para extración de datos y clasificar con Decision Tree, SVM o Random Forest.
+    \end{itemize}
+\end{frame}
+\begin{frame}{Conclusiones}
     \begin{enumerate}
-        \item Las bases de datos son esenciales en nuestra vida
-        \item No son perfectas y necesitan manejo especializado
-        \item Perdurarán hasta mucho tiempo más
+        \item Las CNN son una herramienta poderosa para la clasificación de imágenes
+        \item Con ayuda de un buen entendimiento en la teoría del problema, se pueden lograr muy buenos resultados.
+        \item La clasificación automática de galaxias puede acelerar significativamente el análisis de grandes conjuntos de datos astronómicos. 
     \end{enumerate}
 \end{frame}
 
-\begin{frame}{References}
+
+%/////////////////////////////////////////////%
+\begin{frame}[allowframebreaks]{Referencias}
+    \tiny
     \bibliographystyle{apacite}
-    \bibliography{PresGalaxy.bib}
+    \bibliography{PresGalaxy}
+    
 \end{frame}
 
 \end{document}

@@ -1,0 +1,203 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Abraham%
+\ \protect \BOthers {.}}{%
+Abraham%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+10.1093/mnras/279.3.L47}
+\APACinsertmetastar {%
+10.1093/mnras/279.3.L47}%
+\begin{APACrefauthors}%
+Abraham, R\BPBI G.%
+, Tanvir, N\BPBI R.%
+, Santiago, B\BPBI X.%
+, Ellis, R\BPBI S.%
+, Glazebrook, K.%
+\BCBL {}\ \BBA {} Bergh, S\BPBI v\BPBI d.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{04}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Galaxy morphology to I=25 mag in the Hubble Deep Field} {Galaxy morphology to i=25 mag in the hubble deep field}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Monthly Notices of the Royal Astronomical Society}{279}{3}{L47-L52}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/mnras/279.3.L47} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/mnras/279.3.L47} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Barchi%
+\ \protect \BOthers {.}}{%
+Barchi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+barchi2020machine}
+\APACinsertmetastar {%
+barchi2020machine}%
+\begin{APACrefauthors}%
+Barchi, P\BPBI H.%
+, de Carvalho, R.%
+, Rosa, R\BPBI R.%
+, Sautter, R.%
+, Soares-Santos, M.%
+, Marques, B\BPBI A.%
+\BDBL {}Moura, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Machine and Deep Learning applied to galaxy morphology-A comparative study} {Machine and deep learning applied to galaxy morphology-a comparative study}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Astronomy and Computing}{30}{}{100334}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Conselice%
+, Bershady%
+\BCBL {}\ \BBA {} Jangren%
+}{%
+Conselice%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+conselice2000asymmetry}
+\APACinsertmetastar {%
+conselice2000asymmetry}%
+\begin{APACrefauthors}%
+Conselice, C\BPBI J.%
+, Bershady, M\BPBI A.%
+\BCBL {}\ \BBA {} Jangren, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The asymmetry of galaxies: physical morphology for nearby and high-redshift galaxies} {The asymmetry of galaxies: physical morphology for nearby and high-redshift galaxies}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Astrophysical Journal}{529}{2}{886}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Goodfellow%
+, Bengio%
+\BCBL {}\ \BBA {} Courville%
+}{%
+Goodfellow%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+goodfellow2016deep}
+\APACinsertmetastar {%
+goodfellow2016deep}%
+\begin{APACrefauthors}%
+Goodfellow, I.%
+, Bengio, Y.%
+\BCBL {}\ \BBA {} Courville, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2016}.
+\newblock
+\APACrefbtitle {Deep Learning} {Deep learning}.
+\newblock
+\APACaddressPublisher{}{MIT Press}.
+\newblock
+\begin{APACrefURL} \url{http://www.deeplearningbook.org} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lintott%
+\ \protect \BOthers {.}}{%
+Lintott%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+lintott2008galaxy}
+\APACinsertmetastar {%
+lintott2008galaxy}%
+\begin{APACrefauthors}%
+Lintott, C\BPBI J.%
+, Schawinski, K.%
+, Slosar, A.%
+, Land, K.%
+, Bamford, S.%
+, Thomas, D.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Galaxy Zoo: morphologies derived from visual inspection of galaxies from the Sloan Digital Sky Survey} {Galaxy zoo: morphologies derived from visual inspection of galaxies from the sloan digital sky survey}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Monthly Notices of the Royal Astronomical Society}{389}{3}{1179--1189}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Silk%
+\ \BBA {} Bouwens%
+}{%
+Silk%
+\ \BBA {} Bouwens%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+SILK2001337}
+\APACinsertmetastar {%
+SILK2001337}%
+\begin{APACrefauthors}%
+Silk, J.%
+\BCBT {}\ \BBA {} Bouwens, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The formation of galaxies} {The formation of galaxies}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{New Astronomy Reviews}{45}{4}{337-350}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S1387647300001640} \end{APACrefURL}
+\newblock
+\APACrefnote{Understanding the Universe at the close of the 20th century}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/S1387-6473(00)00164-0} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Willett%
+\ \protect \BOthers {.}}{%
+Willett%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+willett2013galaxy}
+\APACinsertmetastar {%
+willett2013galaxy}%
+\begin{APACrefauthors}%
+Willett, K\BPBI W.%
+, Lintott, C\BPBI J.%
+, Bamford, S\BPBI P.%
+, Masters, K\BPBI L.%
+, Simmons, B\BPBI D.%
+, Casteels, K\BPBI R.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Galaxy Zoo 2: detailed morphological classifications for 304 122 galaxies from the Sloan Digital Sky Survey} {Galaxy zoo 2: detailed morphological classifications for 304 122 galaxies from the sloan digital sky survey}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Monthly Notices of the Royal Astronomical Society}{435}{4}{2835--2860}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

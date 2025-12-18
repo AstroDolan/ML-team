@@ -1,0 +1,67 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Introducción}{3}{Introducción}{0}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Introducción al problema}}
+\headcommand {\slideentry {1}{1}{1}{3/5}{Introducción al problema}{0}}
+\headcommand {\beamer@framepages {3}{5}}
+\headcommand {\beamer@subsectionpages {3}{5}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{6}{Justificacion}}
+\headcommand {\slideentry {1}{2}{1}{6/6}{Justificacion}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{7}{Estado del arte}}
+\headcommand {\beamer@sectionpages {3}{6}}
+\headcommand {\beamer@subsectionpages {7}{6}}
+\headcommand {\sectionentry {2}{Descripcion de datos de estudio}{7}{Descripcion de datos de estudio}{0}}
+\headcommand {\beamer@subsectionpages {7}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Tipos de galaxias}}
+\headcommand {\slideentry {2}{1}{1}{7/7}{Tipos de galaxias}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{1}{2}{8/8}{Tipos de galaxias}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{Analisis preliminar y exploratorio de los datos}}
+\headcommand {\slideentry {2}{2}{1}{9/9}{Analisis preliminar y exploratorio de los datos}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@sectionpages {7}{9}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\sectionentry {3}{Hipótesis}{10}{Hipótesis}{0}}
+\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{10}{¿Qué queremos lograr?}}
+\headcommand {\beamer@sectionpages {10}{9}}
+\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\sectionentry {4}{Esquema Metodologico}{10}{Esquema Metodologico}{0}}
+\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{10}{Preprocesamiento de datos}}
+\headcommand {\beamer@sectionpages {10}{9}}
+\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\sectionentry {5}{Metodología}{10}{Metodología}{0}}
+\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{10}{Arquitectura de la red}}
+\headcommand {\beamer@sectionpages {10}{9}}
+\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\sectionentry {6}{Ideas Futuras}{10}{Ideas Futuras}{0}}
+\headcommand {\slideentry {6}{0}{1}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@sectionpages {10}{11}}
+\headcommand {\beamer@subsectionpages {10}{11}}
+\headcommand {\sectionentry {7}{Refs}{12}{Refs}{0}}
+\headcommand {\slideentry {7}{0}{1}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@sectionpages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\sectionentry {8}{Conclusiones}{13}{Conclusiones}{0}}
+\headcommand {\slideentry {8}{0}{1}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {8}{0}{2}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {13}{14}}
+\headcommand {\beamer@sectionpages {13}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\gdef \inserttotalframenumber {11}}
