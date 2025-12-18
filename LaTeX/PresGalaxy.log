@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  18 DEC 2025 12:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  18 DEC 2025 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1054,6 +1054,13 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
 [7
 
 ]
+Overfull \hbox (55.12349pt too wide) has occurred while \output is active
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+[8
+
+]
 Overfull \hbox (55.12349pt too wide) detected at line 81
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
@@ -1063,10 +1070,10 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-[8
+[9
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 88
+Overfull \hbox (55.12349pt too wide) detected at line 87
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1075,10 +1082,10 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-[9
+[10
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 90
+Overfull \hbox (55.12349pt too wide) detected at line 89
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1087,21 +1094,14 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-[10
-
-]
-Overfull \hbox (55.12349pt too wide) detected at line 99
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
-
-Overfull \hbox (55.12349pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
 [11
 
 ]
+Overfull \hbox (55.12349pt too wide) detected at line 98
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+
 Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
@@ -1116,11 +1116,6 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 103
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
-(./PresGalaxy.toc)
 Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
@@ -1128,82 +1123,46 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 139
+Overfull \hbox (55.12349pt too wide) detected at line 102
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-<pic/M61espiral.jpg, id=1394, 1606.0pt x 1566.85374pt>
-File: pic/M61espiral.jpg Graphic file (type jpg)
-<use pic/M61espiral.jpg>
-Package pdftex.def Info: pic/M61espiral.jpg  used on input line 139.
-(pdftex.def)             Requested size: 77.41304pt x 75.5261pt.
-<pic/M32eliptica.jpg, id=1395, 903.375pt x 612.2875pt>
-File: pic/M32eliptica.jpg Graphic file (type jpg)
-<use pic/M32eliptica.jpg>
-Package pdftex.def Info: pic/M32eliptica.jpg  used on input line 139.
-(pdftex.def)             Requested size: 77.42683pt x 52.47818pt.
-<pic/UGC4459.jpg, id=1396, 1284.8pt x 929.4725pt>
-File: pic/UGC4459.jpg Graphic file (type jpg)
-<use pic/UGC4459.jpg>
-Package pdftex.def Info: pic/UGC4459.jpg  used on input line 139.
-(pdftex.def)             Requested size: 77.41794pt x 56.00703pt.
-
+(./PresGalaxy.toc)
 Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
 [15
 
- <./pic/M61espiral.jpg> <./pic/M32eliptica.jpg> <./pic/UGC4459.jpg>]
-Overfull \hbox (55.12349pt too wide) detected at line 143
+]
+Overfull \hbox (55.12349pt too wide) detected at line 138
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-(./PresGalaxy.toc)
+<pic/M61espiral.jpg, id=1457, 1606.0pt x 1566.85374pt>
+File: pic/M61espiral.jpg Graphic file (type jpg)
+<use pic/M61espiral.jpg>
+Package pdftex.def Info: pic/M61espiral.jpg  used on input line 138.
+(pdftex.def)             Requested size: 77.41304pt x 75.5261pt.
+<pic/M32eliptica.jpg, id=1458, 903.375pt x 612.2875pt>
+File: pic/M32eliptica.jpg Graphic file (type jpg)
+<use pic/M32eliptica.jpg>
+Package pdftex.def Info: pic/M32eliptica.jpg  used on input line 138.
+(pdftex.def)             Requested size: 77.42683pt x 52.47818pt.
+<pic/UGC4459.jpg, id=1459, 1284.8pt x 929.4725pt>
+File: pic/UGC4459.jpg Graphic file (type jpg)
+<use pic/UGC4459.jpg>
+Package pdftex.def Info: pic/UGC4459.jpg  used on input line 138.
+(pdftex.def)             Requested size: 77.41794pt x 56.00703pt.
+
 Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
 [16
 
-]
-Overfull \hbox (55.12349pt too wide) detected at line 148
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
-<pic/ArbolGalaxy.png, id=1581, 670.505pt x 546.04pt>
-File: pic/ArbolGalaxy.png Graphic file (type png)
-<use pic/ArbolGalaxy.png>
-Package pdftex.def Info: pic/ArbolGalaxy.png  used on input line 148.
-(pdftex.def)             Requested size: 307.28987pt x 250.24828pt.
-[17
-
- <./pic/ArbolGalaxy.png>]
-Overfull \hbox (55.12349pt too wide) detected at line 154
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
-<pic/outputQ4.png, id=1638, 714.7503pt x 286.1892pt>
-File: pic/outputQ4.png Graphic file (type png)
-<use pic/outputQ4.png>
-Package pdftex.def Info: pic/outputQ4.png  used on input line 154.
-(pdftex.def)             Requested size: 307.28987pt x 123.04147pt.
-[18
-
- <./pic/outputQ4.png>]
-Overfull \hbox (55.12349pt too wide) detected at line 160
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
-<pic/outputQ11.png, id=1696, 1075.3776pt x 427.8384pt>
-File: pic/outputQ11.png Graphic file (type png)
-<use pic/outputQ11.png>
-Package pdftex.def Info: pic/outputQ11.png  used on input line 160.
-(pdftex.def)             Requested size: 338.02072pt x 134.48256pt.
-[19
-
- <./pic/outputQ11.png>]
-Overfull \hbox (55.12349pt too wide) detected at line 164
+ <./pic/M61espiral.jpg> <./pic/M32eliptica.jpg> <./pic/UGC4459.jpg>]
+Overfull \hbox (55.12349pt too wide) detected at line 142
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1212,10 +1171,46 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-[20
+[17
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 165
+Overfull \hbox (55.12349pt too wide) detected at line 147
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+<pic/ArbolGalaxy.png, id=1644, 670.505pt x 546.04pt>
+File: pic/ArbolGalaxy.png Graphic file (type png)
+<use pic/ArbolGalaxy.png>
+Package pdftex.def Info: pic/ArbolGalaxy.png  used on input line 147.
+(pdftex.def)             Requested size: 307.28987pt x 250.24828pt.
+[18
+
+ <./pic/ArbolGalaxy.png>]
+Overfull \hbox (55.12349pt too wide) detected at line 153
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+<pic/outputQ4.png, id=1702, 714.7503pt x 286.1892pt>
+File: pic/outputQ4.png Graphic file (type png)
+<use pic/outputQ4.png>
+Package pdftex.def Info: pic/outputQ4.png  used on input line 153.
+(pdftex.def)             Requested size: 307.28987pt x 123.04147pt.
+[19
+
+ <./pic/outputQ4.png>]
+Overfull \hbox (55.12349pt too wide) detected at line 159
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+<pic/outputQ11.png, id=1761, 1075.3776pt x 427.8384pt>
+File: pic/outputQ11.png Graphic file (type png)
+<use pic/outputQ11.png>
+Package pdftex.def Info: pic/outputQ11.png  used on input line 159.
+(pdftex.def)             Requested size: 338.02072pt x 134.48256pt.
+[20
+
+ <./pic/outputQ11.png>]
+Overfull \hbox (55.12349pt too wide) detected at line 163
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1227,19 +1222,7 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
 [21
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 170
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
-
-Overfull \hbox (55.12349pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
-[22
-
-]
-Overfull \hbox (55.12349pt too wide) detected at line 175
+Overfull \hbox (55.12349pt too wide) detected at line 164
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1248,10 +1231,22 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
+[22
+
+]
+Overfull \hbox (55.12349pt too wide) detected at line 169
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+
+Overfull \hbox (55.12349pt too wide) has occurred while \output is active
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
 [23
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 176
+Overfull \hbox (55.12349pt too wide) detected at line 174
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1263,11 +1258,11 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
 [24
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 203
+Overfull \hbox (55.12349pt too wide) detected at line 175
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-
+(./PresGalaxy.toc)
 Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
@@ -1275,7 +1270,7 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
 [25
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 226
+Overfull \hbox (55.12349pt too wide) detected at line 202
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1287,23 +1282,35 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
 [26
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 232
+Overfull \hbox (55.12349pt too wide) detected at line 225
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-<pic/EsqMet.png, id=2409, 1523.6925pt x 1168.365pt>
-File: pic/EsqMet.png Graphic file (type png)
-<use pic/EsqMet.png>
-Package pdftex.def Info: pic/EsqMet.png  used on input line 232.
-(pdftex.def)             Requested size: 338.02072pt x 259.18042pt.
 
-Overfull \vbox (8.65123pt too high) detected at line 232
+Overfull \hbox (55.12349pt too wide) has occurred while \output is active
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
 [27
 
+]
+Overfull \hbox (55.12349pt too wide) detected at line 231
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+<pic/EsqMet.png, id=2472, 1523.6925pt x 1168.365pt>
+File: pic/EsqMet.png Graphic file (type png)
+<use pic/EsqMet.png>
+Package pdftex.def Info: pic/EsqMet.png  used on input line 231.
+(pdftex.def)             Requested size: 338.02072pt x 259.18042pt.
+
+Overfull \vbox (8.65123pt too high) detected at line 231
+ []
+
+[28
+
  <./pic/EsqMet.png>]
-Overfull \hbox (55.12349pt too wide) detected at line 236
+Overfull \hbox (55.12349pt too wide) detected at line 235
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1312,22 +1319,10 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-[28
-
-]
-Overfull \hbox (55.12349pt too wide) detected at line 243
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
-
-Overfull \hbox (55.12349pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
 [29
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 250
+Overfull \hbox (55.12349pt too wide) detected at line 242
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1339,7 +1334,19 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
 [30
 
 ]
-Overfull \hbox (55.12349pt too wide) detected at line 259
+Overfull \hbox (55.12349pt too wide) detected at line 249
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+
+Overfull \hbox (55.12349pt too wide) has occurred while \output is active
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+[31
+
+]
+Overfull \hbox (55.12349pt too wide) detected at line 257
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
@@ -1348,15 +1355,7 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
   [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
  []
 
-[31
-
-]
-Overfull \hbox (55.12349pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
- []
-
 [32
-
 
 ]
 Overfull \hbox (55.12349pt too wide) has occurred while \output is active
@@ -1364,6 +1363,14 @@ Overfull \hbox (55.12349pt too wide) has occurred while \output is active
  []
 
 [33
+
+
+]
+Overfull \hbox (55.12349pt too wide) has occurred while \output is active
+  [] [][][][][][][][] [][][] [][][][][] [][][][] [][][][][][] [][][][] []  
+ []
+
+[34
 
 
 ]
@@ -1382,21 +1389,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `PresGalaxy.out' has not changed.
-(rerunfilecheck)             Checksum: 06DB7F6EE99EFD3686704AA0CEC2A0FD;1760.
+(rerunfilecheck)             Checksum: FBBFE69BF91341FB323FE50EE1A1DDD1;1760.
  ) 
 Here is how much of TeX's memory you used:
- 31026 strings out of 467537
- 611930 string characters out of 5423703
- 1034784 words of memory out of 5000000
- 59233 multiletter control sequences out of 15000+600000
+ 31027 strings out of 467537
+ 611940 string characters out of 5423703
+ 1034800 words of memory out of 5000000
+ 59232 multiletter control sequences out of 15000+600000
  647292 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,123p,450b,823s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PresGalaxy.pdf (33 pages, 3274941 bytes).
+Output written on PresGalaxy.pdf (34 pages, 3279169 bytes).
 PDF statistics:
- 2998 PDF objects out of 3580 (max. 8388607)
- 1996 compressed objects within 20 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 3062 PDF objects out of 3580 (max. 8388607)
+ 2058 compressed objects within 21 object streams
+ 88 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

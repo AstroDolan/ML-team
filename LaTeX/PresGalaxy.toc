@@ -1,13 +1,12 @@
 \babel@toc {spanish}{}\relax 
 \beamer@sectionintoc {1}{Introducción}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Introducción al problema}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Justificacion}{8}{0}{1}
-\beamer@subsectionintoc {1}{3}{Estado del arte}{10}{0}{1}
-\beamer@sectionintoc {2}{Tipos de galaxias}{14}{0}{2}
-\beamer@sectionintoc {3}{Descripción de los datos de estudio}{16}{0}{3}
-\beamer@sectionintoc {4}{Hipótesis}{20}{0}{4}
-\beamer@subsectionintoc {4}{1}{¿Qué queremos lograr?}{21}{0}{4}
-\beamer@sectionintoc {5}{Metodología}{23}{0}{5}
-\beamer@subsectionintoc {5}{1}{Arquitectura de la red}{24}{0}{5}
-\beamer@sectionintoc {6}{Conclusiones e Ideas Futuras}{28}{0}{6}
-\contentsline {section}{Referencias}{31}{}%
+\beamer@subsectionintoc {1}{2}{Justificacion}{9}{0}{1}
+\beamer@subsectionintoc {1}{3}{Estado del arte}{11}{0}{1}
+\beamer@sectionintoc {2}{Tipos de galaxias}{15}{0}{2}
+\beamer@sectionintoc {3}{Descripción de los datos de estudio}{17}{0}{3}
+\beamer@sectionintoc {4}{Hipótesis}{21}{0}{4}
+\beamer@subsectionintoc {4}{1}{¿Qué queremos lograr?}{22}{0}{4}
+\beamer@sectionintoc {5}{Metodología}{24}{0}{5}
+\beamer@subsectionintoc {5}{1}{Arquitectura de la red}{25}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones e Ideas Futuras}{29}{0}{6}

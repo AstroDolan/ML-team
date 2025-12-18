@@ -3,7 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[spanish,provide=*]{babel}
 % Cargar apacite después de babel para citas autor-año correctas
-\usepackage{apacite}
+\usepackage[notocbib]{apacite}
 
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
@@ -70,10 +70,10 @@
 \subsection{Introducción al problema}
 \begin{frame}{Dataset Galaxy Zoo}
     \begin{itemize}
-        \item <1->Una galaxia es un entorno en el cual las estrellas nacen y mueren, y las galaxias lejanas son faros luminosos que nos permiten explorar el universo lejano. \cite{SILK2001337}
-        \item<1-> En este trabajo, usamos Galaxy Zoo \cite{lintott2008galaxy,willett2013galaxy} para la clasificacion y validacion de nuestros modelos de clasificacion.
-        \item<2-> El projecto original Galaxy Zoo fue lanzado en julio de 2007 y obtuvo mas de 100,000 voluntarios en sus primeros diez dias.
-        \item<3-> Los voluntarios clasificaron imagenes del Sloan Digital Sky Survey (SDSS) de galaxias en seis categorias: eliptica, espiral en sentido horario, 
+        \item<1->Una galaxia es un entorno en el cual las estrellas nacen y mueren, y las galaxias lejanas son faros luminosos que nos permiten explorar el universo lejano. \cite{SILK2001337}
+        \item<2-> En este trabajo, usamos Galaxy Zoo \cite{lintott2008galaxy,willett2013galaxy} para la clasificacion y validacion de nuestros modelos de clasificacion.
+        \item<3-> El projecto original Galaxy Zoo fue lanzado en julio de 2007 y obtuvo mas de 100,000 voluntarios en sus primeros diez dias.
+        \item<4-> Los voluntarios clasificaron imagenes del Sloan Digital Sky Survey (SDSS) de galaxias en seis categorias: eliptica, espiral en sentido horario, 
         espiral en sentido antihorario, edge-on , estrella/no lo se, o fusion de galaxias. 
     \end{itemize}
 \end{frame}
@@ -83,7 +83,6 @@
     \begin{itemize}
         \item La clasificacion morfologica de galaxias es fundamental para entender la formacion y evolucion de las galaxias.
         \item Basicamente facilita la exploracion espacial. Y esto ayuda a entender mejor el universo y el origen de la vida.
-        \item 
     \end{itemize}
 \end{frame}
 
@@ -255,7 +254,6 @@ Non-trainable params &  & 896 \\
     \tiny
     \bibliographystyle{apacite}
     \bibliography{PresGalaxy}
-    
 \end{frame}
 
 \end{document}
