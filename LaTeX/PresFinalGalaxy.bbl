@@ -1,0 +1,104 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Dieleman%
+, Willett%
+\BCBL {}\ \BBA {} Dambre%
+}{%
+Dieleman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+dieleman2015rotation}
+\APACinsertmetastar {%
+dieleman2015rotation}%
+\begin{APACrefauthors}%
+Dieleman, S.%
+, Willett, K\BPBI W.%
+\BCBL {}\ \BBA {} Dambre, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rotation-invariant convolutional neural networks for galaxy morphology prediction} {Rotation-invariant convolutional neural networks for galaxy morphology prediction}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Monthly Notices of the Royal Astronomical Society}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Drucker%
+, Burges%
+, Kaufman%
+, Smola%
+\BCBL {}\ \BBA {} Vapnik%
+}{%
+Drucker%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+drucker1996support}
+\APACinsertmetastar {%
+drucker1996support}%
+\begin{APACrefauthors}%
+Drucker, H.%
+, Burges, C\BPBI J.%
+, Kaufman, L.%
+, Smola, A.%
+\BCBL {}\ \BBA {} Vapnik, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Support vector regression machines} {Support vector regression machines}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Advances in neural information processing systems.} {Advances in neural information processing systems.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Huertas-Company%
+\ \protect \BOthers {.}}{%
+Huertas-Company%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+huertas2015morphology}
+\APACinsertmetastar {%
+huertas2015morphology}%
+\begin{APACrefauthors}%
+Huertas-Company, M.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A catalog of visual morphology for low-redshift galaxies from the Sloan Digital Sky Survey} {A catalog of visual morphology for low-redshift galaxies from the sloan digital sky survey}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Astrophysical Journal Supplement Series}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vapnik%
+}{%
+Vapnik%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+vapnik1995nature}
+\APACinsertmetastar {%
+vapnik1995nature}%
+\begin{APACrefauthors}%
+Vapnik, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1995}.
+\newblock
+\APACrefbtitle {The nature of statistical learning theory} {The nature of statistical learning theory}.
+\newblock
+\APACaddressPublisher{}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

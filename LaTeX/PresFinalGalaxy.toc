@@ -1,0 +1,8 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {1}{Estado del Arte}{3}{0}{1}
+\beamer@sectionintoc {2}{Fundamentos Teóricos: SVR}{5}{0}{2}
+\beamer@sectionintoc {3}{Implementación}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Arquitectura de la red}{8}{0}{3}
+\beamer@sectionintoc {4}{Entrenamiento del modelo de estudio}{11}{0}{4}
+\beamer@sectionintoc {5}{validación}{13}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones}{14}{0}{6}

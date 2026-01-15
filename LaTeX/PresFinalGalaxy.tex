@@ -1,0 +1,187 @@
+\documentclass{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,provide=*]{babel}
+% Cargar apacite después de babel para citas autor-año correctas
+\usepackage[notocbib]{apacite}
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
+\usepackage{graphicx,listings,stackengine}
+% Manejo robusto de nombres de archivo con espacios y rutas de imágenes
+\usepackage{grffile}
+\graphicspath{{pic/}}
+
+\renewcommand{\APACrefbtitle}[2]{#1}       % Muestra solo el título 
+\renewcommand{\APACrefYearMonthDay}[3]{#1} % Muestra solo el año (omite mes/día)
+
+\author{Brian Gonzalez, Dylan Jara}
+\title{GAX-Kepler: Clasificador de morfología galáctica mediante el uso de redes neuronales convolucionales}
+\subtitle{}
+\institute{
+    Universidad de Santiago de Chile
+}
+\date{\today}
+\usepackage{Ritsumeikan}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{ccnuMainColor}{RGB}{57,64,73}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{ccnuMainColor},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+\renewcommand{\APACrefbtitle}[2]{#1} % Muestra solo el título
+\renewcommand{\APACrefYearMonthDay}[3]{#1} % Muestra solo el año
+\renewcommand{\APACrefnote}[1]{} % Elimina las notas
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \vspace*{-0.6cm}
+    \begin{figure}
+        \begin{center}
+                % Ajuste de tamaño más visible y uso de \graphicspath
+                \includegraphics[keepaspectratio, width=0.25\textwidth]{Usach S1.png}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+% Restaurar la tabla de contenidos y corregir el problema de 'Referencias32'
+\begin{frame}
+    \tableofcontents[sectionstyle=show, subsectionstyle=show/shaded/hide]
+\end{frame}
+
+%//////////////////////////////////////////////////////%
+%/////////////////////////////////////////////%\
+\section{Estado del Arte}
+
+\begin{frame}{Estado del Arte: Evolución de la Clasificación}
+    La clasificación morfológica ha evolucionado desde la inspección visual hasta el Deep Learning.
+    
+    \begin{itemize}
+        \item \textbf{Dieleman et al. (2015):} El cambio de paradigma. Ganadores del desafío Kaggle Galaxy Zoo, demostraron que las CNNs pueden predecir probabilidades de morfología mejor que los humanos, utilizando rotaciones para invarianza \cite{dieleman2015rotation}.
+        
+        \item \textbf{Arquitecturas Híbridas (Actualidad):} Modelos recientes combinan la extracción de características profundas con clasificadores robustos como SVM/SVR o Random Forest para mejorar la generalización en datasets ruidosos \cite{huertas2015morphology}.
+    \end{itemize}
+\end{frame}
+
+%/////////////////////////////////////////////%\
+\section{Fundamentos Teóricos: SVR}
+
+\begin{frame}{Support Vector Regression (SVR)}
+        A diferencia de la clasificación tradicional, la SVR busca predecir valores continuos (probabilidades).
+        
+        \begin{itemize}
+            \item \textbf{Objetivo:} Encontrar una función $f(x)$ que tenga, a lo sumo, una desviación $\epsilon$ de los objetivos reales $y_i$.
+            \item \textbf{Margen de Tolerancia:} Ignora errores menores a $\epsilon$ (zona insensible), lo que la hace muy robusta ante el ruido \cite{drucker1996support}.
+            \item \textbf{Kernel Trick:} Permite mapear datos a dimensiones superiores para resolver problemas no lineales \cite{vapnik1995nature}.
+        \end{itemize}
+\end{frame}
+
+ 
+%/////////////////////////////////////////////%
+\section{Implementación} %Buraian
+\subsection{Arquitectura de la red}
+\begin{frame}{Arquitectura del Modelo CNN}
+\footnotesize
+\begin{table}
+\centering
+\begin{tabular}{l c r}
+\toprule
+\textbf{Capa (tipo)} & \textbf{Forma de salida} & \textbf{Parámetros} \\
+\midrule
+Input (Sequential) & $(64, 64, 3)$ & 0 \\
+
+Conv2D (64 filtros) & $(62, 62, 64)$ & 1,792 \\
+Batch Normalization & $(62, 62, 64)$ & 256 \\
+MaxPooling2D & $(31, 31, 64)$ & 0 \\
+
+Conv2D (128 filtros) & $(29, 29, 128)$ & 73,856 \\
+Batch Normalization & $(29, 29, 128)$ & 512 \\
+MaxPooling2D & $(14, 14, 128)$ & 0 \\
+
+Conv2D (256 filtros) & $(12, 12, 256)$ & 295,168 \\
+Batch Normalization & $(12, 12, 256)$ & 1,024 \\
+MaxPooling2D & $(6, 6, 256)$ & 0 \\
+\midrule
+
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{Arquitectura del Modelo CNN II}
+\footnotesize
+\begin{table}
+\centering
+\begin{tabular}{l c r}
+\toprule
+\textbf{Capa (tipo)} & \textbf{Forma de salida} & \textbf{Parámetros} \\
+\midrule
+
+GlobalAveragePooling2D & (None, 256) & 0 \\
+Dense & (None, 256) & 65,792 \\
+Dropout & (None, 256) & 0 \\
+Dense (Output) & (None, 37) & 9,509 \\
+\midrule
+\textbf{Total params} &  & \textbf{447,909} \\
+Trainable params &  & 447,013 \\
+Non-trainable params &  & 896 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+%/////////////////////////////////////////////%
+\section{Entrenamiento del modelo de estudio}
+\begin{frame}[plain]{}
+    \makebox[\textwidth][c]{%
+        \includegraphics[width=1\textwidth]{pic/ArbolGalaxy.png}
+    }
+\end{frame}
+
+
+
+%///////////////////////////////////////////////////%
+\section{validación} %Brian%
+
+
+
+
+
+
+%/////////////////////////////////////////////%
+\section{Conclusiones} %Brian - Dylan
+\begin{frame}{Conclusiones}
+    \begin{enumerate}
+        \item Las CNN son una herramienta poderosa para la clasificación de imágenes
+        \item Con ayuda de un buen entendimiento en la teoría del problema, se pueden lograr muy buenos resultados.
+        \item La clasificación automática de galaxias puede acelerar significativamente el análisis de grandes conjuntos de datos astronómicos. 
+    \end{enumerate}
+\end{frame}
+
+
+%/////////////////////////////////////////////%
+\begin{frame}[allowframebreaks]{Referencias}
+    \tiny
+    \bibliographystyle{apacite}
+    \bibliography{PresFinalGalaxy}
+\end{frame}
+
+\end{document}
