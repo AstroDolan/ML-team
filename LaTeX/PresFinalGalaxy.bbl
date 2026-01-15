@@ -1,6 +1,31 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Cortes%
+\ \BBA {} Vapnik%
+}{%
+Cortes%
+\ \BBA {} Vapnik%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+cortes1995support}
+\APACinsertmetastar {%
+cortes1995support}%
+\begin{APACrefauthors}%
+Cortes, C.%
+\BCBT {}\ \BBA {} Vapnik, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Support-vector networks} {Support-vector networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Machine learning}{20}{3}{273--297}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Dieleman%
 , Willett%
 \BCBL {}\ \BBA {} Dambre%
@@ -99,6 +124,28 @@ Vapnik, V.%
 \APACrefbtitle {The nature of statistical learning theory} {The nature of statistical learning theory}.
 \newblock
 \APACaddressPublisher{}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vapnik%
+}{%
+Vapnik%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+vapnik2013nature}
+\APACinsertmetastar {%
+vapnik2013nature}%
+\begin{APACrefauthors}%
+Vapnik, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {The nature of statistical learning theory} {The nature of statistical learning theory}.
+\newblock
+\APACaddressPublisher{}{Springer science \& business media}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

@@ -66,7 +66,55 @@
 \end{frame}
 
 %//////////////////////////////////////////////////////%
-%/////////////////////////////////////////////%\
+\section{Introducción} %Dylan%
+\subsection{Estado del arte} %Dylan%
+\begin{frame}{Estado del arte}
+    \begin{itemize}
+        \item<1-> Las Máquinas de Soporte Vectorial fueron introducidas por Cortes y Vapnik \cite{cortes1995support} 
+        \item<2-> Se volvieron populares en los tardios 90, particularmente en la comunidad de machine learing \cite{vapnik2013nature}.
+        \item<3-> Usaremos un ensamble CNN-SVR para clasificar la morfología de las galaxias.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Modelo inicial: CNN clásica}
+\begin{itemize}
+    \item<1-> Se utilizó una red neuronal convolucional para clasificar imágenes de galaxias.
+    \item<2-> El modelo aprende filtros convolucionales fijos a partir de los datos.
+    \item<3-> Cada imagen produce una única predicción determinista.
+    \medskip
+    \item<4->\textbf{Limitación:}\\El modelo no entrega información sobre la incertidumbre de sus predicciones.
+    
+\end{itemize}
+
+\medskip
+
+\end{frame}
+
+\begin{frame}{Limitaciones del enfoque clásico}
+\begin{itemize}
+    \item<1-> Las imágenes astronómicas presentan ruido y estructuras difusas.
+    \item<2-> Existen casos ambiguos incluso para observadores humanos.
+    \item<3-> Una predicción puntual puede ser engañosa en estos casos.
+    \medskip
+    \item<4->\textbf{Pregunta clave:}
+    \textquestiondown Cómo saber cuándo el modelo está realmente seguro de su predicción?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{¿Qué es un modelo bayesiano?}
+\begin{itemize}
+    \item En un modelo bayesiano, los parámetros no son valores fijos.
+    \item Cada peso se modela como una distribución de probabilidad.
+    \item El modelo aprende tanto el valor esperado como la incertidumbre de los pesos.
+\end{itemize}
+
+\medskip
+\textbf{Idea central:}
+\begin{quote}
+El modelo no aprende una única solución, sino un conjunto de soluciones plausibles.
+\end{quote}
+\end{frame}
+
 \section{Estado del Arte}
 
 \begin{frame}{Estado del Arte: Evolución de la Clasificación}
@@ -91,7 +139,6 @@
             \item \textbf{Kernel Trick:} Permite mapear datos a dimensiones superiores para resolver problemas no lineales \cite{vapnik1995nature}.
         \end{itemize}
 \end{frame}
-
  
 %/////////////////////////////////////////////%
 \section{Implementación} %Buraian
@@ -124,7 +171,6 @@ MaxPooling2D & $(6, 6, 256)$ & 0 \\
 \end{table}
 \end{frame}
 
-
 \begin{frame}{Arquitectura del Modelo CNN II}
 \footnotesize
 \begin{table}
@@ -148,13 +194,77 @@ Non-trainable params &  & 896 \\
 \end{frame}
 
 
+\begin{frame}{Arquitectura de la CNN Bayesiana}
+\scriptsize
+\centering
+\begin{tabular}{l c r}
+\toprule
+\textbf{Layer (Type)} & \textbf{Output Shape} & \textbf{Param \#} \\
+\midrule
+Input & (None, 64, 64, 3) & 0 \\
+
+Convolution2DFlipout & (None, 64, 64, 64) & $\sim$3,584 \\
+BatchNormalization & (None, 64, 64, 64) & 256 \\
+MaxPooling2D & (None, 32, 32, 64) & 0 \\
+
+Convolution2DFlipout & (None, 32, 32, 128) & $\sim$147,712 \\
+BatchNormalization & (None, 32, 32, 128) & 512 \\
+MaxPooling2D & (None, 16, 16, 128) & 0 \\
+
+Convolution2DFlipout & (None, 16, 16, 256) & $\sim$590,336 \\
+BatchNormalization & (None, 16, 16, 256) & 1,024 \\
+MaxPooling2D & (None, 8, 8, 256) & 0 \\
+
+GlobalAveragePooling2D & (None, 256) & 0 \\
+
+DenseFlipout & (None, 256) & $\sim$131,584 \\
+
+DenseFlipout (Output) & (None, 37) & $\sim$18,962 \\
+\midrule
+\textbf{Total parameters} &  & $\sim$893k \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+
+
+
+\begin{frame}{Arquitectura del Modelo CNN-SVR}
+\scriptsize
+\centering
+\begin{tabular}{l c r}
+\toprule
+\textbf{Layer (Type)} & \textbf{Output Shape} & \textbf{Param \#} \\
+\midrule
+
+Input (Functional) & $(64, 64, 3)$ & 0 \\
+Sequential(Sequential) & $(64, 64, 3)$ & 0 \\
+Conv2D (64 filtros) & $(64, 64, 64)$ & 1,792 \\
+Batch Normalization & $(64, 64, 64)$ & 256 \\
+MaxPooling2D & $(32, 32, 64)$ & 0 \\
+
+Conv2D (128 filtros) & $(32, 32, 128)$ & 73,856 \\
+Batch Normalization & $(32, 32, 128)$ & 512 \\
+MaxPooling2D & $(16, 16, 128)$ & 0 \\
+
+Conv2D (256 filtros) & $(16, 16, 256)$ & 295,168 \\
+Batch Normalization & $(16, 16, 256)$ & 1,024 \\
+MaxPooling2D & $(8, 8, 256)$ & 0 \\
+
+features = GlobalAveragePooling2D & (None, 256) & 0 \\
+Dense (Output) & (None, 37) & 9,509 \\
+
+extractor = Model(in,out(f)) &  &  \\
+\midrule
+\textbf{Total parameters} &  & $\sim$382k \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+
 %/////////////////////////////////////////////%
 \section{Entrenamiento del modelo de estudio}
-\begin{frame}[plain]{}
-    \makebox[\textwidth][c]{%
-        \includegraphics[width=1\textwidth]{pic/ArbolGalaxy.png}
-    }
-\end{frame}
+
 
 
 

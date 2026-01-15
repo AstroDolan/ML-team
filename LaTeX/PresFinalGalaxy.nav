@@ -4,57 +4,78 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Estado del Arte}{3}{Estado del Arte}{0}}
+\headcommand {\sectionentry {1}{Introducción}{3}{Introducción}{0}}
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Estado del arte}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{Estado del arte}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@sectionpages {3}{4}}
-\headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\sectionentry {2}{Fundamentos Teóricos: SVR}{5}{Fundamentos Teóricos: SVR}{0}}
-\headcommand {\slideentry {2}{0}{1}{5/5}{}{0}}
-\headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {2}{0}{2}{6/6}{}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {5}{6}}
-\headcommand {\beamer@subsectionpages {5}{6}}
-\headcommand {\sectionentry {3}{Implementación}{7}{Implementación}{0}}
-\headcommand {\slideentry {3}{0}{1}{7/7}{}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{8}{Arquitectura de la red}}
-\headcommand {\slideentry {3}{1}{1}{8/8}{Arquitectura de la red}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {3}{1}{2}{9/9}{Arquitectura de la red}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {3}{1}{3}{10/10}{Arquitectura de la red}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@sectionpages {7}{10}}
-\headcommand {\beamer@subsectionpages {8}{10}}
-\headcommand {\sectionentry {4}{Entrenamiento del modelo de estudio}{11}{Entrenamiento del modelo de estudio}{0}}
-\headcommand {\slideentry {4}{0}{1}{11/11}{}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {4}{0}{2}{12/12}{}{0}}
-\headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@sectionpages {11}{12}}
-\headcommand {\beamer@subsectionpages {11}{12}}
-\headcommand {\sectionentry {5}{validación}{13}{validación}{0}}
-\headcommand {\slideentry {5}{0}{1}{13/13}{}{0}}
-\headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@sectionpages {13}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\sectionentry {6}{Conclusiones}{14}{Conclusiones}{0}}
-\headcommand {\slideentry {6}{0}{1}{14/14}{}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {6}{0}{2}{15/15}{}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@sectionpages {14}{15}}
-\headcommand {\beamer@subsectionpages {14}{15}}
-\headcommand {\sectionentry {7}{Referencias}{16}{Referencias}{0}}
-\headcommand {\slideentry {7}{0}{0}{16/16}{}{0}}
+\headcommand {\slideentry {1}{1}{2}{5/7}{Estado del arte}{0}}
+\headcommand {\beamer@framepages {5}{7}}
+\headcommand {\slideentry {1}{1}{3}{8/11}{Estado del arte}{0}}
+\headcommand {\beamer@framepages {8}{11}}
+\headcommand {\slideentry {1}{1}{4}{12/15}{Estado del arte}{0}}
+\headcommand {\beamer@framepages {12}{15}}
+\headcommand {\slideentry {1}{1}{5}{16/16}{Estado del arte}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@partpages {1}{16}}
-\headcommand {\beamer@subsectionpages {14}{16}}
-\headcommand {\beamer@sectionpages {14}{16}}
-\headcommand {\beamer@documentpages {16}}
-\headcommand {\gdef \inserttotalframenumber {16}}
+\headcommand {\beamer@sectionpages {3}{16}}
+\headcommand {\beamer@subsectionpages {4}{16}}
+\headcommand {\sectionentry {2}{Estado del Arte}{17}{Estado del Arte}{0}}
+\headcommand {\slideentry {2}{0}{1}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {2}{0}{2}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@sectionpages {17}{18}}
+\headcommand {\beamer@subsectionpages {17}{18}}
+\headcommand {\sectionentry {3}{Fundamentos Teóricos: SVR}{19}{Fundamentos Teóricos: SVR}{0}}
+\headcommand {\slideentry {3}{0}{1}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {3}{0}{2}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@sectionpages {19}{20}}
+\headcommand {\beamer@subsectionpages {19}{20}}
+\headcommand {\sectionentry {4}{Implementación}{21}{Implementación}{0}}
+\headcommand {\slideentry {4}{0}{1}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{22}{Arquitectura de la red}}
+\headcommand {\slideentry {4}{1}{1}{22/22}{Arquitectura de la red}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {4}{1}{2}{23/23}{Arquitectura de la red}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {4}{1}{3}{24/24}{Arquitectura de la red}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {4}{1}{4}{25/25}{Arquitectura de la red}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {4}{1}{5}{26/26}{Arquitectura de la red}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@sectionpages {21}{26}}
+\headcommand {\beamer@subsectionpages {22}{26}}
+\headcommand {\sectionentry {5}{Entrenamiento del modelo de estudio}{27}{Entrenamiento del modelo de estudio}{0}}
+\headcommand {\slideentry {5}{0}{1}{27/27}{}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@sectionpages {27}{27}}
+\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\sectionentry {6}{validación}{28}{validación}{0}}
+\headcommand {\slideentry {6}{0}{1}{28/28}{}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\beamer@sectionpages {28}{28}}
+\headcommand {\beamer@subsectionpages {28}{28}}
+\headcommand {\sectionentry {7}{Conclusiones}{29}{Conclusiones}{0}}
+\headcommand {\slideentry {7}{0}{1}{29/29}{}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {7}{0}{2}{30/30}{}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@sectionpages {29}{30}}
+\headcommand {\beamer@subsectionpages {29}{30}}
+\headcommand {\sectionentry {8}{Referencias}{31}{Referencias}{0}}
+\headcommand {\slideentry {8}{0}{0}{31/31}{}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {8}{0}{0}{31/32}{}{0}}
+\headcommand {\beamer@framepages {31}{32}}
+\headcommand {\beamer@partpages {1}{32}}
+\headcommand {\beamer@subsectionpages {29}{32}}
+\headcommand {\beamer@sectionpages {29}{32}}
+\headcommand {\beamer@documentpages {32}}
+\headcommand {\gdef \inserttotalframenumber {24}}

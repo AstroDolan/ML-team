@@ -14,45 +14,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: PresFinalGalaxy.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--`others' not consistent with 6th ed. of the APA Manual
-You've used 4 entries,
+You've used 6 entries,
             6951 wiz_defined-function locations,
-            1286 strings with 11334 characters,
-and the built_in function-call counts, 7732 in all, are:
-= -- 961
-> -- 70
-< -- 352
-+ -- 362
-- -- 10
-* -- 466
-:= -- 1399
-add.period$ -- 17
-call.type$ -- 4
-change.case$ -- 69
+            1295 strings with 11490 characters,
+and the built_in function-call counts, 10550 in all, are:
+= -- 1319
+> -- 94
+< -- 449
++ -- 453
+- -- 14
+* -- 625
+:= -- 1856
+add.period$ -- 25
+call.type$ -- 6
+change.case$ -- 103
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 201
-empty$ -- 310
-format.name$ -- 120
-if$ -- 1476
+cite$ -- 12
+duplicate$ -- 277
+empty$ -- 452
+format.name$ -- 158
+if$ -- 2063
 int.to.chr$ -- 0
-int.to.str$ -- 12
+int.to.str$ -- 18
 missing$ -- 0
-newline$ -- 104
-num.names$ -- 32
-pop$ -- 167
+newline$ -- 151
+num.names$ -- 48
+pop$ -- 235
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 24
 quote$ -- 0
-skip$ -- 515
+skip$ -- 725
 stack$ -- 0
-substring$ -- 387
-swap$ -- 106
-text.length$ -- 9
+substring$ -- 491
+swap$ -- 153
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 384
+type$ -- 544
 warning$ -- 1
-while$ -- 40
+while$ -- 52
 width$ -- 0
-write$ -- 132
+write$ -- 187
 (There was 1 warning)
