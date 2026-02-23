@@ -1,0 +1,99 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Cortes%
+\ \BBA {} Vapnik%
+}{%
+Cortes%
+\ \BBA {} Vapnik%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+cortes1995support}
+\APACinsertmetastar {%
+cortes1995support}%
+\begin{APACrefauthors}%
+Cortes, C.%
+\BCBT {}\ \BBA {} Vapnik, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Support-vector networks} {Support-vector networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Machine learning}{20}{3}{273--297}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dieleman%
+, Willett%
+\BCBL {}\ \BBA {} Dambre%
+}{%
+Dieleman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+dieleman2015rotation}
+\APACinsertmetastar {%
+dieleman2015rotation}%
+\begin{APACrefauthors}%
+Dieleman, S.%
+, Willett, K\BPBI W.%
+\BCBL {}\ \BBA {} Dambre, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rotation-invariant convolutional neural networks for galaxy morphology prediction} {Rotation-invariant convolutional neural networks for galaxy morphology prediction}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Monthly Notices of the Royal Astronomical Society}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Huertas-Company%
+\ \protect \BOthers {.}}{%
+Huertas-Company%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+huertas2015morphology}
+\APACinsertmetastar {%
+huertas2015morphology}%
+\begin{APACrefauthors}%
+Huertas-Company, M.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A catalog of visual morphology for low-redshift galaxies from the Sloan Digital Sky Survey} {A catalog of visual morphology for low-redshift galaxies from the sloan digital sky survey}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Astrophysical Journal Supplement Series}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vapnik%
+}{%
+Vapnik%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+vapnik2013nature}
+\APACinsertmetastar {%
+vapnik2013nature}%
+\begin{APACrefauthors}%
+Vapnik, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {The nature of statistical learning theory} {The nature of statistical learning theory}.
+\newblock
+\APACaddressPublisher{}{Springer science \& business media}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

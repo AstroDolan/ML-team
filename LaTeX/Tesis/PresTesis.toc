@@ -1,0 +1,11 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {1}{Introducción}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Lahares}{4}{0}{1}
+\beamer@sectionintoc {2}{Estado del Arte}{12}{0}{2}
+\beamer@sectionintoc {3}{Modelos, ANN y PINNs}{15}{0}{3}
+\beamer@sectionintoc {4}{Variables y parámetros}{19}{0}{4}
+\beamer@sectionintoc {5}{Physics-Informed Neural Networks (PINNs)}{21}{0}{5}
+\beamer@subsectionintoc {5}{1}{Sistema acoplado de PDEs}{22}{0}{5}
+\beamer@sectionintoc {6}{Implementación}{24}{0}{6}
+\beamer@subsectionintoc {6}{1}{Arquitectura de la red}{25}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{31}{0}{7}
