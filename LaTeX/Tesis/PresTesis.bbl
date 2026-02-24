@@ -1,31 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Cortes%
-\ \BBA {} Vapnik%
-}{%
-Cortes%
-\ \BBA {} Vapnik%
-}{%
-{\protect \APACyear {1995}}%
-}]{%
-cortes1995support}
-\APACinsertmetastar {%
-cortes1995support}%
-\begin{APACrefauthors}%
-Cortes, C.%
-\BCBT {}\ \BBA {} Vapnik, V.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1995}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Support-vector networks} {Support-vector networks}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Machine learning}{20}{3}{273--297}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Dieleman%
 , Willett%
 \BCBL {}\ \BBA {} Dambre%
@@ -52,6 +27,32 @@ Dieleman, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+George%
+, Barnhart%
+\BCBL {}\ \BBA {} Iverson%
+}{%
+George%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+george2025d}
+\APACinsertmetastar {%
+george2025d}%
+\begin{APACrefauthors}%
+George, D\BPBI L.%
+, Barnhart, K\BPBI R.%
+\BCBL {}\ \BBA {} Iverson, R\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {D-Claw-A library for the simulation of granular-fluid flows, v1. 0.0} {D-claw-a library for the simulation of granular-fluid flows, v1. 0.0}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{US Geological Survey (USGS) Software}{}{}{34}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Huertas-Company%
 \ \protect \BOthers {.}}{%
 Huertas-Company%
@@ -75,25 +76,83 @@ Huertas-Company, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Vapnik%
+Schilling%
+, Griswold%
+\BCBL {}\ \BBA {} Iverson%
 }{%
-Vapnik%
-}{%
-{\protect \APACyear {2013}}%
+Schilling%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
 }]{%
-vapnik2013nature}
+schilling2008using}
 \APACinsertmetastar {%
-vapnik2013nature}%
+schilling2008using}%
 \begin{APACrefauthors}%
-Vapnik, V.%
+Schilling, S.%
+, Griswold, J.%
+\BCBL {}\ \BBA {} Iverson, R.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2013}.
+\APACrefYearMonthDay{2008}{}{}.
 \newblock
-\APACrefbtitle {The nature of statistical learning theory} {The nature of statistical learning theory}.
+{\BBOQ}\APACrefatitle {Using LAHARZ to Forecast Inundation from lahars, debris flows, and rock avalanches: Confidence limits on prediction} {Using laharz to forecast inundation from lahars, debris flows, and rock avalanches: Confidence limits on prediction}.{\BBCQ}
 \newblock
-\APACaddressPublisher{}{Springer science \& business media}.
+\BIn{} \APACrefbtitle {AGU Fall Meeting Abstracts} {Agu fall meeting abstracts}\ (\BVOL\ 2008, \BPGS\ H51F--0891).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vallance%
+}{%
+Vallance%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+Vallance2024}
+\APACinsertmetastar {%
+Vallance2024}%
+\begin{APACrefauthors}%
+Vallance, J\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Lahars: Origins, Behavior and Hazards} {Lahars: Origins, behavior and hazards}.{\BBCQ}
+\newblock
+\BIn{} M.~Jakob, S.~McDougall\BCBL {}\ \BBA {} P.~Santi\ (\BEDS), \APACrefbtitle {Advances in Debris-flow Science and Practice} {Advances in debris-flow science and practice}\ (\BPGS\ 347--382).
+\newblock
+\APACaddressPublisher{Cham}{Springer International Publishing}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/978-3-031-48691-3_12} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-031-48691-3_12} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Woodhouse%
+, Hogg%
+\BCBL {}\ \BBA {} Phillips%
+}{%
+Woodhouse%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+woodhouseshallow}
+\APACinsertmetastar {%
+woodhouseshallow}%
+\begin{APACrefauthors}%
+Woodhouse, M.%
+, Hogg, A.%
+\BCBL {}\ \BBA {} Phillips, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A shallow-layer model for lahars: formulation and phenomenology} {A shallow-layer model for lahars: formulation and phenomenology}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{JGR-Earth Surface}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

@@ -70,9 +70,10 @@
 \subsection{Lahares}
 \begin{frame}{Qué son los lahares?}
     \begin{itemize}
-        \item<1-> Las Máquinas de Soporte Vectorial fueron introducidas por Cortes y Vapnik \cite{cortes1995support} 
-        \item<2-> Se volvieron populares en los tardios 90, particularmente en la comunidad de machine learing \cite{vapnik2013nature}.
-        \item<3-> Usaremos un ensamble CNN-SVR para clasificar la morfología de las galaxias.
+        \item<1-> Volcanic debris flows that originate at potentially active volcanoes are called lahars \cite{Vallance2024}
+        \item<2-> Lahars are mixtures of water, volcanic ash, tephra, rock fragments, and chunks of ice that can flow like wet concrete. 
+        The term comes from the Indonesian word for these destructive mudflows that cause both property damage and loss of life.
+        \item<3-> Importancia de su estudio, desastres, etc
     \end{itemize}
 \end{frame}
 
@@ -81,10 +82,8 @@
 \begin{frame}{Lahares fotos}
 \begin{itemize}
     \item<1-> Las imágenes astronómicas presentan ruido y estructuras difusas.
-    \item<2-> Existen casos ambiguos incluso para observadores humanos.
-    \item<3-> Una predicción puntual puede ser engañosa en estos casos.
     \medskip
-    \item<4->\textbf{Pregunta clave:}
+    \item<2->\textbf{Pregunta clave:}
     \textquestiondown Cómo saber cuándo el modelo está realmente seguro de su predicción?
     \end{itemize}
 \end{frame}
@@ -93,16 +92,14 @@
 \section{Estado del Arte}
 \begin{frame}{Metodos numericos actuales para prediccion}
 \begin{itemize}
-    \item Laharz
-    \item Otro
-    \item Otro mas
+    \item LAHARZ es un modelo computacional que utiliza descripciones estadísticas de áreas inundadas por eventos pasados de flujo masivo 
+para pronosticar áreas que probablemente serán inundadas por eventos hipotéticos futuros. \cite{schilling2008using}
+    \item D-Claw es una biblioteca de software para la simulación de flujos granulares densos sobre topografía espacialmente variable. \cite{george2025d}
+    \item LaharFlow es un software de dinámica de lahares, diseñado en la Universidad de Bristol, que
+modela el flujo de lahar como una mezcla de agua y granos sólidos, basado en tres principios
+de conservación. Estos son conservación de la masa, momentum y transporte de material sólido \cite{woodhouseshallow}
 \end{itemize}
 
-\medskip
-\textbf{Idea central:}
-\begin{quote}
-Crear una PINN Bayesiana que prediga de mejor manera un lahar
-\end{quote}
 \end{frame}
 
 
@@ -118,11 +115,12 @@ Crear una PINN Bayesiana que prediga de mejor manera un lahar
 
 
 \section{Modelos, ANN y PINNs}
-\begin{frame}{Modelo Shallow-water}
+\begin{frame}{Ecuaciones Shallow-water}
 \begin{itemize}
-    \item Aa
-    \item Bb
-    \item Cc
+    \item Son un sistema de PDEs hiperbolicas que describen el flujo de fluidos en oceanos, rios, etc.
+    \item Se caracterizan ya que su dimension vertical es mucho menor que la horizontal, lo que permite simplificar las ecuaciones de Navier-Stokes.
+    \item Se utilizan para modelar fenómenos como tsunamis, mareas, debris flows, etc.
+    \item Provienen de la derivacion de Navier-Stokes, que a su vez provienen de las leyes de conservacion de masa, momentum.
 \end{itemize}
 \end{frame}
 
