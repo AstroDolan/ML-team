@@ -13,81 +13,95 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{1}{2}{5/7}{Lahares}{0}}
 \headcommand {\beamer@framepages {5}{7}}
-\headcommand {\slideentry {1}{1}{3}{8/9}{Lahares}{0}}
-\headcommand {\beamer@framepages {8}{9}}
-\headcommand {\beamer@sectionpages {3}{9}}
-\headcommand {\beamer@subsectionpages {4}{9}}
-\headcommand {\sectionentry {2}{Estado del Arte}{10}{Estado del Arte}{0}}
-\headcommand {\slideentry {2}{0}{1}{10/10}{}{0}}
+\headcommand {\slideentry {1}{1}{3}{8/8}{Lahares}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {3}{8}}
+\headcommand {\beamer@subsectionpages {4}{8}}
+\headcommand {\sectionentry {2}{Estado del Arte}{9}{Estado del Arte}{0}}
+\headcommand {\slideentry {2}{0}{1}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {2}{0}{2}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{0}{2}{11/11}{}{0}}
+\headcommand {\beamer@sectionpages {9}{10}}
+\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\sectionentry {3}{Modelos, ANN y PINNs}{11}{Modelos, ANN y PINNs}{0}}
+\headcommand {\slideentry {3}{0}{1}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{0}{3}{12/12}{}{0}}
+\headcommand {\slideentry {3}{0}{2}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@sectionpages {10}{12}}
-\headcommand {\beamer@subsectionpages {10}{12}}
-\headcommand {\sectionentry {3}{Modelos, ANN y PINNs}{13}{Modelos, ANN y PINNs}{0}}
-\headcommand {\slideentry {3}{0}{1}{13/13}{}{0}}
+\headcommand {\slideentry {3}{0}{3}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {3}{0}{2}{14/14}{}{0}}
+\headcommand {\slideentry {3}{0}{4}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {3}{0}{3}{15/15}{}{0}}
+\headcommand {\slideentry {3}{0}{5}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {3}{0}{4}{16/16}{}{0}}
+\headcommand {\beamer@sectionpages {11}{15}}
+\headcommand {\beamer@subsectionpages {11}{15}}
+\headcommand {\sectionentry {4}{Variables y parámetros}{16}{Variables y parámetros}{0}}
+\headcommand {\slideentry {4}{0}{1}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@sectionpages {13}{16}}
-\headcommand {\beamer@subsectionpages {13}{16}}
-\headcommand {\sectionentry {4}{Variables y parámetros}{17}{Variables y parámetros}{0}}
-\headcommand {\slideentry {4}{0}{1}{17/17}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{17/17}{}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {4}{0}{2}{18/18}{}{0}}
+\headcommand {\beamer@sectionpages {16}{17}}
+\headcommand {\beamer@subsectionpages {16}{17}}
+\headcommand {\sectionentry {5}{Physics-Informed Neural Networks (PINNs)}{18}{Physics-Informed Neural Networks (PINNs)}{0}}
+\headcommand {\slideentry {5}{0}{1}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@sectionpages {17}{18}}
-\headcommand {\beamer@subsectionpages {17}{18}}
-\headcommand {\sectionentry {5}{Physics-Informed Neural Networks (PINNs)}{19}{Physics-Informed Neural Networks (PINNs)}{0}}
-\headcommand {\slideentry {5}{0}{1}{19/19}{}{0}}
+\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{19}{Sistema acoplado de PDEs}}
+\headcommand {\slideentry {5}{1}{1}{19/19}{Sistema acoplado de PDEs}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@subsectionpages {19}{19}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{20}{Sistema acoplado de PDEs}}
-\headcommand {\slideentry {5}{1}{1}{20/20}{Sistema acoplado de PDEs}{0}}
+\headcommand {\slideentry {5}{1}{2}{20/20}{Sistema acoplado de PDEs}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {5}{1}{2}{21/21}{Sistema acoplado de PDEs}{0}}
+\headcommand {\slideentry {5}{1}{3}{21/21}{Sistema acoplado de PDEs}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@sectionpages {19}{21}}
-\headcommand {\beamer@subsectionpages {20}{21}}
-\headcommand {\sectionentry {6}{Implementación}{22}{Implementación}{0}}
-\headcommand {\slideentry {6}{0}{1}{22/22}{}{0}}
+\headcommand {\slideentry {5}{1}{4}{22/22}{Sistema acoplado de PDEs}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@subsectionpages {22}{22}}
-\headcommand {\beamer@subsectionentry {0}{6}{1}{23}{Arquitectura de la red}}
-\headcommand {\slideentry {6}{1}{1}{23/23}{Arquitectura de la red}{0}}
+\headcommand {\slideentry {5}{1}{5}{23/23}{Sistema acoplado de PDEs}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {6}{1}{2}{24/24}{Arquitectura de la red}{0}}
+\headcommand {\slideentry {5}{1}{6}{24/24}{Sistema acoplado de PDEs}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {6}{1}{3}{25/25}{Arquitectura de la red}{0}}
+\headcommand {\slideentry {5}{1}{7}{25/25}{Sistema acoplado de PDEs}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {6}{1}{4}{26/26}{Arquitectura de la red}{0}}
+\headcommand {\slideentry {5}{1}{8}{26/26}{Sistema acoplado de PDEs}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {6}{1}{5}{27/27}{Arquitectura de la red}{0}}
+\headcommand {\slideentry {5}{1}{9}{27/27}{Sistema acoplado de PDEs}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {6}{1}{6}{28/28}{Arquitectura de la red}{0}}
+\headcommand {\beamer@sectionpages {18}{27}}
+\headcommand {\beamer@subsectionpages {19}{27}}
+\headcommand {\sectionentry {6}{Implementación}{28}{Implementación}{0}}
+\headcommand {\slideentry {6}{0}{1}{28/28}{}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\beamer@sectionpages {22}{28}}
-\headcommand {\beamer@subsectionpages {23}{28}}
-\headcommand {\sectionentry {7}{Conclusiones}{29}{Conclusiones}{0}}
-\headcommand {\slideentry {7}{0}{1}{29/29}{}{0}}
+\headcommand {\beamer@subsectionpages {28}{28}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{29}{Arquitectura de la red}}
+\headcommand {\slideentry {6}{1}{1}{29/29}{Arquitectura de la red}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {7}{0}{2}{30/30}{}{0}}
+\headcommand {\slideentry {6}{1}{2}{30/30}{Arquitectura de la red}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\beamer@sectionpages {29}{30}}
-\headcommand {\beamer@subsectionpages {29}{30}}
-\headcommand {\sectionentry {8}{Referencias}{31}{Referencias}{0}}
-\headcommand {\slideentry {8}{0}{0}{31/31}{}{0}}
+\headcommand {\slideentry {6}{1}{3}{31/31}{Arquitectura de la red}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {8}{0}{0}{31/32}{}{0}}
-\headcommand {\beamer@framepages {31}{32}}
-\headcommand {\beamer@partpages {1}{32}}
-\headcommand {\beamer@subsectionpages {29}{32}}
-\headcommand {\beamer@sectionpages {29}{32}}
-\headcommand {\beamer@documentpages {32}}
-\headcommand {\gdef \inserttotalframenumber {29}}
+\headcommand {\slideentry {6}{1}{4}{32/32}{Arquitectura de la red}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {6}{1}{5}{33/33}{Arquitectura de la red}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {6}{1}{6}{34/34}{Arquitectura de la red}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\beamer@sectionpages {28}{34}}
+\headcommand {\beamer@subsectionpages {29}{34}}
+\headcommand {\sectionentry {7}{Conclusiones}{35}{Conclusiones}{0}}
+\headcommand {\slideentry {7}{0}{1}{35/35}{}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {7}{0}{2}{36/36}{}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@sectionpages {35}{36}}
+\headcommand {\beamer@subsectionpages {35}{36}}
+\headcommand {\sectionentry {8}{Referencias}{37}{Referencias}{0}}
+\headcommand {\slideentry {8}{0}{0}{37/37}{}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\slideentry {8}{0}{0}{37/38}{}{0}}
+\headcommand {\beamer@framepages {37}{38}}
+\headcommand {\beamer@partpages {1}{38}}
+\headcommand {\beamer@subsectionpages {35}{38}}
+\headcommand {\beamer@sectionpages {35}{38}}
+\headcommand {\beamer@documentpages {38}}
+\headcommand {\gdef \inserttotalframenumber {36}}

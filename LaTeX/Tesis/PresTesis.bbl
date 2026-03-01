@@ -1,32 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Dieleman%
-, Willett%
-\BCBL {}\ \BBA {} Dambre%
-}{%
-Dieleman%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2015}}%
-}]{%
-dieleman2015rotation}
-\APACinsertmetastar {%
-dieleman2015rotation}%
-\begin{APACrefauthors}%
-Dieleman, S.%
-, Willett, K\BPBI W.%
-\BCBL {}\ \BBA {} Dambre, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2015}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Rotation-invariant convolutional neural networks for galaxy morphology prediction} {Rotation-invariant convolutional neural networks for galaxy morphology prediction}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Monthly Notices of the Royal Astronomical Society}{}{}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 George%
 , Barnhart%
 \BCBL {}\ \BBA {} Iverson%
@@ -53,26 +27,54 @@ George, D\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Huertas-Company%
-\ \protect \BOthers {.}}{%
-Huertas-Company%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2015}}%
+Green%
+}{%
+Green%
+}{%
+{\protect \APACyear {2019}}%
 }]{%
-huertas2015morphology}
+phdthesis}
 \APACinsertmetastar {%
-huertas2015morphology}%
+phdthesis}%
 \begin{APACrefauthors}%
-Huertas-Company, M.%
-\BCBT {}\ \BOthersPeriod {.}
+Green, R.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2015}{}{}.
+\APACrefYear{2019}.
+\unskip\
 \newblock
-{\BBOQ}\APACrefatitle {A catalog of visual morphology for low-redshift galaxies from the Sloan Digital Sky Survey} {A catalog of visual morphology for low-redshift galaxies from the sloan digital sky survey}.{\BBCQ}
+\APACrefbtitle {Finite Element Modeling of a Suction Caisson Subject to Monotonic Tensile Loading} {Finite element modeling of a suction caisson subject to monotonic tensile loading}\ \APACtypeAddressSchool {\BUPhD}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Raissi%
+, Perdikaris%
+\BCBL {}\ \BBA {} Karniadakis%
+}{%
+Raissi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+RAISSI2019686}
+\APACinsertmetastar {%
+RAISSI2019686}%
+\begin{APACrefauthors}%
+Raissi, M.%
+, Perdikaris, P.%
+\BCBL {}\ \BBA {} Karniadakis, G.%
+\end{APACrefauthors}%
+\unskip\
 \newblock
-\APACjournalVolNumPages{The Astrophysical Journal Supplement Series}{}{}{}.
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations} {Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Computational Physics}{378}{}{686-707}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0021999118307125} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.jcp.2018.10.045} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

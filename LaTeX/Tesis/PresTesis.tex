@@ -1,6 +1,9 @@
 \documentclass{beamer}
 \usepackage{hyperref}
+\usepackage{animate}
+\usepackage{amsmath}
 \usepackage[T1]{fontenc}
+\usefonttheme[onlymath]{serif}
 \usepackage[spanish,provide=*]{babel}
 % Cargar apacite después de babel para citas autor-año correctas
 \usepackage[notocbib]{apacite}
@@ -10,7 +13,7 @@
 \usepackage{graphicx,listings,stackengine}
 % Manejo robusto de nombres de archivo con espacios y rutas de imágenes
 \usepackage{grffile}
-\graphicspath{{pic/}}
+%\graphicspath{{pic/}}
 
 \renewcommand{\APACrefbtitle}[2]{#1}       % Muestra solo el título 
 \renewcommand{\APACrefYearMonthDay}[3]{#1} % Muestra solo el año (omite mes/día)
@@ -55,7 +58,8 @@
     \begin{figure}
         \begin{center}
                 % Ajuste de tamaño más visible y uso de \graphicspath
-                \includegraphics[keepaspectratio, width=0.25\textwidth]{../pic/Usach S1.png}
+                \includegraphics[keepaspectratio, width=0.25\textwidth]{./Pics/Usach S1.png}
+
         \end{center}
     \end{figure}
 \end{frame}
@@ -70,25 +74,22 @@
 \subsection{Lahares}
 \begin{frame}{Qué son los lahares?}
     \begin{itemize}
-        \item<1-> Volcanic debris flows that originate at potentially active volcanoes are called lahars \cite{Vallance2024}
+        \item<1-> Volcanic debris flows that originate at potentially active volcanoes are called lahars \cite{Vallance2024}.
         \item<2-> Lahars are mixtures of water, volcanic ash, tephra, rock fragments, and chunks of ice that can flow like wet concrete. 
-        The term comes from the Indonesian word for these destructive mudflows that cause both property damage and loss of life.
-        \item<3-> Importancia de su estudio, desastres, etc
+        \item<3-> The term comes from the Indonesian word for these destructive mudflows that cause both property damage and loss of life.
     \end{itemize}
 \end{frame}
 
-\medskip
-
-\begin{frame}{Lahares fotos}
-\begin{itemize}
-    \item<1-> Las imágenes astronómicas presentan ruido y estructuras difusas.
-    \medskip
-    \item<2->\textbf{Pregunta clave:}
-    \textquestiondown Cómo saber cuándo el modelo está realmente seguro de su predicción?
-    \end{itemize}
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=10cm,height=6cm]{.//Pics//lahar.png}
+        \caption{Lahar (dark deposit on snow) on Mount Saint Helens after the March 19, 1982, eruption.}
+    \end{figure}
 \end{frame}
 
 
+%/////////////////////////////////////////////%
 \section{Estado del Arte}
 \begin{frame}{Metodos numericos actuales para prediccion}
 \begin{itemize}
@@ -103,17 +104,7 @@ de conservación. Estos son conservación de la masa, momentum y transporte de m
 \end{frame}
 
 
-\begin{frame}{Estado del Arte: Evolución de los metodos predictivos}
-    La clasificación morfológica ha evolucionado desde la inspección visual hasta el Deep Learning.
-    
-    \begin{itemize}
-        \item \textbf{Dieleman et al. (2015):} El cambio de paradigma. Ganadores del desafío Kaggle Galaxy Zoo, demostraron que las CNNs pueden predecir probabilidades de morfología mejor que los humanos, utilizando rotaciones para invarianza \cite{dieleman2015rotation}.
-        
-        \item \textbf{Arquitecturas Híbridas (Actualidad):} Modelos recientes combinan la extracción de características profundas con clasificadores robustos como SVM/SVR o Random Forest para mejorar la generalización en datasets ruidosos \cite{huertas2015morphology}.
-    \end{itemize}
-\end{frame}
-
-
+%/////////////////////////////////////////////%
 \section{Modelos, ANN y PINNs}
 \begin{frame}{Ecuaciones Shallow-water}
 \begin{itemize}
@@ -126,37 +117,129 @@ de conservación. Estos son conservación de la masa, momentum y transporte de m
 
 \begin{frame}{Que son las PINNs?}
 \begin{itemize}
-    \item pinn
-    \item pin
-    \item pi
+    \item Physics-informed neural networks are neural networks that are trained to solve supervised learning tasks while respecting
+    any given laws of physics described by general nonlinear partial differential equations. \cite{RAISSI2019686}
+    \item Such neural networks are constrained to respect any symmetries, invariances, or conservation principles originating from
+the physical laws that govern the observed data, as modeled by general time-dependent and nonlinear partial differential
+equations.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Modelo de PINN basada en Shallow-water?}
+
+
+\begin{frame}
+    \begin{figure}
+    \centering
+    % {12} es la velocidad (cuadros por segundo)
+    % [0-49] asumiendo que tu PDF tiene 50 páginas (índice empieza en 0)
+    \animategraphics[autoplay,loop,width=\linewidth]{20}{./Pics/pinnpdf}{0}{49}
+    \caption{Simulación PINN: Evolución del flujo.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{PDEs y Residuos en la PINN}
 \begin{itemize}
-    \item Laharz
-    \item Otro
-    \item Otro mas
+    \item $\mathcal{L} = \mathcal{L}_{data} + \lambda \mathcal{L}_{physics}$, donde $\mathcal{L}_{data}$ mide el error en los datos y $\mathcal{L}_{physics}$ mide el incumplimiento de las PDEs.
 \end{itemize}
 \end{frame}
 
 \section{Variables y parámetros}
 \begin{frame}{Variables y parámetros}
 \begin{itemize}
-    \item a
-    \item v
-    \item zb
+    \item $h(x, y, t)$: espesor de la mezcla $(m)$,
+    \item $u(x, y, t), v(x, y, t)$: velocidades promediadas en profundidad $(m/s)$,
+    \item $C(x, y, t)$: concentración volumétrica de sólidos $(\text{adimensional}, 0 \leq C \leq 1)$,
+    \item $z_b(x, y, t)$: elevación del lecho $(m)$.
 \end{itemize}
 \end{frame}
 
 \section{Physics-Informed Neural Networks (PINNs)}
 \subsection{Sistema acoplado de PDEs}
-\begin{frame}{Sistema acoplado de PDEs}
-\begin{itemize}
-    \item Masa
-    \item Momentum
-    \item Advección
-\end{itemize}
+\begin{frame}{Conservacion de Masa}
+Conservacion de masa con fuente de masa: 
+    \begin{align}
+    {\partial h \over \partial t} + \nabla \cdot (h \vec{u}) = S_h(x,y,t), && u=(u,v)
+    \end{align}
+\end{frame}
+
+\begin{frame}{Conservacion de Momentum}
+Conservacion de momentum 2D con friccion basal modulada:
+    \begin{align}
+    {{\partial u} \over{\partial t}}+u{{\partial u} \over{\partial x}}+v{{\partial u} \over{\partial y}}+g{{\partial H} \over{\partial x}}+{{\tau_{bx}} \over{\rho_mh}} = 0 \\
+    {{\partial v} \over{\partial t}}+u{{\partial v} \over{\partial x}}+v{{\partial v} \over{\partial y}}+g{{\partial H} \over{\partial y}}+{{\tau_{by}} \over{\rho_mh}} = 0
+    \end{align}
+    Donde la tension basal es parametrizada como 
+    \begin{align}
+    \tau_{b} = \tau_{b}\frac{u}{\|u\|+\epsilon},&&\tau_{b}=\mu_{eff}(C,p)\rho_mgh \cos\theta
+    \end{align}
+\end{frame}
+
+\begin{frame}{Conservacion de Momentum}
+    La pendiente se aproxima por:
+    \begin{align}
+        \cos\theta\approx \frac{1}{\sqrt{1+\|\nabla z_b\|^2}}
+    \end{align}
+    Un modelo reducido pero físicamente interpretable para fricción efectiva:
+    \begin{align}
+        \mu_{eff}(C,p) = \mu_0(1+\alpha_C(C-C_0))\exp(-\alpha \frac{p}{\rho_mgh+p_{ref}})
+    \end{align}
+    donde C0 es una concentración de referencia y pref estabiliza la razón. Este término representa: (i) mayor fricción con mayor carga sólida, y 
+    (ii) menor fricción efectiva cuando el exceso de presión de poros es alto (disminuye el esfuerzo efectivo).
+
+\end{frame}
+
+\begin{frame}{Ecuacion de transporte de solidos (Adveccion-difusion)}
+    Ecuación advección–difusión con término de relajación hacia un equilibrio
+    \begin{align}
+    {\partial C \over \partial t} + u\cdot \nabla C = \nabla \cdot (k_C\nabla C) + \frac{C_{eq}(x,y)-C}{\tau_C}
+    \end{align}
+    En prototipo sintético se puede fijar $\tau C \rightarrow \infty$ (sin relajación) o definir $C_{eq}$ como mayor en cauces y menor en planicies.
+\end{frame}
+
+
+\begin{frame}{Evolucion de presion de poros}
+    \begin{figure}
+    \centering
+    \includegraphics[width=10cm,height=6cm,keepaspectratio]{.//Pics//porepressure.png}
+    \caption{Diagram illustrating the effective stress principle in a saturated cohesionless soil \cite{phdthesis}}
+    \end{figure}
+\end{frame}
+\begin{frame}{Evolucion de presion de poros}
+    Se usa una ecuación de advección con relajación:
+    \begin{align}
+    {\partial p \over \partial t} + u\cdot \nabla p = \frac{p_{eq}(h,C,\|u\|)-p}{\tau_p}
+    \end{align}
+    Un ejemplo simple para equilibrio de presión:
+    \begin{align}
+        p_{eq}=\chi_p\rho_m gh\phi(C)\frac{\|u\|}{\|u\|+u_*}, && \phi(C)=\frac{C}{C+C_*}
+    \end{align}
+    que aumenta con espesor y con concentración, y satura con velocidad. Esto captura cualitativamente el aumento de presión por mezcla densa y cizalle.
+ 
+\end{frame}
+
+
+\begin{frame}{Ecuacion de Exner}
+    \begin{figure}
+    \centering
+    \includegraphics[width=10cm,height=6cm,keepaspectratio]{.//Pics//exner.jpg}
+    \caption{Ecuación de Exner: evolución del lecho.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Ecuacion de Exner}
+    \begin{align}
+    {\partial z_b \over \partial t} + \frac{1}{1-\lambda_p} \nabla\cdot \mathbf{q_s} = E-D,
+    \end{align}
+    donde $q_s$ es el flujo sólido superficial $(m^2/s)$ y $E, D (m/s)$ son erosión y deposición. Para un modelo reducido, se puede usar:
+    \begin{align}
+        \mathbf{q_s}=\gamma_shC\mathbf{u}
+    \end{align}
+    y un cierre simple para erosión/deposición (prototipo):
+    \begin{align}
+        E-D=\beta_e\|\mathbf{u}\|-\beta_dC,
+    \end{align}
+    con $\beta_e,\beta_d$ ajustables. En escenarios iniciales, muchas veces se fija $E-D = 0$ para congelar el lecho y validar primero la dinámica; 
+    luego se activa Exner.
 \end{frame}
 
 %/////////////////////////////////////////////%

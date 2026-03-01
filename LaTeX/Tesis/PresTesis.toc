@@ -1,11 +1,11 @@
 \babel@toc {spanish}{}\relax 
 \beamer@sectionintoc {1}{Introducción}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Lahares}{4}{0}{1}
-\beamer@sectionintoc {2}{Estado del Arte}{10}{0}{2}
-\beamer@sectionintoc {3}{Modelos, ANN y PINNs}{13}{0}{3}
-\beamer@sectionintoc {4}{Variables y parámetros}{17}{0}{4}
-\beamer@sectionintoc {5}{Physics-Informed Neural Networks (PINNs)}{19}{0}{5}
-\beamer@subsectionintoc {5}{1}{Sistema acoplado de PDEs}{20}{0}{5}
-\beamer@sectionintoc {6}{Implementación}{22}{0}{6}
-\beamer@subsectionintoc {6}{1}{Arquitectura de la red}{23}{0}{6}
-\beamer@sectionintoc {7}{Conclusiones}{29}{0}{7}
+\beamer@sectionintoc {2}{Estado del Arte}{9}{0}{2}
+\beamer@sectionintoc {3}{Modelos, ANN y PINNs}{11}{0}{3}
+\beamer@sectionintoc {4}{Variables y parámetros}{16}{0}{4}
+\beamer@sectionintoc {5}{Physics-Informed Neural Networks (PINNs)}{18}{0}{5}
+\beamer@subsectionintoc {5}{1}{Sistema acoplado de PDEs}{19}{0}{5}
+\beamer@sectionintoc {6}{Implementación}{28}{0}{6}
+\beamer@subsectionintoc {6}{1}{Arquitectura de la red}{29}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{35}{0}{7}
