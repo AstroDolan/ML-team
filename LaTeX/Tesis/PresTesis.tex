@@ -19,7 +19,8 @@
 \renewcommand{\APACrefYearMonthDay}[3]{#1} % Muestra solo el año (omite mes/día)
 
 \author{Dylan Jara}
-\title{GAX-Kepler: Clasificador de morfología galáctica mediante el uso de redes neuronales convolucionales}
+\title{Analisis de la fisica para la creacion de una PINN para prediccion de lahares y
+de mapas de peligro volcanico}
 \subtitle{}
 \institute{
     Universidad de Santiago de Chile
@@ -243,106 +244,14 @@ Conservacion de momentum 2D con friccion basal modulada:
 \end{frame}
 
 %/////////////////////////////////////////////%
-\section{Implementación} %Buraian
-\subsection{Arquitectura de la red}
-\begin{frame}{Arquitectura del Modelo CNN}
-\footnotesize
-\begin{table}
-\centering
-\begin{tabular}{l c r}
-\toprule
-\textbf{Capa (tipo)} & \textbf{Forma de salida} & \textbf{Parámetros} \\
-\midrule
-Input (Sequential) & $(64, 64, 3)$ & 0 \\
-
-Conv2D (64 filtros) & $(62, 62, 64)$ & 1,792 \\
-Batch Normalization & $(62, 62, 64)$ & 256 \\
-MaxPooling2D & $(31, 31, 64)$ & 0 \\
-
-Conv2D (128 filtros) & $(29, 29, 128)$ & 73,856 \\
-Batch Normalization & $(29, 29, 128)$ & 512 \\
-MaxPooling2D & $(14, 14, 128)$ & 0 \\
-
-Conv2D (256 filtros) & $(12, 12, 256)$ & 295,168 \\
-Batch Normalization & $(12, 12, 256)$ & 1,024 \\
-MaxPooling2D & $(6, 6, 256)$ & 0 \\
-\midrule
-
-\bottomrule
-\end{tabular}
-\end{table}
-\end{frame}
-
-\begin{frame}{Arquitectura del Modelo CNN II}
-\footnotesize
-\begin{table}
-\centering
-\begin{tabular}{l c r}
-\toprule
-\textbf{Capa (tipo)} & \textbf{Forma de salida} & \textbf{Parámetros} \\
-\midrule
-
-GlobalAveragePooling2D & (None, 256) & 0 \\
-Dense & (None, 256) & 65,792 \\
-Dropout & (None, 256) & 0 \\
-Dense (Output) & (None, 37) & 9,509 \\
-\midrule
-\textbf{Total params} &  & \textbf{447,909} \\
-Trainable params &  & 447,013 \\
-Non-trainable params &  & 896 \\
-\bottomrule
-\end{tabular}
-\end{table}
-\end{frame}
-
-
-
-%/////////////////////////////////////////////%
-\begin{frame}{Métricas asociadas}
-\begin{itemize}
-    \item Accuracy
-    \item Loss total
-    \item La incertidumbre predictiva se evalúa posteriormente mediante muestreo Monte Carlo
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Plataforma de entrenamiento Modelo CNN-SVR}
-\begin{itemize}
-    \item Hardware: CPU (i7-10700f)
-    \item Uso de GPU: Si (NVIDIA RTX 3070 8gb)
-    \item Lenguaje: Python
-    \item Entrenamiento realizado en entorno local
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Proceso de entrenamiento Modelo CNN-SVR}
-\begin{itemize}
-    \item Número máximo de épocas: 30
-    \item Tamaño de batch: 256
-    \item Optimizador: Adam
-    \item Tasa de aprendizaje inicial: $10^{-3}$
-    \item Estrategia de parada temprana:
-    \begin{itemize}
-        \item Monitor: \texttt{val\_loss}
-        \item Paciencia: 3 épocas
-    \end{itemize}
-\end{itemize}
-\end{frame}
-
-
-
-
-
-
-
 
 
 %/////////////////////////////////////////////%
 \section{Conclusiones} %Brian - Dylan
 \begin{frame}{Conclusiones}
     \begin{enumerate}
-        \item Se anadieron el doble de imagenes para ver mejoria en la convergencia, pero no hubo gran diferencia.
-        \item Si bien SVM/SVR son mejores para clasificar imagenes, la diferencia entre resultados fue muy poca.
+        \item Un modelo de PDE acopladas da mucha mas fiabilidad a las predicciones, ya que sigue mejor la fisica
+        \item Se pueden seguir agregando parametros y ecuaciones, aumentando la precision pero a la vez incrementando el costo computacional
     \end{enumerate}
 \end{frame}
 

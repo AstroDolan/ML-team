@@ -6,6 +6,4 @@
 \beamer@sectionintoc {4}{Variables y parámetros}{16}{0}{4}
 \beamer@sectionintoc {5}{Physics-Informed Neural Networks (PINNs)}{18}{0}{5}
 \beamer@subsectionintoc {5}{1}{Sistema acoplado de PDEs}{19}{0}{5}
-\beamer@sectionintoc {6}{Implementación}{28}{0}{6}
-\beamer@subsectionintoc {6}{1}{Arquitectura de la red}{29}{0}{6}
-\beamer@sectionintoc {7}{Conclusiones}{35}{0}{7}
+\beamer@sectionintoc {6}{Conclusiones}{28}{0}{6}
