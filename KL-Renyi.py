@@ -6,7 +6,7 @@ df = pd.read_csv('Egresos_Hospitalarios_2019.csv', encoding='latin-1', on_bad_li
 counts_2019 = df['GLOSA_REGION_RESIDENCIA'].value_counts().sort_index()
 
 ## Aqui existen las 16 regiones, ademas de Extranjero e Ignorada
-print(f'La cantidad de regiones es: {len(counts_2019)}. Ademas la cantidad de registros es: {counts_2019.sum()}')
+print(f'\n\nLa cantidad de regiones es: {len(counts_2019)}. Ademas la cantidad de registros es: {counts_2019.sum()}')
 
 #Obtenemos la frecuencia absoluta
 X = counts_2019.values / counts_2019.sum()
@@ -23,7 +23,7 @@ def kl_divergence(p, q):
     return np.sum(p * np.log(p / q))
 
 resultado_kl = kl_divergence(X, Y)
-print(f"Divergencia KL entre 2019 y Uniforme: {resultado_kl}")
+print(f"\nDivergencia KL entre 2019 y Uniforme: {resultado_kl}")
 
 ##Divergencia de Renyi
 def renyi_divergence(p, q, alpha):
@@ -51,5 +51,5 @@ for a in alphas:
     resultados.append({'Alpha': a, 'Renyi': d_renyi})
 
 df_renyi = pd.DataFrame(resultados)
-print("Divergencia de Rényi para X vs Uniforme (Y):")
+print(f"\nDivergencia de Rényi para X vs Uniforme (Y):")
 print(df_renyi)
