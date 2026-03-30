@@ -1,0 +1,76 @@
+\documentclass{article}
+%\usepackage[spanish]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{bookmark}
+
+\title{Physics-Informed Neural Network for Carbonyl Sulfide Molecule Potential Energy Surfaces Predictions With Variables Hyperparameters}
+
+\author[1]{Dylan Jara Carvajal}
+
+\affil[1]{Departamento de Matemática y Ciencia de la Computación\\Universidad de Santiago de Chile}
+
+\date{11 de diciembre de 2024}
+\onehalfspacing
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    En este documento se guardaran los apuntes del curso de \textit{IBM Introduction to Machine Learning} de Coursera
+\end{abstract}
+
+
+\section{Introducción} Se creó una red neuronal para predecir el potencial de energía de superficie de una molécula de OCS. Para probar el rendimiento de las Physics Informed Neural Networks (PINN), se creó una función de perdida custom utilizando el morse asociado a un enlace de la molécula. Esta función permite penalizar aún más el aprendizaje de la red y hacer que esta converga en base al morse dado.
+
+\section{Resultados y Análisis}
+
+Se realizaron 5 pruebas con distintas dimensiones listadas abajo. 
+\begin{enumerate}
+    \item [1] $(75,1505,\{1,dim-1\})$
+    \item [2] $(105,7505,\{1,5\})$
+    \item [3] $(155,8005,\{1,dim-1\})$
+    \item [4] $(205,10507,\{1,dim-1\})$
+    \item [5] $(305,46513,\{1,dim-1\})$
+\end{enumerate}
+
+Para estos experimentos, se modificó el comando de ejecución de perf, siendo este de la siguiente manera
+$$perf\text{ }stat\text{ }-e\text{ }task-clock,cycles, instructions,power/energy-pkg/\text{ }./maze$$
+Donde se consideran los siguientes eventos como resultantes:
+\begin{enumerate}
+    \item \textbf{msec task-clock:} tiempo que demora la CPU exclusivamente en ejecutar el programa. 
+    \item \textbf{seconds time elapsed:} es el tiempo total demorado en ejecutar el código, de principio a fin. Se puede interpretar también como el tiempo de reloj de pared o lo que ve el usuario.
+    \item \textbf{seconds user:} es el tiempo utilizado accesos a memoria o cálculos matemáticos
+    \item \textbf{seconds sys:} mide el tiempo que demora en llamadas al kernel, asignaciones de memoria, entre otros procesos similares.
+\end{enumerate}
+
+Para el caso de la matriz de dimensión 75. Se consideró un size de valor 1505, el cuál es un poco más grande que el cuarto de su dimensión. La ejecución de este código fue exitosa y tomó poco tiempo. La figura 5 muestra los resultados de la ejecución
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=14cm, height=5cm]{./Pics/DSC05457.JPG}
+    \caption{Perf stat mazepath.exe para $(75,1505,\{1,dim-1\})$}
+\end{figure}
+
+Siguiendo con el caso 2 y 3, usamos matrices cuadradas de dimensión 105. Para el primer intento tenemos la terna $(105,8005,\{1,dim-1\})$. El size de 8005 es un valor bastante elevado, y es el primer valor que funcionó al ejecutarse mientras se reducían los números desde 11.025 ($N^2$). 
+Esta ejecución tuvo una duración aproximada de 23 horas, las cuales el programa se mantenía imprimiendo caminos hacia el centro. Es de considerar que un camino puede contener 8005, por lo que las impresiones eran enormes. Una vez pasadas las 23 horas, Code se cerró abruptamente, dejando una imagen directa al escritorio. Al cerrarse el entorno de programación no se obtuvo ningún tipo de resultado más que el tiempo de reloj aproximado 
+(hora desde que se empezó la ejecución hasta la hora de fallo del día siguiente). Esto provocó perder todo avance que esta versión del programa pudo habernos entregado. \cite{Vallance2024}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=14cm, height=5cm]{./Pics/DSC05457.JPG}
+    \caption{Perf stat mazepath.exe para $(105,7505,\{1,5\})$}
+\end{figure}
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
+
