@@ -1,0 +1,11 @@
+ \Title{\titulo\ \subtitulo}
+ \Subject{\programa}
+ \Author{\autor}
+ \Language{\XMPlang}
+ \Publisher{Universidad de Santiago de Chile}
+ \Keywords{\palabrasClave}
+ \PublicationType{Text}
+ \CreatorTool{LaTeX}
+ \Copyright{\licenciaTipo}
+ \CopyrightURL{\licenciaURL}
+ \Copyrighted{True}

@@ -1,0 +1,68 @@
+\chapter{Título del segundo capítulo}%
+\label{cap:capitulo2}%
+
+Utilice \lstinline!\chapter! para agregar nuevos capítulos, de este modo se numerarán en forma correlativa y la tabla de contenido los capturará correctamente.
+
+Utilice tablas para sintetizar datos. Estas deberían quedar referenciadas en un índice en las páginas iniciales, al igual que las figuras, al colocarles una etiqueta con \lstinline!\label!. \parencite{MR1487846}\par%
+
+\medskip%
+
+\begin{table}[!h]
+	\Centering
+	\caption{Resultados partículas exóticas}%
+	\label{tab:tabla2-1}%
+	\begin{tabular}{ll}
+		\textbf{Parámetro del experimento} & \textbf{Valor obtenido} \\ \hline
+		Energía de colisión                & 14 TeV                  \\ \hline
+		Partículas detectadas              & Masa de 200 GeV/c²      \\ \hline
+		Sección transversal                & 0.01 pb                
+	\end{tabular}
+\end{table}%
+
+Entregue independencia a párrafos que contienen teoremas o fórmulas matemáticas, insertando las ecuaciones de este modo:\par%
+
+\vspace{10mm}
+\begin{theorem}[Convergencia Monótona]
+\label{thm:conv-mon}
+	Sea $\{f_n\}$ una sucesión de funciones medibles tales que:
+	1. $f_n(x) \geq 0$ para todo $x$ y todo $n$.
+	2. $f_n(x)$ es monótona creciente, es decir, $f_n(x) \leq f_{n+1}(x)$.
+	3. Existe una función límite $f(x) = \lim_{n \to \infty} f_n(x)$.
+	
+	Entonces, se cumple que:
+	\begin{equation}
+		\lim_{n \to \infty} \int f_n(x) \,dx = \int \lim_{n \to \infty} f_n(x) \,dx.
+	\end{equation}
+\end{theorem}%
+
+\begin{proof}
+	Dado que $\{f_n\}$ es creciente, tenemos:
+	\begin{equation}
+	    f_1(x) \leq f_2(x) \leq \dots \leq f(x).
+	\end{equation}
+
+	Por la propiedad de la integral, la sucesión $I_n = \int f_n(x) \,dx$ es monótona creciente y acotada, por lo que tiene un límite finito:
+	\begin{equation}
+	    \lim_{n \to \infty} I_n = I, \quad \text{donde } I = \int f(x) \,dx.
+	\end{equation}
+
+Aplicando la convergencia puntual de funciones medibles:
+\begin{equation}
+    \lim_{n \to \infty} \int f_n(x) \,dx = \int \lim_{n \to \infty} f_n(x) \,dx.
+\end{equation}
+
+Esto completa la demostración. \qed
+\end{proof}%
+\vspace{10mm}
+
+Agregue fragmentos de código con \lstinline!\begin{lstlisting}!.
+
+\begin{lstlisting}[language=Python,caption={Hello, World!},label={lst:hello}]
+def main():
+	print("Hello, World!")
+
+if __name__ == "__main__":
+	main()
+\end{lstlisting}
+
+Otra cita bibliográfica interesante, a modo de ejemplo. \parencite{MR1823409}%

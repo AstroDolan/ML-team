@@ -1,0 +1,62 @@
+\chapter{Título del primer capítulo}%
+\label{cap:capitulo1}%
+
+
+Los capítulos son las divisiones temáticas principales que estructuran el contenido de su trabajo. Siempre cite las fuentes de las cuales obtuvo la información. \cite{MR4811139}\par%
+
+Utilice recursos paratextuales como figuras (ver \autoref{fig:imagen1-1}), o notas al pie de página.\footnote{Use notas al pie de página solo de ser necesario.} para dirigir la atención del lector a datos relevantes.\par%
+
+Para gráficos profesionales, prefiera los entornos pgfplots o gnuplot.\par%
+
+\vspace{10mm}%
+\begin{figure}[!h]
+    \centering
+        \begin{tikzpicture}[
+                declare function={
+                    f(\x) = 0.05*(\x-2)*(\x-4)*(\x+5);
+                }
+            ]
+            \begin{axis}[
+                xmin=-5, xmax=6,
+                ymin=-1, ymax=4,
+                axis line style={thin},
+                axis lines=middle,
+                axis equal image,
+                xtick={1},
+                ytick={f(1)},
+                xticklabel={$x$},
+                yticklabel={$f(x)$}
+            ]
+                \addplot[thick, smooth, black, domain=-4.5:5.5] {f(x)};
+                \draw[dashed] (1, 0) -- (1, {f(1)});
+                \draw[dashed] (0, {f(1)}) -- (1, {f(1)});
+            \end{axis}
+        \end{tikzpicture}
+    \caption{Resultado preliminar}%
+    \label{fig:enter-label}
+\end{figure}%
+\vspace{10mm}%
+
+Evite terminar un texto con una figura o tabla, agregue un párrafo o una línea final donde se analiza o comenta la información presentada.\par%
+
+\section{Una sección dentro de un capítulo}%
+\label{sec:seccion1-1}%
+Las secciones dentro de un capítulo ayudan a mantener una buena organización del contenido.\par%
+
+\section{Otra sección dentro de un capítulo}%
+\label{sec:seccion1-2}%
+Esta es la sección 1.2, es decir, la segunda del primer capítulo.\par%
+
+Una figura de ejemplo, señalando su procedencia con \lstinline!\fuente!:\par%
+
+\vspace{10mm}%
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{telescope-schematic.png}
+    \caption{Esquema del telescopio}
+    \label{fig:imagen1-1}%
+    \fuente{Michael Schmid. CC BY-SA 2.0 AT}
+\end{figure}%
+\vspace{10mm}%
+
+Los capítulos deberían terminar con un salto de página, el cuál ya está incorporado en el comando \lstinline!\include! en \href{main}{main.tex}.\par%

@@ -1,0 +1,72 @@
+\documentclass[
+	proyecto,
+	abstract,
+	dedicatoria,
+	agradecimientos,
+	glosario,
+	anexos,
+	apendices
+]{tesisUsach}
+
+% --------------------
+% PÁGINAS PRELIMINARES
+% --------------------
+
+\begin{document}
+
+% Proyecto
+\proyecto{%
+Esta investigación se ha realizado \\ bajo el proyecto XXXXXXXX – 00000000%
+}
+
+% Resumen
+\include{Secciones/a1_Resumen}
+
+% Abstract
+\incAbstract%
+ 
+% Dedicatoria
+\dedicatoria{%
+Una dedicatoria.%
+}
+
+% Agradecimientos
+\agradecimientos{%
+Reconocimiento a personas significativas durante el proceso de investigación.%
+}
+
+% Tabla de contenido
+\newpage%
+\tableofcontents%
+\clearpage%
+
+% Índice de tablas
+\newpage%
+\listoftables%
+\clearpage%
+
+% Índice de figuras
+\newpage%
+\listoffigures%
+\clearpage%
+
+% -----------------
+% PÁGINAS CENTRALES
+% -----------------
+
+% Introducción
+\pagenumbering{arabic}%
+\include{Capitulos/00_Introduccion}
+
+% Capítulos
+\include{Capitulos/01_Capitulo1}
+\include{Capitulos/02_Capitulo2}
+
+% Conclusiones
+\include{Capitulos/0a_Conclusiones}
+
+% ---------------
+% PÁGINAS FINALES
+% ---------------
+
+\end{document}
