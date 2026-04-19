@@ -1,0 +1,329 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{MR1823409}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=53186c2024f0201901a2d26db650b741}{%
+           family={Agricola},
+           familyi={A\bibinitperiod},
+           given={Ilka},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=adfb61e4b551f8656bd7f8c45a7b241a}{%
+           family={Friedrich},
+           familyi={F\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Friedr. Vieweg \& Sohn, Braunschweig}%
+      }
+      \strng{namehash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{fullhash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{fullhashraw}{8fe56639d24a44be02f29893daa40e31}
+      \strng{bibnamehash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{authorbibnamehash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{authornamehash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{authorfullhash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{authorfullhashraw}{8fe56639d24a44be02f29893daa40e31}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3-528-03154-9}
+      \field{note}{Differentialformen in Analysis, Geometrie und Physik. [Differential forms in analysis, geometry and physics]}
+      \field{title}{Globale {A}nalysis}
+      \field{year}{2001}
+      \field{pages}{x+283}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1007/978-3-322-92903-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-322-92903-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-322-92903-7
+      \endverb
+    \endentry
+    \entry{MR4811139}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9429d67921c2c472b249e6c90eda35a4}{%
+           family={Lyu},
+           familyi={L\bibinitperiod},
+           given={Zhiyuan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b8053d660f461e7b84a3ceb2c841d28}{%
+           family={Lui},
+           familyi={L\bibinitperiod},
+           given={Lok\bibnamedelima Ming},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=108e2e7ee0f635c31bce5efef481aa0b}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Gary\bibnamedelimb P.\bibnamedelimi T.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{936fef03cd439d249e29b0b460daa5c3}
+      \strng{fullhash}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{fullhashraw}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{bibnamehash}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{authorbibnamehash}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{authornamehash}{936fef03cd439d249e29b0b460daa5c3}
+      \strng{authorfullhash}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{authorfullhashraw}{dccbb54f9c75c3d7a23838a61290e337}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1936-4954}
+      \field{journaltitle}{SIAM J. Imaging Sci.}
+      \field{number}{4}
+      \field{title}{Spherical density-equalizing map for genus-0 closed surfaces}
+      \field{volume}{17}
+      \field{year}{2024}
+      \field{pages}{2110\bibrangedash 2141}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1137/24M1633911
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1137/24M1633911
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1137/24M1633911
+      \endverb
+    \endentry
+    \entry{MR1487846}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ba14dc71f074b9b4c7fa916d23aea011}{%
+           family={Naulin},
+           familyi={N\bibinitperiod},
+           given={Raúl},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3f1de5da207feb9acf407e4b43b4b0f}{%
+           family={Pinto},
+           familyi={P\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f848fc1deb426d071a375f688e97a704}
+      \strng{fullhash}{f848fc1deb426d071a375f688e97a704}
+      \strng{fullhashraw}{f848fc1deb426d071a375f688e97a704}
+      \strng{bibnamehash}{f848fc1deb426d071a375f688e97a704}
+      \strng{authorbibnamehash}{f848fc1deb426d071a375f688e97a704}
+      \strng{authornamehash}{f848fc1deb426d071a375f688e97a704}
+      \strng{authorfullhash}{f848fc1deb426d071a375f688e97a704}
+      \strng{authorfullhashraw}{f848fc1deb426d071a375f688e97a704}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0362-546X,1873-5215}
+      \field{journaltitle}{Nonlinear Anal.}
+      \field{number}{5-6}
+      \field{title}{Admissible perturbations of exponential dichotomy roughness}
+      \field{volume}{31}
+      \field{year}{1998}
+      \field{pages}{559\bibrangedash 571}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/S0362-546X(97)00423-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/S0362-546X(97)00423-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/S0362-546X(97)00423-9
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{MR1823409}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=53186c2024f0201901a2d26db650b741}{%
+           family={Agricola},
+           familyi={A\bibinitperiod},
+           given={Ilka},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=adfb61e4b551f8656bd7f8c45a7b241a}{%
+           family={Friedrich},
+           familyi={F\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Friedr. Vieweg \& Sohn, Braunschweig}%
+      }
+      \strng{namehash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{fullhash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{fullhashraw}{8fe56639d24a44be02f29893daa40e31}
+      \strng{bibnamehash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{authorbibnamehash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{authornamehash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{authorfullhash}{8fe56639d24a44be02f29893daa40e31}
+      \strng{authorfullhashraw}{8fe56639d24a44be02f29893daa40e31}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3-528-03154-9}
+      \field{note}{Differentialformen in Analysis, Geometrie und Physik. [Differential forms in analysis, geometry and physics]}
+      \field{title}{Globale {A}nalysis}
+      \field{year}{2001}
+      \field{pages}{x+283}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1007/978-3-322-92903-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-322-92903-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-322-92903-7
+      \endverb
+    \endentry
+    \entry{MR4811139}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9429d67921c2c472b249e6c90eda35a4}{%
+           family={Lyu},
+           familyi={L\bibinitperiod},
+           given={Zhiyuan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b8053d660f461e7b84a3ceb2c841d28}{%
+           family={Lui},
+           familyi={L\bibinitperiod},
+           given={Lok\bibnamedelima Ming},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=108e2e7ee0f635c31bce5efef481aa0b}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Gary\bibnamedelimb P.\bibnamedelimi T.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{936fef03cd439d249e29b0b460daa5c3}
+      \strng{fullhash}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{fullhashraw}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{bibnamehash}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{authorbibnamehash}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{authornamehash}{936fef03cd439d249e29b0b460daa5c3}
+      \strng{authorfullhash}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{authorfullhashraw}{dccbb54f9c75c3d7a23838a61290e337}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1936-4954}
+      \field{journaltitle}{SIAM J. Imaging Sci.}
+      \field{number}{4}
+      \field{title}{Spherical density-equalizing map for genus-0 closed surfaces}
+      \field{volume}{17}
+      \field{year}{2024}
+      \field{pages}{2110\bibrangedash 2141}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1137/24M1633911
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1137/24M1633911
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1137/24M1633911
+      \endverb
+    \endentry
+    \entry{MR1487846}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ba14dc71f074b9b4c7fa916d23aea011}{%
+           family={Naulin},
+           familyi={N\bibinitperiod},
+           given={Raúl},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3f1de5da207feb9acf407e4b43b4b0f}{%
+           family={Pinto},
+           familyi={P\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f848fc1deb426d071a375f688e97a704}
+      \strng{fullhash}{f848fc1deb426d071a375f688e97a704}
+      \strng{fullhashraw}{f848fc1deb426d071a375f688e97a704}
+      \strng{bibnamehash}{f848fc1deb426d071a375f688e97a704}
+      \strng{authorbibnamehash}{f848fc1deb426d071a375f688e97a704}
+      \strng{authornamehash}{f848fc1deb426d071a375f688e97a704}
+      \strng{authorfullhash}{f848fc1deb426d071a375f688e97a704}
+      \strng{authorfullhashraw}{f848fc1deb426d071a375f688e97a704}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0362-546X,1873-5215}
+      \field{journaltitle}{Nonlinear Anal.}
+      \field{number}{5-6}
+      \field{title}{Admissible perturbations of exponential dichotomy roughness}
+      \field{volume}{31}
+      \field{year}{1998}
+      \field{pages}{559\bibrangedash 571}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/S0362-546X(97)00423-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/S0362-546X(97)00423-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/S0362-546X(97)00423-9
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

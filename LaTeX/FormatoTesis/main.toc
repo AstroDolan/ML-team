@@ -1,0 +1,20 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Introducción}{1}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Título del primer capítulo}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Una sección dentro de un capítulo}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Otra sección dentro de un capítulo}{3}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Título del segundo capítulo}{4}{chapter.2}%
+\contentsline {chapter}{Conclusiones}{6}{chapter*.9}%
+\contentsline {chapter}{Glosario}{7}{chapter*.10}%
+\contentsline {chapter}{Referencias}{8}{chapter*.11}%
+\setcounter {tocdepth}{0}
+\contentsline {chapter}{Anexos}{9}{section*.12}%
+\contentsline {section}{\numberline {Anexo~1:}Primer anexo}{9}{section.1.Alph0.1}%
+\contentsline {section}{\numberline {Anexo~2:}Segundo anexo}{9}{section.1.Alph0.2}%
+\setcounter {tocdepth}{3}
+\setcounter {tocdepth}{0}
+\contentsline {chapter}{Apéndices}{10}{section*.14}%
+\contentsline {section}{\numberline {Apéndice~1:}Primer apéndice}{10}{section.2.Alph0.1}%
+\contentsline {section}{\numberline {Apéndice~2:}Segundo apéndice}{10}{section.2.Alph0.2}%
+\setcounter {tocdepth}{3}

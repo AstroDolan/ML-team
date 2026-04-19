@@ -1,8 +1,62 @@
 {
-    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "**/*.COBOL*{,/*}": "cobol",
+        "**/*.COB*{,/*}": "cobol",
+        "**/*.COBCOPY*{,/*}": "cobol",
+        "**/*.COPYBOOK*{,/*}": "cobol",
+        "**/*.COPY*{,/*}": "cobol",
+        "**/*.PL1*{,/*}": "pl1",
+        "**/*.PLI*{,/*}": "pl1",
+        "**/*.INC*{,/*}": "pl1",
+        "**/*.INCLUDE*{,/*}": "pl1",
+        "**/*.JCL*{,/*}": "jcl",
+        "**/*.CNTL*{,/*}": "jcl",
+        "**/*.PROC*{,/*}": "jcl",
+        "**/*.ASM*{,/*}": "hlasm",
+        "**/*.ASSEMBLE*{,/*}": "hlasm",
+        "**/*.HLASM*{,/*}": "hlasm",
+        "**/*.HLA*{,/*}": "hlasm",
+        "**/*.MACLIB*{,/*}": "hlasm",
+        "**/*.DBD*{,/*}": "hlasm",
+        "**/*.MFS*{,/*}": "hlasm",
+        "**/*.PCB*{,/*}": "hlasm",
+        "**/*.EXEC*{,/*}": "rexx",
+        "**/*.REXX*{,/*}": "rexx",
+        "**/*.REXXINC*{,/*}": "rexx",
+        "*.rex": "rexx",
+        "*.embeddedhtml": "html"
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/zapp.json"
+            ],
+            "url": "file:///home/saintsaens/.vscode/extensions/ibm.zopeneditor-5.4.1/resources/zapp-schema-1.4.0.json"
+        },
+        {
+            "fileMatch": [
+                "/zcodeformat.json"
+            ],
+            "url": "file:///home/saintsaens/.vscode/extensions/ibm.zopeneditor-5.4.1/resources/zcodeformat-schema-0.0.1.json"
+        }
+    ],
+    "editor.fontFamily": "'Caskaydia Cove Nerd Font','Droid Sans Mono', 'monospace', monospace, 'Font Awesome 6 Free'",
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
+    "jupyter.askForKernelRestart": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+
     "latex-workshop.latex.recipes": [
         {
-            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "name": "pdflatex -> biber -> pdflatex * 2",
+            "tools": [
+                "pdflatex",
+                "biber",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex * 2",
             "tools": [
                 "pdflatex",
                 "bibtex",
@@ -12,22 +66,42 @@
         }
     ],
     "latex-workshop.latex.tools": [
-        {
-            "name": "pdflatex",
-            "command": "pdflatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "bibtex",
-            "command": "bibtex",
-            "args": [
-                "%DOCFILE%"
-            ]
-        }
-    ]
+            {
+                "name": "pdflatex",
+                "command": "pdflatex",
+                "args": [
+                    "-interaction=nonstopmode",
+                    "-synctex=1",
+                    "-file-line-error",
+                    "%DOC%"
+                ]
+            },
+            {
+                "name": "biber",
+                "command": "biber",
+                "args": [
+                    "%DOCFILE%"
+                ]
+            },
+
+            {
+                "name": "bibtex",
+                "command": "bibtex",
+                "args": [
+                    "%DOCFILE%"
+                ]
+            }
+        ],
+        
+    "latex-workshop.latex.recipe.default": "pdflatex -> biber -> pdflatex * 2",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "python.defaultInterpreterPath": "C:\\GalaxyDL\\Scripts\\python.exe",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "editor.accessibilitySupport": "off",
+    "workbench.experimental.useCustomDocumentModel": false,
+    "latex-workshop.view.pdf.viewer": "tab"
 }
