@@ -1,0 +1,319 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Cai%
+, Mao%
+, Wang%
+, Yin%
+\BCBL {}\ \BBA {} Karniadakis%
+}{%
+Cai%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+cai2021physics}
+\APACinsertmetastar {%
+cai2021physics}%
+\begin{APACrefauthors}%
+Cai, S.%
+, Mao, Z.%
+, Wang, Z.%
+, Yin, M.%
+\BCBL {}\ \BBA {} Karniadakis, G\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Physics-informed neural networks (PINNs) for fluid mechanics: A review} {Physics-informed neural networks (pinns) for fluid mechanics: A review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Acta Mechanica Sinica}{37}{12}{1727--1738}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+George%
+, Barnhart%
+\BCBL {}\ \BBA {} Iverson%
+}{%
+George%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+george2025d}
+\APACinsertmetastar {%
+george2025d}%
+\begin{APACrefauthors}%
+George, D\BPBI L.%
+, Barnhart, K\BPBI R.%
+\BCBL {}\ \BBA {} Iverson, R\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {D-Claw-A library for the simulation of granular-fluid flows, v1. 0.0} {D-claw-a library for the simulation of granular-fluid flows, v1. 0.0}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{US Geological Survey (USGS) Software}{}{}{34}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Green%
+}{%
+Green%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+phdthesis}
+\APACinsertmetastar {%
+phdthesis}%
+\begin{APACrefauthors}%
+Green, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2019}.
+\unskip\
+\newblock
+\APACrefbtitle {Finite Element Modeling of a Suction Caisson Subject to Monotonic Tensile Loading} {Finite element modeling of a suction caisson subject to monotonic tensile loading}\ \APACtypeAddressSchool {\BUPhD}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Krishnapriyan%
+, Gholami%
+, Zhe%
+, Kirby%
+\BCBL {}\ \BBA {} Mahoney%
+}{%
+Krishnapriyan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+krishnapriyan2021characterizing}
+\APACinsertmetastar {%
+krishnapriyan2021characterizing}%
+\begin{APACrefauthors}%
+Krishnapriyan, A.%
+, Gholami, A.%
+, Zhe, S.%
+, Kirby, R.%
+\BCBL {}\ \BBA {} Mahoney, M\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Characterizing possible failure modes in physics-informed neural networks} {Characterizing possible failure modes in physics-informed neural networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Advances in neural information processing systems}{34}{}{26548--26560}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Linka%
+\ \protect \BOthers {.}}{%
+Linka%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+linka2022bayesian}
+\APACinsertmetastar {%
+linka2022bayesian}%
+\begin{APACrefauthors}%
+Linka, K.%
+, Sch{\"a}fer, A.%
+, Meng, X.%
+, Zou, Z.%
+, Karniadakis, G\BPBI E.%
+\BCBL {}\ \BBA {} Kuhl, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bayesian physics informed neural networks for real-world nonlinear dynamical systems} {Bayesian physics informed neural networks for real-world nonlinear dynamical systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Methods in Applied Mechanics and Engineering}{402}{}{115346}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ortiz%
+}{%
+Ortiz%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+ortiz1996riesgo}
+\APACinsertmetastar {%
+ortiz1996riesgo}%
+\begin{APACrefauthors}%
+Ortiz, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1996}.
+\newblock
+\APACrefbtitle {Riesgo volc{\'a}nico} {Riesgo volc{\'a}nico}\ (\BVOL~5).
+\newblock
+\APACaddressPublisher{}{Servicio de Publicaciones, Excmo. Cabildo de Lanzarote}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Porfido%
+}{%
+Porfido%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+porfidointroduccion}
+\APACinsertmetastar {%
+porfidointroduccion}%
+\begin{APACrefauthors}%
+Porfido, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Introduccion a los mapas de peligrosidad volcanica} {Introduccion a los mapas de peligrosidad volcanica}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Raissi%
+, Perdikaris%
+, Ahmadi%
+\BCBL {}\ \BBA {} Karniadakis%
+}{%
+Raissi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+raissi2024physics}
+\APACinsertmetastar {%
+raissi2024physics}%
+\begin{APACrefauthors}%
+Raissi, M.%
+, Perdikaris, P.%
+, Ahmadi, N.%
+\BCBL {}\ \BBA {} Karniadakis, G\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Physics-informed neural networks and extensions} {Physics-informed neural networks and extensions}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:2408.16806}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Raissi%
+, Perdikaris%
+\BCBL {}\ \BBA {} Karniadakis%
+}{%
+Raissi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+RAISSI2019686}
+\APACinsertmetastar {%
+RAISSI2019686}%
+\begin{APACrefauthors}%
+Raissi, M.%
+, Perdikaris, P.%
+\BCBL {}\ \BBA {} Karniadakis, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations} {Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Computational Physics}{378}{}{686-707}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0021999118307125} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.jcp.2018.10.045} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schilling%
+, Griswold%
+\BCBL {}\ \BBA {} Iverson%
+}{%
+Schilling%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+schilling2008using}
+\APACinsertmetastar {%
+schilling2008using}%
+\begin{APACrefauthors}%
+Schilling, S.%
+, Griswold, J.%
+\BCBL {}\ \BBA {} Iverson, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Using LAHARZ to Forecast Inundation from lahars, debris flows, and rock avalanches: Confidence limits on prediction} {Using laharz to forecast inundation from lahars, debris flows, and rock avalanches: Confidence limits on prediction}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {AGU Fall Meeting Abstracts} {Agu fall meeting abstracts}\ (\BVOL\ 2008, \BPGS\ H51F--0891).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vallance%
+}{%
+Vallance%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+Vallance2024}
+\APACinsertmetastar {%
+Vallance2024}%
+\begin{APACrefauthors}%
+Vallance, J\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Lahars: Origins, Behavior and Hazards} {Lahars: Origins, behavior and hazards}.{\BBCQ}
+\newblock
+\BIn{} M.~Jakob, S.~McDougall\BCBL {}\ \BBA {} P.~Santi\ (\BEDS), \APACrefbtitle {Advances in Debris-flow Science and Practice} {Advances in debris-flow science and practice}\ (\BPGS\ 347--382).
+\newblock
+\APACaddressPublisher{Cham}{Springer International Publishing}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/978-3-031-48691-3_12} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-031-48691-3_12} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Woodhouse%
+, Hogg%
+\BCBL {}\ \BBA {} Phillips%
+}{%
+Woodhouse%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+woodhouseshallow}
+\APACinsertmetastar {%
+woodhouseshallow}%
+\begin{APACrefauthors}%
+Woodhouse, M.%
+, Hogg, A.%
+\BCBL {}\ \BBA {} Phillips, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A shallow-layer model for lahars: formulation and phenomenology} {A shallow-layer model for lahars: formulation and phenomenology}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{JGR-Earth Surface}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

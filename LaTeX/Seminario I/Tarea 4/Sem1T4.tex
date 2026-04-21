@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+%\usepackage[spanish]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{subcaption}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{bookmark}
+
+
+% Cargar apacite después de babel para citas autor-año correctas
+\usepackage[notocbib]{apacite} 
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
+\usepackage{graphicx,listings,stackengine}
+% Manejo robusto de nombres de archivo con espacios y rutas de imágenes
+\usepackage{grffile}
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+\title{Modelamiento Estocástico de Lahares mediante B-PINN: Un Enfoque de Redes Neuronales Bayesianas Informadas por la Física para la Predicción de Sistemas Acoplados}
+
+\author[1]{Dylan Jara Carvajal}
+\author[2]{Profesor guía a definir}
+\author[3]{Johan Triana (Profesor Co-guía)}
+\author[4]{Yuvineza Gomez-Leyton (Profesor informante)}
+
+\affil[1,2]{Departamento de Matemática y Ciencia de la Computación\\Universidad de Santiago de Chile}
+\affil[3,4]{Universidad Católica del Norte}
+
+\date{\today}
+\onehalfspacing
+\begin{document}
+\maketitle
+  
+\begin{abstract}
+    Se realizó un acople entre una Physics-Informed Neural Network y una red neuronal bayesiana para la predicción de la morfodinámica de un lahar de un volcán arbitrario del sur de Chile.   
+\end{abstract}
+\keywords{Physics-Informed Neural Network, Bayesian Neural Architectures, Partial diferential equations}
+
+\section{Objetivos de la Tesis}
+\subsection{Objetivo General}
+Se crea una red neuronal informada por la física acoplada con una red neuronal bayesiana para resolver un sistema de 6 ecuaciones diferenciales parciales que predicen la morfodinamica de un lahar en un volcan activo del sur de Chile
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+    \item Se debe formar un sistema de ecuaciones compuesto con, por lo bajo, 6 ecuaciones diferenciales parciales que modelen la morfodinámica de un lahar arbitrario de un volcán de Chile.
+    \item Se construye una red neuronal informada por la física usando el sistema de PDEs y otros parámetros geológicos que logre predecir rigurosamente el comportamiento real de un flujo de sedimento. 
+    \item Se acopla una red neuronal bayesiana a la PINN de manera que los pesos aleatorios de la nueva red usen distribuciones de probabilidad y se encuentre la distribución posterior usando métodos de Monte Carlo Hamiltoniano o inferencia variacional para reducir los errores físicos.
+    \item Se debe lograr predecir la morfodinámica de manera extremadamente realista y acorde a la física para poder exportar un mapa de peligro volcánico que entregue datos de evacuación según el riesgo calculado por la red neuronal.   
+\end{enumerate}
+\nocite{*} % Esto evita el error "no \citation commands" al incluir todo el .bib
+\bibliographystyle{apacite} % O "plain", pero apacite es mejor para ciencias
+\bibliography{bibliography} % Asegúrate de que el archivo se llame referencias.bib
+
+\end{document}
