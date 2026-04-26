@@ -103,5 +103,6 @@
     ],
     "editor.accessibilitySupport": "off",
     "workbench.experimental.useCustomDocumentModel": false,
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "remote.autoForwardPortsFallback": 0
 }
