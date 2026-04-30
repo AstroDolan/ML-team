@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  30 APR 2026 04:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  30 APR 2026 04:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -819,9 +819,15 @@ Overfull \hbox (21.36525pt too wide) in paragraph at lines 93--107
  [][] 
  []
 
-(./Sem1T4.bbl [4
+[4
 
-]) [5] (./Sem1T4.aux)
+]
+<carta_gantt_tesis.png, id=38, 867.24pt x 578.16pt>
+File: carta_gantt_tesis.png Graphic file (type png)
+<use carta_gantt_tesis.png>
+Package pdftex.def Info: carta_gantt_tesis.png  used on input line 112.
+(pdftex.def)             Requested size: 433.62001pt x 289.07928pt.
+ (./Sem1T4.bbl [5 <./carta_gantt_tesis.png>]) [6] (./Sem1T4.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
@@ -832,18 +838,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26789 strings out of 467537
- 504362 string characters out of 5423703
- 909739 words of memory out of 5000000
- 55252 multiletter control sequences out of 15000+600000
+ 26803 strings out of 467537
+ 504683 string characters out of 5423703
+ 906837 words of memory out of 5000000
+ 55264 multiletter control sequences out of 15000+600000
  675268 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,11n,108p,529b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvbi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on Sem1T4.pdf (5 pages, 105685 bytes).
+Output written on Sem1T4.pdf (6 pages, 437537 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 29 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 31 named destinations out of 1000 (max. 500000)
+ 50 words of extra memory for PDF output out of 10000 (max. 10000000)
 
