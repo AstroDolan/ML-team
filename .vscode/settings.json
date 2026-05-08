@@ -93,7 +93,7 @@
             }
         ],
         
-    "latex-workshop.latex.recipe.default": "pdflatex -> biber -> pdflatex * 2",
+    "latex-workshop.latex.recipe.default": "pdflatex -> bibtex -> pdflatex * 2",
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "python.defaultInterpreterPath": "C:\\GalaxyDL\\Scripts\\python.exe",
