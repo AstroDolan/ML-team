@@ -1,5 +1,5 @@
-\documentclass[12pt]{article}
-%\usepackage[spanish]{babel} 
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel} 
 \usepackage[utf8]{inputenc}
 \usepackage{tgheros}
 \renewcommand{\familydefault}{\sfdefault}
@@ -10,18 +10,22 @@
 \graphicspath{ {./figures/} }
 \usepackage{subcaption}
 \usepackage{blindtext}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{bookmark}
 
 
 % Cargar apacite después de babel para citas autor-año correctas
-\usepackage[notocbib]{apacite} 
+%\usepackage[notocbib]{apacite} 
 
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
-\usepackage{graphicx,listings,stackengine}
+\usepackage{graphicx,listings,stackengine,amssymb}
 % Manejo robusto de nombres de archivo con espacios y rutas de imágenes
 \usepackage{grffile}
+
+\renewcommand{\Authfont}{\normalsize} % Autores en tamaño normal
+\renewcommand{\Affilfont}{\footnotesize\itshape} % Afiliaciones chicas y en cursiva
+\renewcommand{\Authands}{ y } % Cambia el "and" por "y" en español
 
 % Keywords command
 \providecommand{\keywords}[1]
@@ -30,16 +34,17 @@
   \textbf{\textit{Keywords---}} #1
 }
 
-\title{Modelamiento de Lahares Mediante Redes Neuronales Informadas por la Física (PINNs): Aplicacion al Evento Eruptivo de 2015 del Volcán Villarica, Chile}
+\title{Modelamiento de Lahares mediante Redes Neuronales Informadas por la Física (PINNs): Aplicación al evento eruptivo de 2015 del volcán Villarica, Chile}
 
 \author[1]{Dylan Jara Carvajal}
-\author[2]{Felipe Herrera (Profesor Guía)}
-\author[3]{Johan Triana (Profesor Co-guía)}
-\author[4]{Yuvineza Gomez-Leyton (Profesor informante)}
-\author[5]{Francisco Plaza-Vega (Profesor informante)}
+\author[3]{Felipe Herrera (Profesor Guía)}
+\author[2]{Johan Triana (Profesor Co-guía)}
+\author[2]{Yuvineza Gómez-Leyton (Profesor informante)}
+\author[1]{Francisco Plaza-Vega (Profesor informante)}
 
-\affil[1,2,5]{Departamento de Matemática y Ciencia de la Computación\\Universidad de Santiago de Chile}
-\affil[3,4]{Departamento de Física\\Universidad Católica del Norte}
+\affil[1]{Departamento de Matemática y Ciencia de la Computación\\Universidad de Santiago de Chile}
+\affil[2]{Departamento de Física\\Universidad Católica del Norte}
+\affil[3]{Departamento de Física\\Universidad de Santiago de Chile}
 
 \date{\today}
 \onehalfspacing
@@ -47,20 +52,36 @@
 \maketitle
   
 \begin{abstract}
-    Se realizó un acople entre una Physics-Informed Neural Network (PINN) y un sistema de ecuaciones diferenciales parciales para la predicción de la morfodinámica de un lahar producido por un evento eruptivo del 2015 del volcán Villarica, Chile.   
+    \singlespacing % Interlineado simple solo para este bloque
+    \small % Letra un poco más chica que el resto del texto
+        Los lahares representan uno de los peligros volcánicos más devastadores debido a su alta movilidad y potencial de impacto en comunidades e infraestructura. En Chile, 
+        el volcán Villarrica constituye un escenario crítico para el estudio de estos flujos, particularmente aquellos originados por la interacción entre magma y criósfera, 
+        como se observó en el evento eruptivo de 2015. Este trabajo presenta el desarrollo de un modelo computacional para la simulación de lahares basado en 
+        Redes Neuronales Informadas por la Física (PINNs). La arquitectura propuesta integra ecuaciones diferenciales parciales (PDEs) acopladas bajo la aproximación de flujo somero 
+        (shallow water equations), incorporando variables de transporte de concentración sólida y dinámica de presión de poros para capturar la naturaleza multifásica del fenómeno.
+
+        La metodología aborda la construcción de una PINN entrenada mediante restricciones físicas y condiciones iniciales derivadas de datos históricos del evento de 2015. 
+        Un componente central del estudio consiste en el análisis y mitigación de patologías propias del entrenamiento de PINNs en sistemas geofísicos complejos, tales como 
+        la convergencia a soluciones triviales, el desbalance de gradientes y la inestabilidad numérica. Los resultados buscan demostrar la viabilidad de las PINNs como una 
+        herramienta robusta para la modelación de peligros naturales, integrando las leyes de la física con los avances en inteligencia artificial para fortalecer las capacidades de predicción 
+        y gestión de riesgos volcánicos.  
 \end{abstract}
-\keywords{Physics-Informed Neural Network, Lahares, Ecuaciones Diferenciales Parciales}
+
+\vspace{5mm} % Espacio antes de las keywords
+\keywords{Redes Neuronales Informadas por la Física (PINNs), Lahares, Ecuaciones Diferenciales Parciales}
+
+\onehalfspacing % Volvemos al interlineado 1.5 para el resto del texto (Introducción, etc.)
 
 \section{Objetivos de la Tesis}
 \subsection{Objetivo General}
-Desarrollar un modelo de lahares basado en redes neuronales informadas por la física (PINNs), aplicado al evento eruptivo de 2015 del volcán Villarica, Chile, incorporando ecuaciones acopladas de flujo somero, concentración sólida y presión de poros.
+Desarrollar un modelo de lahares basado en Redes Neuronales Informadas por la Física (PINNs), aplicado al evento eruptivo de 2015 del volcán Villarica, Chile, incorporando ecuaciones acopladas de flujo somero, concentración sólida y presión de poros.
 \subsection{Objetivos Específicos}
-\begin{enumerate}
-    \item Formar un sistema de ecuaciones compuesto con, al menos, seis ecuaciones diferenciales parciales que modelen la morfodinámica de un lahar en el evento eruptivo del año 2015 del volcán Villarica, Chile.
-    \item Construir una red neuronal informada por la física usando el sistema de PDEs y otros parámetros geológicos que prediga el comportamiento real de un flujo de sedimento. 
-    \item Diagnosticar patologías de desvanecimiento y decaimiento de los gradientes e incorporar técnicas de estabilización y optimización avanzadas para mejorar la convergencia del modelo.
-    \item Predecir la morfodinámica de manera realista y acorde a la física para exportar un mapa de peligro volcánico que entregue datos de evacuación según el riesgo calculado por la red neuronal.   
-\end{enumerate}
+\begin{itemize}
+    \item \textbf{OE1:}Formular un sistema acoplado de Ecuaciones Diferenciales Parciales (PDEs) que modelen la morfodinámica de un lahar, incorporando conservación de masa, momento, concentración sólida y presión de poros.
+    \item \textbf{OE2:}Construir una Red Neuronal Informada por la Física, basada en un sistema de ecuaciones diferenciales y parámetros geológicos, con la finalidad de predecir el comportamiento real de un flujo de sedimento. 
+    \item \textbf{OE3:}Diagnosticar patologías de desvanecimiento y decaimiento de los gradientes e incorporar técnicas de estabilización y optimización avanzadas para mejorar la convergencia del modelo.
+    \item \textbf{OE4:}Predecir la morfodinámica de manera realista y acorde a la física para exportar un mapa de peligro volcánico que entregue datos de evacuación según el riesgo calculado por la red neuronal.   
+\end{itemize}
 
 \newpage
 \section{Carta Gantt}
@@ -72,7 +93,7 @@ Desarrollar un modelo de lahares basado en redes neuronales informadas por la f�
 \begin{tabular}{|c|p{7cm}|c|c|c|}
 \hline
 \textbf{ID} & \textbf{Actividad} & \textbf{Inicio} & \textbf{Término} & \textbf{Objetivo(s)} \\ \hline
-1 & Revisión bibliográfica de PINNs y reología de lahares & 02/03/2026 & 31/03/2026 & OE1 \\ \hline
+1 & Revisión bibliográfica de PINNs y geología de lahares & 02/03/2026 & 31/03/2026 & OE1 \\ \hline
 2 & Definición y adimensionalización del sistema de PDEs & 01/04/2026 & 30/04/2026 & OE1 \\ \hline
 3 & Programación del módulo de topografía y lecho seco & 04/05/2026 & 22/05/2026 & OE2 \\ \hline
 4 & Implementación del \textit{Ansatz} (Hard Constraints) para IC & 25/05/2026 & 12/06/2026 & OE2 \\ \hline
@@ -114,8 +135,9 @@ Desarrollar un modelo de lahares basado en redes neuronales informadas por la f�
     \caption{Carta Gantt de actividades para el desarrollo del trabajo de título.}
     \label{fig:gantt}
 \end{figure}
+
 \nocite{*} % Esto evita el error "no \citation commands" al incluir todo el .bib
-\bibliographystyle{apacite} % O "plain", pero apacite es mejor para ciencias
+\bibliographystyle{ieeetr} % O "plain", pero apacite es mejor para ciencias
 \bibliography{bibliography} % Asegúrate de que el archivo se llame referencias.bib
 
 \end{document}
