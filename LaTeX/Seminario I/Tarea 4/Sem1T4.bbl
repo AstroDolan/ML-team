@@ -4,31 +4,31 @@
 J.~W. Vallance, {\em Lahars: Origins, Behavior and Hazards}, pp.~347--382.
 \newblock Cham: Springer International Publishing, 2024.
 
-\bibitem{schilling2008using}
-S.~Schilling, J.~Griswold, and R.~Iverson, ``Using laharz to forecast inundation from lahars, debris flows, and rock avalanches: Confidence limits on prediction,'' in {\em AGU Fall Meeting Abstracts}, vol.~2008, pp.~H51F--0891, 2008.
-
-\bibitem{george2025d}
-D.~L. George, K.~R. Barnhart, and R.~M. Iverson, ``D-claw-a library for the simulation of granular-fluid flows, v1. 0.0,'' {\em US Geological Survey (USGS) Software}, p.~34, 2025.
-
-\bibitem{woodhouseshallow}
-M.~Woodhouse, A.~Hogg, and J.~Phillips, ``A shallow-layer model for lahars: formulation and phenomenology,'' {\em JGR-Earth Surface}.
-
-\bibitem{RAISSI2019686}
-M.~Raissi, P.~Perdikaris, and G.~Karniadakis, ``Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations,'' {\em Journal of Computational Physics}, vol.~378, pp.~686--707, 2019.
-
-\bibitem{phdthesis}
-R.~Green, {\em Finite Element Modeling of a Suction Caisson Subject to Monotonic Tensile Loading}.
-\newblock PhD thesis, 03 2019.
+\bibitem{porfido2020new}
+S.~Porfido, G.~Alessio, G.~Gaudiosi, and R.~Nappi, ``New perspectives in the definition/evaluation of seismic hazard through analysis of the environmental effects induced by earthquakes,'' 2020.
 
 \bibitem{ortiz1996riesgo}
 R.~Ortiz, {\em Riesgo volc{\'a}nico}, vol.~5.
 \newblock Servicio de Publicaciones, Excmo. Cabildo de Lanzarote, 1996.
 
-\bibitem{porfido2020new}
-S.~Porfido, G.~Alessio, G.~Gaudiosi, and R.~Nappi, ``New perspectives in the definition/evaluation of seismic hazard through analysis of the environmental effects induced by earthquakes,'' 2020.
+\bibitem{RAISSI2019686}
+M.~Raissi, P.~Perdikaris, and G.~Karniadakis, ``Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations,'' {\em Journal of Computational Physics}, vol.~378, pp.~686--707, 2019.
 
 \bibitem{cai2021physics}
 S.~Cai, Z.~Mao, Z.~Wang, M.~Yin, and G.~E. Karniadakis, ``Physics-informed neural networks (pinns) for fluid mechanics: A review,'' {\em Acta Mechanica Sinica}, vol.~37, no.~12, pp.~1727--1738, 2021.
+
+\bibitem{woodhouseshallow}
+M.~Woodhouse, A.~Hogg, and J.~Phillips, ``A shallow-layer model for lahars: formulation and phenomenology,'' {\em JGR-Earth Surface}.
+
+\bibitem{phdthesis}
+R.~Green, {\em Finite Element Modeling of a Suction Caisson Subject to Monotonic Tensile Loading}.
+\newblock PhD thesis, 03 2019.
+
+\bibitem{schilling2008using}
+S.~Schilling, J.~Griswold, and R.~Iverson, ``Using laharz to forecast inundation from lahars, debris flows, and rock avalanches: Confidence limits on prediction,'' in {\em AGU Fall Meeting Abstracts}, vol.~2008, pp.~H51F--0891, 2008.
+
+\bibitem{george2025d}
+D.~L. George, K.~R. Barnhart, and R.~M. Iverson, ``D-claw-a library for the simulation of granular-fluid flows, v1. 0.0,'' {\em US Geological Survey (USGS) Software}, p.~34, 2025.
 
 \bibitem{krishnapriyan2021characterizing}
 A.~Krishnapriyan, A.~Gholami, S.~Zhe, R.~Kirby, and M.~W. Mahoney, ``Characterizing possible failure modes in physics-informed neural networks,'' {\em Advances in neural information processing systems}, vol.~34, pp.~26548--26560, 2021.

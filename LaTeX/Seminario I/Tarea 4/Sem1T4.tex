@@ -37,14 +37,14 @@
 \title{Modelamiento de Lahares mediante Redes Neuronales Informadas por la Física (PINNs): Aplicación al evento eruptivo de 2015 del volcán Villarica, Chile}
 
 \author[1]{Dylan Jara Carvajal}
-\author[3]{Felipe Herrera (Profesor Guía)}
-\author[2]{Johan Triana (Profesor Co-guía)}
-\author[2]{Yuvineza Gómez-Leyton (Profesor informante)}
+\author[2]{Felipe Herrera (Profesor Guía)}
+\author[3]{Johan Triana (Profesor Co-guía)}
+\author[3]{Yuvineza Gómez-Leyton (Profesor informante)}
 \author[1]{Francisco Plaza-Vega (Profesor informante)}
 
 \affil[1]{Departamento de Matemática y Ciencia de la Computación\\Universidad de Santiago de Chile}
-\affil[2]{Departamento de Física\\Universidad Católica del Norte}
-\affil[3]{Departamento de Física\\Universidad de Santiago de Chile}
+\affil[2]{Departamento de Física\\Universidad de Santiago de Chile}
+\affil[3]{Departamento de Física\\Universidad Católica del Norte}
 
 \date{\today}
 \onehalfspacing
@@ -54,15 +54,15 @@
 \begin{abstract}
     \singlespacing % Interlineado simple solo para este bloque
     \small % Letra un poco más chica que el resto del texto
-        Los lahares representan uno de los peligros volcánicos más devastadores debido a su alta movilidad y potencial de impacto en comunidades e infraestructura. En Chile, 
+        Los lahares representan uno de los peligros volcánicos más devastadores debido a su alta movilidad y potencial de impacto en comunidades e infraestructura \textbf{\cite{Vallance2024,porfido2020new,ortiz1996riesgo}}. En Chile, 
         el volcán Villarrica constituye un escenario crítico para el estudio de estos flujos, particularmente aquellos originados por la interacción entre magma y criósfera, 
         como se observó en el evento eruptivo de 2015. Este trabajo presenta el desarrollo de un modelo computacional para la simulación de lahares basado en 
-        Redes Neuronales Informadas por la Física (PINNs). La arquitectura propuesta integra ecuaciones diferenciales parciales (PDEs) acopladas bajo la aproximación de flujo somero 
-        (shallow water equations), incorporando variables de transporte de concentración sólida y dinámica de presión de poros para capturar la naturaleza multifásica del fenómeno.
+        Redes Neuronales Informadas por la Física (PINNs) \textbf{\cite{RAISSI2019686,cai2021physics}}. La arquitectura propuesta integra ecuaciones diferenciales parciales (PDEs) acopladas bajo la aproximación de flujo somero 
+        (shallow water equations) \textbf{\cite{woodhouseshallow}}, incorporando variables de transporte de concentración sólida y dinámica de presión de poros \textbf{\cite{phdthesis}} para capturar la naturaleza multifásica del fenómeno \textbf{\cite{schilling2008using,george2025d}}.
 
         La metodología aborda la construcción de una PINN entrenada mediante restricciones físicas y condiciones iniciales derivadas de datos históricos del evento de 2015. 
         Un componente central del estudio consiste en el análisis y mitigación de patologías propias del entrenamiento de PINNs en sistemas geofísicos complejos, tales como 
-        la convergencia a soluciones triviales, el desbalance de gradientes y la inestabilidad numérica. Los resultados buscan demostrar la viabilidad de las PINNs como una 
+        la convergencia a soluciones triviales, el desbalance de gradientes y la inestabilidad numérica \textbf{\cite{krishnapriyan2021characterizing,raissi2024physics}}. Los resultados buscan demostrar la viabilidad de las PINNs como una
         herramienta robusta para la modelación de peligros naturales, integrando las leyes de la física con los avances en inteligencia artificial para fortalecer las capacidades de predicción 
         y gestión de riesgos volcánicos.  
 \end{abstract}

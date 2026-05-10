@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Homebrew) (preloaded format=pdflatex 2026.3.4)  9 MAY 2026 21:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Homebrew) (preloaded format=pdflatex 2026.3.4)  10 MAY 2026 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -714,10 +714,10 @@ File: ot1qhv.fd 2009/09/25 v1.2 font definition file for OT1/qhv
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count393
 ) (./Sem1T4.aux
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 14.
+(babel)             Reported on input line 25.
 
 
 LaTeX Warning: Label `tab:planificacion_gantt' multiply defined.
@@ -836,14 +836,14 @@ Overfull \hbox (4.23087pt too wide) in paragraph at lines 115--129
 [4
 
 ]
-<carta_gantt_formal.png, id=34, 787.0203pt x 497.03693pt>
+<carta_gantt_formal.png, id=56, 787.0203pt x 497.03693pt>
 File: carta_gantt_formal.png Graphic file (type png)
 <use carta_gantt_formal.png>
 Package pdftex.def Info: carta_gantt_formal.png  used on input line 134.
 (pdftex.def)             Requested size: 433.62001pt x 273.84895pt.
  (./Sem1T4.bbl [5 <./carta_gantt_formal.png>]) [6] (./Sem1T4.aux
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -857,16 +857,16 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  28354 strings out of 467525
  539841 string characters out of 5408440
- 945822 words of memory out of 5000000
+ 945821 words of memory out of 5000000
  56797 multiletter control sequences out of 15000+600000
  686321 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,11n,108p,531b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,11n,108p,531b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/tex-gyre/qhvbi.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on Sem1T4.pdf (6 pages, 559829 bytes).
+Output written on Sem1T4.pdf (6 pages, 561461 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 108 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  26 named destinations out of 1000 (max. 500000)
  50 words of extra memory for PDF output out of 10000 (max. 10000000)
 
