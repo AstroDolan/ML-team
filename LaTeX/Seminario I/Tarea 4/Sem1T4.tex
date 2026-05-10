@@ -93,16 +93,16 @@ Desarrollar un modelo de lahares basado en Redes Neuronales Informadas por la F�
 \begin{tabular}{|c|p{7cm}|c|c|c|}
 \hline
 \textbf{ID} & \textbf{Actividad} & \textbf{Inicio} & \textbf{Término} & \textbf{Objetivo(s)} \\ \hline
-1 & Revisión bibliográfica de PINNs y geología de lahares & 02/03/2026 & 31/03/2026 & OE1 \\ \hline
-2 & Definición y adimensionalización del sistema de PDEs & 01/04/2026 & 30/04/2026 & OE1 \\ \hline
-3 & Programación del módulo de topografía y lecho seco & 04/05/2026 & 22/05/2026 & OE2 \\ \hline
-4 & Implementación del \textit{Ansatz} (Hard Constraints) para IC & 25/05/2026 & 12/06/2026 & OE2 \\ \hline
-5 & Obtencion de predicciones en el orden de 10e-3 & 15/06/2026 & 03/07/2026 & OE2 \\ \hline
-6 & Configuración de normalización y callbacks & 06/07/2026 & 31/07/2026 & OE3 \\ \hline
+1 & Revisión bibliográfica de PINNs y peligros volcánicos & 02/03/2026 & 31/03/2026 & OE1 \\ \hline
+2 & Definición de sistema de PDEs a usar& 01/04/2026 & 30/04/2026 & OE1 \\ \hline
+3 & Programación de PINNs en Phyton por etapas & 04/05/2026 & 22/05/2026 & OE2 \\ \hline
+4 & Implementación de restricciones fuertes & 25/05/2026 & 12/06/2026 & OE2 \\ \hline
+5 & Obtencion de predicciones adecuadas & 15/06/2026 & 03/07/2026 & OE2 \\ \hline
+6 & Configuración de normalización y detenciones tempranas & 06/07/2026 & 31/07/2026 & OE3 \\ \hline
 7 & Redacción de Capítulos 1 (Intro) y 2 (Marco Teórico) & 03/08/2026 & 21/08/2026 & Doc. \\ \hline
-8 & Ejecución Etapa 1: Ajuste de IC/BC y masa inicial & 24/08/2026 & 11/09/2026 & OE3 \\ \hline
-9 & Ejecución Etapa 2: Entrenamiento de Masa y Momento & 14/09/2026 & 09/10/2026 & OE3 \\ \hline
-10 & Ejecución Etapa 3: Acople de Concentración y Presión & 12/10/2026 & 06/11/2026 & OE3 \\ \hline
+8 & Ejecución etapa 1 de PINNs: Ajuste de IC/BC y masa inicial & 24/08/2026 & 11/09/2026 & OE3 \\ \hline
+9 & Ejecución etapa 2 de PINNs: Entrenamiento de masa y momento & 14/09/2026 & 09/10/2026 & OE3 \\ \hline
+10 & Ejecución etapa 3 de PINNs: Acople de concentración y presión & 12/10/2026 & 06/11/2026 & OE3 \\ \hline
 \end{tabular}
 \end{table}
 \clearpage
@@ -115,14 +115,14 @@ Desarrollar un modelo de lahares basado en Redes Neuronales Informadas por la F�
 \begin{tabular}{|c|p{7cm}|c|c|c|}
 \hline
 \textbf{ID} & \textbf{Actividad} & \textbf{Inicio} & \textbf{Término} & \textbf{Objetivo(s)} \\ \hline
-11 & Implementación de técnicas para Trivial Solution Collapse & 09/11/2026 & 27/11/2026 & OE4 \\ \hline
-12 & Optimización final con L-BFGS y Learning Rate Decay & 30/11/2026 & 24/12/2026 & OE3 \\ \hline
-13 & Redacción de Capítulo 3 (Metodología) & 28/12/2026 & 15/01/2027 & Doc. \\ \hline
-14 & Pruebas de sensibilidad y cuantificación de error & 18/01/2027 & 05/02/2027 & OE4 \\ \hline
-15 & Validación vs. Modelos Numéricos Tradicionales & 08/02/2027 & 26/02/2027 & OE4 \\ \hline
+11 & Implementación de técnicas para soluciones de colapso a la trivialidad & 09/11/2026 & 27/11/2026 & OE3 \\ \hline
+12 & Configuración final del optimizador y decaimiento de la tasa de aprendizaje & 30/11/2026 & 24/12/2026 & OE3 \\ \hline
+13 & Redacción de capítulo 3 (Metodología) & 28/12/2026 & 15/01/2027 & Doc. \\ \hline
+14 & Pruebas de sensibilidad y cuantificación de errores & 18/01/2027 & 05/02/2027 & OE3 \\ \hline
+15 & Validación \textit{vs} Modelos numéricos tradicionales & 08/02/2027 & 26/02/2027 & OE3-OE4 \\ \hline
 16 & Análisis de resultados y generación de visualizaciones & 01/03/2027 & 12/03/2027 & OE4 \\ \hline
-17 & Redacción de Capítulos 4 (Resultados) y 5 (Conclusiones) & 15/03/2027 & 24/03/2027 & Doc. \\ \hline
-18 & Revisión final de formato, citas y bibliografía & 25/03/2027 & 29/03/2027 & Doc. \\ \hline
+17 & Redacción de capítulos 4 (Resultados) y 5 (Conclusiones) & 15/03/2027 & 24/03/2027 & Doc. \\ \hline
+18 & Revisión final, citas y bibliografía & 25/03/2027 & 29/03/2027 & Doc. \\ \hline
 19 & Preparación de material para defensa de tesis & 30/03/2027 & 30/03/2027 & Examen \\ \hline
 20 & Entrega final y cierre de proceso & 31/03/2027 & 31/03/2027 & Hito Final \\ \hline
 \end{tabular}
@@ -131,13 +131,13 @@ Desarrollar un modelo de lahares basado en Redes Neuronales Informadas por la F�
 \newpage
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\linewidth]{carta_gantt_tesis.png}
+    \includegraphics[width=\linewidth]{carta_gantt_formal.png}
     \caption{Carta Gantt de actividades para el desarrollo del trabajo de título.}
     \label{fig:gantt}
 \end{figure}
 
-\nocite{*} % Esto evita el error "no \citation commands" al incluir todo el .bib
-\bibliographystyle{ieeetr} % O "plain", pero apacite es mejor para ciencias
-\bibliography{bibliography} % Asegúrate de que el archivo se llame referencias.bib
+\nocite{*} % Para evitar el error "no \citation commands" al incluir .bib
+\bibliographystyle{ieeetr}
+\bibliography{bibliography}
 
 \end{document}
