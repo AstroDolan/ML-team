@@ -1,58 +1,50 @@
 This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: PresSemI.aux
-The style file: apacite.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+The style file: ieeetr.bst
 Database file #1: BibTesis.bib
-apacite.bst [2013/07/21 v6.03 APA bibliography style]
-Warning--No school in phdthesis
-You've used 6 entries,
-            6951 wiz_defined-function locations,
-            1309 strings with 11960 characters,
-and the built_in function-call counts, 13624 in all, are:
-= -- 1725
-> -- 113
-< -- 681
-+ -- 695
-- -- 12
-* -- 876
-:= -- 2539
-add.period$ -- 28
-call.type$ -- 6
-change.case$ -- 93
+Warning--can't use both author and editor fields in Vallance2024
+Warning--empty year in woodhouseshallow
+Warning--empty school in phdthesis
+You've used 12 entries,
+            1876 wiz_defined-function locations,
+            551 strings with 5797 characters,
+and the built_in function-call counts, 3128 in all, are:
+= -- 299
+> -- 135
+< -- 0
++ -- 50
+- -- 38
+* -- 224
+:= -- 451
+add.period$ -- 15
+call.type$ -- 12
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 313
-empty$ -- 486
-format.name$ -- 165
-if$ -- 2555
+cite$ -- 15
+duplicate$ -- 155
+empty$ -- 294
+format.name$ -- 38
+if$ -- 754
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 0
-newline$ -- 160
-num.names$ -- 50
-pop$ -- 213
+int.to.str$ -- 12
+missing$ -- 12
+newline$ -- 42
+num.names$ -- 12
+pop$ -- 46
 preamble$ -- 1
-purify$ -- 25
+purify$ -- 0
 quote$ -- 0
-skip$ -- 906
+skip$ -- 102
 stack$ -- 0
-substring$ -- 777
-swap$ -- 201
-text.length$ -- 31
+substring$ -- 192
+swap$ -- 64
+text.length$ -- 0
 text.prefix$ -- 0
-top$ -- 1
-type$ -- 672
-warning$ -- 1
-while$ -- 69
-width$ -- 0
-write$ -- 199
-(There was 1 warning)
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 27
+width$ -- 14
+write$ -- 112
+(There were 3 warnings)
