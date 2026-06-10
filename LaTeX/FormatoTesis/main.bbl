@@ -18,76 +18,146 @@
 
 
 \refsection{0}
-  \datalist[entry]{apa/apasortcite//global/global/global}
-    \entry{MR1823409}{book}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=53186c2024f0201901a2d26db650b741}{%
-           family={Agricola},
+  \datalist[entry]{none/global//global/global/global}
+    \entry{https://doi.org/10.1029/2018GC007692}{article}{}{}
+      \name{author}{17}{}{%
+        {{hash=721fc1a513c91e2a3344ddc52f15d625}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Emma\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1d4ff5d01a3d289d827c32175a98b955}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={Kieran},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e8680f6ab8df7607952a7e199d13994e}{%
+           family={Mason},
+           familyi={M\bibinitperiod},
+           given={Emily},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c74ec542071008a35e46c7445996d328}{%
+           family={Edmonds},
+           familyi={E\bibinitperiod},
+           given={Marie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a0fab2e936194d437728a444a22aaa65}{%
+           family={Aiuppa},
            familyi={A\bibinitperiod},
-           given={Ilka},
-           giveni={I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=adfb61e4b551f8656bd7f8c45a7b241a}{%
-           family={Friedrich},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=753d51c5eeac8128b72ecee4adbf8673}{%
+           family={Giudice},
+           familyi={G\bibinitperiod},
+           given={Gaetano},
+           giveni={G\bibinitperiod}}}%
+        {{hash=96865249a414bb94f722b81755565c4e}{%
+           family={Bitetto},
+           familyi={B\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b1500098140dafc84439beb7057fa68}{%
+           family={Francofonte},
            familyi={F\bibinitperiod},
+           given={Vincenzo},
+           giveni={V\bibinitperiod}}}%
+        {{hash=e2eeb40bd10f5a94488a5b59361fe215}{%
+           family={Burrow},
+           familyi={B\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c0e5270b30b6f4e037559d4f80e278dd}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
            given={Thomas},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
+           giveni={T\bibinitperiod}}}%
+        {{hash=9d02749fc1d1c1a8bd72ec9581321896}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1213f3d2b99f028ead1786862e3fff15}{%
+           family={Pering},
+           familyi={P\bibinitperiod},
+           given={Tom\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=8e5c7ad2ad58f5a5d7eb06b77943bb93}{%
+           family={Wilkes},
+           familyi={W\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1fc20a6554e4c205a4d6e4f07d971476}{%
+           family={McGonigle},
+           familyi={M\bibinitperiod},
+           given={Andrew\bibnamedelimb J.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7da49c0c5a3999ad244d41eeb2cf14c5}{%
+           family={Velasquez},
+           familyi={V\bibinitperiod},
+           given={Gabriela},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c5eaa0c3cf160df5bcefcd7fa973cd2b}{%
+           family={Melgarejo},
+           familyi={M\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0a2cd77b552e2fe2f2e99b0b2190bb01}{%
+           family={Bucarey},
+           familyi={B\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Friedr. Vieweg \& Sohn, Braunschweig}%
-      }
-      \strng{namehash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{fullhash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{fullhashraw}{8fe56639d24a44be02f29893daa40e31}
-      \strng{bibnamehash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{authorbibnamehash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{authornamehash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{authorfullhash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{authorfullhashraw}{8fe56639d24a44be02f29893daa40e31}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
+      \strng{namehash}{69586344e3a7d144d9db3266199e2545}
+      \strng{fullhash}{f3d7bc098c574ff678c7dd061e50e6e7}
+      \strng{fullhashraw}{f3d7bc098c574ff678c7dd061e50e6e7}
+      \strng{bibnamehash}{69586344e3a7d144d9db3266199e2545}
+      \strng{authorbibnamehash}{69586344e3a7d144d9db3266199e2545}
+      \strng{authornamehash}{69586344e3a7d144d9db3266199e2545}
+      \strng{authorfullhash}{f3d7bc098c574ff678c7dd061e50e6e7}
+      \strng{authorfullhashraw}{f3d7bc098c574ff678c7dd061e50e6e7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{3-528-03154-9}
-      \field{note}{Differentialformen in Analysis, Geometrie und Physik. [Differential forms in analysis, geometry and physics]}
-      \field{title}{Globale {A}nalysis}
-      \field{year}{2001}
-      \field{pages}{x+283}
-      \range{pages}{-1}
+      \field{abstract}{Abstract Volcanic gas emissions are intimately linked to the dynamics of magma ascent and outgassing and, on geological time scales, constitute an important source of volatiles to the Earth's atmosphere. Measurements of gas composition and flux are therefore critical to both volcano monitoring and to determining the contribution of volcanoes to global geochemical cycles. However, significant gaps remain in our global inventories of volcanic emissions, (particularly for CO2, which requires proximal sampling of a concentrated plume) for those volcanoes where the near-vent region is hazardous or inaccessible. Unmanned Aerial Systems (UAS) provide a robust and effective solution to proximal sampling of dense volcanic plumes in extreme volcanic environments. Here we present gas compositional data acquired using a gas sensor payload aboard a UAS flown at Volcán Villarrica, Chile. We compare UAS-derived gas time series to simultaneous crater rim multi-GAS data and UV camera imagery to investigate early plume evolution. SO2 concentrations measured in the young proximal plume exhibit periodic variations that are well correlated with the concentrations of other species. By combining molar gas ratios (CO2/SO2 = 1.48–1.68, H2O/SO2 = 67–75, and H2O/CO2 = 45–51) with the SO2 flux (142 ± 17 t/day) from UV camera images, we derive CO2 and H2O fluxes of ~150 t/day and ~2,850 t/day, respectively. We observe good agreement between time-averaged molar gas ratios obtained from simultaneous UAS- and ground-based multi-GAS acquisitions. However, the UAS measurements made in the young, less diluted plume reveal additional short-term periodic structure that reflects active degassing through discrete, audible gas exhalations.}
+      \field{journaltitle}{Geochemistry, Geophysics, Geosystems}
+      \field{number}{2}
+      \field{title}{Dynamics of Outgassing and Plume Transport Revealed by Proximal Unmanned Aerial System (UAS) Measurements at Volcán Villarrica, Chile}
+      \field{volume}{20}
+      \field{year}{2019}
+      \field{pages}{730\bibrangedash 750}
+      \range{pages}{21}
       \verb{doi}
-      \verb 10.1007/978-3-322-92903-7
+      \verb https://doi.org/10.1029/2018GC007692
+      \endverb
+      \verb{eprint}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2018GC007692
       \endverb
       \verb{urlraw}
-      \verb https://doi.org/10.1007/978-3-322-92903-7
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018GC007692
       \endverb
       \verb{url}
-      \verb https://doi.org/10.1007/978-3-322-92903-7
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018GC007692
       \endverb
+      \keyw{unmanned aerial system,drone,Villarrica,volcanic emissions,degassing}
     \endentry
     \entry{MR4811139}{article}{}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=9429d67921c2c472b249e6c90eda35a4}{%
+        {{hash=9429d67921c2c472b249e6c90eda35a4}{%
            family={Lyu},
            familyi={L\bibinitperiod},
            given={Zhiyuan},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7b8053d660f461e7b84a3ceb2c841d28}{%
+           giveni={Z\bibinitperiod}}}%
+        {{hash=7b8053d660f461e7b84a3ceb2c841d28}{%
            family={Lui},
            familyi={L\bibinitperiod},
            given={Lok\bibnamedelima Ming},
-           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=108e2e7ee0f635c31bce5efef481aa0b}{%
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=108e2e7ee0f635c31bce5efef481aa0b}{%
            family={Choi},
            familyi={C\bibinitperiod},
            given={Gary\bibnamedelimb P.\bibnamedelimi T.},
-           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
       }
       \strng{namehash}{936fef03cd439d249e29b0b460daa5c3}
       \strng{fullhash}{dccbb54f9c75c3d7a23838a61290e337}
@@ -97,11 +167,8 @@
       \strng{authornamehash}{936fef03cd439d249e29b0b460daa5c3}
       \strng{authorfullhash}{dccbb54f9c75c3d7a23838a61290e337}
       \strng{authorfullhashraw}{dccbb54f9c75c3d7a23838a61290e337}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1936-4954}
@@ -124,18 +191,16 @@
     \endentry
     \entry{MR1487846}{article}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=ba14dc71f074b9b4c7fa916d23aea011}{%
+        {{hash=ba14dc71f074b9b4c7fa916d23aea011}{%
            family={Naulin},
            familyi={N\bibinitperiod},
            given={Raúl},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b3f1de5da207feb9acf407e4b43b4b0f}{%
+           giveni={R\bibinitperiod}}}%
+        {{hash=b3f1de5da207feb9acf407e4b43b4b0f}{%
            family={Pinto},
            familyi={P\bibinitperiod},
            given={Manuel},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
+           giveni={M\bibinitperiod}}}%
       }
       \strng{namehash}{f848fc1deb426d071a375f688e97a704}
       \strng{fullhash}{f848fc1deb426d071a375f688e97a704}
@@ -145,11 +210,8 @@
       \strng{authornamehash}{f848fc1deb426d071a375f688e97a704}
       \strng{authorfullhash}{f848fc1deb426d071a375f688e97a704}
       \strng{authorfullhashraw}{f848fc1deb426d071a375f688e97a704}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0362-546X,1873-5215}
@@ -170,22 +232,18 @@
       \verb https://doi.org/10.1016/S0362-546X(97)00423-9
       \endverb
     \endentry
-  \enddatalist
-  \datalist[entry]{apa/global//global/global/global}
     \entry{MR1823409}{book}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=53186c2024f0201901a2d26db650b741}{%
+        {{hash=53186c2024f0201901a2d26db650b741}{%
            family={Agricola},
            familyi={A\bibinitperiod},
            given={Ilka},
-           giveni={I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=adfb61e4b551f8656bd7f8c45a7b241a}{%
+           giveni={I\bibinitperiod}}}%
+        {{hash=adfb61e4b551f8656bd7f8c45a7b241a}{%
            family={Friedrich},
            familyi={F\bibinitperiod},
            given={Thomas},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
+           giveni={T\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Friedr. Vieweg \& Sohn, Braunschweig}%
@@ -198,11 +256,8 @@
       \strng{authornamehash}{8fe56639d24a44be02f29893daa40e31}
       \strng{authorfullhash}{8fe56639d24a44be02f29893daa40e31}
       \strng{authorfullhashraw}{8fe56639d24a44be02f29893daa40e31}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{3-528-03154-9}
@@ -219,108 +274,6 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/978-3-322-92903-7
-      \endverb
-    \endentry
-    \entry{MR4811139}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=9429d67921c2c472b249e6c90eda35a4}{%
-           family={Lyu},
-           familyi={L\bibinitperiod},
-           given={Zhiyuan},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7b8053d660f461e7b84a3ceb2c841d28}{%
-           family={Lui},
-           familyi={L\bibinitperiod},
-           given={Lok\bibnamedelima Ming},
-           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=108e2e7ee0f635c31bce5efef481aa0b}{%
-           family={Choi},
-           familyi={C\bibinitperiod},
-           given={Gary\bibnamedelimb P.\bibnamedelimi T.},
-           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{936fef03cd439d249e29b0b460daa5c3}
-      \strng{fullhash}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{fullhashraw}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{bibnamehash}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{authorbibnamehash}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{authornamehash}{936fef03cd439d249e29b0b460daa5c3}
-      \strng{authorfullhash}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{authorfullhashraw}{dccbb54f9c75c3d7a23838a61290e337}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1936-4954}
-      \field{journaltitle}{SIAM J. Imaging Sci.}
-      \field{number}{4}
-      \field{title}{Spherical density-equalizing map for genus-0 closed surfaces}
-      \field{volume}{17}
-      \field{year}{2024}
-      \field{pages}{2110\bibrangedash 2141}
-      \range{pages}{32}
-      \verb{doi}
-      \verb 10.1137/24M1633911
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1137/24M1633911
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1137/24M1633911
-      \endverb
-    \endentry
-    \entry{MR1487846}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=ba14dc71f074b9b4c7fa916d23aea011}{%
-           family={Naulin},
-           familyi={N\bibinitperiod},
-           given={Raúl},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b3f1de5da207feb9acf407e4b43b4b0f}{%
-           family={Pinto},
-           familyi={P\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{f848fc1deb426d071a375f688e97a704}
-      \strng{fullhash}{f848fc1deb426d071a375f688e97a704}
-      \strng{fullhashraw}{f848fc1deb426d071a375f688e97a704}
-      \strng{bibnamehash}{f848fc1deb426d071a375f688e97a704}
-      \strng{authorbibnamehash}{f848fc1deb426d071a375f688e97a704}
-      \strng{authornamehash}{f848fc1deb426d071a375f688e97a704}
-      \strng{authorfullhash}{f848fc1deb426d071a375f688e97a704}
-      \strng{authorfullhashraw}{f848fc1deb426d071a375f688e97a704}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0362-546X,1873-5215}
-      \field{journaltitle}{Nonlinear Anal.}
-      \field{number}{5-6}
-      \field{title}{Admissible perturbations of exponential dichotomy roughness}
-      \field{volume}{31}
-      \field{year}{1998}
-      \field{pages}{559\bibrangedash 571}
-      \range{pages}{13}
-      \verb{doi}
-      \verb 10.1016/S0362-546X(97)00423-9
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1016/S0362-546X(97)00423-9
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1016/S0362-546X(97)00423-9
       \endverb
     \endentry
   \enddatalist

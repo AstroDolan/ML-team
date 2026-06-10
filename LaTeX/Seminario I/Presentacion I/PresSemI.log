@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  11 MAY 2026 01:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  10 JUN 2026 12:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -795,30 +795,171 @@ LaTeX Info: Redefining \addtolength on input line 87.
 ) (c:/texlive/2025/texmf-dist/tex/latex/grffile/grffile.sty
 Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legacy)
 Package grffile Info: This package is an empty stub for compatibility on input line 40.
-) (./Ritsumeikan.sty (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemesmoothbars.sty) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.sty)) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@halignto' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@acol' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@preamble' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@classz' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@acol' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@preamble' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@acol' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@preamble' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@classiv' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@preamble' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tabularcr' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `alignment tab' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `alignment tab' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `alignment tab' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `alignment tab' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\crcr' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 30.
+
+(./Ritsumeikan.sty (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemesmoothbars.sty) (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.sty)) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count403
 ) (./PresSemI.aux)
 \openout1 = `PresSemI.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -873,7 +1014,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 57.
  (c:/texlive/2025/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (c:/texlive/2025/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -889,447 +1030,120 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 \c@lstlisting=\count410
  (./PresSemI.nav)
-Overfull \hbox (11.62498pt too wide) detected at line 48
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) detected at line 60
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-<./Pics/Usach S1.png, id=99, 1103.12125pt x 348.30125pt>
-File: ./Pics/Usach S1.png Graphic file (type png)
-<use ./Pics/Usach S1.png>
-Package pdftex.def Info: ./Pics/Usach S1.png  used on input line 60.
-(pdftex.def)             Requested size: 76.82246pt x 24.25603pt.
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-
- <./Pics/Usach S1.png>]
-Overfull \hbox (11.62498pt too wide) detected at line 65
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[2
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 68
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[3
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 69
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[4
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 76
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
-(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 76.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 69.
  (c:/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+<./Pics/Usach S1.png, id=93, 1103.12125pt x 348.30125pt>
+File: ./Pics/Usach S1.png Graphic file (type png)
+<use ./Pics/Usach S1.png>
+Package pdftex.def Info: ./Pics/Usach S1.png  used on input line 69.
+(pdftex.def)             Requested size: 76.82246pt x 24.25603pt.
+ [1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 
-[5
+ <./Pics/Usach S1.png>] (./PresSemI.toc) [2
+
+] (./PresSemI.toc) [3
+
+] (./PresSemI.toc) [4
+
+] [5
+
+] [6
+
+] [7
 
 ]
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[6
-
-]
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[7
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 84
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-<.//Pics//lahar.png, id=813, 1193.20781pt x 753.5653pt>
+<.//Pics//lahar.png, id=766, 1193.20781pt x 753.5653pt>
 File: .//Pics//lahar.png Graphic file (type png)
 <use .//Pics//lahar.png>
-Package pdftex.def Info: .//Pics//lahar.png  used on input line 84.
+Package pdftex.def Info: .//Pics//lahar.png  used on input line 93.
 (pdftex.def)             Requested size: 284.51863pt x 170.70622pt.
+ [8
 
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+ <.//Pics//lahar.png>] (./PresSemI.toc) [9
 
-[8
+] [10
 
- <.//Pics//lahar.png>]
-Overfull \hbox (11.62498pt too wide) detected at line 86
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+] [11
 
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+] (./PresSemI.toc) [12
 
-[9
+] [13
 
-]
-Overfull \hbox (11.62498pt too wide) detected at line 94
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+] [14
 
+] (./PresSemI.toc) [15
 
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+] [16
 
-[10
+] (./PresSemI.toc) [17
+
+] [18
+
+] (./PresSemI.toc) [19
 
 ]
-Overfull \hbox (11.62498pt too wide) detected at line 100
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[11
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 103
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[12
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 116
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[13
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 125
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[14
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 129
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[15
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 139
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[16
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 143
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[17
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 151
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[18
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 154
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[19
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 169
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 169.
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+(amsmath)                 on input line 178.
 
 [20
 
-]
-Overfull \hbox (11.62498pt too wide) detected at line 183
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+] [21
 
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[21
+] [22
 
 ]
-Overfull \hbox (11.62498pt too wide) detected at line 191
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[22
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 200
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-<.//Pics//porepressure.png, id=2385, 511.9125pt x 207.77625pt>
+<.//Pics//porepressure.png, id=2242, 511.9125pt x 207.77625pt>
 File: .//Pics//porepressure.png Graphic file (type png)
 <use .//Pics//porepressure.png>
-Package pdftex.def Info: .//Pics//porepressure.png  used on input line 200.
+Package pdftex.def Info: .//Pics//porepressure.png  used on input line 209.
 (pdftex.def)             Requested size: 284.5288pt x 115.4852pt.
+ [23
 
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[23
-
- <.//Pics//porepressure.png>]
-Overfull \hbox (11.62498pt too wide) detected at line 212
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[24
+ <.//Pics//porepressure.png>] [24
 
 ]
-Overfull \hbox (11.62498pt too wide) detected at line 221
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-<.//Pics//exner.jpg, id=2591, 187.1793pt x 115.34293pt>
+<.//Pics//exner.jpg, id=2436, 187.1793pt x 115.34293pt>
 File: .//Pics//exner.jpg Graphic file (type jpg)
 <use .//Pics//exner.jpg>
-Package pdftex.def Info: .//Pics//exner.jpg  used on input line 221.
+Package pdftex.def Info: .//Pics//exner.jpg  used on input line 230.
 (pdftex.def)             Requested size: 277.07245pt x 170.7365pt.
+ [25
 
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+ <.//Pics//exner.jpg>] [26
 
-[25
+] (./PresSemI.toc) [27
 
- <.//Pics//exner.jpg>]
-Overfull \hbox (11.62498pt too wide) detected at line 237
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+] [28
 
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[26
+] [29
 
 ]
-Overfull \hbox (11.62498pt too wide) detected at line 240
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[27
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 263
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[28
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 288
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[29
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 297
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-<Pics/carta_gantt_formal.png, id=3108, 787.0203pt x 497.03693pt>
+<Pics/carta_gantt_formal.png, id=2924, 787.0203pt x 497.03693pt>
 File: Pics/carta_gantt_formal.png Graphic file (type png)
 <use Pics/carta_gantt_formal.png>
-Package pdftex.def Info: Pics/carta_gantt_formal.png  used on input line 297.
+Package pdftex.def Info: Pics/carta_gantt_formal.png  used on input line 306.
 (pdftex.def)             Requested size: 307.28987pt x 194.07114pt.
 
-Overfull \vbox (30.16394pt too high) detected at line 297
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
+Overfull \vbox (30.16394pt too high) detected at line 306
  []
 
 [30
 
- <./Pics/carta_gantt_formal.png>]
-Overfull \hbox (11.62498pt too wide) detected at line 299
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
+ <./Pics/carta_gantt_formal.png>] (./PresSemI.bbl) [31
 
-(./PresSemI.toc)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[31
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 305
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[32
-
-]
-Overfull \hbox (11.62498pt too wide) detected at line 318
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-(./PresSemI.bbl)
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[33
-
-]
-Overfull \hbox (11.62498pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [][][][] [][][] [][][] [][][][][][][][][] [][][][][] [][][][][]  
- []
-
-[34
+] [32
 
 
 ]
@@ -1349,18 +1163,18 @@ L3 programming layer <2025-11-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 30874 strings out of 467537
- 612209 string characters out of 5423703
- 1036020 words of memory out of 5000000
- 59095 multiletter control sequences out of 15000+600000
- 640902 words of font info for 74 fonts, out of 8000000 for 9000
+ 30873 strings out of 467537
+ 612220 string characters out of 5423703
+ 1034391 words of memory out of 5000000
+ 59096 multiletter control sequences out of 15000+600000
+ 643187 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,123p,644b,838s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on PresSemI.pdf (34 pages, 4461738 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
+Output written on PresSemI.pdf (32 pages, 4468054 bytes).
 PDF statistics:
- 3674 PDF objects out of 4296 (max. 8388607)
- 2343 compressed objects within 24 object streams
- 93 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3268 PDF objects out of 3580 (max. 8388607)
+ 2105 compressed objects within 22 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 

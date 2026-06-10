@@ -162,7 +162,7 @@
 \DeclareOption{apendices}{\tesisusach@apendicestrue}%
 
 % Citas
-\newcommand{\@norma}{apa}
+\newcommand{\@norma}{ieee}
 \DeclareOption{ams}{\def\@norma{ams}}%
 \DeclareOption{ieee}{\def\@norma{ieee}}%
 \DeclareOption{apa}{\def\@norma{apa}}%
@@ -690,9 +690,9 @@
 
 % Por omisión en pdfLaTeX
 \makeatletter
-\def\tesisusach@facultad{[Facultad]}
-\def\tesisusach@departamento{[Departamento]}
-\def\tesisusach@titulacion{[Titulación]}
+\def\tesisusach@facultad{Facultad de Ciencia}
+\def\tesisusach@departamento{Departamento de Matemática y Ciencia de la Computación}
+\def\tesisusach@titulacion{Analista en Computación Científica}
 \makeatother
 
 \endinput

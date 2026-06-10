@@ -15,15 +15,24 @@
 %\graphicspath{{pic/}}
 
 
-
-\author{Dylan Jara}
-\title[Modelamiento de Lahares mediante PINNs]{Modelamiento de Lahares mediante Redes Neuronales Informadas por la Física (PINNs): Aplicación 
+\title[Modelamiento de Lahares mediante PINNs]{\large Modelamiento de Lahares mediante Redes Neuronales Informadas por la Física (PINNs): Aplicación
 al evento eruptivo de 2015 del volcán Villarica, Chile}
-\subtitle{}
-\institute{
-    Departamento de Matemática y Ciencia de la Computación, Universidad de Santiago de Chile
+
+\author[Dylan Jara]{
+    \textbf{\small Dylan Jara Carvajal} \\
+    \vspace{0.2cm}
+    {\scriptsize
+    \begin{tabular}{c c c}
+        Profesor Patrocinante & Profesor Guía & Profesor Co-guía \\
+        \textbf{Felipe Herrera} & \textbf{Johan Triana} & \textbf{Yuvineza Gomez-Leyton}
+    \end{tabular}
+    }
 }
-\date{\today}
+\institute[DMCC - USACH]{\small
+    Departamento de Matemática y Ciencia de la Computación\\
+    Universidad de Santiago de Chile
+}
+\date{\small\today}
 \usepackage{./Ritsumeikan}
 
 % defs
@@ -69,7 +78,7 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 \subsection{Lahares}
 \begin{frame}{Qué son los lahares?}
     \begin{itemize}
-        \item<1-> Flujos de sedimentos volcánicos que se originan en volcanes potencialmente activos se llaman lahares \textbf{\cite{Vallance2024}}.
+        \item<1-> Flujos de sedimentos volcánicos que se originan en volcanes potencialmente activos se llaman lahares \cite{Vallance2024}.
         \item<2-> Los lahares son mezclas de agua, ceniza volcánica, tefra, fragmentos de roca y bloques de hielo que pueden fluir como concreto húmedo. 
         \item<3-> El término proviene de la palabra indonesia para estos destructivos flujos de lodo que causan tanto daños materiales como pérdida de vidas. \cite{porfido2020new,ortiz1996riesgo}
     \end{itemize}
@@ -84,7 +93,7 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 \end{frame}
 
 \subsection{Physics-Informed Neural Networks (PINNs)}
-\begin{frame}{Que son las PINNs?}
+\begin{frame}{Qué son las PINNs?}
 \begin{itemize}
     \item Las redes neuronales basadas en la física son redes neuronales entrenadas para resolver tareas de aprendizaje supervisado respetando
     cualquier ley física dada descrita por ecuaciones diferenciales parciales no lineales generales. \cite{RAISSI2019686}
@@ -151,7 +160,7 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 \end{frame}
 
 
-\section{Sistema acoplado de PDEs}
+\section[Sistema PDEs]{Sistema acoplado de PDEs}
 \begin{frame}{Conservacion de Masa y Momentum}
     Conservacion de masa con fuente de masa: 
     \begin{align}
@@ -296,15 +305,6 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
     \end{figure}
 \end{frame}
 %/////////////////////////////////////////////%
-\section{Conclusiones} 
-\begin{frame}{Conclusiones}
-    \begin{enumerate}
-        \item Se ha formulado un sistema acoplado de PDEs que modela la morfodinámica de un lahar, incorporando conservación de masa, momento, concentración sólida y presión de poros.
-        \item El agregar más ecuaciones diferenciales parciales y parámetros geológicos al modelo de PINN permite capturar fenómenos físicos más complejos, pero también introduce desafíos significativos en términos de convergencia y estabilidad del entrenamiento.
-    \end{enumerate}
-\end{frame}
-
-
 
 %/////////////////////////////////////////////%
 \begin{frame}[allowframebreaks]{Referencias}
