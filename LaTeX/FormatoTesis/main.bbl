@@ -141,53 +141,55 @@
       \endverb
       \keyw{unmanned aerial system,drone,Villarrica,volcanic emissions,degassing}
     \endentry
-    \entry{MR4811139}{article}{}{}
+    \entry{HORNIK1989359}{article}{}{}
       \name{author}{3}{}{%
-        {{hash=9429d67921c2c472b249e6c90eda35a4}{%
-           family={Lyu},
-           familyi={L\bibinitperiod},
-           given={Zhiyuan},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=7b8053d660f461e7b84a3ceb2c841d28}{%
-           family={Lui},
-           familyi={L\bibinitperiod},
-           given={Lok\bibnamedelima Ming},
-           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=108e2e7ee0f635c31bce5efef481aa0b}{%
-           family={Choi},
-           familyi={C\bibinitperiod},
-           given={Gary\bibnamedelimb P.\bibnamedelimi T.},
-           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=bec8dd1340457a82c21b54971e4c9417}{%
+           family={Hornik},
+           familyi={H\bibinitperiod},
+           given={Kurt},
+           giveni={K\bibinitperiod}}}%
+        {{hash=17a26ba07299c37a45cc2475a9f3bc8d}{%
+           family={Stinchcombe},
+           familyi={S\bibinitperiod},
+           given={Maxwell},
+           giveni={M\bibinitperiod}}}%
+        {{hash=426e452a5ec8e692f7740ce0d3e3655c}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Halbert},
+           giveni={H\bibinitperiod}}}%
       }
-      \strng{namehash}{936fef03cd439d249e29b0b460daa5c3}
-      \strng{fullhash}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{fullhashraw}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{bibnamehash}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{authorbibnamehash}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{authornamehash}{936fef03cd439d249e29b0b460daa5c3}
-      \strng{authorfullhash}{dccbb54f9c75c3d7a23838a61290e337}
-      \strng{authorfullhashraw}{dccbb54f9c75c3d7a23838a61290e337}
+      \strng{namehash}{a8d7f46f242b5a2ff80ecb656326c2de}
+      \strng{fullhash}{31166c18fa8ee825c1eb4693189f9e2a}
+      \strng{fullhashraw}{31166c18fa8ee825c1eb4693189f9e2a}
+      \strng{bibnamehash}{31166c18fa8ee825c1eb4693189f9e2a}
+      \strng{authorbibnamehash}{31166c18fa8ee825c1eb4693189f9e2a}
+      \strng{authornamehash}{a8d7f46f242b5a2ff80ecb656326c2de}
+      \strng{authorfullhash}{31166c18fa8ee825c1eb4693189f9e2a}
+      \strng{authorfullhashraw}{31166c18fa8ee825c1eb4693189f9e2a}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1936-4954}
-      \field{journaltitle}{SIAM J. Imaging Sci.}
-      \field{number}{4}
-      \field{title}{Spherical density-equalizing map for genus-0 closed surfaces}
-      \field{volume}{17}
-      \field{year}{2024}
-      \field{pages}{2110\bibrangedash 2141}
-      \range{pages}{32}
+      \field{abstract}{This paper rigorously establishes that standard multilayer feedforward networks with as few as one hidden layer using arbitrary squashing functions are capable of approximating any Borel measurable function from one finite dimensional space to another to any desired degree of accuracy, provided sufficiently many hidden units are available. In this sense, multilayer feedforward networks are a class of universal approximators.}
+      \field{issn}{0893-6080}
+      \field{journaltitle}{Neural Networks}
+      \field{number}{5}
+      \field{title}{Multilayer feedforward networks are universal approximators}
+      \field{volume}{2}
+      \field{year}{1989}
+      \field{pages}{359\bibrangedash 366}
+      \range{pages}{8}
       \verb{doi}
-      \verb 10.1137/24M1633911
+      \verb https://doi.org/10.1016/0893-6080(89)90020-8
       \endverb
       \verb{urlraw}
-      \verb https://doi.org/10.1137/24M1633911
+      \verb https://www.sciencedirect.com/science/article/pii/0893608089900208
       \endverb
       \verb{url}
-      \verb https://doi.org/10.1137/24M1633911
+      \verb https://www.sciencedirect.com/science/article/pii/0893608089900208
       \endverb
+      \keyw{Feedforward networks,Universal approximation,Mapping networks,Network representation capability,Stone-Weierstrass Theorem,Squashing functions,Sigma-Pi networks,Back-propagation networks}
     \endentry
     \entry{MR1487846}{article}{}{}
       \name{author}{2}{}{%
