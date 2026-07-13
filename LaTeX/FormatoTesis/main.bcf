@@ -2375,9 +2375,10 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">https://doi.org/10.1029/2018GC007692</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">HORNIK1989359</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">MR1487846</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">MR1823409</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">krenker2011introduction</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">HORNIK1989359</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">MR1487846</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">MR1823409</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
