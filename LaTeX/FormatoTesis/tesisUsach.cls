@@ -493,6 +493,9 @@
 	\renewcommand\familydefault{\sfdefault}
 \fi\fi
 
+\usepackage{amsmath}
+\usepackage{amssymb}
+
 % Bibliografía
 \RequirePackage{csquotes}%
 

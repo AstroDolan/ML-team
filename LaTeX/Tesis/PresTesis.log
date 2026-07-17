@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  13 JUL 2026 00:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  17 JUL 2026 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1666,7 +1666,7 @@ Package rerunfilecheck Info: File `PresTesis.out' has not changed.
 Here is how much of TeX's memory you used:
  32630 strings out of 467537
  648919 string characters out of 5423703
- 1082631 words of memory out of 5000000
+ 1082633 words of memory out of 5000000
  60827 multiletter control sequences out of 15000+600000
  641067 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

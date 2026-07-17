@@ -141,6 +141,42 @@
       \endverb
       \keyw{unmanned aerial system,drone,Villarrica,volcanic emissions,degassing}
     \endentry
+    \entry{krenker2011introduction}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=85afb04bed2f628cc57263ce30fdd708}{%
+           family={Krenker},
+           familyi={K\bibinitperiod},
+           given={Andrej},
+           giveni={A\bibinitperiod}}}%
+        {{hash=21c119e00a16fdb72b3e88020ebf44a8}{%
+           family={Bešter},
+           familyi={B\bibinitperiod},
+           given={Janez},
+           giveni={J\bibinitperiod}}}%
+        {{hash=997e1d2b48ea5bb89be8468733c688ba}{%
+           family={Kos},
+           familyi={K\bibinitperiod},
+           given={Andrej},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{935a19d7d94ab22b2a299e6c41111d52}
+      \strng{fullhash}{0f9a6ffbaf596d822e6bfccc8f0dc1f2}
+      \strng{fullhashraw}{0f9a6ffbaf596d822e6bfccc8f0dc1f2}
+      \strng{bibnamehash}{0f9a6ffbaf596d822e6bfccc8f0dc1f2}
+      \strng{authorbibnamehash}{0f9a6ffbaf596d822e6bfccc8f0dc1f2}
+      \strng{authornamehash}{935a19d7d94ab22b2a299e6c41111d52}
+      \strng{authorfullhash}{0f9a6ffbaf596d822e6bfccc8f0dc1f2}
+      \strng{authorfullhashraw}{0f9a6ffbaf596d822e6bfccc8f0dc1f2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artificial Neural Networks: Methodological Advances and Biomedical Applications. InTech}
+      \field{title}{Introduction to the artificial neural networks}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
+    \endentry
     \entry{HORNIK1989359}{article}{}{}
       \name{author}{3}{}{%
         {{hash=bec8dd1340457a82c21b54971e4c9417}{%
@@ -167,8 +203,8 @@
       \strng{authornamehash}{a8d7f46f242b5a2ff80ecb656326c2de}
       \strng{authorfullhash}{31166c18fa8ee825c1eb4693189f9e2a}
       \strng{authorfullhashraw}{31166c18fa8ee825c1eb4693189f9e2a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper rigorously establishes that standard multilayer feedforward networks with as few as one hidden layer using arbitrary squashing functions are capable of approximating any Borel measurable function from one finite dimensional space to another to any desired degree of accuracy, provided sufficiently many hidden units are available. In this sense, multilayer feedforward networks are a class of universal approximators.}
@@ -212,8 +248,8 @@
       \strng{authornamehash}{f848fc1deb426d071a375f688e97a704}
       \strng{authorfullhash}{f848fc1deb426d071a375f688e97a704}
       \strng{authorfullhashraw}{f848fc1deb426d071a375f688e97a704}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0362-546X,1873-5215}
@@ -258,8 +294,8 @@
       \strng{authornamehash}{8fe56639d24a44be02f29893daa40e31}
       \strng{authorfullhash}{8fe56639d24a44be02f29893daa40e31}
       \strng{authorfullhashraw}{8fe56639d24a44be02f29893daa40e31}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{3-528-03154-9}
