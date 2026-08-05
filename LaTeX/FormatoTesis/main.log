@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  26 JUL 2026 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  3 AUG 2026 03:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1862,7 +1862,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./Figuras/logoUsach.png, id=78, 1037.8775pt x 1037.8775pt>
+<./Figuras/logoUsach.png, id=134, 1037.8775pt x 1037.8775pt>
 File: ./Figuras/logoUsach.png Graphic file (type png)
 <use ./Figuras/logoUsach.png>
 Package pdftex.def Info: ./Figuras/logoUsach.png  used on input line 15.
@@ -1979,14 +1979,14 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-)
-\tf@toc=\write9
-\openout9 = `main.toc'.
-
  [5
 
 
-] (./main.lot
+])
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+ [6] (./main.lot
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1997,7 +1997,7 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
- [6
+ [7
 
 
 ] (./main.lof
@@ -2011,7 +2011,7 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [7
+ [8
 
 
 ]
@@ -2036,10 +2036,10 @@ Overfull \hbox (65.15007pt too wide) in paragraph at lines 1--1
 |\T1/qhv/b/n/24.88 (-20) Fundamentos de Re-des Neu-ro-na-les Ar-ti-fi-cia-les| 
  []
 
-<./Figuras/figura1-ANN-Cap1.png, id=151, 551.81157pt x 372.64218pt>
+<./Figuras/figura1-ANN-Cap1.png, id=230, 551.81157pt x 372.64218pt>
 File: ./Figuras/figura1-ANN-Cap1.png Graphic file (type png)
 <use ./Figuras/figura1-ANN-Cap1.png>
-Package pdftex.def Info: ./Figuras/figura1-ANN-Cap1.png  used on input line 13.
+Package pdftex.def Info: ./Figuras/figura1-ANN-Cap1.png  used on input line 14.
 (pdftex.def)             Requested size: 330.61957pt x 223.27998pt.
 
 pdfTeX warning (font expansion): font should be expanded before its first use
@@ -2049,36 +2049,67 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning (font expansion): font should be expanded before its first use
 
-Overfull \hbox (0.97827pt too wide) in paragraph at lines 26--30
+Overfull \hbox (0.97827pt too wide) in paragraph at lines 23--28
 \T1/qhv/m/n/12 (-20) ar-ti-fi-cial. Su for-mu-la-ción ma-te-má-ti-ca se ins-pi-ra, de ma-ne-ra sim-pli-fi-ca-da, en el fun-cio-na-mien-to
  []
 
-
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 
+l.31 
       [2
 
 
 
 
-] (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-) [3 <./Figuras/figura1-ANN-Cap1.png>]
-Overfull \hbox (0.28024pt too wide) in paragraph at lines 52--53
+] [3 <./Figuras/figura1-ANN-Cap1.png>]
+Overfull \hbox (0.28024pt too wide) in paragraph at lines 52--55
 []\T1/qhv/m/n/12 (-20) Es im-por-tan-te no-tar que, si bien la ana-lo-gía bio-ló-gi-ca re-sul-ta útil co-mo mo-ti-va-ción con-cep-tual,
  []
 
-[4]) [5]
+<./Figuras/fig7.2kr.jpg, id=260, 315.30186pt x 206.57707pt>
+File: ./Figuras/fig7.2kr.jpg Graphic file (type jpg)
+<use ./Figuras/fig7.2kr.jpg>
+Package pdftex.def Info: ./Figuras/fig7.2kr.jpg  used on input line 63.
+(pdftex.def)             Requested size: 330.61957pt x 216.62547pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (14.76932pt too wide) in paragraph at lines 69--74
+\T1/qhv/m/n/12 (-20) in-ter-me-dias de los da-tos, cap-tu-ran-do pa-tro-nes com-ple-jos y no li-nea-les que se-rían inal-can-za-bles
+ []
+
+[4]
+Overfull \hbox (14.90857pt too wide) in paragraph at lines 88--89
+[]\T1/qhv/m/n/12 (-20) La sa-li-da fi-nal de la red, $[] \OT1/cmr/m/n/12 = \OT1/cmr/bx/n/12 h[]$\T1/qhv/m/n/12 (-20) , que-da ex-pre-sa-da co-mo la com-po-si-ción de $\OML/cmm/m/it/12 L$ \T1/qhv/m/n/12 (-20) trans-for-ma-cio-nes
+ []
+
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [5 <./Figuras/fig7.2kr.jpg>]) [6]
 \openout2 = `Capitulos/02_Capitulo2.aux'.
 
  (./Capitulos/02_Capitulo2.tex
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 4.
-LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 17.
-(c:/texlive/2025/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
+(Font)              scaled to size 10.95pt on input line 24.
+[7
+
+
+
+
+]
+Overfull \vbox (226.33049pt too high) has occurred while \output is active []
+
+ [8]
+LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 37.
+ (c:/texlive/2025/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2086,22 +2117,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 6047) in paragraph at lines 14--20
+Underfull \hbox (badness 6047) in paragraph at lines 34--40
  [][] 
  []
 
-[6
-
-
-
-
-{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+(c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 60.
+) [9{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 80.
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 10.95pt on input line 61.
-) [7]
+(Font)              scaled to size 10.95pt on input line 81.
+) [10]
 \openout2 = `Capitulos/0a_Conclusiones.aux'.
 
  (./Capitulos/0a_Conclusiones.tex
@@ -2109,7 +2135,7 @@ Overfull \hbox (8.1357pt too wide) in paragraph at lines 13--13
 []\T1/qhv/m/n/12 (-20) En es-ta par-te ter-mi-nan las pá-gi-nas cen-tra-les. A con-ti-nua-ción, se pue-de agre-gar op-ta-ti-va-men-te,
  []
 
-) [8
+) [11
 
 
 
@@ -2125,7 +2151,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
 
 No file main.gls.
-[9
+[12
 
 
 
@@ -2134,13 +2160,13 @@ Overfull \hbox (11.34657pt too wide) in paragraph at lines 75--75
 \T1/qhv/m/n/12 (-20) Un-man-ned Ae-rial Sys-tem (UAS) Mea-su-re-ments at Vol-cán Vi-lla-rri-ca, Chi-le,^^T \T1/qhv/m/it/12 (-20) Geo-che-mistry,
  []
 
-[10
+[13
 
-] (./Secciones/b1_Anexos.tex) [11
+] [14] (./Secciones/b1_Anexos.tex) [15
 
 
 
-] (./Secciones/b2_Apendices.tex) [12
+] (./Secciones/b2_Apendices.tex) [16
 
 
 
@@ -2157,19 +2183,19 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 443191EB5236C40D4CDDD1F6BCF65914;2344.
+(rerunfilecheck)             Checksum: 39D3BD0B6C0C3B13D9EC97CDF40BCB09;5323.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61112 strings out of 467537
- 1317083 string characters out of 5423703
- 2403207 words of memory out of 5000000
- 88852 multiletter control sequences out of 15000+600000
- 690341 words of font info for 150 fonts, out of 8000000 for 9000
+ 61240 strings out of 467537
+ 1319779 string characters out of 5423703
+ 2400822 words of memory out of 5000000
+ 88933 multiletter control sequences out of 15000+600000
+ 692771 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,8n,131p,2546b,2324s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,8n,131p,2546b,4034s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{cite.0@MR1823409} has been referenced but does not exist, replaced by a fixed one
 
@@ -2180,7 +2206,16 @@ pdfTeX warning (dest): name{cite.0@MR1487846} has been referenced but does not e
 pdfTeX warning (dest): name{cite.0@HORNIK1989359} has been referenced but does not exist, replaced by a fixed one
 
 
+pdfTeX warning (dest): name{cite.0@park2025artificial} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@goodfellow2016deep} has been referenced but does not exist, replaced by a fixed one
+
+
 pdfTeX warning (dest): name{cite.0@mcculloch1943logical} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@walczak2018artificial} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{cite.0@krenker2011introduction} has been referenced but does not exist, replaced by a fixed one
@@ -2188,11 +2223,11 @@ pdfTeX warning (dest): name{cite.0@krenker2011introduction} has been referenced 
 
 pdfTeX warning (dest): name{cite.0@https://doi.org/10.1029/2018GC007692} has been referenced but does not exist, replaced by a fixed one
 
-<c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on main.pdf (21 pages, 329378 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
+Output written on main.pdf (26 pages, 441970 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
- 36011 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 37664 words of extra memory for PDF output out of 42996 (max. 10000000)
 

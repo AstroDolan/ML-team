@@ -2,11 +2,12 @@
 \label{cap:capitulo1}%
 
 \section{Redes Neuronales Artificiales}
+\label{sec:redes_neuroanles_artificiales}
 Una red neuronal artificial (RNA) o por sus siglas en inglés ANN (\textit{Artificial Neural Network}) es un modelo matemático que intenta simular la estructura y las funcionalidades
 de las redes neuronales biológicas. El bloque base de una ANN es un una neurona artificial, esto es, un simple modelo matemático (una función).
 Este modelo contiene tres reglas básicas: la suma ponderada de las entradas, la adición de un sesgo y la aplicación de una función de activación. Las entradas de la neurona multiplicadas por un peso, es decir,
 cada valor de entrada es ponderado por un peso individual. En el medio de la neurona se encuentra la función que suma todas las entradas ponderadas y los sesgos. Posterior a la suma, en la salida
-de la neurona se encuentra la función de activación, la cual es una función no lineal que determina si la neurona se activa o no. \cite{krenker2011introduction}.
+de la neurona se encuentra la función de activación, la cual es una función no lineal que determina si la neurona se activa o no. \cite{krenker2011introduction} \cite{walczak2018artificial}. %CITAR TAMBIEN A STEVEN WALCZAK, AGREGAR EL .BIB
 
 \begin{figure}[h!]
     \centering
@@ -15,18 +16,15 @@ de la neurona se encuentra la función de activación, la cual es una función n
     \label{fig:neurona}
     \fuente{\cite{krenker2011introduction}}
 \end{figure}
-\subsection{Neurona Artificial}
-La neurona artificial es el pilar fundamental de las redes neuronales artificiales. Su diseño y funcionalidades están basadas en observaciones de la biología, específicamente en el funcionamiento de las neuronas biológicas.
-La información de la neurona artificial se transmite a través de entradas ponderadas por un peso, donde cada entrada puede ser ponderada por un peso individual. Luego, el cuerpo de la neurona artificial suma todas las entradas ponderadas, sesgos y 
-"procesa" la información a través de una función de activación. 
 
 \subsection{Neurona Artificial}
 \label{subsec:neurona_artificial}
 
-La neurona artificial constituye la unidad computacional fundamental de una red neuronal artificial. Su formulación matemática se inspira, de manera simplificada, en el funcionamiento de la neurona biológica: las dendritas que reciben señales 
-se representan mediante entradas ponderadas, el cuerpo celular que integra dichas señales se representa mediante una suma, y el axón que transmite el resultado se representa mediante una función de salida. El primer modelo matemático formal 
-de esta idea fue propuesto por McCulloch y Pitts, quienes introdujeron una neurona binaria capaz de representar operaciones lógicas a partir de la combinación de señales de entrada \cite{mcculloch1943logical}. Si bien dicho modelo original 
-consideraba únicamente salidas binarias, sentó las bases conceptuales de las neuronas artificiales utilizadas en la actualidad.
+La neurona artificial constituye la unidad computacional fundamental de una red neuronal artificial. Su formulación matemática se inspira, de manera simplificada, en el funcionamiento de la neurona biológica: 
+las dendritas que reciben señales se representan mediante entradas ponderadas, el cuerpo celular que integra dichas señales se representa mediante una suma, y el axón que transmite el resultado se representa 
+mediante una función de salida. El primer modelo matemático formal de esta idea fue propuesto por McCulloch y Pitts, quienes introdujeron una neurona binaria capaz de representar operaciones lógicas a 
+partir de la combinación de señales de entrada \cite{mcculloch1943logical}. Si bien dicho modelo original consideraba únicamente salidas binarias, sentó las bases conceptuales de las neuronas 
+artificiales utilizadas en la actualidad.
 
 Formalmente, sea $\mathbf{x} = (x_1, x_2, \dots, x_n) \in \mathbb{R}^n$ el vector de entradas de la neurona. A cada entrada $x_i$ se le asocia un peso sináptico $w_i \in \mathbb{R}$, que pondera su contribución relativa. La neurona calcula 
 primero una combinación lineal de las entradas, conocida como \textit{entrada neta} o \textit{potencial de activación}, definida como
@@ -47,16 +45,66 @@ queda entonces definida por
     \label{eq:salida_neurona}
 \end{equation}
 
-La elección de $\varphi$ es determinante para la capacidad expresiva del modelo: sin una función de activación no lineal, la composición de múltiples neuronas se reduciría a una simple transformación lineal, independientemente del número de neuronas o capas involucradas. Entre las funciones de activación más utilizadas se encuentran la función sigmoide, la tangente hiperbólica y la unidad lineal rectificada (ReLU), cada una con propiedades distintas en cuanto a suavidad, rango de salida y comportamiento del gradiente durante el entrenamiento; estas se discutirán con mayor detalle en las secciones siguientes, en el contexto de la arquitectura completa de la red.
+La elección de $\varphi$ es determinante para la capacidad expresiva del modelo: sin una función de activación no lineal, la composición de múltiples neuronas se reduciría a una simple transformación lineal, independientemente del número de neuronas o capas 
+involucradas. Entre las funciones de activación más utilizadas se encuentran la función sigmoide, la tangente hiperbólica y la unidad lineal rectificada (ReLU), cada una con propiedades distintas en cuanto a suavidad, 
+rango de salida y comportamiento del gradiente durante el entrenamiento; estas se discutirán con mayor detalle en las secciones siguientes, en el contexto de la arquitectura completa de la red \cite{goodfellow2016deep}.
 
-Es importante notar que, si bien la analogía biológica resulta útil como motivación conceptual, la neurona artificial descrita por las Ecuaciones~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} es, en esencia, un modelo matemático de aproximación de funciones. Una única neurona posee una capacidad de representación limitada, restringida a separaciones lineales o a transformaciones simples de sus entradas. La potencia de las redes neuronales artificiales surge, en cambio, de la interconexión de múltiples neuronas organizadas en capas, dando lugar al perceptrón multicapa que se describe a continuación.
+Es importante notar que, si bien la analogía biológica resulta útil como motivación conceptual, la neurona artificial descrita por las Ecuaciones~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} es, en esencia, 
+un modelo matemático de aproximación de funciones. Una única neurona posee una capacidad de representación limitada, restringida a separaciones lineales o a transformaciones simples de sus entradas. 
+La potencia de las redes neuronales artificiales surge, en cambio, de la interconexión de múltiples neuronas organizadas en capas, dando lugar al perceptrón multicapa que se describe a continuación.
+
 \subsection{Perceptrón Multicapa}
+\label{subsec:perceptron_multicapa}
+El perceptrón multicapa (MLP, por sus siglas en inglés) es la arquitectura más común de redes neuronales artificiales. En la mayoría de los casos, las señales son transmitidas de manera unidireccional 
+desde la capa de entrada hasta la capa de salida y el valor de salida de la neurona no afecta a la red. Este tipo de arquitectura se llama \textit{feedforward} y se representa mediante un grafo acíclico dirigido.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{fig7.2kr.jpg}
+    \caption{Red neuronal \textit{feedforward} de tres capas con una capa de entrada, una (o más) capa(s) oculta(s) y una capa de salida.}
+    \label{fig:feedforwardneuralnetwork}
+    \fuente{\cite{park2025artificial}}
+\end{figure}
 
+Las capas que no se conectan directamente con la entrada o la salida se denominan capas ocultas. La presencia de estas capas permite a la red aprender representaciones intermedias de los datos, capturando patrones complejos y 
+no lineales que serían inalcanzables para un modelo lineal simple. La introducción de múltiples capas es determinada por la complejidad de la función que se desea aproximar y la no-linealidad de esta. 
+En general, a mayor complejidad de la función objetivo, mayor número de capas y neuronas se requerirá para lograr una aproximación satisfactoria. El número de neuronas
+en la capa de entrada depende de la cantidad de variables independientes que se deseen considerar, mientras que el número de neuronas en la capa de salida depende de la cantidad de variables dependientes que se deseen predecir.
+Finalmente, tanto el número de capas ocultas como el número de neuronas por capa son dependientes de la complejidad del modelo y son parámetros importantes en el desarrollo del MLP \cite{park2025artificial}.
+
+Desde un punto de vista formal, es posible extender la formulación presentada para una única neurona (Ecuaciones~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona}) a la red completa mediante la composición sucesiva de 
+transformaciones afines y funciones de activación, aplicadas capa a capa. Sea $L$ el número total de capas de la red (sin contar la capa de entrada), y sea $\mathbf{h}^{(l)} \in \mathbb{R}^{n_l}$ el vector de 
+activaciones de la capa $l$, con $\mathbf{h}^{(0)} = \mathbf{x}$ correspondiente al vector de entrada. La salida de cada capa $l = 1, \dots, L$ se calcula recursivamente como
+%Referencias: Goodfellow et al., Deep Learning, 2016; Nielsen, Neural Networks and Deep Learning, 2015. Capitulo 6
+\begin{equation}
+    \mathbf{h}^{(l)} = \varphi^{(l)}\!\left(W^{(l)} \mathbf{h}^{(l-1)} + \mathbf{b}^{(l)}\right),
+    \label{eq:forward_layer}
+\end{equation}
+
+\noindent donde $W^{(l)} \in \mathbb{R}^{n_l \times n_{l-1}}$ es la matriz de pesos que conecta la capa $l-1$ con la capa $l$, $\mathbf{b}^{(l)} \in \mathbb{R}^{n_l}$ es el vector de sesgos de la capa $l$, y $\varphi^{(l)}$ es 
+la función de activación correspondiente, aplicada componente a componente. Nótese que la Ecuación~\eqref{eq:forward_layer} generaliza directamente las Ecuaciones~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} de 
+la neurona individual, aplicándolas ahora de manera simultánea a todas las neuronas de una capa.
+
+La salida final de la red, $\hat{\mathbf{y}} = \mathbf{h}^{(L)}$, queda expresada como la composición de $L$ transformaciones sucesivas,
+
+\begin{equation}
+    \hat{\mathbf{y}} = F_{\boldsymbol{\theta}}(\mathbf{x}) = \varphi^{(L)}\!\left(W^{(L)} \varphi^{(L-1)}\!\left(\cdots \varphi^{(1)}\!\left(W^{(1)}\mathbf{x} + \mathbf{b}^{(1)}\right)\cdots\right) + \mathbf{b}^{(L)}\right),
+    \label{eq:mlp_forward}
+\end{equation}
+
+\noindent donde $\boldsymbol{\theta} = \{W^{(l)}, \mathbf{b}^{(l)}\}_{l=1}^{L}$ agrupa el conjunto completo de parámetros entrenables de la red. Esta notación compacta, $F_{\boldsymbol{\theta}}$, será la que se utilice en lo 
+sucesivo para referirse a la red neuronal como aproximador de una función objetivo, y resulta particularmente relevante en el contexto de las PINNs, donde una red de este tipo se emplea directamente para aproximar 
+la solución latente $u(t,x)$ de la ecuación diferencial de interés \cite{goodfellow2016deep}.
+
+Cabe destacar que la capacidad de un MLP para aproximar funciones arbitrarias no es solo empírica, sino que está respaldada teóricamente por el teorema de aproximación universal, 
+el cual establece que una red \textit{feedforward} con al menos una capa oculta y un número suficiente de neuronas puede aproximar cualquier función continua sobre un subconjunto compacto 
+de $\mathbb{R}^n$ con la precisión deseada, bajo condiciones razonables sobre la función de activación \cite{HORNIK1989359}. Este resultado es, en última instancia, el que justifica el uso de redes neuronales 
+profundas como aproximadores de soluciones de ecuaciones diferenciales en el marco de las PINNs, como se retomará más adelante en este capítulo.
 
 \section{PINNs}
-En este trabajo se adopta una aproximación diferente a lo que suele realizarse en la literatura, empleando redes neuronales profundas gracias a su gran y bien conocida capacidad como aproximadores universales \cite{HORNIK1989359}. De esta manera
-se puede abordar sin problemas la no-linealidad de los sistemas acoplados que aborda este trabajo. En áreas tales como sistemas físicos, biológicos o de ingeniería puede ser difícil o directamente imposible conseguir datos para el entrenamiento
+En este trabajo se adopta una aproximación diferente a lo que suele realizarse en la literatura, empleando redes neuronales profundas gracias a su gran y bien conocida capacidad como aproximadores 
+universales \cite{HORNIK1989359}. De esta manera se puede abordar sin problemas la no-linealidad de los sistemas acoplados que aborda este trabajo. En áreas tales como sistemas físicos, biológicos o de ingeniería 
+puede ser difícil o directamente imposible conseguir datos para el entrenamiento
 de modelos de aprendizaje automático causando un sesgo de entrenamiento y conclusiones incompletas o equívocas. 
 
 Consideramos una ecuación diferencial no lineal y parametrizada en su forma general 

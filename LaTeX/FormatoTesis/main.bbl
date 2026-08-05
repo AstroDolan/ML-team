@@ -177,6 +177,35 @@
       \field{pages}{1\bibrangedash 18}
       \range{pages}{18}
     \endentry
+    \entry{walczak2018artificial}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=fe9466dc3b4419a67b0463ea66e0da9d}{%
+           family={Walczak},
+           familyi={W\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IGI Global Scientific Publishing}%
+      }
+      \strng{namehash}{fe9466dc3b4419a67b0463ea66e0da9d}
+      \strng{fullhash}{fe9466dc3b4419a67b0463ea66e0da9d}
+      \strng{fullhashraw}{fe9466dc3b4419a67b0463ea66e0da9d}
+      \strng{bibnamehash}{fe9466dc3b4419a67b0463ea66e0da9d}
+      \strng{authorbibnamehash}{fe9466dc3b4419a67b0463ea66e0da9d}
+      \strng{authornamehash}{fe9466dc3b4419a67b0463ea66e0da9d}
+      \strng{authorfullhash}{fe9466dc3b4419a67b0463ea66e0da9d}
+      \strng{authorfullhashraw}{fe9466dc3b4419a67b0463ea66e0da9d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of Information Science and Technology, Fourth Edition}
+      \field{title}{Artificial neural networks}
+      \field{year}{2018}
+      \field{pages}{120\bibrangedash 131}
+      \range{pages}{12}
+    \endentry
     \entry{mcculloch1943logical}{article}{}{}
       \name{author}{2}{}{%
         {{hash=1ccb147b2b2165266e6ce5900193e687}{%
@@ -201,8 +230,8 @@
       \strng{authornamehash}{816477c5724040789c6fe02e3968dc62}
       \strng{authorfullhash}{816477c5724040789c6fe02e3968dc62}
       \strng{authorfullhashraw}{816477c5724040789c6fe02e3968dc62}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The bulletin of mathematical biophysics}
@@ -212,6 +241,82 @@
       \field{year}{1943}
       \field{pages}{115\bibrangedash 133}
       \range{pages}{19}
+    \endentry
+    \entry{goodfellow2016deep}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{fullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{fullhashraw}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{bibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhashraw}{3ae53fe582e8a815b118d26947eaa326}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deep Learning}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://www.deeplearningbook.org
+      \endverb
+      \verb{url}
+      \verb http://www.deeplearningbook.org
+      \endverb
+    \endentry
+    \entry{park2025artificial}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=57d5d74c71e5f118bd576478a8b66ab9}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Young-Seuk},
+           giveni={Y\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=ec31530255f73b59199189e91873d360}{%
+           family={Lek},
+           familyi={L\bibinitperiod},
+           given={Sovan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{fullhash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{fullhashraw}{f968b9b832afff664e9091b43ab3040e}
+      \strng{bibnamehash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{authorbibnamehash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{authornamehash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{authorfullhash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{authorfullhashraw}{f968b9b832afff664e9091b43ab3040e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Ecological model types}
+      \field{title}{Artificial neural networks (multilayer perceptron) for ecological modeling}
+      \field{year}{2025}
+      \field{pages}{297\bibrangedash 322}
+      \range{pages}{26}
     \endentry
     \entry{HORNIK1989359}{article}{}{}
       \name{author}{3}{}{%
@@ -239,8 +344,8 @@
       \strng{authornamehash}{a8d7f46f242b5a2ff80ecb656326c2de}
       \strng{authorfullhash}{31166c18fa8ee825c1eb4693189f9e2a}
       \strng{authorfullhashraw}{31166c18fa8ee825c1eb4693189f9e2a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper rigorously establishes that standard multilayer feedforward networks with as few as one hidden layer using arbitrary squashing functions are capable of approximating any Borel measurable function from one finite dimensional space to another to any desired degree of accuracy, provided sufficiently many hidden units are available. In this sense, multilayer feedforward networks are a class of universal approximators.}
@@ -284,8 +389,8 @@
       \strng{authornamehash}{f848fc1deb426d071a375f688e97a704}
       \strng{authorfullhash}{f848fc1deb426d071a375f688e97a704}
       \strng{authorfullhashraw}{f848fc1deb426d071a375f688e97a704}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0362-546X,1873-5215}
@@ -330,8 +435,8 @@
       \strng{authornamehash}{8fe56639d24a44be02f29893daa40e31}
       \strng{authorfullhash}{8fe56639d24a44be02f29893daa40e31}
       \strng{authorfullhashraw}{8fe56639d24a44be02f29893daa40e31}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{3-528-03154-9}
