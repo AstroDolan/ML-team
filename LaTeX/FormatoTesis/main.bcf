@@ -2385,8 +2385,10 @@
     <bcf:citekey order="9" intorder="1">goodfellow2016deep</bcf:citekey>
     <bcf:citekey order="10" intorder="1">HORNIK1989359</bcf:citekey>
     <bcf:citekey order="11" intorder="1">HORNIK1989359</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">MR1487846</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">MR1823409</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Lowe1986</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">article</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">MR1487846</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">MR1823409</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

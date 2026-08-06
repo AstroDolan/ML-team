@@ -368,6 +368,35 @@
       \endverb
       \keyw{Feedforward networks,Universal approximation,Mapping networks,Network representation capability,Stone-Weierstrass Theorem,Squashing functions,Sigma-Pi networks,Back-propagation networks}
     \endentry
+    \entry{article}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a3703b12215525e200476e0c16ca6cf3}{%
+           family={Stern},
+           familyi={S\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3703b12215525e200476e0c16ca6cf3}
+      \strng{fullhash}{a3703b12215525e200476e0c16ca6cf3}
+      \strng{fullhashraw}{a3703b12215525e200476e0c16ca6cf3}
+      \strng{bibnamehash}{a3703b12215525e200476e0c16ca6cf3}
+      \strng{authorbibnamehash}{a3703b12215525e200476e0c16ca6cf3}
+      \strng{authornamehash}{a3703b12215525e200476e0c16ca6cf3}
+      \strng{authorfullhash}{a3703b12215525e200476e0c16ca6cf3}
+      \strng{authorfullhashraw}{a3703b12215525e200476e0c16ca6cf3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista geológica de Chile}
+      \field{month}{12}
+      \field{title}{Active Andean volcanism: its geologic and tectonic setting}
+      \field{volume}{31}
+      \field{year}{2004}
+      \verb{doi}
+      \verb 10.4067/S0716-02082004000200001
+      \endverb
+    \endentry
     \entry{MR1487846}{article}{}{}
       \name{author}{2}{}{%
         {{hash=ba14dc71f074b9b4c7fa916d23aea011}{%
@@ -456,6 +485,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{Lowe1986}
 \endrefsection
 \endinput
 
