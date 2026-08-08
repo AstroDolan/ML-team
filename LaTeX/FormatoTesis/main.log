@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  6 AUG 2026 12:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  7 AUG 2026 22:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1862,7 +1862,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./Figuras/logoUsach.png, id=134, 1037.8775pt x 1037.8775pt>
+<./Figuras/logoUsach.png, id=102, 1037.8775pt x 1037.8775pt>
 File: ./Figuras/logoUsach.png Graphic file (type png)
 <use ./Figuras/logoUsach.png>
 Package pdftex.def Info: ./Figuras/logoUsach.png  used on input line 15.
@@ -1910,15 +1910,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Lowe1986
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
 
@@ -1987,14 +1979,14 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
- [5
-
-
-])
+)
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
- [6] (./main.lot
+ [5
+
+
+] (./main.lot
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2005,7 +1997,7 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
- [7
+ [6
 
 
 ] (./main.lof
@@ -2019,7 +2011,7 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [8
+ [7
 
 
 ]
@@ -2044,7 +2036,7 @@ Overfull \hbox (65.15007pt too wide) in paragraph at lines 1--1
 |\T1/qhv/b/n/24.88 (-20) Fundamentos de Re-des Neu-ro-na-les Ar-ti-fi-cia-les| 
  []
 
-<./Figuras/figura1-ANN-Cap1.png, id=230, 551.81157pt x 372.64218pt>
+<./Figuras/figura1-ANN-Cap1.png, id=188, 551.81157pt x 372.64218pt>
 File: ./Figuras/figura1-ANN-Cap1.png Graphic file (type png)
 <use ./Figuras/figura1-ANN-Cap1.png>
 Package pdftex.def Info: ./Figuras/figura1-ANN-Cap1.png  used on input line 14.
@@ -2078,7 +2070,7 @@ Overfull \hbox (0.28024pt too wide) in paragraph at lines 52--55
 []\T1/qhv/m/n/12 (-20) Es im-por-tan-te no-tar que, si bien la ana-lo-gía bio-ló-gi-ca re-sul-ta útil co-mo mo-ti-va-ción con-cep-tual,
  []
 
-<./Figuras/fig7.2kr.jpg, id=260, 315.30186pt x 206.57707pt>
+<./Figuras/fig7.2kr.jpg, id=217, 315.30186pt x 206.57707pt>
 File: ./Figuras/fig7.2kr.jpg Graphic file (type jpg)
 <use ./Figuras/fig7.2kr.jpg>
 Package pdftex.def Info: ./Figuras/fig7.2kr.jpg  used on input line 63.
@@ -2105,10 +2097,17 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
  (./Capitulos/02_Capitulo2.tex
 Cap\'{\i }tulo 2.
+[7
 
-LaTeX Warning: Citation 'Lowe1986' on page 7 undefined on input line 12.
 
-LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 19.
+
+
+]
+Overfull \hbox (48.04318pt too wide) in paragraph at lines 24--28
+\T1/qhv/m/n/12 (-20) pe-li-gros co-mo los flu-jos pi-ro-clás-ti-cos y los laha-res con-cen-tran una pro-por-ción des-pro-por-cio-na-da-men-te
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 40.
 (c:/texlive/2025/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
 )
@@ -2116,26 +2115,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qhv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [7
-
-
-
-
-]
+ [8]
+<figuras/zonasvolcanicas.png, id=283, 438.13687pt x 628.59843pt>
+File: figuras/zonasvolcanicas.png Graphic file (type png)
+<use figuras/zonasvolcanicas.png>
+Package pdftex.def Info: figuras/zonasvolcanicas.png  used on input line 46.
+(pdftex.def)             Requested size: 236.15787pt x 338.82423pt.
+ [9{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./Figuras/zonasvolcanicas.png>]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
- [8{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-Underfull \hbox (badness 6047) in paragraph at lines 41--47
+(Font)              scaled to size 10.95pt on input line 65.
+
+Underfull \hbox (badness 6047) in paragraph at lines 75--81
  [][] 
  []
 
-[9] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+[10] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 87.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 121.
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 10.95pt on input line 88.
-) [10]
+(Font)              scaled to size 10.95pt on input line 122.
+ [11]) [12]
 \openout2 = `Capitulos/0a_Conclusiones.aux'.
 
  (./Capitulos/0a_Conclusiones.tex
@@ -2143,7 +2143,7 @@ Overfull \hbox (8.1357pt too wide) in paragraph at lines 13--13
 []\T1/qhv/m/n/12 (-20) En es-ta par-te ter-mi-nan las pá-gi-nas cen-tra-les. A con-ti-nua-ción, se pue-de agre-gar op-ta-ti-va-men-te,
  []
 
-) [11
+) [13
 
 
 
@@ -2153,11 +2153,31 @@ Overfull \hbox (18.01857pt too wide) in paragraph at lines 70--70
 \T1/qhv/m/n/12 (-20) Un-man-ned Ae-rial Sys-tem (UAS) Mea-su-re-ments at Vol-cán Vi-lla-rri-ca, Chi-le,^^T \T1/qhv/m/it/12 (-20) Geo-che-mistry,
  []
 
-[12
+
+Overfull \hbox (60.71202pt too wide) in paragraph at lines 70--70
+\T1/qhv/m/n/12 (-20) ed., Se-cond Edi-tion, Ams-ter-dam: Aca-de-mic Press, 2015, págs. 587[]597, \T1/qhv/m/sc/12 (-20) isbn\T1/qhv/m/n/12 (-20) : 978-0-12-385938-9.
+ []
+
+[14
 
 
 
 ]
+Overfull \hbox (8.17882pt too wide) in paragraph at lines 70--70
+\T1/qhv/m/n/12 (-20) Ecua-dor: high-lights from stra-ti-graphy and ob-ser-va-tio-nal re-cords and re-la-ted downs-tream
+ []
+
+
+Overfull \hbox (1.75941pt too wide) in paragraph at lines 70--70
+[]\T1/qhv/m/n/12 (-20) V. Neall, ^^S  Lahars as ma-jor geo-lo-gi-cal ha-zards,^^T \T1/qhv/m/it/12 (-20) Bu-lle-tin of the In-ter-na-tio-nal As-so-cia-tion
+ []
+
+
+Overfull \hbox (15.26987pt too wide) in paragraph at lines 70--70
+\T1/qhv/m/it/12 (-20) of En-gi-nee-ring Geology-Bulletin de l'Association In-ter-na-tio-na-le de Géo-lo-gie de l'Ingénieur\T1/qhv/m/n/12 (-20) ,
+ []
+
+[15]
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
@@ -2168,18 +2188,38 @@ Overfull \vbox (29.99446pt too high) has occurred while \output is active []
 
 
 No file main.gls.
-[13]
+[16]
 Overfull \hbox (18.01857pt too wide) in paragraph at lines 75--75
 \T1/qhv/m/n/12 (-20) Un-man-ned Ae-rial Sys-tem (UAS) Mea-su-re-ments at Vol-cán Vi-lla-rri-ca, Chi-le,^^T \T1/qhv/m/it/12 (-20) Geo-che-mistry,
  []
 
-[14
+[17
 
-] [15] (./Secciones/b1_Anexos.tex) [16
+]
+Overfull \hbox (60.71202pt too wide) in paragraph at lines 75--75
+\T1/qhv/m/n/12 (-20) ed., Se-cond Edi-tion, Ams-ter-dam: Aca-de-mic Press, 2015, págs. 587[]597, \T1/qhv/m/sc/12 (-20) isbn\T1/qhv/m/n/12 (-20) : 978-0-12-385938-9.
+ []
+
+
+Overfull \hbox (8.17882pt too wide) in paragraph at lines 75--75
+\T1/qhv/m/n/12 (-20) Ecua-dor: high-lights from stra-ti-graphy and ob-ser-va-tio-nal re-cords and re-la-ted downs-tream
+ []
+
+
+Overfull \hbox (1.75941pt too wide) in paragraph at lines 75--75
+[]\T1/qhv/m/n/12 (-20) V. Neall, ^^S  Lahars as ma-jor geo-lo-gi-cal ha-zards,^^T \T1/qhv/m/it/12 (-20) Bu-lle-tin of the In-ter-na-tio-nal As-so-cia-tion
+ []
+
+
+Overfull \hbox (15.26987pt too wide) in paragraph at lines 75--75
+\T1/qhv/m/it/12 (-20) of En-gi-nee-ring Geology-Bulletin de l'Association In-ter-na-tio-na-le de Géo-lo-gie de l'Ingénieur\T1/qhv/m/n/12 (-20) ,
+ []
+
+[18] [19] (./Secciones/b1_Anexos.tex) [20
 
 
 
-] (./Secciones/b2_Apendices.tex) [17
+] (./Secciones/b2_Apendices.tex) [21
 
 
 
@@ -2196,24 +2236,27 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AE4C19AF13B11DF632CCB0BFB3E086EE;5427.
+(rerunfilecheck)             Checksum: F4F57EAD74D0B2AF5B42E00165231646;3938.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61247 strings out of 467537
- 1319943 string characters out of 5423703
- 2406893 words of memory out of 5000000
- 88938 multiletter control sequences out of 15000+600000
- 692703 words of font info for 161 fonts, out of 8000000 for 9000
+ 61339 strings out of 467537
+ 1323347 string characters out of 5423703
+ 2409079 words of memory out of 5000000
+ 88998 multiletter control sequences out of 15000+600000
+ 693899 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,8n,131p,2550b,4034s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,8n,131p,2550b,3358s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{cite.0@MR1823409} has been referenced but does not exist, replaced by a fixed one
+
 <c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on main.pdf (27 pages, 448302 bytes).
+Output written on main.pdf (30 pages, 1281478 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 425 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
- 37664 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 440 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 37605 words of extra memory for PDF output out of 42996 (max. 10000000)
 

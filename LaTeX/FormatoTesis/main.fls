@@ -764,8 +764,13 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qhvr.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
+INPUT ./Figuras/zonasvolcanicas.png
+INPUT ./Figuras/zonasvolcanicas.png
+INPUT ./Figuras/zonasvolcanicas.png
+INPUT ./Figuras/zonasvolcanicas.png
+INPUT ./Figuras/zonasvolcanicas.png
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty

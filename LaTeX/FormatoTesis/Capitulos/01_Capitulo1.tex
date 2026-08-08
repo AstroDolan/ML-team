@@ -74,7 +74,7 @@ Finalmente, tanto el número de capas ocultas como el número de neuronas por ca
 
 Desde un punto de vista formal, es posible extender la formulación presentada para una única neurona (Ecuaciones~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona}) a la red completa mediante la composición sucesiva de 
 transformaciones afines y funciones de activación, aplicadas capa a capa. Sea $L$ el número total de capas de la red (sin contar la capa de entrada), y sea $\mathbf{h}^{(l)} \in \mathbb{R}^{n_l}$ el vector de 
-activaciones de la capa $l$, con $\mathbf{h}^{(0)} = \mathbf{x}$ correspondiente al vector de entrada. La salida de cada capa $l = 1, \dots, L$ se calcula recursivamente como
+activaciones de la capa $l$, con $\mathbf{h}^{(0)} = \mathbf{x}$ el vector de entrada. La salida de cada capa $l = 1, \dots, L$ se calcula recursivamente como
 %Referencias: Goodfellow et al., Deep Learning, 2016; Nielsen, Neural Networks and Deep Learning, 2015. Capitulo 6
 \begin{equation}
     \mathbf{h}^{(l)} = \varphi^{(l)}\!\left(W^{(l)} \mathbf{h}^{(l-1)} + \mathbf{b}^{(l)}\right),
@@ -108,6 +108,12 @@ puede ser difícil o directamente imposible conseguir datos para el entrenamient
 de modelos de aprendizaje automático causando un sesgo de entrenamiento y conclusiones incompletas o equívocas. 
 
 Consideramos una ecuación diferencial no lineal y parametrizada en su forma general 
-$$u_t + \mathcal{N}[u;\lambda] = 0, x\in \Omega, t\in[0,T]$$
+\begin{equation}
+    u_t + \mathcal{N}[u;\lambda] = 0, x\in \Omega, t\in[0,T]
+    \label{eq:nonlinearDiffEq}
+\end{equation}
+
+
+
 donde $u(t,x)$ denota la solución latente, $\mathcal{N}$ es un operador diferencial no lineal, $\lambda$ es un conjunto de parámetros que caracterizan el sistema y $\Omega$ es un subconjunto de $\mathbb{R}^d$.
 
