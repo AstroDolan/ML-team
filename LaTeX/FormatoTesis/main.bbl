@@ -368,6 +368,125 @@
       \endverb
       \keyw{Feedforward networks,Universal approximation,Mapping networks,Network representation capability,Stone-Weierstrass Theorem,Squashing functions,Sigma-Pi networks,Back-propagation networks}
     \endentry
+    \entry{wang2023expert}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=15db674b3efc6848f40514aa0034717a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Sifan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a3e2e25bd681c86b4f52eff42c3197ff}{%
+           family={Sankaran},
+           familyi={S\bibinitperiod},
+           given={Shyam},
+           giveni={S\bibinitperiod}}}%
+        {{hash=750f950ac7e7c6eb92db4793d9c16a0d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hanwen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=197d71332633e07aa578718628fdc405}{%
+           family={Perdikaris},
+           familyi={P\bibinitperiod},
+           given={Paris},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{ef1ca3afbde4b19c973486cc8a12bc89}
+      \strng{fullhash}{1b49b5b93e091647434d31cd34f2625e}
+      \strng{fullhashraw}{1b49b5b93e091647434d31cd34f2625e}
+      \strng{bibnamehash}{1b49b5b93e091647434d31cd34f2625e}
+      \strng{authorbibnamehash}{1b49b5b93e091647434d31cd34f2625e}
+      \strng{authornamehash}{ef1ca3afbde4b19c973486cc8a12bc89}
+      \strng{authorfullhash}{1b49b5b93e091647434d31cd34f2625e}
+      \strng{authorfullhashraw}{1b49b5b93e091647434d31cd34f2625e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2308.08468}
+      \field{title}{An expert's guide to training physics-informed neural networks}
+      \field{year}{2023}
+    \endentry
+    \entry{griewank2008evaluating}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=9d68c52b6098887b6e6de85daafbb0bb}{%
+           family={Griewank},
+           familyi={G\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=68a9142e72a38a6200c3beb53fe90f40}{%
+           family={Walther},
+           familyi={W\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{77366ceff7089ab546dc44d384ee46ac}
+      \strng{fullhash}{77366ceff7089ab546dc44d384ee46ac}
+      \strng{fullhashraw}{77366ceff7089ab546dc44d384ee46ac}
+      \strng{bibnamehash}{77366ceff7089ab546dc44d384ee46ac}
+      \strng{authorbibnamehash}{77366ceff7089ab546dc44d384ee46ac}
+      \strng{authornamehash}{77366ceff7089ab546dc44d384ee46ac}
+      \strng{authorfullhash}{77366ceff7089ab546dc44d384ee46ac}
+      \strng{authorfullhashraw}{77366ceff7089ab546dc44d384ee46ac}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Evaluating derivatives: principles and techniques of algorithmic differentiation}
+      \field{year}{2008}
+    \endentry
+    \entry{RAISSI2019686}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a3194cb4f8e3959e569236521aa2fd86}{%
+           family={Raissi},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c2e8423b7b49343a85abf9af92ee2a82}{%
+           family={Perdikaris},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1c2f5930e36485e8d38a87746769fdcc}{%
+           family={Karniadakis},
+           familyi={K\bibinitperiod},
+           given={G.E.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{38cf3149596a29a18976b23d267bacc7}
+      \strng{fullhash}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{fullhashraw}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{bibnamehash}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{authorbibnamehash}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{authornamehash}{38cf3149596a29a18976b23d267bacc7}
+      \strng{authorfullhash}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{authorfullhashraw}{a17a0649dc8bad70026488d4ea37c508}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce physics-informed neural networks – neural networks that are trained to solve supervised learning tasks while respecting any given laws of physics described by general nonlinear partial differential equations. In this work, we present our developments in the context of solving two main classes of problems: data-driven solution and data-driven discovery of partial differential equations. Depending on the nature and arrangement of the available data, we devise two distinct types of algorithms, namely continuous time and discrete time models. The first type of models forms a new family of data-efficient spatio-temporal function approximators, while the latter type allows the use of arbitrarily accurate implicit Runge–Kutta time stepping schemes with unlimited number of stages. The effectiveness of the proposed framework is demonstrated through a collection of classical problems in fluids, quantum mechanics, reaction–diffusion systems, and the propagation of nonlinear shallow-water waves.}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations}
+      \field{volume}{378}
+      \field{year}{2019}
+      \field{pages}{686\bibrangedash 707}
+      \range{pages}{22}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jcp.2018.10.045
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0021999118307125
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0021999118307125
+      \endverb
+      \keyw{Data-driven scientific computing,Machine learning,Predictive modeling,Runge–Kutta methods,Nonlinear dynamics}
+    \endentry
     \entry{ortiz1995danos}{article}{}{}
       \name{author}{2}{}{%
         {{hash=5ffbdf3dcc328a55c0fe98cd008376fa}{%
@@ -663,8 +782,8 @@
       \strng{editornamehash}{b599492f774f363df6182f19abe135e5}
       \strng{editorfullhash}{17be8c296de38a5a8636f3558865d6a0}
       \strng{editorfullhashraw}{17be8c296de38a5a8636f3558865d6a0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Encyclopedia of Volcanoes}
@@ -1062,8 +1181,8 @@
       \strng{authornamehash}{6759dc7661767a5c65fcf88b2930eaee}
       \strng{authorfullhash}{6759dc7661767a5c65fcf88b2930eaee}
       \strng{authorfullhashraw}{6759dc7661767a5c65fcf88b2930eaee}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Encyclopedia of volcanoes}

@@ -6,24 +6,24 @@
 \contentsline {subsection}{\numberline {1.1.1}Neurona Artificial}{2}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Perceptrón Multicapa}{4}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}PINNs}{6}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Contexto geográfico y geológico de los peligros volcánicos}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introducción a los peligros volcánicos}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Lahares}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Zonas Volcánicas de Chile}{9}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Volcán Villarrica}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Contexto geográfico y geológico}{10}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Evento eruptivo del Volcán Villarrica del 3 de marzo del 2015}{10}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Justificación como caso de estudio}{10}{subsection.2.3.3}%
-\contentsline {chapter}{Conclusiones}{13}{chapter*.10}%
-\contentsline {chapter}{Glosario}{16}{chapter*.11}%
-\contentsline {chapter}{Referencias}{17}{chapter*.12}%
+\contentsline {chapter}{\numberline {2}Contexto geográfico y geológico de los peligros volcánicos}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introducción a los peligros volcánicos}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Lahares}{9}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Zonas Volcánicas de Chile}{10}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Volcán Villarrica}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Contexto geográfico y geológico}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Evento eruptivo del Volcán Villarrica del 3 de marzo del 2015}{11}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Justificación como caso de estudio}{11}{subsection.2.3.3}%
+\contentsline {chapter}{Conclusiones}{14}{chapter*.10}%
+\contentsline {chapter}{Glosario}{17}{chapter*.11}%
+\contentsline {chapter}{Referencias}{18}{chapter*.12}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{Anexos}{20}{section*.13}%
-\contentsline {section}{\numberline {Anexo~1:}Primer anexo}{20}{section.1.Alph0.1}%
-\contentsline {section}{\numberline {Anexo~2:}Segundo anexo}{20}{section.1.Alph0.2}%
+\contentsline {chapter}{Anexos}{22}{section*.13}%
+\contentsline {section}{\numberline {Anexo~1:}Primer anexo}{22}{section.1.Alph0.1}%
+\contentsline {section}{\numberline {Anexo~2:}Segundo anexo}{22}{section.1.Alph0.2}%
 \setcounter {tocdepth}{3}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{Apéndices}{21}{section*.15}%
-\contentsline {section}{\numberline {Apéndice~1:}Primer apéndice}{21}{section.2.Alph0.1}%
-\contentsline {section}{\numberline {Apéndice~2:}Segundo apéndice}{21}{section.2.Alph0.2}%
+\contentsline {chapter}{Apéndices}{23}{section*.15}%
+\contentsline {section}{\numberline {Apéndice~1:}Primer apéndice}{23}{section.2.Alph0.1}%
+\contentsline {section}{\numberline {Apéndice~2:}Segundo apéndice}{23}{section.2.Alph0.2}%
 \setcounter {tocdepth}{3}

@@ -1,3 +1,5 @@
+\newcommand{\vect}[1]{\mathbf{#1}}
+
 \chapter{Fundamentos de Redes Neuronales Artificiales}%
 \label{cap:capitulo1}%
 
@@ -102,18 +104,55 @@ de $\mathbb{R}^n$ con la precisión deseada, bajo condiciones razonables sobre l
 profundas como aproximadores de soluciones de ecuaciones diferenciales en el marco de las PINNs, como se retomará más adelante en este capítulo.
 
 \section{PINNs}
-En este trabajo se adopta una aproximación diferente a lo que suele realizarse en la literatura, empleando redes neuronales profundas gracias a su gran y bien conocida capacidad como aproximadores 
+Este trabajo adopta una aproximación diferente a lo que suele realizarse en la literatura, empleando redes neuronales profundas gracias a su gran y bien conocida capacidad como aproximadores 
 universales \cite{HORNIK1989359}. De esta manera se puede abordar sin problemas la no-linealidad de los sistemas acoplados que aborda este trabajo. En áreas tales como sistemas físicos, biológicos o de ingeniería 
 puede ser difícil o directamente imposible conseguir datos para el entrenamiento
 de modelos de aprendizaje automático causando un sesgo de entrenamiento y conclusiones incompletas o equívocas. 
 
 Consideramos una ecuación diferencial no lineal y parametrizada en su forma general 
 \begin{equation}
-    u_t + \mathcal{N}[u;\lambda] = 0, x\in \Omega, t\in[0,T]
+    \vect{u}_t + \mathcal{N}[\vect{u}] = 0, \quad x\in \Omega, t\in[0,T]
     \label{eq:nonlinearDiffEq}
 \end{equation}
 
+donde $u(t,x)$ denota la solución latente, $\mathcal{N}[\cdot]$ es un operador diferencial lineal o no lineal y $\Omega$ es un subconjunto de $\mathbb{R}^d$. Sujeto a las condiciones iniciales y de contorno
+\begin{equation}
+    \vect{u}(0,x) = g(x), x\in \Omega,
+    \label{eq:initilCond}
+\end{equation}
+\begin{equation}
+    \mathcal{B}[\vect{u}] = 0, \quad t\in[0,T], x\in \partial \Omega
+    \label{eq:boundaryCond}
+\end{equation}
 
+donde $\mathcal{B}[\cdot]$ es un operador de frontera correspondiente a Dirichlet, Neumann o Robin, o condiciones de frontera periodicas.
 
-donde $u(t,x)$ denota la solución latente, $\mathcal{N}$ es un operador diferencial no lineal, $\lambda$ es un conjunto de parámetros que caracterizan el sistema y $\Omega$ es un subconjunto de $\mathbb{R}^d$.
+Se representa la solución desconocida (latente) de una red neuronal profunda $u_\theta(t,x)$, donde $\theta$ denota el conjunto de parámetros entrenables o configurables de la red, por ejemplo, pesos y  sesgos. Esto permite
+definir los residuos de la ecuación diferencial como
+\begin{equation}
+    \mathcal{R}_\theta(t,\vect{x}) = \frac{\partial \vect{u}_\theta}{\partial t}(t_r,\vect{x}_r) + \mathcal{N}[\vect{u}_\theta](t_r,\vect{x}_r)
+\end{equation}
 
+Dadas las ecuaciones anteriores, es posible entrenar un modelo informado por la física, minimizando la función de pérdida 
+\begin{equation}
+    \mathcal{L}(\theta) = \lambda_1 \mathcal{L}_ic(\theta) + \lambda_2 \mathcal{L}_bc(\theta) + \lambda_3 \mathcal{L}_r(\theta)
+    \label{eq:compositeLossFn}
+\end{equation} donde
+\begin{equation}
+    \mathcal{L}_ic(\theta) = \frac{1}{N_{ic}}\sum_{i=1}^{N_{ic}} \left\lvert \vect{u}_\theta(0,\vect{x}_{ic}^i) - g(\vect{x}_{ic}^i) \right\rvert^2
+    \label{eq:initCondLoss}
+\end{equation}
+
+\begin{equation}
+    \mathcal{L}_bc(\theta) = \frac{1}{N_{bc}}\sum_{i=1}^{N_{bc}} \left\lvert \mathcal{B}[\vect{u}_\theta](t_{bc}^i,\vect{x}_{`bc}^i) \right\rvert^2
+    \label{eq:boundaryCondLoss}
+\end{equation}
+
+\begin{equation}
+    \mathcal{L}_r(\theta) = \frac{1}{N_r}\sum_{i=1}^{N_r} \left\lvert \mathcal{R}_\theta(t_r^i,\vect{x}_r^i) \right\rvert^2
+    \label{eq:residualLoss}
+\end{equation}
+
+De esta forma, $\{x_{ic}^i\}_{i=1}^{N_{ic}}$ representan los puntos de datos iniciales, $\{x_{bc}^i\}_{i=1}^{N_{bc}}$ los puntos de datos de frontera y $\{x_{r}^i\}_{i=1}^{N_{r}}$ los puntos de datos residuales. Estos datos pueden
+ser vertices de mallas fijas o puntos aleatoriamente distribuidos en cada iteración del algoritmo del gradiente descendente. Obsérvese que cada gradiente con respecto a las variables de entrada o a
+los parámetros $\theta$ de la red pueden ser calculados de forma eficiente mediante la diferenciación automática. \cite{wang2023expert, griewank2008evaluating, RAISSI2019686}.

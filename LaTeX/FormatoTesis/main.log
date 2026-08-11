@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  7 AUG 2026 22:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  10 AUG 2026 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2032,14 +2032,14 @@ l.59 \include{Capitulos/00_Introduccion}
  (./Capitulos/01_Capitulo1.tex
 Cap\'{\i }tulo 1.
 
-Overfull \hbox (65.15007pt too wide) in paragraph at lines 1--1
+Overfull \hbox (65.15007pt too wide) in paragraph at lines 3--3
 |\T1/qhv/b/n/24.88 (-20) Fundamentos de Re-des Neu-ro-na-les Ar-ti-fi-cia-les| 
  []
 
 <./Figuras/figura1-ANN-Cap1.png, id=188, 551.81157pt x 372.64218pt>
 File: ./Figuras/figura1-ANN-Cap1.png Graphic file (type png)
 <use ./Figuras/figura1-ANN-Cap1.png>
-Package pdftex.def Info: ./Figuras/figura1-ANN-Cap1.png  used on input line 14.
+Package pdftex.def Info: ./Figuras/figura1-ANN-Cap1.png  used on input line 16.
 (pdftex.def)             Requested size: 330.61957pt x 223.27998pt.
 
 pdfTeX warning (font expansion): font should be expanded before its first use
@@ -2049,7 +2049,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning (font expansion): font should be expanded before its first use
 
-Overfull \hbox (0.97827pt too wide) in paragraph at lines 23--28
+Overfull \hbox (0.97827pt too wide) in paragraph at lines 25--30
 \T1/qhv/m/n/12 (-20) ar-ti-fi-cial. Su for-mu-la-ción ma-te-má-ti-ca se ins-pi-ra, de ma-ne-ra sim-pli-fi-ca-da, en el fun-cio-na-mien-to
  []
 
@@ -2059,32 +2059,32 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 
+l.33 
       [2
 
 
 
 
 ] [3 <./Figuras/figura1-ANN-Cap1.png>]
-Overfull \hbox (0.28024pt too wide) in paragraph at lines 52--55
+Overfull \hbox (0.28024pt too wide) in paragraph at lines 54--57
 []\T1/qhv/m/n/12 (-20) Es im-por-tan-te no-tar que, si bien la ana-lo-gía bio-ló-gi-ca re-sul-ta útil co-mo mo-ti-va-ción con-cep-tual,
  []
 
 <./Figuras/fig7.2kr.jpg, id=217, 315.30186pt x 206.57707pt>
 File: ./Figuras/fig7.2kr.jpg Graphic file (type jpg)
 <use ./Figuras/fig7.2kr.jpg>
-Package pdftex.def Info: ./Figuras/fig7.2kr.jpg  used on input line 63.
+Package pdftex.def Info: ./Figuras/fig7.2kr.jpg  used on input line 65.
 (pdftex.def)             Requested size: 330.61957pt x 216.62547pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (14.76932pt too wide) in paragraph at lines 69--74
+Overfull \hbox (14.76932pt too wide) in paragraph at lines 71--76
 \T1/qhv/m/n/12 (-20) in-ter-me-dias de los da-tos, cap-tu-ran-do pa-tro-nes com-ple-jos y no li-nea-les que se-rían inal-can-za-bles
  []
 
 [4]
-Overfull \hbox (14.90857pt too wide) in paragraph at lines 88--89
+Overfull \hbox (14.90857pt too wide) in paragraph at lines 90--91
 []\T1/qhv/m/n/12 (-20) La sa-li-da fi-nal de la red, $[] \OT1/cmr/m/n/12 = \OT1/cmr/bx/n/12 h[]$\T1/qhv/m/n/12 (-20) , que-da ex-pre-sa-da co-mo la com-po-si-ción de $\OML/cmm/m/it/12 L$ \T1/qhv/m/n/12 (-20) trans-for-ma-cio-nes
  []
 
@@ -2092,12 +2092,12 @@ Overfull \hbox (14.90857pt too wide) in paragraph at lines 88--89
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [5 <./Figuras/fig7.2kr.jpg>]) [6]
+) [5 <./Figuras/fig7.2kr.jpg>] [6]) [7]
 \openout2 = `Capitulos/02_Capitulo2.aux'.
 
  (./Capitulos/02_Capitulo2.tex
 Cap\'{\i }tulo 2.
-[7
+[8
 
 
 
@@ -2115,13 +2115,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qhv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [8]
-<figuras/zonasvolcanicas.png, id=283, 438.13687pt x 628.59843pt>
+ [9]
+<figuras/zonasvolcanicas.png, id=300, 438.13687pt x 628.59843pt>
 File: figuras/zonasvolcanicas.png Graphic file (type png)
 <use figuras/zonasvolcanicas.png>
 Package pdftex.def Info: figuras/zonasvolcanicas.png  used on input line 46.
 (pdftex.def)             Requested size: 236.15787pt x 338.82423pt.
- [9{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./Figuras/zonasvolcanicas.png>]
+ [10{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./Figuras/zonasvolcanicas.png>]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 10.95pt on input line 65.
 
@@ -2129,13 +2129,13 @@ Underfull \hbox (badness 6047) in paragraph at lines 75--81
  [][] 
  []
 
-[10] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+[11] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 121.
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
 (Font)              scaled to size 10.95pt on input line 122.
- [11]) [12]
+ [12]) [13]
 \openout2 = `Capitulos/0a_Conclusiones.aux'.
 
  (./Capitulos/0a_Conclusiones.tex
@@ -2143,7 +2143,7 @@ Overfull \hbox (8.1357pt too wide) in paragraph at lines 13--13
 []\T1/qhv/m/n/12 (-20) En es-ta par-te ter-mi-nan las pá-gi-nas cen-tra-les. A con-ti-nua-ción, se pue-de agre-gar op-ta-ti-va-men-te,
  []
 
-) [13
+) [14
 
 
 
@@ -2154,15 +2154,25 @@ Overfull \hbox (18.01857pt too wide) in paragraph at lines 70--70
  []
 
 
-Overfull \hbox (60.71202pt too wide) in paragraph at lines 70--70
-\T1/qhv/m/n/12 (-20) ed., Se-cond Edi-tion, Ams-ter-dam: Aca-de-mic Press, 2015, págs. 587[]597, \T1/qhv/m/sc/12 (-20) isbn\T1/qhv/m/n/12 (-20) : 978-0-12-385938-9.
+Overfull \hbox (10.27779pt too wide) in paragraph at lines 70--70
+[]\T1/qhv/m/n/12 (-20) A. Grie-wank y A. Walther, \T1/qhv/m/it/12 (-20) Eva-lua-ting de-ri-va-ti-ves: prin-ci-ples and tech-ni-ques of al-go-rith-mic
  []
 
-[14
+
+Overfull \hbox (13.87672pt too wide) in paragraph at lines 70--70
+\T1/qhv/m/n/12 (-20) di-rec-ción: []$\T1/zi4/m/n/12 https : / / www . sciencedirect . com / science / article / pii / S0021999118307125$[] 
+ []
+
+[15
 
 
 
 ]
+Overfull \hbox (60.71202pt too wide) in paragraph at lines 70--70
+\T1/qhv/m/n/12 (-20) ed., Se-cond Edi-tion, Ams-ter-dam: Aca-de-mic Press, 2015, págs. 587[]597, \T1/qhv/m/sc/12 (-20) isbn\T1/qhv/m/n/12 (-20) : 978-0-12-385938-9.
+ []
+
+
 Overfull \hbox (8.17882pt too wide) in paragraph at lines 70--70
 \T1/qhv/m/n/12 (-20) Ecua-dor: high-lights from stra-ti-graphy and ob-ser-va-tio-nal re-cords and re-la-ted downs-tream
  []
@@ -2177,25 +2187,31 @@ Overfull \hbox (15.26987pt too wide) in paragraph at lines 70--70
 \T1/qhv/m/it/12 (-20) of En-gi-nee-ring Geology-Bulletin de l'Association In-ter-na-tio-na-le de Géo-lo-gie de l'Ingénieur\T1/qhv/m/n/12 (-20) ,
  []
 
-[15]
+[16]
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-
-Overfull \vbox (29.99446pt too high) has occurred while \output is active []
-
-
 No file main.gls.
-[16]
+[17]
 Overfull \hbox (18.01857pt too wide) in paragraph at lines 75--75
 \T1/qhv/m/n/12 (-20) Un-man-ned Ae-rial Sys-tem (UAS) Mea-su-re-ments at Vol-cán Vi-lla-rri-ca, Chi-le,^^T \T1/qhv/m/it/12 (-20) Geo-che-mistry,
  []
 
-[17
+
+Overfull \hbox (10.27779pt too wide) in paragraph at lines 75--75
+[]\T1/qhv/m/n/12 (-20) A. Grie-wank y A. Walther, \T1/qhv/m/it/12 (-20) Eva-lua-ting de-ri-va-ti-ves: prin-ci-ples and tech-ni-ques of al-go-rith-mic
+ []
+
+[18
 
 ]
+Overfull \hbox (13.87672pt too wide) in paragraph at lines 75--75
+\T1/qhv/m/n/12 (-20) di-rec-ción: []$\T1/zi4/m/n/12 https : / / www . sciencedirect . com / science / article / pii / S0021999118307125$[] 
+ []
+
+
 Overfull \hbox (60.71202pt too wide) in paragraph at lines 75--75
 \T1/qhv/m/n/12 (-20) ed., Se-cond Edi-tion, Ams-ter-dam: Aca-de-mic Press, 2015, págs. 587[]597, \T1/qhv/m/sc/12 (-20) isbn\T1/qhv/m/n/12 (-20) : 978-0-12-385938-9.
  []
@@ -2205,7 +2221,7 @@ Overfull \hbox (8.17882pt too wide) in paragraph at lines 75--75
 \T1/qhv/m/n/12 (-20) Ecua-dor: high-lights from stra-ti-graphy and ob-ser-va-tio-nal re-cords and re-la-ted downs-tream
  []
 
-
+[19]
 Overfull \hbox (1.75941pt too wide) in paragraph at lines 75--75
 []\T1/qhv/m/n/12 (-20) V. Neall, ^^S  Lahars as ma-jor geo-lo-gi-cal ha-zards,^^T \T1/qhv/m/it/12 (-20) Bu-lle-tin of the In-ter-na-tio-nal As-so-cia-tion
  []
@@ -2215,11 +2231,11 @@ Overfull \hbox (15.26987pt too wide) in paragraph at lines 75--75
 \T1/qhv/m/it/12 (-20) of En-gi-nee-ring Geology-Bulletin de l'Association In-ter-na-tio-na-le de Géo-lo-gie de l'Ingénieur\T1/qhv/m/n/12 (-20) ,
  []
 
-[18] [19] (./Secciones/b1_Anexos.tex) [20
+[20] [21] (./Secciones/b1_Anexos.tex) [22
 
 
 
-] (./Secciones/b2_Apendices.tex) [21
+] (./Secciones/b2_Apendices.tex) [23
 
 
 
@@ -2242,21 +2258,30 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61339 strings out of 467537
- 1323347 string characters out of 5423703
- 2409079 words of memory out of 5000000
- 88998 multiletter control sequences out of 15000+600000
- 693899 words of font info for 171 fonts, out of 8000000 for 9000
+ 61374 strings out of 467537
+ 1324272 string characters out of 5423703
+ 2409494 words of memory out of 5000000
+ 89019 multiletter control sequences out of 15000+600000
+ 693999 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,8n,131p,2550b,3358s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,8n,131p,2550b,3367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{cite.0@MR1823409} has been referenced but does not exist, replaced by a fixed one
 
+
+pdfTeX warning (dest): name{cite.0@MR1487846} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@vallance2000lahars} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@lowe1986lahars} has been referenced but does not exist, replaced by a fixed one
+
 <c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on main.pdf (30 pages, 1281478 bytes).
+Output written on main.pdf (32 pages, 1290929 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 440 compressed objects within 5 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 556 PDF objects out of 1000 (max. 8388607)
+ 464 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
  37605 words of extra memory for PDF output out of 42996 (max. 10000000)
 
