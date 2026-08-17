@@ -368,6 +368,147 @@
       \endverb
       \keyw{Feedforward networks,Universal approximation,Mapping networks,Network representation capability,Stone-Weierstrass Theorem,Squashing functions,Sigma-Pi networks,Back-propagation networks}
     \endentry
+    \entry{nwankpa2018activation}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9c489b25d2bc5bb5768eb70d67450f50}{%
+           family={Nwankpa},
+           familyi={N\bibinitperiod},
+           given={Chigozie},
+           giveni={C\bibinitperiod}}}%
+        {{hash=543d58357fa0b1e46db99506cf24b681}{%
+           family={Ijomah},
+           familyi={I\bibinitperiod},
+           given={Winifred},
+           giveni={W\bibinitperiod}}}%
+        {{hash=8bc3d9a3f42fcd86180fada96450c64e}{%
+           family={Gachagan},
+           familyi={G\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=657767f231ce05f35b32c75a6ee73295}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c131526aca25552505a9e4de0fb1545c}
+      \strng{fullhash}{8241e9b90f93002ac9ce23216c1a6317}
+      \strng{fullhashraw}{8241e9b90f93002ac9ce23216c1a6317}
+      \strng{bibnamehash}{8241e9b90f93002ac9ce23216c1a6317}
+      \strng{authorbibnamehash}{8241e9b90f93002ac9ce23216c1a6317}
+      \strng{authornamehash}{c131526aca25552505a9e4de0fb1545c}
+      \strng{authorfullhash}{8241e9b90f93002ac9ce23216c1a6317}
+      \strng{authorfullhashraw}{8241e9b90f93002ac9ce23216c1a6317}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1811.03378}
+      \field{title}{Activation functions: Comparison of trends in practice and research for deep learning}
+      \field{year}{2018}
+    \endentry
+    \entry{sharma2017activation}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=1a9ba99937a36acb679ef24b0648eeec}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Sagar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=02b76ea846825e9079301c2264e967fd}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2a981cdebb500cb081aee6ab3896c41c}{%
+           family={Athaiya},
+           familyi={A\bibinitperiod},
+           given={Anidhya},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{74716e6158e47506b13dcc385f9eb7b8}
+      \strng{fullhash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{fullhashraw}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{bibnamehash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{authorbibnamehash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{authornamehash}{74716e6158e47506b13dcc385f9eb7b8}
+      \strng{authorfullhash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{authorfullhashraw}{37065766f46d4cb23db895ce6a0ad8da}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Towards Data Sci}
+      \field{number}{12}
+      \field{title}{Activation functions in neural networks}
+      \field{volume}{6}
+      \field{year}{2017}
+      \field{pages}{310\bibrangedash 316}
+      \range{pages}{7}
+    \endentry
+    \entry{dubey2022activation}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=422723c10889e09025fbdd6ae3b2559c}{%
+           family={Dubey},
+           familyi={D\bibinitperiod},
+           given={Shiv\bibnamedelima Ram},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=2c68c1374ed7bb2269d600aea9110cb4}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Satish\bibnamedelima Kumar},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=743368b5332faa87b8fa6727a05a6756}{%
+           family={Chaudhuri},
+           familyi={C\bibinitperiod},
+           given={Bidyut\bibnamedelima Baran},
+           giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e21078fa0443e36a485a115550c64cb3}
+      \strng{fullhash}{82262550a40dbc6f066e7d2314dd824e}
+      \strng{fullhashraw}{82262550a40dbc6f066e7d2314dd824e}
+      \strng{bibnamehash}{82262550a40dbc6f066e7d2314dd824e}
+      \strng{authorbibnamehash}{82262550a40dbc6f066e7d2314dd824e}
+      \strng{authornamehash}{e21078fa0443e36a485a115550c64cb3}
+      \strng{authorfullhash}{82262550a40dbc6f066e7d2314dd824e}
+      \strng{authorfullhashraw}{82262550a40dbc6f066e7d2314dd824e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neurocomputing}
+      \field{title}{Activation functions in deep learning: A comprehensive survey and benchmark}
+      \field{volume}{503}
+      \field{year}{2022}
+      \field{pages}{92\bibrangedash 108}
+      \range{pages}{17}
+    \endentry
+    \entry{lederer2021activation}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c45f4a5d7a4dc8d0be4b3b63990aea9e}{%
+           family={Lederer},
+           familyi={L\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
+      \strng{fullhash}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
+      \strng{fullhashraw}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
+      \strng{bibnamehash}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
+      \strng{authorbibnamehash}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
+      \strng{authornamehash}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
+      \strng{authorfullhash}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
+      \strng{authorfullhashraw}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2101.09957}
+      \field{title}{Activation functions in artificial neural networks: A systematic overview}
+      \field{year}{2021}
+    \endentry
     \entry{wang2023expert}{article}{}{}
       \name{author}{4}{}{%
         {{hash=15db674b3efc6848f40514aa0034717a}{%
@@ -541,8 +682,8 @@
       \strng{authornamehash}{07e4f2edf66eebbbb57ef46d2a246383}
       \strng{authorfullhash}{07e4f2edf66eebbbb57ef46d2a246383}
       \strng{authorfullhashraw}{07e4f2edf66eebbbb57ef46d2a246383}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Volcanic Hazards: A Sourcebook on the Effects of Eruptions}
@@ -587,8 +728,8 @@
       \strng{editornamehash}{b599492f774f363df6182f19abe135e5}
       \strng{editorfullhash}{17be8c296de38a5a8636f3558865d6a0}
       \strng{editorfullhashraw}{17be8c296de38a5a8636f3558865d6a0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{edition}{2nd}
@@ -643,8 +784,8 @@
       \strng{editornamehash}{19c193db2952de12daf8fdd8305c75af}
       \strng{editorfullhash}{19c193db2952de12daf8fdd8305c75af}
       \strng{editorfullhashraw}{19c193db2952de12daf8fdd8305c75af}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Explosive volcanic eruptions inject variable amounts of particles of variable size, shape, and composition (i.e., tephra) into the atmosphere. Tephra dispersal and sedimentation mostly depends on particle characteristics, atmospheric conditions, and plume dynamics, with the potential of affecting the environment and society at multiple scales. In particular, thinning trends of tephra deposits mostly depend on particle Reynolds number, which defines different fallout regimes. Nonetheless, particle–particle interactions (e.g., particle aggregation) and gravitational instabilities can strongly affect the particle residence time in the atmosphere promoting premature fallout of the finest fraction (<100 μm). Several analytical and numerical models have been developed to describe both particle transport and settling with the intent of better understanding dispersal dynamics, quantifying the associated hazards, and determining the main eruption source parameters by solving inverse problems. A full characterization of tephra dispersal and sedimentation can only be achieved through a critical synergy of multiple approaches.}
@@ -721,8 +862,8 @@
       \strng{editornamehash}{b599492f774f363df6182f19abe135e5}
       \strng{editorfullhash}{17be8c296de38a5a8636f3558865d6a0}
       \strng{editorfullhashraw}{17be8c296de38a5a8636f3558865d6a0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Encyclopedia of Volcanoes}
@@ -932,8 +1073,8 @@
       \strng{authornamehash}{ea006404d40729baa521a39c9e46c137}
       \strng{authorfullhash}{ea006404d40729baa521a39c9e46c137}
       \strng{authorfullhashraw}{ea006404d40729baa521a39c9e46c137}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Bulletin of the International Association of Engineering Geology-Bulletin de l'Association Internationale de Géologie de l'Ingénieur}
@@ -998,8 +1139,8 @@
       \strng{authornamehash}{3efd9dba5da7cecac3db5d1e1831f627}
       \strng{authorfullhash}{d625051488e95a6823aaf188c2395ae7}
       \strng{authorfullhashraw}{d625051488e95a6823aaf188c2395ae7}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The geology of Chile}
@@ -1029,8 +1170,8 @@
       \strng{authornamehash}{52b11d9180369acca2b95d3e3e740e79}
       \strng{authorfullhash}{52b11d9180369acca2b95d3e3e740e79}
       \strng{authorfullhashraw}{52b11d9180369acca2b95d3e3e740e79}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista de Estudios Latinoamericanos sobre Reducción del Riesgo de Desastres REDER}
@@ -1057,8 +1198,8 @@
       \strng{authornamehash}{a3703b12215525e200476e0c16ca6cf3}
       \strng{authorfullhash}{a3703b12215525e200476e0c16ca6cf3}
       \strng{authorfullhashraw}{a3703b12215525e200476e0c16ca6cf3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista geológica de Chile}
@@ -1094,8 +1235,8 @@
       \strng{authornamehash}{a0fe955731f28c58094a8482d1232232}
       \strng{authorfullhash}{a0fe955731f28c58094a8482d1232232}
       \strng{authorfullhashraw}{a0fe955731f28c58094a8482d1232232}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Geophysical Research Letters}
@@ -1150,8 +1291,8 @@
       \strng{authornamehash}{744a5d076434f1fd7eab0fc589540d9b}
       \strng{authorfullhash}{49eb5783785a6ac1f858a8bf8a319e87}
       \strng{authorfullhashraw}{49eb5783785a6ac1f858a8bf8a319e87}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature}
@@ -1190,93 +1331,6 @@
       \field{year}{2000}
       \field{pages}{601\bibrangedash 616}
       \range{pages}{16}
-    \endentry
-    \entry{MR1487846}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=ba14dc71f074b9b4c7fa916d23aea011}{%
-           family={Naulin},
-           familyi={N\bibinitperiod},
-           given={Raúl},
-           giveni={R\bibinitperiod}}}%
-        {{hash=b3f1de5da207feb9acf407e4b43b4b0f}{%
-           family={Pinto},
-           familyi={P\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{f848fc1deb426d071a375f688e97a704}
-      \strng{fullhash}{f848fc1deb426d071a375f688e97a704}
-      \strng{fullhashraw}{f848fc1deb426d071a375f688e97a704}
-      \strng{bibnamehash}{f848fc1deb426d071a375f688e97a704}
-      \strng{authorbibnamehash}{f848fc1deb426d071a375f688e97a704}
-      \strng{authornamehash}{f848fc1deb426d071a375f688e97a704}
-      \strng{authorfullhash}{f848fc1deb426d071a375f688e97a704}
-      \strng{authorfullhashraw}{f848fc1deb426d071a375f688e97a704}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0362-546X,1873-5215}
-      \field{journaltitle}{Nonlinear Anal.}
-      \field{number}{5-6}
-      \field{title}{Admissible perturbations of exponential dichotomy roughness}
-      \field{volume}{31}
-      \field{year}{1998}
-      \field{pages}{559\bibrangedash 571}
-      \range{pages}{13}
-      \verb{doi}
-      \verb 10.1016/S0362-546X(97)00423-9
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1016/S0362-546X(97)00423-9
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1016/S0362-546X(97)00423-9
-      \endverb
-    \endentry
-    \entry{MR1823409}{book}{}{}
-      \name{author}{2}{}{%
-        {{hash=53186c2024f0201901a2d26db650b741}{%
-           family={Agricola},
-           familyi={A\bibinitperiod},
-           given={Ilka},
-           giveni={I\bibinitperiod}}}%
-        {{hash=adfb61e4b551f8656bd7f8c45a7b241a}{%
-           family={Friedrich},
-           familyi={F\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Friedr. Vieweg \& Sohn, Braunschweig}%
-      }
-      \strng{namehash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{fullhash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{fullhashraw}{8fe56639d24a44be02f29893daa40e31}
-      \strng{bibnamehash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{authorbibnamehash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{authornamehash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{authorfullhash}{8fe56639d24a44be02f29893daa40e31}
-      \strng{authorfullhashraw}{8fe56639d24a44be02f29893daa40e31}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{3-528-03154-9}
-      \field{note}{Differentialformen in Analysis, Geometrie und Physik. [Differential forms in analysis, geometry and physics]}
-      \field{title}{Globale {A}nalysis}
-      \field{year}{2001}
-      \field{pages}{x+283}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1007/978-3-322-92903-7
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/978-3-322-92903-7
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/978-3-322-92903-7
-      \endverb
     \endentry
   \enddatalist
 \endrefsection

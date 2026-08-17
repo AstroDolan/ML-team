@@ -168,6 +168,8 @@
 \DeclareOption{apa}{\def\@norma{apa}}%
 \DeclareOption{phys}{\def\@norma{phys}}%
 
+
+
 % Implementa opciones
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}%
 
@@ -437,8 +439,9 @@
 	\Copyrighted{True}
 \end{filecontents*}
 
-% PDF
-\PassOptionsToPackage{bookmarks,pdfpagelabels,hidelinks,spanish}{hyperref}%
+%PDF
+\usepackage[dvipsnames]{xcolor}
+\PassOptionsToPackage{bookmarks,pdfpagelabels,hidelinks,spanish,colorlinks=true,linkcolor=blue,citecolor=Aquamarine}{hyperref}%
 \RequirePackage[a-3b]{pdfx}%
 \RequirePackage{pdfpages}%
 

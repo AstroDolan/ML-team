@@ -1,8 +1,10 @@
 \newcommand{\vect}[1]{\mathbf{#1}}
 
-\chapter{Fundamentos de Redes Neuronales Artificiales}%
+\chapter{Redes neuronales artificiales}%
 \label{cap:capitulo1}%
 
+%////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////
 \section{Redes Neuronales Artificiales}
 \label{sec:redes_neuroanles_artificiales}
 Una red neuronal artificial (RNA) o por sus siglas en inglés ANN (\textit{Artificial Neural Network}) es un modelo matemático que intenta simular la estructura y las funcionalidades
@@ -19,6 +21,8 @@ de la neurona se encuentra la función de activación, la cual es una función n
     \fuente{\cite{krenker2011introduction}}
 \end{figure}
 
+%////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////
 \subsection{Neurona Artificial}
 \label{subsec:neurona_artificial}
 
@@ -55,6 +59,9 @@ Es importante notar que, si bien la analogía biológica resulta útil como moti
 un modelo matemático de aproximación de funciones. Una única neurona posee una capacidad de representación limitada, restringida a separaciones lineales o a transformaciones simples de sus entradas. 
 La potencia de las redes neuronales artificiales surge, en cambio, de la interconexión de múltiples neuronas organizadas en capas, dando lugar al perceptrón multicapa que se describe a continuación.
 
+
+%////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////
 \subsection{Perceptrón Multicapa}
 \label{subsec:perceptron_multicapa}
 El perceptrón multicapa (MLP, por sus siglas en inglés) es la arquitectura más común de redes neuronales artificiales. En la mayoría de los casos, las señales son transmitidas de manera unidireccional 
@@ -101,21 +108,88 @@ la solución latente $u(t,x)$ de la ecuación diferencial de interés \cite{good
 Cabe destacar que la capacidad de un MLP para aproximar funciones arbitrarias no es solo empírica, sino que está respaldada teóricamente por el teorema de aproximación universal, 
 el cual establece que una red \textit{feedforward} con al menos una capa oculta y un número suficiente de neuronas puede aproximar cualquier función continua sobre un subconjunto compacto 
 de $\mathbb{R}^n$ con la precisión deseada, bajo condiciones razonables sobre la función de activación \cite{HORNIK1989359}. Este resultado es, en última instancia, el que justifica el uso de redes neuronales 
-profundas como aproximadores de soluciones de ecuaciones diferenciales en el marco de las PINNs, como se retomará más adelante en este capítulo.
+profundas como aproximadores de soluciones de ecuaciones diferenciales en el marco de las PINNs
 
+
+%////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////
+\section{Funciones de activación}
+Las funciones de activación (FA) son usadas en las redes neuronales artificiales para transformar un valor de entrada en un valor de salida a traves de un procesamiento de gradientes, el cual es usado como entrada 
+para la siguiente capa de la red. Dentro de la literatura también se les conoce como funciones de transferencia \cite{nwankpa2018activation}. Gran parte de la precisión a la hora de predecir un resultado depende de la función de activación que se use. 
+Si bien existen muchas funciones de activación, no existe una que sea mejor para todos los casos \cite{sharma2017activation}. Esta FA puede ser lineal o no lineal dependiendo de la función matemática que represente y debe cumplir
+con no agregar complejidad computacional de manera extensiva \cite{dubey2022activation}.
+
+Durante los años se han explorado y creado variedad de FA. Dentro de ellas, algunas de las más usadas son: la función sigmoide, la función tangente hiperbólica, la función ReLU y sus variantes, la función softmax y la función lineal. 
+Cada una de estas funciones tiene propiedades matemáticas particulares que las hacen más o menos adecuadas para diferentes tipos de problemas \cite{lederer2021activation}. En este capítulo se describen dos funciones de interés para este trabajo.
+
+\subsection{ReLU}
+ReLU viene del inglés \textit{Rectified Linear Unit}, el cual significa \"{}Unidad lineal rectificada\"{}. Esta función también es conocida como función parte-positiva, ya que, para los valores positivos de entrada, la salida es igual a $1$, mientras
+que para las entradas negativas, la salida es igual a $0$ \cite{lederer2021activation}. Esta definida como,
+\begin{equation}
+    \dot{f}(x) = \max(0,x)
+    \label{eq_relu}
+\end{equation}
+La primera y segunda derivada de esta función es,
+\begin{equation}
+    \dot{f}(x) = \begin{cases}
+    1, & \forall x \in (0,\infty) \\
+    0, & \forall x \in (-\infty,0) \\
+    \end{cases}
+    \qquad \mbox{ y } \qquad
+    \ddot{f}(x) = 0 \quad \forall x \in \mathbb{R} \setminus \{0\}
+    \label{diffs_relu}
+\end{equation}
+Si se analiza la ecuación \ref{diffs_relu}, se puede observar que no es diferenciable en $x=0$, lo que puede repercutir negativamente en ciertos problemas que requieran de su segunda derivada, como es el caso de este trabajo.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{migu.jpg}
+    \caption{Función ReLU y su derivada.}
+    \label{fig:relu}
+    \fuente{\cite{lederer2021activation}}
+\end{figure}
+
+\subsection{Sigmoide}
+Una función sigmoide es una función matemática suave que se caracteriza por su forma en "S". Esta es continua y diferenciable, y sus valores de salida se encuentran en el rango $(0,1)$. Esta es una de las funciones de activación más usadas dado que es una
+función no lineal. Se define como,
+\begin{equation}
+    f(x) = \frac{1}{1 + e^{-x}}
+    \label{eq_sigmoid}
+\end{equation}
+La derivada de esta función es,
+\begin{equation}
+    \dot{f}(x) = f(x)(1 - f(x))
+    \label{diffs_sigmoid}
+\end{equation}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{migu.jpg}
+    \caption{Función sigmoide y su derivada.}
+    \label{fig:sigmoide}
+    \fuente{\cite{nwankpa2018activation}}
+\end{figure}
+
+%////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////
+\section{Optimizadores}
+
+
+%////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////
 \section{PINNs}
 Este trabajo adopta una aproximación diferente a lo que suele realizarse en la literatura, empleando redes neuronales profundas gracias a su gran y bien conocida capacidad como aproximadores 
 universales \cite{HORNIK1989359}. De esta manera se puede abordar sin problemas la no-linealidad de los sistemas acoplados que aborda este trabajo. En áreas tales como sistemas físicos, biológicos o de ingeniería 
 puede ser difícil o directamente imposible conseguir datos para el entrenamiento
 de modelos de aprendizaje automático causando un sesgo de entrenamiento y conclusiones incompletas o equívocas. 
 
-Consideramos una ecuación diferencial no lineal y parametrizada en su forma general 
+Consideramos una ecuación diferencial no lineal y parametrizada en su forma general, 
 \begin{equation}
     \vect{u}_t + \mathcal{N}[\vect{u}] = 0, \quad x\in \Omega, t\in[0,T]
     \label{eq:nonlinearDiffEq}
 \end{equation}
 
-donde $u(t,x)$ denota la solución latente, $\mathcal{N}[\cdot]$ es un operador diferencial lineal o no lineal y $\Omega$ es un subconjunto de $\mathbb{R}^d$. Sujeto a las condiciones iniciales y de contorno
+donde $u(t,x)$ denota la solución latente, $\mathcal{N}[\cdot]$ es un operador diferencial lineal o no lineal y $\Omega$ es un subconjunto de $\mathbb{R}^d$. Sujeto a las condiciones iniciales y de frontera,
 \begin{equation}
     \vect{u}(0,x) = g(x), x\in \Omega,
     \label{eq:initilCond}
@@ -128,23 +202,23 @@ donde $u(t,x)$ denota la solución latente, $\mathcal{N}[\cdot]$ es un operador 
 donde $\mathcal{B}[\cdot]$ es un operador de frontera correspondiente a Dirichlet, Neumann o Robin, o condiciones de frontera periodicas.
 
 Se representa la solución desconocida (latente) de una red neuronal profunda $u_\theta(t,x)$, donde $\theta$ denota el conjunto de parámetros entrenables o configurables de la red, por ejemplo, pesos y  sesgos. Esto permite
-definir los residuos de la ecuación diferencial como
+definir los residuos de la ecuación diferencial como,
 \begin{equation}
     \mathcal{R}_\theta(t,\vect{x}) = \frac{\partial \vect{u}_\theta}{\partial t}(t_r,\vect{x}_r) + \mathcal{N}[\vect{u}_\theta](t_r,\vect{x}_r)
 \end{equation}
 
-Dadas las ecuaciones anteriores, es posible entrenar un modelo informado por la física, minimizando la función de pérdida 
+Dadas las ecuaciones anteriores, es posible entrenar un modelo informado por la física, minimizando la función de pérdida, 
 \begin{equation}
-    \mathcal{L}(\theta) = \lambda_1 \mathcal{L}_ic(\theta) + \lambda_2 \mathcal{L}_bc(\theta) + \lambda_3 \mathcal{L}_r(\theta)
+    \mathcal{L}(\theta) = \lambda_1 \mathcal{L}_{ic}(\theta) + \lambda_2 \mathcal{L}_{bc}(\theta) + \lambda_3 \mathcal{L}_{r}(\theta)
     \label{eq:compositeLossFn}
 \end{equation} donde
 \begin{equation}
-    \mathcal{L}_ic(\theta) = \frac{1}{N_{ic}}\sum_{i=1}^{N_{ic}} \left\lvert \vect{u}_\theta(0,\vect{x}_{ic}^i) - g(\vect{x}_{ic}^i) \right\rvert^2
+        \mathcal{L}_{ic}(\theta) = \frac{1}{N_{ic}}\sum_{i=1}^{N_{ic}} \left\lvert \vect{u}_\theta(0,\vect{x}_{ic}^i) - g(\vect{x}_{ic}^i) \right\rvert^2
     \label{eq:initCondLoss}
 \end{equation}
 
 \begin{equation}
-    \mathcal{L}_bc(\theta) = \frac{1}{N_{bc}}\sum_{i=1}^{N_{bc}} \left\lvert \mathcal{B}[\vect{u}_\theta](t_{bc}^i,\vect{x}_{`bc}^i) \right\rvert^2
+    \mathcal{L}_{bc}(\theta) = \frac{1}{N_{bc}}\sum_{i=1}^{N_{bc}} \left\lvert \mathcal{B}[\vect{u}_\theta](t_{bc}^i,\vect{x}_{`bc}^i) \right\rvert^2
     \label{eq:boundaryCondLoss}
 \end{equation}
 
@@ -156,3 +230,8 @@ Dadas las ecuaciones anteriores, es posible entrenar un modelo informado por la 
 De esta forma, $\{x_{ic}^i\}_{i=1}^{N_{ic}}$ representan los puntos de datos iniciales, $\{x_{bc}^i\}_{i=1}^{N_{bc}}$ los puntos de datos de frontera y $\{x_{r}^i\}_{i=1}^{N_{r}}$ los puntos de datos residuales. Estos datos pueden
 ser vertices de mallas fijas o puntos aleatoriamente distribuidos en cada iteración del algoritmo del gradiente descendente. Obsérvese que cada gradiente con respecto a las variables de entrada o a
 los parámetros $\theta$ de la red pueden ser calculados de forma eficiente mediante la diferenciación automática. \cite{wang2023expert, griewank2008evaluating, RAISSI2019686}.
+
+
+%////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////
+\subsection{Loss function and optimization for PINN}
