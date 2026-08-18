@@ -1,0 +1,87 @@
+//Dylan Jara Carvajal - LAB2 BDNE - Prof Juan Manuel Cubillos S12026
+LINK:
+https://drive.google.com/drive/folders/1_wDrAVy1rxdGYt9Oh79H84liFTuuX2jO?usp=sharing
+
+// Select the database to use.
+use('COMBUSTIBLES');
+
+Quitamos el insertmany por conveniencia del txt
+
+//a. Mostrar todas las estaciones de servicio cuyo nombre de comuna finalice con la palabra ‘OL’ sin importar mayúscula o minúscula.
+db.CNE.find({nombre_comuna:{$regex:/OL$/i}},{_id:0, distribuidor:{nombre:1},nombre_comuna:1})
+
+//b. Mostrar todas las estaciones de servicio cuya razón social contenga la palabra ‘hijos’ en alguna parte y el inicio del nombre de la comuna sea ‘L’ 
+// (Sin importar mayúscula o minúscula). Mostrar columnas razon_social, nombre_comuna, nombre_region, nombre_distribuidor y precios.
+db.CNE.find({razon_social:{$regex:/hijos/i},nombre_comuna:{$regex:/^L/i}},{_id:0, razon_social:1 ,nombre_comuna:1, nombre_region:1, distribuidor:{nombre:1}, precios:1})
+
+//c. Mostrar todas las estaciones de servicio cuyo distribuidor contenga al inicio la letra “s” o finalice con la letra “c” (Sin importar mayúscula o minúscula) 
+// y que el nombre de la comuna inicie con la letra ‘A’ o termine con la letra ‘s’ (Sin importar mayúscula o minúscula)
+db.CNE.find({"distribuidor.nombre":/^s|c$/i,"nombre_comuna":/^A|s$/i},{_id:0, distribuidor:{nombre:1}, nombre_comuna:1})
+
+//d. Mostrar el aumento en un 15% el precio de venta de todas las estaciones de servicio cuyo distribuidor inicie con la letra “S” 
+// sin importar mayúscula o minúscula, que esté en las regiones que contengan la palabra “co”
+db.CNE.updateMany({"distribuidor.nombre": /^s/i, "nombre_region": /co/i},
+  {
+    $mul: {
+      "precios.gasolina 93":1.15,
+      "precios.gasolina 97":1.15,
+      "precios.petroleo diesel":1.15,
+      "precios.gasolina 95":1.15
+    }
+  }
+)
+db.CNE.find({"distribuidor.nombre": /^s/i, "nombre_region": /co/i},
+  {
+    _id: 0,
+    "distribuidor.nombre":1,
+    "nombre_region":1,
+    "precios":1
+  }
+)
+
+//e. Mostrar todas las estaciones de servicio de la comuna de Maipú donde el distribuidor sea Copec y la calle contenga la palabra “pajaritos” mostrando las estadísticas de búsqueda.
+db.CNE.find({"direccion_calle": /pajaritos/i, "nombre_comuna": "Maipú", "distribuidor.nombre": "Copec"},
+  {
+    _id: 0,
+    nombre_comuna:1,
+    "distribuidor.nombre":1,
+    direccion_calle:1,
+    direccion_numero:1
+  }
+).explain("executionStats")
+
+//INDICES
+//f. Crear índices para las todas las consultas anteriores, mostrando estadísticas, comparando cifras y explicando las diferencias en ejecución
+
+//CONSULTAS CON AGREGACION
+//g. Crear una consulta con agregación usando match, project y sort con enunciado
+//Queremos ver las bencineras Shell con los precios de 95 más bajo en las regiones que contengan la cadena "AR"
+db.CNE.aggregate([{$match:{"distribuidor.nombre":/shell/i,"nombre_region":/ar/i,"precios.gasolina 95":{$gt:0}}},
+  {$project:{
+    _id:0, "distribuidor.nombre":1, nombre_region:1, "precios.gasolina 95":1}},{$sort:{"precios.gasolina 95":1}}  
+])
+
+//h. Crear una consulta con agregación usando group a dos claves, project y sort con enunciado
+//Buscamos la gasolinera de cada region que contan el substring AR que venda la bencina de 97 más barata y ordenamos de menor a mayor
+db.CNE.aggregate([{$match:{"nombre_region":/ar/i, "precios.gasolina 97":{$gt:0}}},
+  {$sort:{"precios.gasolina 97":1}},
+  {$group: 
+    {_id:"$nombre_region", Distribuidor:{$first:"$distribuidor.nombre"}, Precio: {$first:"$precios.gasolina 97"}}},
+  {$project:{
+    _id:0, "nombre_region":"$_id", "distribuidor.nombre":"$Distribuidor", "precios.gasolina 97":"$Precio"}},
+  {$sort:{"precios.gasolina 97":1}}  
+])
+
+//i. Crear una consulta con agregación usando group y promedio con enunciado
+//Buscamos el valor promedio de la bencina de 93 por comuna en todo Chile
+db.CNE.aggregate([{$group:{_id:"$nombre_comuna", Promedio:{$avg:"$precios.gasolina 93"}}},
+{$project: {_id: 0, Comuna:"$_id", Promedio:1}}
+])
+
+
+//j. Crear una consulta con agregación con una operación matemática y project con enunciado
+//Asumimos que la inflacion anual equivale al 3%. Mostrar los precios actualizados a la inflacion de 4 años para las bencineras Copec
+db.CNE.aggregate([{$match:{"distribuidor.nombre":/copec/i}},
+  {$project:{_id:0, "distribuidor.nombre":1, nombre_region:1, "precios.gasolina 93":{$multiply:["$precios.gasolina 93", 1.12]}, "precios.gasolina 97":{$multiply:["$precios.gasolina 97", 1.12]}, 
+  "precios.petroleo diesel":{$multiply:["$precios.petroleo diesel", 1.12]}, "precios.gasolina 95":{$multiply:["$precios.gasolina 95", 1.12]}}}
+]) 
