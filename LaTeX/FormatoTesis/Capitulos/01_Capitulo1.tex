@@ -123,11 +123,11 @@ Durante los años se han explorado y creado variedad de FA. Dentro de ellas, alg
 Cada una de estas funciones tiene propiedades matemáticas particulares que las hacen más o menos adecuadas para diferentes tipos de problemas \cite{lederer2021activation}. En este capítulo se describen dos funciones de interés para este trabajo.
 
 \subsection{ReLU}
-ReLU viene del inglés \textit{Rectified Linear Unit}, el cual significa \"{}Unidad lineal rectificada\"{}. Esta función también es conocida como función parte-positiva, ya que, para los valores positivos de entrada, la salida es igual a $1$, mientras
-que para las entradas negativas, la salida es igual a $0$ \cite{lederer2021activation}. Esta definida como,
+ReLU viene del inglés \textit{Rectified Linear Unit}, el cual significa \"{}Unidad lineal rectificada\"{}. Esta función también es conocida como función parte-positiva, ya que, para los valores positivos de entrada, la salida es igual a la entrada (función identidad), mientras
+que para las entradas negativas o nulas, la salida es igual a $0$ \cite{lederer2021activation}. Esta definida como,
 \begin{equation}
-    \dot{f}(x) = \max(0,x)
-    \label{eq_relu}
+    f(x) = \max(0,x)
+    \label{relu}
 \end{equation}
 La primera y segunda derivada de esta función es,
 \begin{equation}
@@ -139,7 +139,7 @@ La primera y segunda derivada de esta función es,
     \ddot{f}(x) = 0 \quad \forall x \in \mathbb{R} \setminus \{0\}
     \label{diffs_relu}
 \end{equation}
-Si se analiza la ecuación \ref{diffs_relu}, se puede observar que no es diferenciable en $x=0$, lo que puede repercutir negativamente en ciertos problemas que requieran de su segunda derivada, como es el caso de este trabajo.
+Si se analiza la ecuación \ref{diffs_relu}, se puede observar que la segunda derivada es $0$ para todo el dominio, lo que puede repercutir negativamente en ciertos problemas que requieran de ella, como es el caso de este trabajo.
 
 \begin{figure}
     \centering
@@ -149,9 +149,9 @@ Si se analiza la ecuación \ref{diffs_relu}, se puede observar que no es diferen
     \fuente{\cite{lederer2021activation}}
 \end{figure}
 
-\subsection{Sigmoides}
+\subsection{Sigmoideaaa}
 Una función sigmoide es una función matemática suave que se caracteriza por su forma en "S". Esta es continua y diferenciable, y sus valores de salida se encuentran en el rango $(0,1)$. 
-Dentro de las funciones sigmoides una de las funciones de activación más usadas es la función tangente hiperbólica (\textit{tanh}), dado que es una función no lineal. Se define como,
+Es función de activación muy usadas en el aprendizaje profundo, dado que esta es una función no lineal. Se define como,
 \begin{equation}
     f(x) = \frac{1}{1 + e^{-x}}
     \label{eq_sigmoid}
@@ -161,6 +161,9 @@ La derivada de esta función es,
     \dot{f}(x) = f(x)(1 - f(x))
     \label{diffs_sigmoid}
 \end{equation}
+
+Si bien ReLU puede ser más usada en la actualidad en el ámbito del aprendizaje profundo, la función sigmoide tiene la ventaja de ser infinitamente diferenciable, lo que la hace muy útil en problemas
+donde las derivadas de orden superior son requeridas.
 
 \begin{figure}
     \centering
