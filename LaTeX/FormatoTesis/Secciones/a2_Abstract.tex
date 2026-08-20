@@ -1,15 +1,15 @@
 \begin{abstract}%
+    Lahars represent one of the primary hazards associated with snow- and ice-capped volcanoes due to their ability to rapidly mobilize mixtures of water, sediment, and volcanic material through drainage networks. 
+    Villarrica volcano, one of Chile's most active volcanic systems, serves as a relevant case study due to the generation of lahars during its 2015 eruptive event, which were triggered by the interaction between the 
+    eruptive process and the snow and ice cover.
 
-Lahars represent one of the most devastating volcanic hazards due to their high mobility and potential impact on communities and infrastructure. 
-In Chile, the Villarrica volcano constitutes a critical scenario for studying these flows, particularly those triggered by the interaction between magma and the cryosphere, 
-as observed during the 2015 eruptive event. This work presents the development of a computational model for lahar simulation based on Physics-Informed Neural Networks (PINNs). 
-The proposed architecture integrates coupled partial differential equations (PDEs) under the shallow water approximation, incorporating solid concentration transport variables 
-and pore pressure dynamics to capture the multiphase nature of the phenomenon.
+    This research proposes the development of a computational lahar model using Physics-Informed Neural Networks (PINNs), using the 2015 Villarrica volcano eruption as a case study. The physical model will be 
+    formulated as a coupled system of partial differential equations based on the shallow water (shallow flow) approximation, incorporating mass and momentum conservation, solid concentration transport, 
+    and pore pressure evolution. The PINN will approximate the spatio-temporal fields of flow depth, velocity, solid concentration, and pore pressure by embedding the governing equations directly into its loss function.
 
-The methodology addresses the construction of a PINN trained using physical constraints and initial conditions derived from historical data of the 2015 event. 
-A core component of this study consists of analyzing and mitigating training pathologies inherent to PINNs when applied to complex geophysical systems, 
-such as convergence to trivial solutions, gradient imbalance, and numerical instability. The results aim to demonstrate the viability of PINNs as a 
-robust tool for natural hazard modeling, integrating the laws of physics with advancements in artificial intelligence to strengthen volcanic risk prediction and management capabilities.
+    The methodology will account for physically consistent initial and boundary conditions, topographic representation, and specific training stability strategies—including hard enforcement of initial conditions, 
+    variable normalization, and convergence control to prevent trivial solutions. Subsequently, the model will be applied to the 2015 Villarrica event using available parameters and observational data. 
+    The study aims to evaluate the capability of PINNs to reproduce the spatio-temporal dynamics of lahars and establish their potential as a complementary tool for the physical modeling of this volcanic hazard.
 \end{abstract}
 
 \textbf{Keywords:Physics-Informed Neural Networks (PINNs), Partial Differential Equations, Villarrica Volcano, Lahars, Volcanic Hazards} \keywords\par%

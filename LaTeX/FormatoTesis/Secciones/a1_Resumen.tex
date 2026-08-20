@@ -1,15 +1,30 @@
 \pagenumbering{roman}%
 \begin{abstract}%
-    Los lahares representan uno de los peligros volcánicos más devastadores debido a su alta movilidad y potencial de impacto en comunidades e infraestructura. En Chile, 
-    el volcán Villarrica constituye un escenario crítico para el estudio de estos flujos, particularmente aquellos originados por la interacción entre magma y criósfera, 
-    como se observó en el evento eruptivo de 2015. Este trabajo presenta el desarrollo de un modelo computacional para la simulación de lahares basado en 
-    Redes Neuronales Informadas por la Física (PINNs). La arquitectura propuesta integra ecuaciones diferenciales parciales (PDEs) acopladas bajo la aproximación de flujo somero 
-    (shallow water equations), incorporando variables de transporte de concentración sólida y dinámica de presión de poros para capturar la naturaleza multifásica del fenómeno   
-    La metodología aborda la construcción de una PINN entrenada mediante restricciones físicas y condiciones iniciales derivadas de datos históricos del evento de 2015. 
-    Un componente central del estudio consiste en el análisis y mitigación de patologías propias del entrenamiento de PINNs en sistemas geofísicos complejos, tales como 
-    la convergencia a soluciones triviales, el desbalance de gradientes y la inestabilidad numérica. Los resultados buscan demostrar la viabilidad de las PINNs como una
-    herramienta robusta para la modelación de peligros naturales, integrando las leyes de la física con los avances en inteligencia artificial para fortalecer las capacidades de predicción 
-    y gestión de riesgos volcánicos. 
+    Los lahares constituyen uno de los principales peligros asociados a volcanes cubiertos por nieve y hielo, debido a su capacidad para movilizar rápidamente mezclas de agua, sedimentos y material volcánico a través de los 
+    sistemas de drenaje. El volcán Villarrica, uno de los sistemas volcánicos más activos de Chile, constituye un caso de estudio relevante debido a la generación de lahares durante su evento eruptivo de 2015, asociados a la 
+    interacción del proceso eruptivo con la cubierta de nieve y hielo.
+
+    Esta investigación propone desarrollar un modelo computacional de lahares mediante Redes Neuronales Informadas por la Física (PINNs), utilizando el evento eruptivo de 2015 del volcán Villarrica como caso de estudio. 
+    El modelo físico se formulará mediante un sistema acoplado de ecuaciones diferenciales parciales basado en la aproximación de flujo somero, incorporando la conservación de masa y momento, el transporte de concentración 
+    sólida y la evolución de la presión de poros. La PINN aproximará los campos espacio-temporales de espesor, velocidad, concentración sólida y presión de poros, incorporando las ecuaciones gobernantes directamente en su 
+    función de pérdida.
+
+    La metodología considerará condiciones iniciales y de frontera físicamente consistentes, representación de la topografía y estrategias específicas para mejorar la estabilidad del entrenamiento, incluyendo la imposición 
+    fuerte de condiciones iniciales, normalización de variables y control de la convergencia hacia soluciones triviales. Posteriormente, el modelo será aplicado al caso del Villarrica 2015 utilizando parámetros y observaciones 
+    disponibles para el evento. Se espera evaluar la capacidad de las PINNs para reproducir la dinámica espacio-temporal de lahares y establecer su potencial como herramienta complementaria para la modelación 
+    física de este tipo de peligro volcánico.
+    
+    %Los lahares representan uno de los peligros volcánicos más devastadores debido a su alta movilidad y potencial de impacto en comunidades e infraestructura. En Chile, 
+    %el volcán Villarrica constituye un escenario crítico para el estudio de estos flujos, particularmente aquellos originados por la interacción entre magma y criósfera, 
+    %como se observó en el evento eruptivo de 2015. Este trabajo presenta el desarrollo de un modelo computacional para la simulación de lahares basado en 
+    %Redes Neuronales Informadas por la Física (PINNs). La arquitectura propuesta integra ecuaciones diferenciales parciales acopladas bajo la aproximación de flujo somero, 
+    %incorporando variables de transporte de concentración sólida y dinámica de presión de poros para capturar la naturaleza multifásica del fenómeno   
+    %La metodología aborda la construcción de una PINN entrenada mediante restricciones físicas y condiciones iniciales derivadas de datos históricos del evento de 2015. 
+    %Un componente central del estudio consiste en el análisis y mitigación de patologías propias del entrenamiento de PINNs en sistemas geofísicos complejos, tales como 
+    %la convergencia a soluciones triviales, el desbalance de gradientes y la inestabilidad numérica. Los resultados buscan demostrar la viabilidad de las PINNs como una
+    %herramienta robusta para la modelación de peligros naturales, integrando las leyes de la física con los avances en inteligencia artificial para fortalecer las capacidades de predicción 
+    %y gestión de riesgos volcánicos. 
+
 \end{abstract}
 
 \textbf{Palabras clave: Redes Neuronales Informadas por la Física (PINNs), Ecuaciones Diferenciales Parciales, Volcán Villarica, Lahares, Peligros Volcánicos} \palabrasClave\par%

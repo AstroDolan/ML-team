@@ -8,10 +8,10 @@
 \section{Redes Neuronales Artificiales}
 \label{sec:redes_neuroanles_artificiales}
 Una red neuronal artificial (RNA) o por sus siglas en inglés ANN (\textit{Artificial Neural Network}) es un modelo matemático que intenta simular la estructura y las funcionalidades
-de las redes neuronales biológicas. El bloque base de una ANN es un una neurona artificial, esto es, un simple modelo matemático (una función).
+de las redes neuronales biológicas. El bloque base de una RNA es un una neurona artificial, esto es, un simple modelo matemático o función.
 Este modelo contiene tres reglas básicas: la suma ponderada de las entradas, la adición de un sesgo y la aplicación de una función de activación. Las entradas de la neurona multiplicadas por un peso, es decir,
 cada valor de entrada es ponderado por un peso individual. En el medio de la neurona se encuentra la función que suma todas las entradas ponderadas y los sesgos. Posterior a la suma, en la salida
-de la neurona se encuentra la función de activación, la cual es una función no lineal que determina si la neurona se activa o no. \cite{krenker2011introduction} \cite{walczak2018artificial}. %CITAR TAMBIEN A STEVEN WALCZAK, AGREGAR EL .BIB
+de la neurona se encuentra la función de activación, la cual es una función no lineal que determina si la neurona se activa o no \cite{krenker2011introduction,walczak2018artificial}.
 
 \begin{figure}[h!]
     \centering
@@ -33,7 +33,7 @@ partir de la combinación de señales de entrada \cite{mcculloch1943logical}. Si
 artificiales utilizadas en la actualidad.
 
 Formalmente, sea $\mathbf{x} = (x_1, x_2, \dots, x_n) \in \mathbb{R}^n$ el vector de entradas de la neurona. A cada entrada $x_i$ se le asocia un peso sináptico $w_i \in \mathbb{R}$, que pondera su contribución relativa. La neurona calcula 
-primero una combinación lineal de las entradas, conocida como \textit{entrada neta} o \textit{potencial de activación}, definida como
+primero una combinación lineal de las entradas, conocida como \textit{entrada neta} o \textit{potencial de activación}, definida como,
 
 \begin{equation}
     z = \sum_{i=1}^{n} w_i x_i + b,
@@ -41,10 +41,14 @@ primero una combinación lineal de las entradas, conocida como \textit{entrada n
 \end{equation}
 
 \noindent donde $b \in \mathbb{R}$ es el sesgo (\textit{bias}), un parámetro adicional que permite desplazar el umbral de activación de la neurona independientemente de los valores de entrada. Es posible escribir la Ecuación~\eqref{eq:entrada_neta} 
-de forma compacta como $z = \mathbf{w}^{\top}\mathbf{x} + b$, con $\mathbf{w} = (w_1, \dots, w_n)^{\top}$.
+de forma compacta como $z = \mathbf{w}^{\top}\mathbf{x} + b$, con, 
+\begin{equation}
+    \mathbf{w} = (w_1, \dots, w_n)^{\top}.
+    \label{eq:pesos}
+\end{equation}
 
 Posteriormente, la entrada neta $z$ es transformada mediante una función de activación $\varphi: \mathbb{R} \rightarrow \mathbb{R}$, que introduce no linealidad en el modelo y determina el grado de activación de la neurona. La salida de la neurona artificial 
-queda entonces definida por
+queda entonces definida por,
 
 \begin{equation}
     y = \varphi(z) = \varphi\left(\sum_{i=1}^{n} w_i x_i + b\right).
@@ -75,15 +79,15 @@ desde la capa de entrada hasta la capa de salida y el valor de salida de la neur
     \fuente{\cite{park2025artificial}}
 \end{figure}
 
-Las capas que no se conectan directamente con la entrada o la salida se denominan capas ocultas. La presencia de estas capas permite a la red aprender representaciones intermedias de los datos, capturando patrones complejos y 
-no lineales que serían inalcanzables para un modelo lineal simple. La introducción de múltiples capas es determinada por la complejidad de la función que se desea aproximar y la no-linealidad de esta. 
-En general, a mayor complejidad de la función objetivo, mayor número de capas y neuronas se requerirá para lograr una aproximación satisfactoria. El número de neuronas
-en la capa de entrada depende de la cantidad de variables independientes que se deseen considerar, mientras que el número de neuronas en la capa de salida depende de la cantidad de variables dependientes que se deseen predecir.
+Las capas que no se conectan directamente con la entrada o la salida se denominan capas ocultas. La presencia de estas capas permite a la red aprender representaciones intermedias de los datos, capturando patrones 
+complejos y no lineales que serían inalcanzables para un modelo lineal simple. La introducción de múltiples capas es determinada por la complejidad de la función que se desea aproximar y la no-linealidad de esta. 
+En general, a mayor complejidad de la función objetivo, mayor número de capas y neuronas se requerirá para lograr predicciones con mayor precisión. El número de neuronas
+en la capa de entrada depende de la cantidad de variables independientes o de entrada que se deseen considerar, mientras que el número de neuronas en la capa de salida depende de la cantidad de variables dependientes que se deseen predecir.
 Finalmente, tanto el número de capas ocultas como el número de neuronas por capa son dependientes de la complejidad del modelo y son parámetros importantes en el desarrollo del MLP \cite{park2025artificial}.
 
-Desde un punto de vista formal, es posible extender la formulación presentada para una única neurona (Ecuaciones~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona}) a la red completa mediante la composición sucesiva de 
+Desde un punto de vista formal, es posible extender la formulación presentada para una única neurona basada en las ecuaciones ~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} a la red completa mediante la composición sucesiva de 
 transformaciones afines y funciones de activación, aplicadas capa a capa. Sea $L$ el número total de capas de la red (sin contar la capa de entrada), y sea $\mathbf{h}^{(l)} \in \mathbb{R}^{n_l}$ el vector de 
-activaciones de la capa $l$, con $\mathbf{h}^{(0)} = \mathbf{x}$ el vector de entrada. La salida de cada capa $l = 1, \dots, L$ se calcula recursivamente como
+activaciones de la capa $l$, con $\mathbf{h}^{(0)} = \mathbf{x}$ el vector de entrada. La salida de cada capa $l = 1, \dots, L$ se calcula recursivamente como,
 %Referencias: Goodfellow et al., Deep Learning, 2016; Nielsen, Neural Networks and Deep Learning, 2015. Capitulo 6
 \begin{equation}
     \mathbf{h}^{(l)} = \varphi^{(l)}\!\left(W^{(l)} \mathbf{h}^{(l-1)} + \mathbf{b}^{(l)}\right),
@@ -91,7 +95,7 @@ activaciones de la capa $l$, con $\mathbf{h}^{(0)} = \mathbf{x}$ el vector de en
 \end{equation}
 
 \noindent donde $W^{(l)} \in \mathbb{R}^{n_l \times n_{l-1}}$ es la matriz de pesos que conecta la capa $l-1$ con la capa $l$, $\mathbf{b}^{(l)} \in \mathbb{R}^{n_l}$ es el vector de sesgos de la capa $l$, y $\varphi^{(l)}$ es 
-la función de activación correspondiente, aplicada componente a componente. Nótese que la Ecuación~\eqref{eq:forward_layer} generaliza directamente las Ecuaciones~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} de 
+la función de activación correspondiente, aplicada componente a componente. Nótese que la ecuación~\eqref{eq:forward_layer} generaliza directamente las Ecuaciones~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} de 
 la neurona individual, aplicándolas ahora de manera simultánea a todas las neuronas de una capa.
 
 La salida final de la red, $\hat{\mathbf{y}} = \mathbf{h}^{(L)}$, queda expresada como la composición de $L$ transformaciones sucesivas,
@@ -105,10 +109,9 @@ La salida final de la red, $\hat{\mathbf{y}} = \mathbf{h}^{(L)}$, queda expresad
 sucesivo para referirse a la red neuronal como aproximador de una función objetivo, y resulta particularmente relevante en el contexto de las PINNs, donde una red de este tipo se emplea directamente para aproximar 
 la solución latente $u(t,x)$ de la ecuación diferencial de interés \cite{goodfellow2016deep}.
 
-Cabe destacar que la capacidad de un MLP para aproximar funciones arbitrarias no es solo empírica, sino que está respaldada teóricamente por el teorema de aproximación universal, 
+Cabe destacar que la capacidad de un MLP para aproximar funciones arbitrarias no es solo empírica, sino que está respaldada teóricamente por el teorema de aproximación universal \cite{HORNIK1989359}, 
 el cual establece que una red \textit{feedforward} con al menos una capa oculta y un número suficiente de neuronas puede aproximar cualquier función continua sobre un subconjunto compacto 
-de $\mathbb{R}^n$ con la precisión deseada, bajo condiciones razonables sobre la función de activación \cite{HORNIK1989359}. Este resultado es, en última instancia, el que justifica el uso de redes neuronales 
-profundas como aproximadores de soluciones de ecuaciones diferenciales en el marco de las PINNs
+de $\mathbb{R}^n$ con la precisión deseada, bajo condiciones razonables sobre la función de activación.
 
 
 %////////////////////////////////////////////////////////////////////////////////////
@@ -223,7 +226,10 @@ donde típicamente se configuran $\beta_1 = 0.9$, $\beta_2 = 0.999$ y $\epsilon 
 
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
-\section{PINNs}
+%////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////
+
+\section{Redes Neuronales Informadas por la Física (PINNs)}
 Este trabajo adopta una aproximación diferente a lo que suele realizarse en la literatura, empleando redes neuronales profundas gracias a su gran y bien conocida capacidad como aproximadores 
 universales \cite{HORNIK1989359}. De esta manera se puede abordar sin problemas la no-linealidad de los sistemas acoplados que aborda este trabajo. En áreas tales como sistemas físicos, biológicos o de ingeniería 
 puede ser difícil o directamente imposible conseguir datos para el entrenamiento
