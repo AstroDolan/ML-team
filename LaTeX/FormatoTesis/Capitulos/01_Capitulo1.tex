@@ -149,9 +149,9 @@ Si se analiza la ecuación \ref{diffs_relu}, se puede observar que la segunda de
     \fuente{\cite{lederer2021activation}}
 \end{figure}
 
-\subsection{Sigmoideaaa}
+\subsection{Sigmoide}
 Una función sigmoide es una función matemática suave que se caracteriza por su forma en "S". Esta es continua y diferenciable, y sus valores de salida se encuentran en el rango $(0,1)$. 
-Es función de activación muy usadas en el aprendizaje profundo, dado que esta es una función no lineal. Se define como,
+Es función de activación muy usadas en el aprendizaje profundo para predecir probabilidades y salidas binarias. Se define como,
 \begin{equation}
     f(x) = \frac{1}{1 + e^{-x}}
     \label{eq_sigmoid}
@@ -163,8 +163,8 @@ La derivada de esta función es,
 \end{equation}
 
 Si bien ReLU puede ser más usada en la actualidad en el ámbito del aprendizaje profundo, la función sigmoide tiene la ventaja de ser infinitamente diferenciable, lo que la hace muy útil en problemas
-donde las derivadas de orden superior son requeridas.
-
+donde las derivadas de orden superior son requeridas. Sin embargo, la FA Sigmoide tiene la desventaja de que puede saturar su gradiente y converger lentamente a una solución, 
+provocando que el gradiente se propague en diferentes direcciones \cite{nwankpa2018activation}.
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{migu.jpg}
@@ -176,7 +176,50 @@ donde las derivadas de orden superior son requeridas.
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
 \section{Optimizadores}
+\section{Algoritmos de Optimización}
+El entrenamiento de una red neuronal artificial se formula fundamentalmente como un problema de optimización no convexa, cuyo objetivo es encontrar el conjunto de parámetros $\boldsymbol{\theta} \in \mathbb{R}^d$ (pesos y sesgos) que minimice una función de pérdida $\mathcal{L}(\boldsymbol{\theta})$ sobre el conjunto de datos de entrenamiento:
+\begin{equation}
+    \boldsymbol{\theta}^* = \arg\min_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta})
+    \label{eq:opt_problem}
+\end{equation}
 
+Los algoritmos de optimización determinan la trayectoria y la velocidad con la que los parámetros convergen hacia un mínimo local a través de aproximaciones iterativas basadas en el gradiente de la función de pérdida, $\nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta})$, calculado mediante el algoritmo de retropropagación (\textit{backpropagation}).
+
+\subsection{Fundamentos y Descenso de Gradiente}
+La base de la mayoría de los métodos modernos es el Descenso de Gradiente Estocástico (SGD, por sus siglas en inglés \textit{Stochastic Gradient Descent}), cuya regla de actualización en la iteración $t$ se define como:
+\begin{equation}
+    \boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta \, \nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta}_t; \mathcal{B}_t)
+    \label{eq:sgd}
+\end{equation}
+donde $\eta > 0$ representa la tasa de aprendizaje (\textit{learning rate}) y $\mathcal{B}_t$ denota un subconjunto aleatorio de datos (\textit{mini-batch}). A pesar de su simplicidad computacional, SGD presenta limitaciones significativas en superficies de pérdida no isotrópicas, zonas con mesetas o valles pronunciados, y es altamente sensible a la elección estática de $\eta$. Para mitigar estos problemas, surgen los métodos de tasa de aprendizaje adaptativa.
+
+\subsection{RMSprop}
+Propuesto por Geoff Hinton, RMSprop (\textit{Root Mean Square Propagation}) resuelve las oscilaciones excesivas en dimensiones con gradientes pronunciados dividiendo la tasa de aprendizaje por un promedio móvil exponencial de los cuadrados de los gradientes históricos. 
+
+El algoritmo calcula en cada paso $t$:
+\begin{align}
+    \boldsymbol{v}_t &= \beta \, \boldsymbol{v}_{t-1} + (1 - \beta) \, \boldsymbol{g}_t^{\odot 2} \label{eq:rmsprop_v} \\
+    \boldsymbol{\theta}_{t+1} &= \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\boldsymbol{v}_t} + \epsilon} \odot \boldsymbol{g}_t \label{eq:rmsprop_update}
+\end{align}
+donde $\boldsymbol{g}_t = \nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta}_t)$, $\beta \in [0, 1)$ es el factor de decaimiento (comúnmente $\beta = 0.9$), $\epsilon > 0$ es una constante pequeña (típicamente $10^{-8}$) para evitar la división por cero, y $\odot$ denota el producto elemento a elemento. De este modo, RMSprop atenúa los pasos en direcciones con variaciones abruptas y acelera en aquellas con pendientes suaves.
+
+\subsection{Adam}
+El optimizador Adam (\textit{Adaptive Moment Estimation}) combina las ventajas del método de momento (aceleración en la dirección relevante) con RMSprop (escalamiento adaptativo por coordenada). Mantiene promedios móviles tanto del gradiente (primer momento) como de su cuadrado (segundo momento no centrado):
+\begin{align}
+    \boldsymbol{m}_t &= \beta_1 \boldsymbol{m}_{t-1} + (1 - \beta_1) \boldsymbol{g}_t \label{eq:adam_m} \\
+    \boldsymbol{v}_t &= \beta_2 \boldsymbol{v}_{t-1} + (1 - \beta_2) \boldsymbol{g}_t^{\odot 2} \label{eq:adam_v}
+\end{align}
+Dado que los vectores $\boldsymbol{m}_t$ y $\boldsymbol{v}_t$ se inicializan en cero, presentan un sesgo hacia el origen en las primeras iteraciones. Adam incorpora una corrección de sesgo analítica:
+\begin{equation}
+    \hat{\boldsymbol{m}}_t = \frac{\boldsymbol{m}_t}{1 - \beta_1^t}, \qquad \hat{\boldsymbol{v}}_t = \frac{\boldsymbol{v}_t}{1 - \beta_2^t}
+    \label{eq:adam_bias}
+\end{equation}
+Finalmente, la regla de actualización de los parámetros está dada por:
+\begin{equation}
+    \boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\hat{\boldsymbol{v}}_t} + \epsilon} \odot \hat{\boldsymbol{m}}_t
+    \label{eq:adam_update}
+\end{equation}
+donde típicamente se configuran $\beta_1 = 0.9$, $\beta_2 = 0.999$ y $\epsilon = 10^{-8}$. Gracias a su robustez y rápida convergencia, Adam se ha establecido como el optimizador por defecto en diversas tareas de aprendizaje profundo.
 
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
