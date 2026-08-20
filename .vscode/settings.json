@@ -44,56 +44,38 @@
     "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
     "jupyter.askForKernelRestart": false,
     "github.copilot.nextEditSuggestions.enabled": true,
-
+    "github.copilot.inlineSuggestions.enabled": true,
     "latex-workshop.latex.recipes": [
         {
-            "name": "pdflatex -> biber -> pdflatex * 2",
+            "name": "Documento (latexmk)",
             "tools": [
-                "pdflatex",
-                "biber",
-                "pdflatex",
-                "pdflatex"
+                "latexmk"
             ]
         },
         {
-            "name": "pdflatex -> bibtex -> pdflatex * 2",
+            "name": "Presentacion Beamer (latexmk)",
             "tools": [
-                "pdflatex",
-                "bibtex",
-                "pdflatex",
-                "pdflatex"
+                "latexmk"
             ]
         }
     ],
     "latex-workshop.latex.tools": [
-            {
-                "name": "pdflatex",
-                "command": "pdflatex",
-                "args": [
-                    "-interaction=nonstopmode",
-                    "-synctex=1",
-                    "-file-line-error",
-                    "%DOC%"
-                ]
-            },
-            {
-                "name": "biber",
-                "command": "biber",
-                "args": [
-                    "%DOCFILE%"
-                ]
-            },
-
-            {
-                "name": "bibtex",
-                "command": "bibtex",
-                "args": [
-                    "%DOCFILE%"
-                ]
-            }
-        ],
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-cd",
+                "-pdf",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        }
+    ],
         
-    "latex-workshop.latex.recipe.default": "pdflatex -> biber -> pdflatex * 2",
+    "latex-workshop.latex.recipe.default": "Documento (latexmk)",
+    "latex-workshop.latex.autoBuild.run": "onFileChange",
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "python.defaultInterpreterPath": "C:\\GalaxyDL\\Scripts\\python.exe",

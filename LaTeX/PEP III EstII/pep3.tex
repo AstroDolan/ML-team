@@ -1,0 +1,478 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+
+\begin{document}
+
+    \begin{center}
+        \vspace{1cm}
+        \LARGE\textbf{Prueba 3 Estadística II 01/2026} \\
+        \Large{\textbf{Profesor:} Alexis Rojas Pineda} \\
+        \Large{\textbf{Estudiante:} Dylan Jara Carvajal} \\
+        \Large{Primer Semestre 2026}
+    \end{center}
+
+
+%///////////////////////////////////////////////////////////////////////////////////////
+%///////////////////////////////////////////////////////////////////////////////////////
+
+\section*{Pregunta 1.}
+A continuación, se presenta una muestra de 100 conductores electrónicos, a los cuales se les midió su resistencia (X), en $\Omega$.
+
+\begin{center}
+    \begin{tabular}{cc}
+        \toprule
+        Resistencia (X) & N$^\circ$ de conductores \\
+        \midrule
+        Menos de 10 & 11 \\
+        10 -- 12 & 18 \\
+        12 -- 14 & 24 \\
+        14 -- 16 & 21 \\
+        16 -- 18 & 16 \\
+        18 y más & 10 \\
+        \midrule
+        Total & 100 \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\begin{align*}
+    \sum_{i=1}^{100}X_{i} &= 1386 \\
+    \sum_{i=1}^{100}X_{i}^{2} &= 20084
+\end{align*}
+Usando el criterio del valor-p ¿se puede afirmar que la resistencia de los conductores electrónicos tiene distribución normal?
+
+\section*{Desarrollo P1}
+\begin{itemize}
+    \item [a)] Se plantean las hipótesis:
+    \begin{itemize}
+        \item $H_0$: La resistencia de los conductores electrónicos sigue una distribución normal, $X \sim N(\mu, \sigma^2)$.
+        \item $H_1$: La resistencia de los conductores electrónicos no sigue una distribución normal.
+    \end{itemize}
+
+    \item [b)]
+        Como $\mu$ y $\sigma$ son desconocidos, estimamos a partir de los datos muestrales ($n = 100$).
+        La media muestral ($\bar{X}$) se calcula como,
+        \begin{equation*}
+            \bar{X} = \frac{\sum_{i=1}^{100} X_i}{n} = \frac{1386}{100} = 13.86
+        \end{equation*}
+        
+        Varianza muestral ($S^2$):
+        \begin{equation*}
+            S^2 = \frac{\sum_{i=1}^{100} X_{i}^{2} - n\bar{X}^2}{n - 1} = \frac{20084 - 100(13.86)^2}{99} = \frac{20084 - 19209.96}{99} \approx 8.8287
+        \end{equation*}
+        
+        Desviación estándar muestral ($S$):
+        \begin{equation*}
+            S = \sqrt{8.8287} \approx 2.9713
+        \end{equation*}
+        Por $H_0$, asumimos $X \sim N(13.86, 2.9713^2)$.
+
+\item [c)] 
+        Para las frecuencias esperadas ($E_i$), estandarizamos intervalos usando $Z = \frac{X - 13.86}{2.9713}$. Como $n=100$, tenemos que $E_i = 100 \cdot P_i$:
+        
+        \begin{itemize}
+            \item \textbf{Menos de 10:} $P(Z < -1.299) = 0.0970 \implies E_1 = 9.70$
+            \item \textbf{10 -- 12:} $P(-1.299 \leq Z < -0.626) = 0.1687 \implies E_2 = 16.87$
+            \item \textbf{12 -- 14:} $P(-0.626 \leq Z < 0.047) = 0.2530 \implies E_3 = 25.30$
+            \item \textbf{14 -- 16:} $P(0.047 \leq Z < 0.720) = 0.2455 \implies E_4 = 24.55$
+            \item \textbf{16 -- 18:} $P(0.720 \leq Z < 1.393) = 0.1540 \implies E_5 = 15.40$
+            \item \textbf{18 o más:} $P(Z \geq 1.393) = 0.0818 \implies E_6 = 8.18$
+        \end{itemize}
+
+        \item [4)] Cálculo del estadístico de prueba ($\chi^2_{\text{obs}}$):
+        Usamos $\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}$:
+        
+        \begin{center}
+            \begin{tabular}{cccccc}
+                \toprule
+                Categoría & $O_i$ & $E_i$ & $(O_i - E_i)$ & $(O_i - E_i)^2$ & $\frac{(O_i - E_i)^2}{E_i}$ \\
+                \midrule
+                Menos de 10 & 11 & 9,70  & 1,30  & 1,6900 & 0,1742 \\
+                10 -- 12    & 18 & 16,87 & 1,13  & 1,2769 & 0,0757 \\
+                12 -- 14    & 24 & 25,30 & -1,30 & 1,6900 & 0,0668 \\
+                14 -- 16    & 21 & 24,55 & -3,55 & 1,,6025& 0,5133 \\
+                16 -- 18    & 16 & 15,40 & 0,60  & 0,3600 & 0,0234 \\
+                18 y más    & 10 & 8,18  & 1,82  & 3,3124 & 0,4049 \\
+                \midrule
+                \textbf{Total} & \textbf{100} & \textbf{100,00} & & & \textbf{$\approx 1,258$} \\
+                \bottomrule
+            \end{tabular}
+        \end{center}
+        Por lo tanto, $\chi^2_{\text{obs}} = 1.258$ (el cálculo computacional con todos los decimales da $1.264$).
+
+        \item [5)] Grados de libertad y Valor-p:
+        \begin{itemize}
+            \item Grados de libertad ($gl$) = $6 - 1 - 2 = 3$
+            \item Valor-p: $P(\chi^2_{(3)} > 1.264) \approx 0.738$
+        \end{itemize}
+        
+        \item [6)] Conclusión:
+        Dado que el valor-p ($0.738$) es mayor que cualquier nivel de significancia de uso común ($\alpha = 0.05$ o $\alpha = 0.01$), no rechazamos la hipótesis nula $H_0$.
+        \vspace{0.5cm}
+        
+        \noindent\textbf{Respuesta Final:} Usando el criterio del valor-p, sí podemos afirmar con suficiente evidencia que la resistencia de los conductores electrónicos sigue una distribución normal.
+\end{itemize}
+
+
+
+
+
+
+%///////////////////////////////////////////////////////////////////////////////////////
+%///////////////////////////////////////////////////////////////////////////////////////
+
+\section*{Pregunta 2.}
+Un gerente está preocupado porque la participación de mercado de su producto se distribuye en forma dispareja en el país. En una encuesta en la que dividió al país en tres sectores geográficos (Norte-Centro-Sur). Se tomó un muestreo aleatorio de 100 consumidores por sector con los siguientes resultados:
+
+\begin{center}
+    \begin{tabular}{lcccc}
+        \toprule
+        & \multicolumn{3}{c}{Sector Geográfico} & \\
+        \cmidrule{2-4}
+        Participación de Mercado & Norte & Centro & Sur & Total \\
+        \midrule
+        Compra el producto & 40 & 55 & 45 & 140 \\
+        No compra el producto & 60 & 45 & 55 & 160 \\
+        \midrule
+        Total & 100 & 100 & 100 & 300 \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+Usando el criterio del valor-p ¿se puede afirmar que existe independencia entre el sector geográfico con la participación de mercado?
+
+\section*{Desarrollo P2}
+\begin{itemize}
+    \item [a)] Planteamiento de hipótesis:
+    \begin{itemize}
+        \item $H_0$: La participación de mercado es independiente del sector geográfico.
+        \item $H_1$: La participación de mercado NO es independiente del sector geográfico (existe asociación).
+    \end{itemize}
+
+    \item [b)] 
+    Bajo ($H_0$), las frecuencias esperadas las calculamos como,
+    \begin{equation*}
+        E_{ij} = \frac{\text{Total Fila}_i \times \text{Total Columna}_j}{\text{Total General}}
+    \end{equation*}
+    
+    Para los consumidores que compran el producto:
+    \begin{equation*}
+        E_{11} (\text{Norte}) = E_{12} (\text{Centro}) = E_{13} (\text{Sur}) = \frac{140 \times 100}{300} = 46.67
+    \end{equation*}
+    
+    Para los consumidores que no compran el producto:
+    \begin{equation*}
+        E_{21} (\text{Norte}) = E_{22} (\text{Centro}) = E_{23} (\text{Sur}) = \frac{160 \times 100}{300} = 53.33
+    \end{equation*}
+    
+    \item [c)]
+    Para el estadístico de prueba, usamos $\chi^2 = \sum \frac{(O_{ij} - E_{ij})^2}{E_{ij}}$:
+    
+    \begin{center}
+        \begin{tabular}{llccccc}
+            \toprule
+            Participación & Sector & $O_{ij}$ & $E_{ij}$ & $(O_{ij} - E_{ij})$ & $(O_{ij} - E_{ij})^2$ & $\frac{(O_{ij} - E_{ij})^2}{E_{ij}}$ \\
+            \midrule
+            Compra & Norte & 40 & 46,67 & -6,67 & 44,4889 & 0,953 \\
+            Compra & Centro & 55 & 46,67 & 8,33 & 69,3889 & 1,487 \\
+            Compra & Sur & 45 & 46,67 & -1,67 & 2,7889 & 0,060 \\
+            \midrule
+            No compra & Norte & 60 & 53,33 & 6,67 & 44,4889 & 0,834 \\
+            No compra & Centro & 45 & 53,33 & -8,33 & 69,3889 & 1,301 \\
+            No compra & Sur & 55 & 53,33 & 1,67 & 2,7889 & 0,052 \\
+            \midrule
+            \textbf{Total} & & \textbf{300} & \textbf{300,00} & & & \textbf{$\approx 4,6875$} \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+    
+    Por lo tanto, el estadístico de prueba es $\chi^2_{\text{obs}} = 4.6875$.
+    
+    \item [d)] Grados de libertad y valor-p
+    \begin{itemize}
+        \item \textbf{Grados de libertad ($gl$):} $gl = (filas - 1) \times (columnas - 1) = (2 - 1) \times (3 - 1) = 1 \times 2 = 2$
+        \item \textbf{Valor-p:} $P(\chi^2_{(2)} > 4.6875) \approx 0.096$
+    \end{itemize}
+    
+    \item [e)] Conclusión:
+    Considerando un nivel de significancia estándar de $\alpha = 0.05$, como el valor-p ($0.096$) es mayor que $\alpha$, \textbf{no hay evidencia estadística suficiente para rechazar $H_0$}.
+    \vspace{0.5cm}
+    
+    \noindent\textbf{Respuesta Final:} Usando el criterio del valor-p, sí se puede afirmar que existe independencia entre el sector geográfico y la participación de mercado.
+\end{itemize}
+
+
+
+%///////////////////////////////////////////////////////////////////////////////////////
+%///////////////////////////////////////////////////////////////////////////////////////
+
+\section*{Pregunta 3.}
+Considere la formulación del modelo de regresión lineal simple 
+$$Y_{i}=\alpha_{1}+\alpha_{2}(X_{i}-\overline{X})+\epsilon_{i}$$ 
+para $i=1,2,...,n$ con los errores $\epsilon_{1},\epsilon_{2},...,\epsilon_{n}$ iid $N(0,\sigma_{\epsilon}^{2})$.
+\begin{enumerate}[label=\alph{enumi})]
+    \item Demuestre que los estimadores de mínimos cuadrados de $\alpha_{1}$ y $\alpha_{2}$ son insesgados.
+    \item Demuestre que los estimadores de mínimos cuadrados de $\alpha_{1}$ y $\alpha_{2}$ son no correlacionados.
+\end{enumerate}
+
+\subsection*{Solución P3}
+    \begin{itemize}
+    
+        \item [a)] Demostrar insesgamiento de los estimadores:
+        Dado el modelo centrado:
+        
+        \[
+        Y_i = \alpha_1 + \alpha_2(X_i - \bar{X}) + \varepsilon_i,
+        \quad \text{con } \varepsilon_i \sim \text{iid } N(0, \sigma^2), \quad i = 1,\dots,n,
+        \]
+        
+        el estimador de mínimos cuadrados de \( \alpha_2 \) es:
+        
+        \[
+        \hat{\alpha}_2 = \frac{\sum_{i=1}^n (X_i - \bar{X})(Y_i - \bar{Y})}{\sum_{i=1}^n (X_i - \bar{X})^2}
+        \]
+        
+        Si sustituimos \( Y_i = \alpha_1 + \alpha_2(X_i - \bar{X}) + \varepsilon_i \):
+        
+        \[
+        \hat{\alpha}_2 = \frac{\sum (X_i - \bar{X})(\alpha_2(X_i - \bar{X}) + \varepsilon_i)}{\sum (X_i - \bar{X})^2}
+        = \alpha_2 + \frac{\sum (X_i - \bar{X})\varepsilon_i}{\sum (X_i - \bar{X})^2}
+        \]
+        
+        Como \( \mathbb{E}[\varepsilon_i] = 0 \), tenemos que:
+        
+        \[
+        \mathbb{E}[\hat{\alpha}_2] = \alpha_2 + \frac{\sum (X_i - \bar{X}) \cdot \mathbb{E}[\varepsilon_i]}{\sum (X_i - \bar{X})^2} = \alpha_2
+        \]
+        
+        Por lo tanto, \( \hat{\alpha}_2 \) es un estimador insesgado.
+        
+        \bigskip
+        
+        Para \( \alpha_1 \) notamos que:
+        
+        \[
+        \hat{\alpha}_1 = \bar{Y} = \frac{1}{n} \sum Y_i = \alpha_1 + \bar{\varepsilon}
+        \]
+        
+        y como \( \mathbb{E}[\bar{\varepsilon}] = 0 \), entonces:
+        
+        \[
+        \mathbb{E}[\hat{\alpha}_1] = \alpha_1 + \mathbb{E}[\bar{\varepsilon}] = \alpha_1
+        \]
+        
+        \textbf{Conclusión:} Los estimadores \( \hat{\alpha}_1 \) y \( \hat{\alpha}_2 \) son ambos insesgados bajo las condiciones del modelo.
+        \bigskip
+        
+    
+        \item [b)] Demostrar la no correlación entre estimadores:
+        Queremos demostrar que:
+        \[
+        \operatorname{Cov}(\hat{\alpha}_1, \hat{\alpha}_2) = 0
+        \]
+        
+        Recordamos:
+        \[
+        \hat{\alpha}_1 = \bar{Y} = \alpha_1 + \bar{\varepsilon}
+        \quad \text{y} \quad
+        \hat{\alpha}_2 = \frac{\sum (X_i - \bar{X})\varepsilon_i}{\sum (X_i - \bar{X})^2}
+        \]
+        
+        Entonces:
+        \[
+        \operatorname{Cov}(\hat{\alpha}_1, \hat{\alpha}_2) = \operatorname{Cov}\left( \bar{\varepsilon}, \frac{\sum (X_i - \bar{X}) \varepsilon_i}{\sum (X_i - \bar{X})^2} \right)
+        \]
+        
+        Ahora aplicamos linealidad de la covarianza:
+        \[
+        = \frac{1}{\sum (X_i - \bar{X})^2} \sum_{i=1}^n (X_i - \bar{X}) \operatorname{Cov}(\bar{\varepsilon}, \varepsilon_i)
+        \]
+        
+        Como \( \bar{\varepsilon} = \frac{1}{n} \sum_{j=1}^n \varepsilon_j \), entonces:
+        \[
+        \operatorname{Cov}(\bar{\varepsilon}, \varepsilon_i) = \frac{\sigma^2}{n}
+        \quad \text{para todo } i
+        \]
+        
+        Por lo tanto:
+        \[
+        \operatorname{Cov}(\hat{\alpha}_1, \hat{\alpha}_2)
+        = \frac{1}{\sum (X_i - \bar{X})^2} \cdot \frac{\sigma^2}{n} \sum_{i=1}^n (X_i - \bar{X}) = 0
+        \]
+        
+        (ya que \( \sum (X_i - \bar{X}) = 0 \))
+        
+        \bigskip
+        
+        \textbf{Conclusión:} Los estimadores \( \hat{\alpha}_1 \) y \( \hat{\alpha}_2 \) son no correlacionados.
+    \end{itemize}
+    
+
+%///////////////////////////////////////////////////////////////////////////////////////
+%///////////////////////////////////////////////////////////////////////////////////////
+
+\section*{Pregunta 4.}
+Un corredor de bienes raíces estudió la relación entre $x =$ ingreso anual (en millones de pesos) de los compradores de residencias e $Y =$ precio de venta de la residencia (en millones de pesos). Se obtuvieron datos de las solicitudes hipotecarias correspondientes a 24 profesionales de distintas empresas. El resumen de algunos resultados es:
+\begin{align*}
+    n &= 24 \\
+    \sum_{i=1}^{24}x_{i} &= 942.5 & \sum_{i=1}^{24}x_{i}^{2} &= 39915.5 \\
+    \sum_{i=1}^{24}y_{i} &= 2830.6 & \sum_{i=1}^{24}y_{i}^{2} &= 347868.9 \\
+    \sum_{i=1}^{24}x_{i}y_{i} &= 116392.8
+\end{align*}
+
+\begin{enumerate}[label=\alph{enumi})]
+    \item Calcule el coeficiente de correlación de Pearson e interprete su valor.
+    \item Estime el modelo de regresión lineal adecuado e interprete los coeficientes estimados.
+    \item Construya la tabla ANOVA y realice la prueba de significancia del modelo con un nivel de significación del 5\%.
+\end{enumerate}
+
+\subsection*{Solución P4}
+\begin{itemize}
+	\item [a)] El coeficiente de Pearson es:
+        $$
+            r = \frac{n\sum x_i y_i - \sum x_i \sum y_i}{\sqrt{(n\sum x_i^2 - (\sum x_i)^2)(n\sum y_i^2 - (\sum y_i)^2)}}
+        $$
+        Calculamos numerador y denominador por separado:
+        $$
+        \begin{array}{r c l}
+             Numerador & = & n\sum x_i y_i - \sum x_i \sum y_i \\
+             \noalign{\vspace{5pt}}
+             & = & 24 \cdot 116392.8 - 942.5 \cdot 2830.6 \\
+             \noalign{\vspace{5pt}}
+             & = & 125586.7
+        \end{array}
+        $$
+        $$
+        \begin{array}{r c l}
+             Denominador & = & \sqrt{(n\sum x_i^2 - (\sum x_i)^2)(n\sum y_i^2 - (\sum y_i)^2)} \\
+             \noalign{\vspace{5pt}}
+             & = &  \sqrt{(24 \cdot 39915.5 - (942.5)^2)(24 \cdot 347868.9 - (2830.6)^2)} \\
+             \noalign{\vspace{5pt}}
+             & = & \sqrt{(69665.75)(336557.24)} \\
+             \noalign{\vspace{5pt}}
+             & = & \sqrt{23,446,512,542.53} \\
+             \noalign{\vspace{5pt}}
+             & \approx & 153122.541
+        \end{array}
+        $$
+        Entonces, calculando $r$ se tiene:
+        $$
+        r = \dfrac{125586.7}{153122.541} \approx 0.8202
+        $$
+        \newline
+        Por lo tanto, el coeficiente de Pearson $r$ es aproximadamente 0.8202. Esto quiere decir que existe una correlación fuerte entre el ingreso anual de los compradores y el precio de venta de las residencias. En otras palabras, a mayor ingreso, se tiene a corresponder un mayor precio en la propiedad adquirida.
+	
+	\item [b)] Para estimar el modelo de regresión lineal debemos tener en cuenta la forma general del modelo, la cual es
+    $$
+    \hat{y} = a + bx,
+    $$
+    donde:
+    \begin{itemize}
+        \item [$\bullet$] $b$ corresponde a la pendiente de la recta y
+        \item [$\bullet$] $a$ es la ordenada de corte con el eje $y$ (valor estimado de $Y$ cuando $X = 0$)
+    \end{itemize}
+    
+    Calculando la pendiente $b$:
+    $$
+    \begin{array}{r c l}
+         b & = & \dfrac{n\sum x_iy_i - \sum x_i \sum y_i}{n\sum x_i^2 - (\sum x_i)^2} \\
+         \noalign{\vspace{7pt}}
+         & = & \dfrac{24 \cdot 116392.8 - 942.5 \cdot 2630.6}{24 \cdot 39915.5 - (942.5)^2} \\
+         \noalign{\vspace{7pt}}
+         & = & \dfrac{125586.7}{69665.75} \\
+         \noalign{\vspace{7pt}}
+         & \approx & 1.803
+    \end{array}
+    $$
+    \newline
+    Por otro lado, podemos calcular el valor de $a$ como
+    $$
+        a = \bar{y} - b\bar{x},
+    $$
+    donde:
+    \begin{itemize}
+        \item [$\bullet$] $\bar{x}$ es la media de la muestra de ingresos anuales y
+        \item [$\bullet$] $\bar{y}$ es la media de la muestra de precios de venta de las residencias
+    \end{itemize}
+    Calculando el valor de $a$:
+    $$
+    \begin{array}{r c l}
+        a & = & \bar{y} - b\bar{x} \\
+        \noalign{\vspace{5pt}}
+         & = & \dfrac{2830.6}{24} - 1.8027 \cdot \dfrac{942.5}{24} \\
+         \noalign{\vspace{5pt}}
+         & \approx & 117.9417 - 1.8027 \cdot 39.2708 \\
+         \noalign{\vspace{5pt}}
+         & = & 47.148
+    \end{array}
+    $$
+    \newline
+    En conclusión, el modelo de regresión lineal estimado corresponde a la ecuación
+    $$
+        \hat{y} = 47.136 + 1.803x,
+    $$
+    donde:
+    \begin{itemize}
+        \item [$\bullet$] $b = 1.803$ indica que por cada millón de pesos adicional en el ingreso anual del comprador, el precio de la residencia aumenta, en promedio, $1.803$ millones de pesos.
+        \item [$\bullet$] $a = 47.136$ corresponde al valor de la vivienda cuando el comprador posee un ingreso anual de 0 pesos, lo cual no tiene sentido en la realidad, pero permite estimar el modelo de regresión lineal anteriormente planteado.
+    \end{itemize}
+	
+	\item [c)] Primero necesitamos calcular las medias de x e y:
+    $$\bar{x}=\frac{\sum x_i}{n}=\frac{942.5}{24}=39.2708$$
+    $$\bar{y}=\frac{\sum y_i}{n}=\frac{2830.6}{24}=117.9417$$
+    Luego, calculamos los coeficientes de regresión lineal:
+    Tenemos como modelo:$$\hat{y}=b_0+b_1x$$, la pendiente es: $$b_1=\frac{n\sum x_i y_i-\sum x_i\sum y_i}{n\sum x_i^2-(\sum x_i)^2}$$
+    Sustituimos: $$b_1=\frac{24\cdot116392.8-942.5\cdot2830.6}{24\cdot39915.5-(942.5)^2}=1.8027$$
+    Nuestro intercepto es: $$b_0=\bar{y}-b_1\bar{x}=117.9417-1.8027\cdot39.2708=47.148$$
+    Como siguiente paso, empezamos a crear la tabla ANOVA con la suma de los cuadrados: $$SCT=\sum y_i^2-\frac{(\sum y_i)^2}{n}=347868.9-\frac{(2830.6)^2}{24}=14023.2183$$
+    Seguimos con la suma de cuadrados del modelo: $$SCM=b_1\sum x_i y_i-\frac{\sum x_i\sum y_i}{n}=1.8027\cdot\left(116392.8-\frac{942.5\cdot2830.6}{24}\right)=9433.15$$
+    Sabemos que que el error es: $$SCE=SCT-SCM=14023.2183-9433.15=4590.0683$$
+    Construimos la tabla ANOVA:
+    \begin{center}
+        \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{Fuente}       & \textbf{SC}      & \textbf{gl} & \textbf{CM}       & \textbf{F}      \\
+        \hline
+        Regresión             & 9433.15          & 1           & 9433.15           & 45.21           \\
+        Error                 & 4590.07          & 22          & 208.64            &                 \\
+        Total                 & 14023.22         & 23          &                   &                 \\
+        \hline
+        \end{tabular}
+    \end{center}
+\end{itemize}
+
+Donde:
+\begin{itemize}
+    \item \( \text{SC} \) es la suma de cuadrados
+    \item \( \text{gl} \) son los grados de libertad
+    \item \( \text{CM} \) Cuadrado medio \( = \frac{\text{SC}}{\text{gl}} \)
+    \item \( F = \frac{\text{CM}_{\text{Regresión}}}{\text{CM}_{\text{Error}}} = \frac{9433.15}{208.64} \approx 45.21 \)
+\end{itemize}
+Realizamos la prueba de significancia con el $5\%:$
+
+\begin{itemize}
+    \item Hipótesis nula: \( H_0 : \beta_1 = 0 \)
+    \item Hipótesis alternativa: \( H_1 : \beta_1 \ne 0 \)
+    \item Nivel de significancia: \( \alpha = 0.05 \)
+    \item Valor crítico de \( F \) para \( gl_1 = 1 \) y \( gl_2 = 22 \): \( F_{\text{crítico}} \approx 4.30 \)
+\end{itemize}
+
+Como \( F_{calculado} = 45.21 > 4.30 \), se \textbf{rechaza la hipótesis nula}.
+
+\bigskip
+
+\textbf{Conclusión:} Existe evidencia significativa para afirmar que el ingreso anual tiene una relación lineal con el precio de la residencia.
+%///////////////////////////////////////////////////////////////////////////////////////
+%///////////////////////////////////////////////////////////////////////////////////////
+
+
+\end{document}
