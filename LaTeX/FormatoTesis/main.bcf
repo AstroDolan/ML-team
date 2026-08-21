@@ -2379,7 +2379,7 @@
     <bcf:citekey order="2" intorder="2">walczak2018artificial</bcf:citekey>
     <bcf:citekey order="3" intorder="1">krenker2011introduction</bcf:citekey>
     <bcf:citekey order="4" intorder="1">mcculloch1943logical</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">goodfellow2016deep</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">park2025artificial</bcf:citekey>
     <bcf:citekey order="6" intorder="1">park2025artificial</bcf:citekey>
     <bcf:citekey order="7" intorder="1">park2025artificial</bcf:citekey>
     <bcf:citekey order="8" intorder="1">goodfellow2016deep</bcf:citekey>
@@ -2396,24 +2396,27 @@
     <bcf:citekey order="19" intorder="1">wang2023expert</bcf:citekey>
     <bcf:citekey order="19" intorder="2">griewank2008evaluating</bcf:citekey>
     <bcf:citekey order="19" intorder="3">RAISSI2019686</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">ortiz1995danos</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">blong1984volcanic</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">sigurdsson2015encyclopedia</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">blong1984volcanic</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">BONADONNA2015587</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">blong1984volcanic</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">vallance2015lahars</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">gudmundsson2015hazards</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">mothes2015lahars</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">newhallself1982vei</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">brown2017volcanic</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">neall1976lahars</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">stern2007chilean</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">geoffroy2023peligros</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">article</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">johnson2015lahar</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">lowe1986lahars</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">vallance2000lahars</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">RAISSI2019686</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">ortiz1995danos</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">blong1984volcanic</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">sigurdsson2015encyclopedia</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">blong1984volcanic</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">BONADONNA2015587</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">blong1984volcanic</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">vallance2015lahars</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">gudmundsson2015hazards</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">mothes2015lahars</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">newhallself1982vei</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">brown2017volcanic</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">neall1976lahars</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">stern2007chilean</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">geoffroy2023peligros</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">article</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">article</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">caricchi2024co2</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">johnson2015lahar</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">lowe1986lahars</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">vallance2000lahars</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

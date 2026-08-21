@@ -15,7 +15,7 @@ de la neurona se encuentra la función de activación, la cual es una función n
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.7\textwidth]{figura1-ANN-Cap1.png}
+    \includegraphics[width=0.9\textwidth]{esquema_neurona.jpeg}
     \caption{Esquema de trabajo de una neurona artificial.}
     \label{fig:neurona}
     \fuente{\cite{krenker2011introduction}}
@@ -26,14 +26,13 @@ de la neurona se encuentra la función de activación, la cual es una función n
 \subsection{Neurona Artificial}
 \label{subsec:neurona_artificial}
 
-La neurona artificial constituye la unidad computacional fundamental de una red neuronal artificial. Su formulación matemática se inspira, de manera simplificada, en el funcionamiento de la neurona biológica: 
-las dendritas que reciben señales se representan mediante entradas ponderadas, el cuerpo celular que integra dichas señales se representa mediante una suma, y el axón que transmite el resultado se representa 
-mediante una función de salida. El primer modelo matemático formal de esta idea fue propuesto por McCulloch y Pitts, quienes introdujeron una neurona binaria capaz de representar operaciones lógicas a 
-partir de la combinación de señales de entrada \cite{mcculloch1943logical}. Si bien dicho modelo original consideraba únicamente salidas binarias, sentó las bases conceptuales de las neuronas 
-artificiales utilizadas en la actualidad.
+Su formulación matemática se inspira en el funcionamiento de la neurona biológica desde un punto de vista más simple:  las dendritas que reciben señales son representadas por las entradas ponderadas, el cuerpo celular que integra dichas señales 
+se representa mediante una suma, y el axón que transmite el resultado equivale a una función de salida. El primer modelo matemático formal de esta idea fue propuesto por McCulloch y Pitts \cite{mcculloch1943logical}, 
+quienes introdujeron una neurona binaria capaz de representar operaciones lógicas a partir de la combinación de señales de entrada. Si bien, este modelo original consideraba únicamente salidas binarias, 
+sentó las bases teóricas de las neuronas artificiales que se utilizan actualmente.
 
-Formalmente, sea $\mathbf{x} = (x_1, x_2, \dots, x_n) \in \mathbb{R}^n$ el vector de entradas de la neurona. A cada entrada $x_i$ se le asocia un peso sináptico $w_i \in \mathbb{R}$, que pondera su contribución relativa. La neurona calcula 
-primero una combinación lineal de las entradas, conocida como \textit{entrada neta} o \textit{potencial de activación}, definida como,
+Formalmente, sea $\mathbf{x} = (x_1, x_2, \dots, x_n) \in \mathbb{R}^n$ el vector de entradas de la neurona. A cada entrada $x_i$ se le asocia un peso sináptico $w_i \in \mathbb{R}$, que pondera su contribución relativa, es decir, qué tanto impacto causará
+en el valor de salida. La neurona calcula primero una combinación lineal de las entradas, conocida como \textit{entrada neta} o \textit{potencial de activación}, se define como,
 
 \begin{equation}
     z = \sum_{i=1}^{n} w_i x_i + b,
@@ -47,25 +46,37 @@ de forma compacta como $z = \mathbf{w}^{\top}\mathbf{x} + b$, con,
     \label{eq:pesos}
 \end{equation}
 
-Posteriormente, la entrada neta $z$ es transformada mediante una función de activación $\varphi: \mathbb{R} \rightarrow \mathbb{R}$, que introduce no linealidad en el modelo y determina el grado de activación de la neurona. La salida de la neurona artificial 
-queda entonces definida por,
+Posteriormente, la entrada neta $z$ es transformada mediante una función de activación $\varphi: \mathbb{R} \rightarrow \mathbb{R}$. Esta función introduce no linealidad en la arquitectura de la red neuronal, permitiéndole aproximar relaciones complejas 
+que no pueden representarse mediante una sucesión de transformaciones exclusivamente lineales. La salida de una neurona artificial puede expresarse como,
 
 \begin{equation}
     y = \varphi(z) = \varphi\left(\sum_{i=1}^{n} w_i x_i + b\right).
     \label{eq:salida_neurona}
 \end{equation}
 
-La elección de $\varphi$ es determinante para la capacidad expresiva del modelo: sin una función de activación no lineal, la composición de múltiples neuronas se reduciría a una simple transformación lineal, independientemente del número de neuronas o capas 
-involucradas. Entre las funciones de activación más utilizadas se encuentran la función sigmoide, la tangente hiperbólica y la unidad lineal rectificada (ReLU), cada una con propiedades distintas en cuanto a suavidad, 
-rango de salida y comportamiento del gradiente durante el entrenamiento; estas se discutirán con mayor detalle en las secciones siguientes, en el contexto de la arquitectura completa de la red \cite{goodfellow2016deep}.
+En el contexto de una PINN, esta no linealidad propia de la arquitectura debe distinguirse de la no linealidad asociada al sistema físico gobernante. En el presente problema, las ecuaciones diferenciales parciales que describen la 
+dinámica del lahar contienen términos no lineales, particularmente aquellos asociados al transporte advectivo y al acoplamiento entre espesor, velocidad, concentración sólida y presión de poros. 
+Las ecuaciones gobernantes no introducen la no linealidad de la red neuronal, sino que actúan como restricciones físicas durante su entrenamiento.
 
-Es importante notar que, si bien la analogía biológica resulta útil como motivación conceptual, la neurona artificial descrita por las Ecuaciones~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} es, en esencia, 
-un modelo matemático de aproximación de funciones. Una única neurona posee una capacidad de representación limitada, restringida a separaciones lineales o a transformaciones simples de sus entradas. 
-La potencia de las redes neuronales artificiales surge, en cambio, de la interconexión de múltiples neuronas organizadas en capas, dando lugar al perceptrón multicapa que se describe a continuación.
+%La elección de $\varphi$ es determinante para la capacidad expresiva del modelo: sin una función de activación no lineal, la composición de múltiples neuronas se reduciría a una simple transformación lineal, independientemente del número de neuronas o capas 
+%involucradas. Entre las funciones de activación más utilizadas se encuentran la función sigmoide, la tangente hiperbólica y la unidad lineal rectificada (ReLU), cada una con propiedades distintas en cuanto a suavidad, 
+%rango de salida y comportamiento del gradiente durante el entrenamiento; estas se discutirán con mayor detalle en las secciones siguientes, en el contexto de la arquitectura completa de la red \cite{goodfellow2016deep}.
 
+Es importante notar que si bien la analogía biológica resulta útil como aproximación conceptual, la neurona artificial descrita por las Ecuaciones ~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} es sólo
+un modelo matemático de aproximación de funciones. La limitancia computacional de usar una sola neurona corresponde a su restringida capacidad de transformaciones lineales simples de sus entradas.
+Las redes neuronales consiguen su potencia a partir de la interconexión de múltiples neuronas organizadas en una arquitecturas basadas en capas, creando así al perceptrón multicapa.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{neurona.jpeg}
+    \caption{Esquema de una neurona artificial con $n$ entradas ponderadas, un sesgo y una función de activación.}
+    \label{fig:neuronartificial}
+    \fuente{\cite{park2025artificial}}
+\end{figure}
 
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
+
 \subsection{Perceptrón Multicapa}
 \label{subsec:perceptron_multicapa}
 El perceptrón multicapa (MLP, por sus siglas en inglés) es la arquitectura más común de redes neuronales artificiales. En la mayoría de los casos, las señales son transmitidas de manera unidireccional 
@@ -73,7 +84,7 @@ desde la capa de entrada hasta la capa de salida y el valor de salida de la neur
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.7\textwidth]{fig7.2kr.jpg}
+    \includegraphics[width=0.9\textwidth]{feedforward.jpeg}
     \caption{Red neuronal \textit{feedforward} de tres capas con una capa de entrada, una (o más) capa(s) oculta(s) y una capa de salida.}
     \label{fig:feedforwardneuralnetwork}
     \fuente{\cite{park2025artificial}}
@@ -146,7 +157,7 @@ Si se analiza la ecuación \ref{diffs_relu}, se puede observar que la segunda de
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{migu.jpg}
+    \includegraphics[width=0.8\textwidth]{relu.png}
     \caption{Función ReLU y su derivada.}
     \label{fig:relu}
     \fuente{\cite{lederer2021activation}}
@@ -170,7 +181,7 @@ donde las derivadas de orden superior son requeridas. Sin embargo, la FA Sigmoid
 provocando que el gradiente se propague en diferentes direcciones \cite{nwankpa2018activation}.
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{migu.jpg}
+    \includegraphics[width=0.8\textwidth]{sigmoid.png}
     \caption{Función sigmoide y su derivada.}
     \label{fig:sigmoide}
     \fuente{\cite{nwankpa2018activation}}
@@ -179,50 +190,50 @@ provocando que el gradiente se propague en diferentes direcciones \cite{nwankpa2
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
 \section{Optimizadores}
-\section{Algoritmos de Optimización}
-El entrenamiento de una red neuronal artificial se formula fundamentalmente como un problema de optimización no convexa, cuyo objetivo es encontrar el conjunto de parámetros $\boldsymbol{\theta} \in \mathbb{R}^d$ (pesos y sesgos) que minimice una función de pérdida $\mathcal{L}(\boldsymbol{\theta})$ sobre el conjunto de datos de entrenamiento:
-\begin{equation}
-    \boldsymbol{\theta}^* = \arg\min_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta})
-    \label{eq:opt_problem}
-\end{equation}
-
-Los algoritmos de optimización determinan la trayectoria y la velocidad con la que los parámetros convergen hacia un mínimo local a través de aproximaciones iterativas basadas en el gradiente de la función de pérdida, $\nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta})$, calculado mediante el algoritmo de retropropagación (\textit{backpropagation}).
-
-\subsection{Fundamentos y Descenso de Gradiente}
-La base de la mayoría de los métodos modernos es el Descenso de Gradiente Estocástico (SGD, por sus siglas en inglés \textit{Stochastic Gradient Descent}), cuya regla de actualización en la iteración $t$ se define como:
-\begin{equation}
-    \boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta \, \nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta}_t; \mathcal{B}_t)
-    \label{eq:sgd}
-\end{equation}
-donde $\eta > 0$ representa la tasa de aprendizaje (\textit{learning rate}) y $\mathcal{B}_t$ denota un subconjunto aleatorio de datos (\textit{mini-batch}). A pesar de su simplicidad computacional, SGD presenta limitaciones significativas en superficies de pérdida no isotrópicas, zonas con mesetas o valles pronunciados, y es altamente sensible a la elección estática de $\eta$. Para mitigar estos problemas, surgen los métodos de tasa de aprendizaje adaptativa.
-
-\subsection{RMSprop}
-Propuesto por Geoff Hinton, RMSprop (\textit{Root Mean Square Propagation}) resuelve las oscilaciones excesivas en dimensiones con gradientes pronunciados dividiendo la tasa de aprendizaje por un promedio móvil exponencial de los cuadrados de los gradientes históricos. 
-
-El algoritmo calcula en cada paso $t$:
-\begin{align}
-    \boldsymbol{v}_t &= \beta \, \boldsymbol{v}_{t-1} + (1 - \beta) \, \boldsymbol{g}_t^{\odot 2} \label{eq:rmsprop_v} \\
-    \boldsymbol{\theta}_{t+1} &= \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\boldsymbol{v}_t} + \epsilon} \odot \boldsymbol{g}_t \label{eq:rmsprop_update}
-\end{align}
-donde $\boldsymbol{g}_t = \nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta}_t)$, $\beta \in [0, 1)$ es el factor de decaimiento (comúnmente $\beta = 0.9$), $\epsilon > 0$ es una constante pequeña (típicamente $10^{-8}$) para evitar la división por cero, y $\odot$ denota el producto elemento a elemento. De este modo, RMSprop atenúa los pasos en direcciones con variaciones abruptas y acelera en aquellas con pendientes suaves.
-
-\subsection{Adam}
-El optimizador Adam (\textit{Adaptive Moment Estimation}) combina las ventajas del método de momento (aceleración en la dirección relevante) con RMSprop (escalamiento adaptativo por coordenada). Mantiene promedios móviles tanto del gradiente (primer momento) como de su cuadrado (segundo momento no centrado):
-\begin{align}
-    \boldsymbol{m}_t &= \beta_1 \boldsymbol{m}_{t-1} + (1 - \beta_1) \boldsymbol{g}_t \label{eq:adam_m} \\
-    \boldsymbol{v}_t &= \beta_2 \boldsymbol{v}_{t-1} + (1 - \beta_2) \boldsymbol{g}_t^{\odot 2} \label{eq:adam_v}
-\end{align}
-Dado que los vectores $\boldsymbol{m}_t$ y $\boldsymbol{v}_t$ se inicializan en cero, presentan un sesgo hacia el origen en las primeras iteraciones. Adam incorpora una corrección de sesgo analítica:
-\begin{equation}
-    \hat{\boldsymbol{m}}_t = \frac{\boldsymbol{m}_t}{1 - \beta_1^t}, \qquad \hat{\boldsymbol{v}}_t = \frac{\boldsymbol{v}_t}{1 - \beta_2^t}
-    \label{eq:adam_bias}
-\end{equation}
-Finalmente, la regla de actualización de los parámetros está dada por:
-\begin{equation}
-    \boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\hat{\boldsymbol{v}}_t} + \epsilon} \odot \hat{\boldsymbol{m}}_t
-    \label{eq:adam_update}
-\end{equation}
-donde típicamente se configuran $\beta_1 = 0.9$, $\beta_2 = 0.999$ y $\epsilon = 10^{-8}$. Gracias a su robustez y rápida convergencia, Adam se ha establecido como el optimizador por defecto en diversas tareas de aprendizaje profundo.
+%\section{Algoritmos de Optimización}
+%El entrenamiento de una red neuronal artificial se formula fundamentalmente como un problema de optimización no convexa, cuyo objetivo es encontrar el conjunto de parámetros $\boldsymbol{\theta} \in \mathbb{R}^d$ (pesos y sesgos) que minimice una función de pérdida $\mathcal{L}(\boldsymbol{\theta})$ sobre el conjunto de datos de entrenamiento:
+%\begin{equation}
+%    \boldsymbol{\theta}^* = \arg\min_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta})
+%    \label{eq:opt_problem}
+%\end{equation}
+%
+%Los algoritmos de optimización determinan la trayectoria y la velocidad con la que los parámetros convergen hacia un mínimo local a través de aproximaciones iterativas basadas en el gradiente de la función de pérdida, $\nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta})$, calculado mediante el algoritmo de retropropagación (\textit{backpropagation}).
+%
+%\subsection{Fundamentos y Descenso de Gradiente}
+%La base de la mayoría de los métodos modernos es el Descenso de Gradiente Estocástico (SGD, por sus siglas en inglés \textit{Stochastic Gradient Descent}), cuya regla de actualización en la iteración $t$ se define como:
+%\begin{equation}
+%    \boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta \, \nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta}_t; \mathcal{B}_t)
+%    \label{eq:sgd}
+%\end{equation}
+%donde $\eta > 0$ representa la tasa de aprendizaje (\textit{learning rate}) y $\mathcal{B}_t$ denota un subconjunto aleatorio de datos (\textit{mini-batch}). A pesar de su simplicidad computacional, SGD presenta limitaciones significativas en superficies de pérdida no isotrópicas, zonas con mesetas o valles pronunciados, y es altamente sensible a la elección estática de $\eta$. Para mitigar estos problemas, surgen los métodos de tasa de aprendizaje adaptativa.
+%
+%\subsection{RMSprop}
+%Propuesto por Geoff Hinton, RMSprop (\textit{Root Mean Square Propagation}) resuelve las oscilaciones excesivas en dimensiones con gradientes pronunciados dividiendo la tasa de aprendizaje por un promedio móvil exponencial de los cuadrados de los gradientes históricos. 
+%
+%El algoritmo calcula en cada paso $t$:
+%\begin{align}
+%    \boldsymbol{v}_t &= \beta \, \boldsymbol{v}_{t-1} + (1 - \beta) \, \boldsymbol{g}_t^{\odot 2} \label{eq:rmsprop_v} \\
+%    \boldsymbol{\theta}_{t+1} &= \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\boldsymbol{v}_t} + \epsilon} \odot \boldsymbol{g}_t \label{eq:rmsprop_update}
+%\end{align}
+%donde $\boldsymbol{g}_t = \nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta}_t)$, $\beta \in [0, 1)$ es el factor de decaimiento (comúnmente $\beta = 0.9$), $\epsilon > 0$ es una constante pequeña (típicamente $10^{-8}$) para evitar la división por cero, y $\odot$ denota el producto elemento a elemento. De este modo, RMSprop atenúa los pasos en direcciones con variaciones abruptas y acelera en aquellas con pendientes suaves.
+%
+%\subsection{Adam}
+%El optimizador Adam (\textit{Adaptive Moment Estimation}) combina las ventajas del método de momento (aceleración en la dirección relevante) con RMSprop (escalamiento adaptativo por coordenada). Mantiene promedios móviles tanto del gradiente (primer momento) como de su cuadrado (segundo momento no centrado):
+%\begin{align}
+%    \boldsymbol{m}_t &= \beta_1 \boldsymbol{m}_{t-1} + (1 - \beta_1) \boldsymbol{g}_t \label{eq:adam_m} \\
+%    \boldsymbol{v}_t &= \beta_2 \boldsymbol{v}_{t-1} + (1 - \beta_2) \boldsymbol{g}_t^{\odot 2} \label{eq:adam_v}
+%\end{align}
+%Dado que los vectores $\boldsymbol{m}_t$ y $\boldsymbol{v}_t$ se inicializan en cero, presentan un sesgo hacia el origen en las primeras iteraciones. Adam incorpora una corrección de sesgo analítica:
+%\begin{equation}
+%    \hat{\boldsymbol{m}}_t = \frac{\boldsymbol{m}_t}{1 - \beta_1^t}, \qquad \hat{\boldsymbol{v}}_t = \frac{\boldsymbol{v}_t}{1 - \beta_2^t}
+%    \label{eq:adam_bias}
+%\end{equation}
+%Finalmente, la regla de actualización de los parámetros está dada por:
+%\begin{equation}
+%    \boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\hat{\boldsymbol{v}}_t} + \epsilon} \odot \hat{\boldsymbol{m}}_t
+%    \label{eq:adam_update}
+%\end{equation}
+%donde típicamente se configuran $\beta_1 = 0.9$, $\beta_2 = 0.999$ y $\epsilon = 10^{-8}$. Gracias a su robustez y rápida convergencia, Adam se ha establecido como el optimizador por defecto en diversas tareas de aprendizaje profundo.
 
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
@@ -283,7 +294,13 @@ De esta forma, $\{x_{ic}^i\}_{i=1}^{N_{ic}}$ representan los puntos de datos ini
 ser vertices de mallas fijas o puntos aleatoriamente distribuidos en cada iteración del algoritmo del gradiente descendente. Obsérvese que cada gradiente con respecto a las variables de entrada o a
 los parámetros $\theta$ de la red pueden ser calculados de forma eficiente mediante la diferenciación automática. \cite{wang2023expert, griewank2008evaluating, RAISSI2019686}.
 
-
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{pdeloss.jpeg}
+    \caption{Esquema de una red neuronal informada por la física (PINN).}
+    \label{fig:pinn}
+    \fuente{\cite{RAISSI2019686}}
+\end{figure}
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
 \subsection{Loss function and optimization for PINN}

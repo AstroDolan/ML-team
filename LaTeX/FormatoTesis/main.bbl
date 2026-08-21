@@ -242,6 +242,40 @@
       \field{pages}{115\bibrangedash 133}
       \range{pages}{19}
     \endentry
+    \entry{park2025artificial}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=57d5d74c71e5f118bd576478a8b66ab9}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Young-Seuk},
+           giveni={Y\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=ec31530255f73b59199189e91873d360}{%
+           family={Lek},
+           familyi={L\bibinitperiod},
+           given={Sovan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{fullhash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{fullhashraw}{f968b9b832afff664e9091b43ab3040e}
+      \strng{bibnamehash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{authorbibnamehash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{authornamehash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{authorfullhash}{f968b9b832afff664e9091b43ab3040e}
+      \strng{authorfullhashraw}{f968b9b832afff664e9091b43ab3040e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Ecological model types}
+      \field{title}{Artificial neural networks (multilayer perceptron) for ecological modeling}
+      \field{year}{2025}
+      \field{pages}{297\bibrangedash 322}
+      \range{pages}{26}
+    \endentry
     \entry{goodfellow2016deep}{book}{}{}
       \name{author}{3}{}{%
         {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
@@ -271,8 +305,8 @@
       \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
       \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
       \strng{authorfullhashraw}{3ae53fe582e8a815b118d26947eaa326}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Deep Learning}
@@ -283,40 +317,6 @@
       \verb{url}
       \verb http://www.deeplearningbook.org
       \endverb
-    \endentry
-    \entry{park2025artificial}{incollection}{}{}
-      \name{author}{2}{}{%
-        {{hash=57d5d74c71e5f118bd576478a8b66ab9}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Young-Seuk},
-           giveni={Y\bibinithyphendelim S\bibinitperiod}}}%
-        {{hash=ec31530255f73b59199189e91873d360}{%
-           family={Lek},
-           familyi={L\bibinitperiod},
-           given={Sovan},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{f968b9b832afff664e9091b43ab3040e}
-      \strng{fullhash}{f968b9b832afff664e9091b43ab3040e}
-      \strng{fullhashraw}{f968b9b832afff664e9091b43ab3040e}
-      \strng{bibnamehash}{f968b9b832afff664e9091b43ab3040e}
-      \strng{authorbibnamehash}{f968b9b832afff664e9091b43ab3040e}
-      \strng{authornamehash}{f968b9b832afff664e9091b43ab3040e}
-      \strng{authorfullhash}{f968b9b832afff664e9091b43ab3040e}
-      \strng{authorfullhashraw}{f968b9b832afff664e9091b43ab3040e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Ecological model types}
-      \field{title}{Artificial neural networks (multilayer perceptron) for ecological modeling}
-      \field{year}{2025}
-      \field{pages}{297\bibrangedash 322}
-      \range{pages}{26}
     \endentry
     \entry{HORNIK1989359}{article}{}{}
       \name{author}{3}{}{%
@@ -989,8 +989,8 @@
       \strng{authornamehash}{cf27c9c9b2df269a410b0d2fdce4a4f3}
       \strng{authorfullhash}{cf27c9c9b2df269a410b0d2fdce4a4f3}
       \strng{authorfullhashraw}{cf27c9c9b2df269a410b0d2fdce4a4f3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Geophysical Research}
@@ -1211,6 +1211,62 @@
       \verb 10.4067/S0716-02082004000200001
       \endverb
     \endentry
+    \entry{caricchi2024co2}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=f6c1f0aed2ef127b7d3ce6e104cdb750}{%
+           family={Caricchi},
+           familyi={C\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cb71f0225f82b498324f694d7d2d1b5f}{%
+           family={Montagna},
+           familyi={M\bibinitperiod},
+           given={Chiara\bibnamedelima P},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a0fab2e936194d437728a444a22aaa65}{%
+           family={Aiuppa},
+           familyi={A\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5b0e6b5ba07f788643d1f51d3aef4c58}{%
+           family={Lages},
+           familyi={L\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d3a5bb238557deff1229554f4d8c704e}{%
+           family={Tamburello},
+           familyi={T\bibinitperiod},
+           given={Giancarlo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=36c04ca3d709cff7f049ca1cafbbcbc8}{%
+           family={Papale},
+           familyi={P\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{3d7480e23206a16a93187097410e93f9}
+      \strng{fullhash}{9b802d78051dff63f7c2f37b424f7d4f}
+      \strng{fullhashraw}{9b802d78051dff63f7c2f37b424f7d4f}
+      \strng{bibnamehash}{9b802d78051dff63f7c2f37b424f7d4f}
+      \strng{authorbibnamehash}{9b802d78051dff63f7c2f37b424f7d4f}
+      \strng{authornamehash}{3d7480e23206a16a93187097410e93f9}
+      \strng{authorfullhash}{9b802d78051dff63f7c2f37b424f7d4f}
+      \strng{authorfullhashraw}{9b802d78051dff63f7c2f37b424f7d4f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geophysical Research: Solid Earth}
+      \field{number}{4}
+      \field{title}{CO2 flushing triggers paroxysmal eruptions at open conduit basaltic volcanoes}
+      \field{volume}{129}
+      \field{year}{2024}
+      \field{pages}{e2023JB028486}
+      \range{pages}{-1}
+    \endentry
     \entry{johnson2015lahar}{article}{}{}
       \name{author}{2}{}{%
         {{hash=f51cdf3f17286080047566278cba4389}{%
@@ -1322,8 +1378,8 @@
       \strng{authornamehash}{6759dc7661767a5c65fcf88b2930eaee}
       \strng{authorfullhash}{6759dc7661767a5c65fcf88b2930eaee}
       \strng{authorfullhashraw}{6759dc7661767a5c65fcf88b2930eaee}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Encyclopedia of volcanoes}

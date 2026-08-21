@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  20 AUG 2026 00:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.17)  21 AUG 2026 02:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/djara/OneDrive/Documents/ML-team/LaTeX/FormatoTesis/main
-(c:/Users/djara/OneDrive/Documents/ML-team/LaTeX/FormatoTesis/main.tex
+**main.tex
+(./main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
 (./tesisUsach.cls
@@ -1865,7 +1865,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./Figuras/logoUsach.png, id=138, 1037.8775pt x 1037.8775pt>
+<./Figuras/logoUsach.png, id=122, 1037.8775pt x 1037.8775pt>
 File: ./Figuras/logoUsach.png Graphic file (type png)
 <use ./Figuras/logoUsach.png>
 Package pdftex.def Info: ./Figuras/logoUsach.png  used on input line 18.
@@ -1987,14 +1987,14 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
- [5
-
-
-])
+)
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
- [6] (./main.lot
+ [5
+
+
+] (./main.lot
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2005,7 +2005,7 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
- [7
+ [6
 
 
 ] (./main.lof
@@ -2019,7 +2019,7 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [8
+ [7
 
 
 ]
@@ -2039,11 +2039,11 @@ l.63 \include{Capitulos/00_Introduccion}
 
  (./Capitulos/01_Capitulo1.tex
 Cap\'{\i }tulo 1.
-<./Figuras/figura1-ANN-Cap1.png, id=239, 551.81157pt x 372.64218pt>
-File: ./Figuras/figura1-ANN-Cap1.png Graphic file (type png)
-<use ./Figuras/figura1-ANN-Cap1.png>
-Package pdftex.def Info: ./Figuras/figura1-ANN-Cap1.png  used on input line 18.
-(pdftex.def)             Requested size: 330.61957pt x 223.27998pt.
+<./Figuras/esquema_neurona.jpeg, id=225, 1606.0pt x 1085.05376pt>
+File: ./Figuras/esquema_neurona.jpeg Graphic file (type jpg)
+<use ./Figuras/esquema_neurona.jpeg>
+Package pdftex.def Info: ./Figuras/esquema_neurona.jpeg  used on input line 18.
+(pdftex.def)             Requested size: 425.08127pt x 287.19019pt.
 
 pdfTeX warning (font expansion): font should be expanded before its first use
 
@@ -2051,43 +2051,40 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 pdfTeX warning (font expansion): font should be expanded before its first use
-
-Overfull \hbox (0.97827pt too wide) in paragraph at lines 29--34
-\T1/qhv/m/n/12 (-20) ar-ti-fi-cial. Su for-mu-la-ción ma-te-má-ti-ca se ins-pi-ra, de ma-ne-ra sim-pli-fi-ca-da, en el fun-cio-na-mien-to
- []
-
 (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 
+l.36 
       [2
 
 
 
 
-] [3 <./Figuras/figura1-ANN-Cap1.png>]
-Overfull \hbox (0.28024pt too wide) in paragraph at lines 62--65
-[]\T1/qhv/m/n/12 (-20) Es im-por-tan-te no-tar que, si bien la ana-lo-gía bio-ló-gi-ca re-sul-ta útil co-mo mo-ti-va-ción con-cep-tual,
- []
+] [3 <./Figuras/esquema_neurona.jpeg>]
+<./Figuras/neurona.jpeg, id=251, 1606.0pt x 1136.245pt>
+File: ./Figuras/neurona.jpeg Graphic file (type jpg)
+<use ./Figuras/neurona.jpeg>
+Package pdftex.def Info: ./Figuras/neurona.jpeg  used on input line 71.
+(pdftex.def)             Requested size: 377.85402pt x 267.32968pt.
+<./Figuras/feedforward.jpeg, id=253, 1606.0pt x 986.68625pt>
+File: ./Figuras/feedforward.jpeg Graphic file (type jpg)
+<use ./Figuras/feedforward.jpeg>
+Package pdftex.def Info: ./Figuras/feedforward.jpeg  used on input line 87.
+(pdftex.def)             Requested size: 425.08127pt x 261.15443pt.
 
-<./Figuras/fig7.2kr.jpg, id=270, 315.30186pt x 206.57707pt>
-File: ./Figuras/fig7.2kr.jpg Graphic file (type jpg)
-<use ./Figuras/fig7.2kr.jpg>
-Package pdftex.def Info: ./Figuras/fig7.2kr.jpg  used on input line 76.
-(pdftex.def)             Requested size: 330.61957pt x 216.62547pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (14.76932pt too wide) in paragraph at lines 82--87
+Overfull \hbox (14.76932pt too wide) in paragraph at lines 93--98
 \T1/qhv/m/n/12 (-20) in-ter-me-dias de los da-tos, cap-tu-ran-do pa-tro-nes com-ple-jos y no li-nea-les que se-rían inal-can-za-bles
  []
 
-[4]
-Overfull \hbox (14.90857pt too wide) in paragraph at lines 101--102
+[4] [5 <./Figuras/neurona.jpeg>]
+Overfull \hbox (14.90857pt too wide) in paragraph at lines 112--113
 []\T1/qhv/m/n/12 (-20) La sa-li-da fi-nal de la red, $[] \OT1/cmr/m/n/12 = \OT1/cmr/bx/n/12 h[]$\T1/qhv/m/n/12 (-20) , que-da ex-pre-sa-da co-mo la com-po-si-ción de $\OML/cmm/m/it/12 L$ \T1/qhv/m/n/12 (-20) trans-for-ma-cio-nes
  []
 
@@ -2095,33 +2092,46 @@ Overfull \hbox (14.90857pt too wide) in paragraph at lines 101--102
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [5 <./Figuras/fig7.2kr.jpg>] [6]
-<./Figuras/migu.jpg, id=312, 3035.34pt x 3035.34pt>
-File: ./Figuras/migu.jpg Graphic file (type jpg)
-<use ./Figuras/migu.jpg>
-Package pdftex.def Info: ./Figuras/migu.jpg  used on input line 149.
-(pdftex.def)             Requested size: 236.15787pt x 236.11641pt.
- [7 <./Figuras/migu.jpg>]
-File: ./Figuras/migu.jpg Graphic file (type jpg)
-<use ./Figuras/migu.jpg>
-Package pdftex.def Info: ./Figuras/migu.jpg  used on input line 173.
-(pdftex.def)             Requested size: 236.15787pt x 236.11641pt.
- [8] [9] [10] [11]) [12]
+) [6 <./Figuras/feedforward.jpeg>] [7]
+<./Figuras/relu.png, id=302, 505.89pt x 361.35pt>
+File: ./Figuras/relu.png Graphic file (type png)
+<use ./Figuras/relu.png>
+Package pdftex.def Info: ./Figuras/relu.png  used on input line 160.
+(pdftex.def)             Requested size: 377.85402pt x 269.89806pt.
+ [8 <./Figuras/relu.png>]
+<./Figuras/sigmoid.png, id=312, 505.89pt x 361.35pt>
+File: ./Figuras/sigmoid.png Graphic file (type png)
+<use ./Figuras/sigmoid.png>
+Package pdftex.def Info: ./Figuras/sigmoid.png  used on input line 184.
+(pdftex.def)             Requested size: 377.85402pt x 269.89806pt.
+ [9 <./Figuras/sigmoid.png>] [10]
+<./Figuras/pdeloss.jpeg, id=337, 1606.0pt x 1136.245pt>
+File: ./Figuras/pdeloss.jpeg Graphic file (type jpg)
+<use ./Figuras/pdeloss.jpeg>
+Package pdftex.def Info: ./Figuras/pdeloss.jpeg  used on input line 299.
+(pdftex.def)             Requested size: 425.08127pt x 300.7394pt.
+) [11 <./Figuras/pdeloss.jpeg>]
 \openout2 = `Capitulos/02_Capitulo2.aux'.
 
  (./Capitulos/02_Capitulo2.tex
 Cap\'{\i }tulo 2.
-[13
+[12
 
 
 
 
 ]
-Overfull \hbox (48.04318pt too wide) in paragraph at lines 28--32
+<figuras/esquema_volcan.jpeg, id=360, 1204.5pt x 1413.28pt>
+File: figuras/esquema_volcan.jpeg Graphic file (type jpg)
+<use figuras/esquema_volcan.jpeg>
+Package pdftex.def Info: figuras/esquema_volcan.jpeg  used on input line 25.
+(pdftex.def)             Requested size: 330.61957pt x 387.93079pt.
+ [13 <./Figuras/esquema_volcan.jpeg>]
+Overfull \hbox (48.04318pt too wide) in paragraph at lines 35--39
 \T1/qhv/m/n/12 (-20) pe-li-gros co-mo los flu-jos pi-ro-clás-ti-cos y los laha-res con-cen-tran una pro-por-ción des-pro-por-cio-na-da-men-te
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 44.
+LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 51.
 (c:/texlive/2025/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
 )
@@ -2129,13 +2139,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qhv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [14]
-<figuras/zonasvolcanicas.png, id=400, 438.13687pt x 628.59843pt>
-File: figuras/zonasvolcanicas.png Graphic file (type png)
-<use figuras/zonasvolcanicas.png>
-Package pdftex.def Info: figuras/zonasvolcanicas.png  used on input line 50.
-(pdftex.def)             Requested size: 236.15787pt x 338.82423pt.
- [15{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./Figuras/zonasvolcanicas.png>]) [16]
+<figuras/esquemalahar.jpeg, id=374, 1606.0pt x 1169.36874pt>
+File: figuras/esquemalahar.jpeg Graphic file (type jpg)
+<use figuras/esquemalahar.jpeg>
+Package pdftex.def Info: figuras/esquemalahar.jpeg  used on input line 57.
+(pdftex.def)             Requested size: 377.85402pt x 275.12286pt.
+ [14{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+<figuras/Volcanvillarrica.png, id=387, 844.95676pt x 597.432pt>
+File: figuras/Volcanvillarrica.png Graphic file (type png)
+<use figuras/Volcanvillarrica.png>
+Package pdftex.def Info: figuras/Volcanvillarrica.png  used on input line 72.
+(pdftex.def)             Requested size: 425.08127pt x 300.5567pt.
+ [15 <./Figuras/esquemalahar.jpeg>] [16 <./Figuras/VolcanVillarrica.png>]) [17]
 \openout2 = `Capitulos/0a_Conclusiones.aux'.
 
  (./Capitulos/0a_Conclusiones.tex
@@ -2143,7 +2158,7 @@ Overfull \hbox (8.1357pt too wide) in paragraph at lines 13--13
 []\T1/qhv/m/n/12 (-20) En es-ta par-te ter-mi-nan las pá-gi-nas cen-tra-les. A con-ti-nua-ción, se pue-de agre-gar op-ta-ti-va-men-te,
  []
 
-) [17
+) [18
 
 
 
@@ -2158,7 +2173,7 @@ Overfull \hbox (1.09435pt too wide) in paragraph at lines 74--74
 []\T1/qhv/m/n/12 (-20) C. Nwank-pa, W. Ijo-mah, A. Ga-cha-gan y S. Marshall, ^^S  Ac-ti-va-tion fun-ctions: Com-pa-ri-son
  []
 
-[18
+[19
 
 
 
@@ -2182,7 +2197,7 @@ Overfull \hbox (8.17882pt too wide) in paragraph at lines 74--74
 \T1/qhv/m/n/12 (-20) Ecua-dor: high-lights from stra-ti-graphy and ob-ser-va-tio-nal re-cords and re-la-ted downs-tream
  []
 
-[19]
+[20]
 Overfull \hbox (1.75941pt too wide) in paragraph at lines 74--74
 []\T1/qhv/m/n/12 (-20) V. Neall, ^^S  Lahars as ma-jor geo-lo-gi-cal ha-zards,^^T \T1/qhv/m/it/12 (-20) Bu-lle-tin of the In-ter-na-tio-nal As-so-cia-tion
  []
@@ -2202,7 +2217,7 @@ Overfull \vbox (29.99446pt too high) has occurred while \output is active []
 
 
 No file main.gls.
-[20]
+[21]
 Overfull \hbox (18.01857pt too wide) in paragraph at lines 79--79
 \T1/qhv/m/n/12 (-20) Un-man-ned Ae-rial Sys-tem (UAS) Mea-su-re-ments at Vol-cán Vi-lla-rri-ca, Chi-le,^^T \T1/qhv/m/it/12 (-20) Geo-che-mistry,
  []
@@ -2212,7 +2227,7 @@ Overfull \hbox (1.09435pt too wide) in paragraph at lines 79--79
 []\T1/qhv/m/n/12 (-20) C. Nwank-pa, W. Ijo-mah, A. Ga-cha-gan y S. Marshall, ^^S  Ac-ti-va-tion fun-ctions: Com-pa-ri-son
  []
 
-[21
+[22
 
 ]
 Overfull \hbox (10.27779pt too wide) in paragraph at lines 79--79
@@ -2229,7 +2244,7 @@ Overfull \hbox (60.71202pt too wide) in paragraph at lines 79--79
 \T1/qhv/m/n/12 (-20) ed., Se-cond Edi-tion, Ams-ter-dam: Aca-de-mic Press, 2015, págs. 587[]597, \T1/qhv/m/sc/12 (-20) isbn\T1/qhv/m/n/12 (-20) : 978-0-12-385938-9.
  []
 
-[22]
+[23]
 Overfull \hbox (8.17882pt too wide) in paragraph at lines 79--79
 \T1/qhv/m/n/12 (-20) Ecua-dor: high-lights from stra-ti-graphy and ob-ser-va-tio-nal re-cords and re-la-ted downs-tream
  []
@@ -2244,7 +2259,7 @@ Overfull \hbox (15.26987pt too wide) in paragraph at lines 79--79
 \T1/qhv/m/it/12 (-20) of En-gi-nee-ring Geology-Bulletin de l'Association In-ter-na-tio-na-le de Géo-lo-gie de l'Ingénieur\T1/qhv/m/n/12 (-20) ,
  []
 
-[23] [24] (./Secciones/b1_Anexos.tex) [25
+[24] [25] (./Secciones/b1_Anexos.tex) [26
 
 
 
@@ -2253,7 +2268,7 @@ Overfull \hbox (15.26987pt too wide) in paragraph at lines 79--79
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 682.
 See the caption package documentation for explanation.
 
-[26
+[27
 
 
 
@@ -2270,19 +2285,22 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B50AA47C84D0797A31FA45B6A7B92F4D;5262.
+(rerunfilecheck)             Checksum: 2B145BC7506F42D686F8615BE282F977;4635.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61075 strings out of 467537
- 1322288 string characters out of 5423703
- 2398103 words of memory out of 5000000
- 88701 multiletter control sequences out of 15000+600000
- 690596 words of font info for 170 fonts, out of 8000000 for 9000
+ 61148 strings out of 467537
+ 1324005 string characters out of 5423703
+ 2398179 words of memory out of 5000000
+ 88774 multiletter control sequences out of 15000+600000
+ 699156 words of font info for 184 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,14n,131p,2546b,4034s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,8n,131p,2489b,3364s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{cite.0@caricchi2024co2} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{cite.0@vallance2000lahars} has been referenced but does not exist, replaced by a fixed one
 
@@ -2291,6 +2309,9 @@ pdfTeX warning (dest): name{cite.0@lowe1986lahars} has been referenced but does 
 
 
 pdfTeX warning (dest): name{cite.0@johnson2015lahar} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{cite.0@article} has been referenced but does not exist, replaced by a fixed one
@@ -2305,10 +2326,10 @@ pdfTeX warning (dest): name{cite.0@geoffroy2023peligros} has been referenced but
 pdfTeX warning (dest): name{cite.0@neall1976lahars} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on main.pdf (36 pages, 2205456 bytes).
+Output written on main.pdf (36 pages, 50192239 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 527 compressed objects within 6 object streams
- 133 named destinations out of 1000 (max. 500000)
- 34610 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 513 compressed objects within 6 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 41771 words of extra memory for PDF output out of 42996 (max. 10000000)
 
