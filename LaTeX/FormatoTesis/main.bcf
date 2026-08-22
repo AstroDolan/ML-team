@@ -2409,14 +2409,19 @@
     <bcf:citekey order="30" intorder="1">newhallself1982vei</bcf:citekey>
     <bcf:citekey order="31" intorder="1">brown2017volcanic</bcf:citekey>
     <bcf:citekey order="32" intorder="1">neall1976lahars</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">stern2007chilean</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">geoffroy2023peligros</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">article</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">article</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">caricchi2024co2</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">johnson2015lahar</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">lowe1986lahars</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">vallance2000lahars</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">lowe1986lahars</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">vallance2000lahars</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">stern2007chilean</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">geoffroy2023peligros</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">article</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">article</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">caricchi2024co2</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">unknown</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">inproceedings</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">johnson2015lahar</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">sernageomin2015informe</bcf:citekey>
+    <bcf:citekey order="43" intorder="2">inproceedingsn</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">unknownvera</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

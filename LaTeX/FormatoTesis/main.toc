@@ -14,21 +14,20 @@
 \contentsline {chapter}{\numberline {2}Contexto geológico}{12}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introducción a los peligros volcánicos}{12}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Lahares}{14}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Zonas Volcánicas de Chile}{14}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Volcán Villarrica}{15}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Contexto geográfico y geológico}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.2.1}Zonas Volcánicas de Chile}{15}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Volcán Villarrica}{16}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Contexto geográfico y geológico}{16}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Evento eruptivo del Volcán Villarrica del 3 de marzo del 2015}{17}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Justificación como caso de estudio}{17}{subsection.2.3.3}%
-\contentsline {chapter}{Conclusiones}{18}{chapter*.15}%
-\contentsline {chapter}{Glosario}{21}{chapter*.16}%
-\contentsline {chapter}{Referencias}{22}{chapter*.17}%
+\contentsline {chapter}{Conclusiones}{19}{chapter*.15}%
+\contentsline {chapter}{Glosario}{22}{chapter*.16}%
+\contentsline {chapter}{Referencias}{23}{chapter*.17}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{Anexos}{26}{section*.18}%
-\contentsline {section}{\numberline {Anexo~1:}Primer anexo}{26}{section.1.Alph0.1}%
-\contentsline {section}{\numberline {Anexo~2:}Segundo anexo}{26}{section.1.Alph0.2}%
+\contentsline {chapter}{Anexos}{27}{section*.18}%
+\contentsline {section}{\numberline {Anexo~1:}Primer anexo}{27}{section.1.Alph0.1}%
+\contentsline {section}{\numberline {Anexo~2:}Segundo anexo}{27}{section.1.Alph0.2}%
 \setcounter {tocdepth}{3}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{Apéndices}{27}{section*.20}%
-\contentsline {section}{\numberline {Apéndice~1:}Primer apéndice}{27}{section.2.Alph0.1}%
-\contentsline {section}{\numberline {Apéndice~2:}Segundo apéndice}{27}{section.2.Alph0.2}%
+\contentsline {chapter}{Apéndices}{28}{section*.20}%
+\contentsline {section}{\numberline {Apéndice~1:}Primer apéndice}{28}{section.2.Alph0.1}%
+\contentsline {section}{\numberline {Apéndice~2:}Segundo apéndice}{28}{section.2.Alph0.2}%
 \setcounter {tocdepth}{3}

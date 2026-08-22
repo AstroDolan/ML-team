@@ -1085,6 +1085,91 @@
       \field{pages}{233\bibrangedash 240}
       \range{pages}{8}
     \endentry
+    \entry{lowe1986lahars}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=28f8eb0590ef19905938acf29f32fbfd}{%
+           family={Lowe},
+           familyi={L\bibinitperiod},
+           given={Donald\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=6b1059f16407feafe75787cd6fc2c890}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Stanley\bibnamedelima N},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=fb7e0fdc7f7d885f68417b5ee4f8fc3c}{%
+           family={Leigh},
+           familyi={L\bibinitperiod},
+           given={Henry},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ed9218b0fa84132c135ae301909eef07}{%
+           family={Connort},
+           familyi={C\bibinitperiod},
+           given={Charles\bibnamedelima B},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=7fb608d2d3561b276c98aea5768fd51a}{%
+           family={Gemmell},
+           familyi={G\bibinitperiod},
+           given={J\bibnamedelima Bruce},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=af62e638e1d2672c0a3d52478b12a5a6}{%
+           family={Stoiber},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{744a5d076434f1fd7eab0fc589540d9b}
+      \strng{fullhash}{49eb5783785a6ac1f858a8bf8a319e87}
+      \strng{fullhashraw}{49eb5783785a6ac1f858a8bf8a319e87}
+      \strng{bibnamehash}{49eb5783785a6ac1f858a8bf8a319e87}
+      \strng{authorbibnamehash}{49eb5783785a6ac1f858a8bf8a319e87}
+      \strng{authornamehash}{744a5d076434f1fd7eab0fc589540d9b}
+      \strng{authorfullhash}{49eb5783785a6ac1f858a8bf8a319e87}
+      \strng{authorfullhashraw}{49eb5783785a6ac1f858a8bf8a319e87}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{6092}
+      \field{title}{Lahars initiated by the 13 November 1985 eruption of Nevado del Ruiz, Colombia}
+      \field{volume}{324}
+      \field{year}{1986}
+      \field{pages}{51\bibrangedash 53}
+      \range{pages}{3}
+    \endentry
+    \entry{vallance2000lahars}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6759dc7661767a5c65fcf88b2930eaee}{%
+           family={Vallance},
+           familyi={V\bibinitperiod},
+           given={James\bibnamedelima W},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{6759dc7661767a5c65fcf88b2930eaee}
+      \strng{fullhash}{6759dc7661767a5c65fcf88b2930eaee}
+      \strng{fullhashraw}{6759dc7661767a5c65fcf88b2930eaee}
+      \strng{bibnamehash}{6759dc7661767a5c65fcf88b2930eaee}
+      \strng{authorbibnamehash}{6759dc7661767a5c65fcf88b2930eaee}
+      \strng{authornamehash}{6759dc7661767a5c65fcf88b2930eaee}
+      \strng{authorfullhash}{6759dc7661767a5c65fcf88b2930eaee}
+      \strng{authorfullhashraw}{6759dc7661767a5c65fcf88b2930eaee}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Encyclopedia of volcanoes}
+      \field{title}{Lahars}
+      \field{year}{2000}
+      \field{pages}{601\bibrangedash 616}
+      \range{pages}{16}
+    \endentry
     \entry{stern2007chilean}{article}{}{}
       \name{author}{8}{}{%
         {{hash=718e2c89f9849c199c2c7eca09c8fb33}{%
@@ -1267,6 +1352,97 @@
       \field{pages}{e2023JB028486}
       \range{pages}{-1}
     \endentry
+    \entry{unknown}{unknown}{}{}
+      \name{author}{5}{}{%
+        {{hash=3c37ea61ef5d20d50d70e3ff7ef3d3aa}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d7560efee408d1f35bddc83e887773ea}{%
+           family={Keller},
+           familyi={K\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b6085590d1bd3d9bb9b4845a51e2965b}{%
+           family={Díaz\bibnamedelima Alvarado},
+           familyi={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=585b90af5cfb3c90c51e0688bb6d0102}{%
+           family={Polacci},
+           familyi={P\bibinitperiod},
+           given={Margherita},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1cc34aaf45e7c39f0604234a03370c24}{%
+           family={Inostroza},
+           familyi={I\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ed022fe4eeee71b7f5adcde58caed82}
+      \strng{fullhash}{9c3e8439d6cc712debd592a90854963f}
+      \strng{fullhashraw}{9c3e8439d6cc712debd592a90854963f}
+      \strng{bibnamehash}{9c3e8439d6cc712debd592a90854963f}
+      \strng{authorbibnamehash}{9c3e8439d6cc712debd592a90854963f}
+      \strng{authornamehash}{5ed022fe4eeee71b7f5adcde58caed82}
+      \strng{authorfullhash}{9c3e8439d6cc712debd592a90854963f}
+      \strng{authorfullhashraw}{9c3e8439d6cc712debd592a90854963f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{The 3 March 2015 eruption of Villarrica volcano, Southern Andes of Chile: Overview of deposits and impacts}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.13140/RG.2.1.3575.1286
+      \endverb
+    \endentry
+    \entry{inproceedings}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=1cc34aaf45e7c39f0604234a03370c24}{%
+           family={Inostroza},
+           familyi={I\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d91a9d5c8fd23419acfa4e45cea90d5f}{%
+           family={Aguilera},
+           familyi={A\bibinitperiod},
+           given={Felipe},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c90c6072cea2d27fe43c2f222e0a4a8a}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={Cristóbal},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2dd63b47c0f27e00f8915acb6d2e54b1}{%
+           family={Layana},
+           familyi={L\bibinitperiod},
+           given={Susana},
+           giveni={S\bibinitperiod}}}%
+        {{hash=86235761656db1f5d1be964e5ea3e40a}{%
+           family={Chocobar},
+           familyi={C\bibinitperiod},
+           given={Javiera},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f4e8239f680b97a073adcbec6faaeea}
+      \strng{fullhash}{b128ec969784ef1fd19857da2b293db8}
+      \strng{fullhashraw}{b128ec969784ef1fd19857da2b293db8}
+      \strng{bibnamehash}{b128ec969784ef1fd19857da2b293db8}
+      \strng{authorbibnamehash}{b128ec969784ef1fd19857da2b293db8}
+      \strng{authornamehash}{5f4e8239f680b97a073adcbec6faaeea}
+      \strng{authorfullhash}{b128ec969784ef1fd19857da2b293db8}
+      \strng{authorfullhashraw}{b128ec969784ef1fd19857da2b293db8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Variaciones en la anomalía termal del volcán Villarrica asociadas al pulso eruptivo de Marzo 2015: Interpretaciones mediante imágenes Landsat ETM+ y OLI}
+      \field{year}{2015}
+    \endentry
     \entry{johnson2015lahar}{article}{}{}
       \name{author}{2}{}{%
         {{hash=f51cdf3f17286080047566278cba4389}{%
@@ -1291,8 +1467,8 @@
       \strng{authornamehash}{a0fe955731f28c58094a8482d1232232}
       \strng{authorfullhash}{a0fe955731f28c58094a8482d1232232}
       \strng{authorfullhashraw}{a0fe955731f28c58094a8482d1232232}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Geophysical Research Letters}
@@ -1303,90 +1479,93 @@
       \field{pages}{6324\bibrangedash 6325}
       \range{pages}{2}
     \endentry
-    \entry{lowe1986lahars}{article}{}{}
-      \name{author}{6}{}{%
-        {{hash=28f8eb0590ef19905938acf29f32fbfd}{%
-           family={Lowe},
-           familyi={L\bibinitperiod},
-           given={Donald\bibnamedelima R},
-           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=6b1059f16407feafe75787cd6fc2c890}{%
-           family={Williams},
-           familyi={W\bibinitperiod},
-           given={Stanley\bibnamedelima N},
-           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=fb7e0fdc7f7d885f68417b5ee4f8fc3c}{%
-           family={Leigh},
-           familyi={L\bibinitperiod},
-           given={Henry},
-           giveni={H\bibinitperiod}}}%
-        {{hash=ed9218b0fa84132c135ae301909eef07}{%
-           family={Connort},
-           familyi={C\bibinitperiod},
-           given={Charles\bibnamedelima B},
-           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=7fb608d2d3561b276c98aea5768fd51a}{%
-           family={Gemmell},
-           familyi={G\bibinitperiod},
-           given={J\bibnamedelima Bruce},
-           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=af62e638e1d2672c0a3d52478b12a5a6}{%
-           family={Stoiber},
-           familyi={S\bibinitperiod},
-           given={Richard\bibnamedelima E},
-           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group UK London}%
-      }
-      \strng{namehash}{744a5d076434f1fd7eab0fc589540d9b}
-      \strng{fullhash}{49eb5783785a6ac1f858a8bf8a319e87}
-      \strng{fullhashraw}{49eb5783785a6ac1f858a8bf8a319e87}
-      \strng{bibnamehash}{49eb5783785a6ac1f858a8bf8a319e87}
-      \strng{authorbibnamehash}{49eb5783785a6ac1f858a8bf8a319e87}
-      \strng{authornamehash}{744a5d076434f1fd7eab0fc589540d9b}
-      \strng{authorfullhash}{49eb5783785a6ac1f858a8bf8a319e87}
-      \strng{authorfullhashraw}{49eb5783785a6ac1f858a8bf8a319e87}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature}
-      \field{number}{6092}
-      \field{title}{Lahars initiated by the 13 November 1985 eruption of Nevado del Ruiz, Colombia}
-      \field{volume}{324}
-      \field{year}{1986}
-      \field{pages}{51\bibrangedash 53}
-      \range{pages}{3}
-    \endentry
-    \entry{vallance2000lahars}{article}{}{}
+    \entry{sernageomin2015informe}{article}{}{}
       \name{author}{1}{}{%
-        {{hash=6759dc7661767a5c65fcf88b2930eaee}{%
-           family={Vallance},
-           familyi={V\bibinitperiod},
-           given={James\bibnamedelima W},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=01258c198a0198bcfa3c31c2eeb06925}{%
+           family={Sernageomin},
+           familyi={S\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Academic Press}%
-      }
-      \strng{namehash}{6759dc7661767a5c65fcf88b2930eaee}
-      \strng{fullhash}{6759dc7661767a5c65fcf88b2930eaee}
-      \strng{fullhashraw}{6759dc7661767a5c65fcf88b2930eaee}
-      \strng{bibnamehash}{6759dc7661767a5c65fcf88b2930eaee}
-      \strng{authorbibnamehash}{6759dc7661767a5c65fcf88b2930eaee}
-      \strng{authornamehash}{6759dc7661767a5c65fcf88b2930eaee}
-      \strng{authorfullhash}{6759dc7661767a5c65fcf88b2930eaee}
-      \strng{authorfullhashraw}{6759dc7661767a5c65fcf88b2930eaee}
+      \strng{namehash}{01258c198a0198bcfa3c31c2eeb06925}
+      \strng{fullhash}{01258c198a0198bcfa3c31c2eeb06925}
+      \strng{fullhashraw}{01258c198a0198bcfa3c31c2eeb06925}
+      \strng{bibnamehash}{01258c198a0198bcfa3c31c2eeb06925}
+      \strng{authorbibnamehash}{01258c198a0198bcfa3c31c2eeb06925}
+      \strng{authornamehash}{01258c198a0198bcfa3c31c2eeb06925}
+      \strng{authorfullhash}{01258c198a0198bcfa3c31c2eeb06925}
+      \strng{authorfullhashraw}{01258c198a0198bcfa3c31c2eeb06925}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Encyclopedia of volcanoes}
-      \field{title}{Lahars}
-      \field{year}{2000}
-      \field{pages}{601\bibrangedash 616}
-      \range{pages}{16}
+      \field{journaltitle}{Red Nacional de Vigilancia Volcánica, OVDAS, Servicio Nacional de Geología y Minería}
+      \field{title}{Informe de Resumen Crisis Volcán Villarrica, Febrero-Marzo 2015}
+      \field{year}{2015}
+    \endentry
+    \entry{inproceedingsn}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=f0cd49d469ad49bdaf2e3bb2cb183cb1}{%
+           family={Naranjo},
+           familyi={N\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
+      \strng{fullhash}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
+      \strng{fullhashraw}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
+      \strng{bibnamehash}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
+      \strng{authorbibnamehash}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
+      \strng{authornamehash}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
+      \strng{authorfullhash}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
+      \strng{authorfullhashraw}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Nuevo estilo eruptivo del volcán Villarrica: 3 de marzo 2015}
+      \field{year}{2019}
+    \endentry
+    \entry{unknownvera}{unknown}{}{}
+      \name{author}{4}{}{%
+        {{hash=d267c1d93ceb4a55f7feca9daded4495}{%
+           family={Vera},
+           familyi={V\bibinitperiod},
+           given={Franco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6c87eda34e0ff089c1b7e5c7108c7828}{%
+           family={Palma},
+           familyi={P\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1805e103501075ef0b21851b4259f4a3}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=59ed936a34bed8e400af98f34817b5c2}{%
+           family={Flores},
+           familyi={F\bibinitperiod},
+           given={Nayaret},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9602c77fb922d201d4973cd07314461a}
+      \strng{fullhash}{fdcfe834241608bea041686e78a55cec}
+      \strng{fullhashraw}{fdcfe834241608bea041686e78a55cec}
+      \strng{bibnamehash}{fdcfe834241608bea041686e78a55cec}
+      \strng{authorbibnamehash}{fdcfe834241608bea041686e78a55cec}
+      \strng{authornamehash}{9602c77fb922d201d4973cd07314461a}
+      \strng{authorfullhash}{fdcfe834241608bea041686e78a55cec}
+      \strng{authorfullhashraw}{fdcfe834241608bea041686e78a55cec}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{title}{Lahares generados por avalanchas mixtas durante la erupción del 03 de Marzo de 2015 en el Volcán Villarrica}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.13140/RG.2.2.18802.40643
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
