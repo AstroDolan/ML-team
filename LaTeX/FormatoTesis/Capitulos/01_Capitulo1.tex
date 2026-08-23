@@ -189,54 +189,66 @@ provocando que el gradiente se propague en diferentes direcciones \cite{nwankpa2
 
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
-\section{Optimizadores}
-%\section{Algoritmos de Optimización}
-%El entrenamiento de una red neuronal artificial se formula fundamentalmente como un problema de optimización no convexa, cuyo objetivo es encontrar el conjunto de parámetros $\boldsymbol{\theta} \in \mathbb{R}^d$ (pesos y sesgos) que minimice una función de pérdida $\mathcal{L}(\boldsymbol{\theta})$ sobre el conjunto de datos de entrenamiento:
-%\begin{equation}
-%    \boldsymbol{\theta}^* = \arg\min_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta})
-%    \label{eq:opt_problem}
-%\end{equation}
-%
-%Los algoritmos de optimización determinan la trayectoria y la velocidad con la que los parámetros convergen hacia un mínimo local a través de aproximaciones iterativas basadas en el gradiente de la función de pérdida, $\nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta})$, calculado mediante el algoritmo de retropropagación (\textit{backpropagation}).
-%
-%\subsection{Fundamentos y Descenso de Gradiente}
-%La base de la mayoría de los métodos modernos es el Descenso de Gradiente Estocástico (SGD, por sus siglas en inglés \textit{Stochastic Gradient Descent}), cuya regla de actualización en la iteración $t$ se define como:
-%\begin{equation}
-%    \boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta \, \nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta}_t; \mathcal{B}_t)
-%    \label{eq:sgd}
-%\end{equation}
-%donde $\eta > 0$ representa la tasa de aprendizaje (\textit{learning rate}) y $\mathcal{B}_t$ denota un subconjunto aleatorio de datos (\textit{mini-batch}). A pesar de su simplicidad computacional, SGD presenta limitaciones significativas en superficies de pérdida no isotrópicas, zonas con mesetas o valles pronunciados, y es altamente sensible a la elección estática de $\eta$. Para mitigar estos problemas, surgen los métodos de tasa de aprendizaje adaptativa.
-%
-%\subsection{RMSprop}
-%Propuesto por Geoff Hinton, RMSprop (\textit{Root Mean Square Propagation}) resuelve las oscilaciones excesivas en dimensiones con gradientes pronunciados dividiendo la tasa de aprendizaje por un promedio móvil exponencial de los cuadrados de los gradientes históricos. 
-%
-%El algoritmo calcula en cada paso $t$:
-%\begin{align}
-%    \boldsymbol{v}_t &= \beta \, \boldsymbol{v}_{t-1} + (1 - \beta) \, \boldsymbol{g}_t^{\odot 2} \label{eq:rmsprop_v} \\
-%    \boldsymbol{\theta}_{t+1} &= \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\boldsymbol{v}_t} + \epsilon} \odot \boldsymbol{g}_t \label{eq:rmsprop_update}
-%\end{align}
-%donde $\boldsymbol{g}_t = \nabla_{\boldsymbol{\theta}} \mathcal{L}(\boldsymbol{\theta}_t)$, $\beta \in [0, 1)$ es el factor de decaimiento (comúnmente $\beta = 0.9$), $\epsilon > 0$ es una constante pequeña (típicamente $10^{-8}$) para evitar la división por cero, y $\odot$ denota el producto elemento a elemento. De este modo, RMSprop atenúa los pasos en direcciones con variaciones abruptas y acelera en aquellas con pendientes suaves.
-%
-%\subsection{Adam}
-%El optimizador Adam (\textit{Adaptive Moment Estimation}) combina las ventajas del método de momento (aceleración en la dirección relevante) con RMSprop (escalamiento adaptativo por coordenada). Mantiene promedios móviles tanto del gradiente (primer momento) como de su cuadrado (segundo momento no centrado):
-%\begin{align}
-%    \boldsymbol{m}_t &= \beta_1 \boldsymbol{m}_{t-1} + (1 - \beta_1) \boldsymbol{g}_t \label{eq:adam_m} \\
-%    \boldsymbol{v}_t &= \beta_2 \boldsymbol{v}_{t-1} + (1 - \beta_2) \boldsymbol{g}_t^{\odot 2} \label{eq:adam_v}
-%\end{align}
-%Dado que los vectores $\boldsymbol{m}_t$ y $\boldsymbol{v}_t$ se inicializan en cero, presentan un sesgo hacia el origen en las primeras iteraciones. Adam incorpora una corrección de sesgo analítica:
-%\begin{equation}
-%    \hat{\boldsymbol{m}}_t = \frac{\boldsymbol{m}_t}{1 - \beta_1^t}, \qquad \hat{\boldsymbol{v}}_t = \frac{\boldsymbol{v}_t}{1 - \beta_2^t}
-%    \label{eq:adam_bias}
-%\end{equation}
-%Finalmente, la regla de actualización de los parámetros está dada por:
-%\begin{equation}
-%    \boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\hat{\boldsymbol{v}}_t} + \epsilon} \odot \hat{\boldsymbol{m}}_t
-%    \label{eq:adam_update}
-%\end{equation}
-%donde típicamente se configuran $\beta_1 = 0.9$, $\beta_2 = 0.999$ y $\epsilon = 10^{-8}$. Gracias a su robustez y rápida convergencia, Adam se ha establecido como el optimizador por defecto en diversas tareas de aprendizaje profundo.
+
+\section{Funciones de pérdida}
+Las funciones de pérdida o de costo son funciones matemáticas que cuantifican la diferencia entre una predicción del modelo y el valor real.
 
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
+
+\section{Gradiente Descendente y algoritmos de optimización}
+El algoritmo del Gradiente Descendente (GD) es uno de los métodos más populares al momento de entrenar modelos de aprendizaje automático y por lejos la forma más común de optimizar redes neuronales, 
+esto gracias a su eficiencia en la minimización de funciones de pérdida \cite{ruder2016overview}. El GD computa el gradiente de la función de pérdida con respecto a los parámetros del modelo \cite{rumelhart1986learning}. 
+Sea $\mathcal{L}(\theta)$ una función de pérdida, tal que $\theta\in \mathbb{R}^d$ es el conjunto de parámetros del modelo. El gradiente de la función de pérdida parametrizada se denota como $\nabla_\theta \mathcal{L}(\theta)$.
+
+La optimización se refiere a proceso de minimizar o maximizar una función $f(x)$ mediante la alteración de su parámetro $x$. El entrenamiento de una red neuronal artificial puede ser considerado como una problema de 
+optimización no convexa\footnote{A diferencia de la optimización convexa, en la no convexa puede haber múltiples mínimos locales. \cite{fotopoulos2024reviewnonconvexoptimizationmethod}}, cuyo objetivo es encontrar el conjunto de parámetros $\theta$  
+que minimice la función de pérdida $\mathcal{L}(\theta)$ sobre el conjunto de datos de entrenamiento \cite{goodfellow2016deep, andrychowicz2016learning}. Se expresa como, %goodfellow tiene la notacion de * para el valor que se optimiza.
+\begin{equation}
+    \theta^* = \arg\min_{\theta} \mathcal{L}(\theta)
+    \label{eq:opt_problem}
+\end{equation}
+
+\subsection{Gradiente Descendiente (\textit{Batch Gradient Descent})}
+Manteniendo la notación de la ecuación \ref{eq:opt_problem}. Sea $\eta > 0 $ la tasa de aprendizaje (\textit{learning rate}) que determina el tamaño de los pasos para alcanzar el mínimo local y 
+$\mathcal{L}:\mathbb{R}\rightarrow\mathbb{R}$ una función diferenciable. El gradiente descendente se define como,
+\begin{equation}
+    \theta = \theta - \eta \cdot\nabla_\theta \mathcal{L}(\theta)
+    \label{eq:gd}
+\end{equation}
+
+Dado que se deben calcular los gradientes respecto a todos los parámetros de todo el conjunto, este método puede ser computacionalmente alto, lento e incluso no computable para conjuntos de datos que no caben en memoria \cite{ruder2016overview, zhang2019gradient}. 
+
+\subsection{Optimizadores}
+\begin{table}[htbp]
+    \centering
+    \caption{List of losses analysed in this paper. $\mathbf{y}$ is true label as one-hot encoding, $\hat{\mathbf{y}}$ is true label as $+1/-1$ encoding, $\mathbf{o}$ is the output of the last layer of the network, $\cdot^{(j)}$ denotes $j$-th dimension of a given vector, and $\sigma(\cdot)$ denotes probability estimate.}
+    \label{tab:losses}
+    \begin{tabular}{lll}
+        \toprule
+        symbol & name & equation \\
+        \midrule
+        $\mathcal{L}_1$ & $\mathrm{L}_1$ loss & $\|\mathbf{y} - \mathbf{o}\|_1$ \\
+        $\mathcal{L}_2$ & $\mathrm{L}_2$ loss & $\|\mathbf{y} - \mathbf{o}\|_2^2$ \\
+        $\mathcal{L}_1 \circ \sigma$ & expectation loss & $\|\mathbf{y} - \sigma(\mathbf{o})\|_1$ \\
+        $\mathcal{L}_2 \circ \sigma$ & regularised expectation loss\footnotemark & $\|\mathbf{y} - \sigma(\mathbf{o})\|_2^2$ \\
+        $\mathcal{L}_\infty \circ \sigma$ & Chebyshev loss & $\max_j |\sigma(\mathbf{o})^{(j)} - \mathbf{y}^{(j)}|$ \\
+        $\text{hinge}$ & hinge [13] (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)$ \\
+        $\text{hinge}^2$ & squared hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^2$ \\
+        $\text{hinge}^3$ & cubed hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^3$ \\
+        $\log$ & log (cross entropy) loss & $-\sum_j \mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}$ \\
+        $\log^2$ & squared log loss & $-\sum_j [\mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}]^2$ \\
+        $\text{tan}$ & Tanimoto loss & $\displaystyle \frac{-\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2^2 + \|\mathbf{y}\|_2^2 - \sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}$ \\
+        $\text{D}_{\text{CS}}$ & Cauchy-Schwarz Divergence [3] & $\displaystyle -\log \frac{\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2 \|\mathbf{y}\|_2}$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+%////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////
+
+
+
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
 
@@ -252,7 +264,7 @@ Consideramos una ecuación diferencial no lineal y parametrizada en su forma gen
     \label{eq:nonlinearDiffEq}
 \end{equation}
 
-donde $u(t,x)$ denota la solución latente, $\mathcal{N}[\cdot]$ es un operador diferencial lineal o no lineal y $\Omega$ es un subconjunto de $\mathbb{R}^d$. Sujeto a las condiciones iniciales y de frontera,
+donde $u(t,x)$ denota la solución latente\footnote{Explica esto}, $\mathcal{N}[\cdot]$ es un operador diferencial lineal o no lineal y $\Omega$ es un subconjunto de $\mathbb{R}^d$. Sujeto a las condiciones iniciales y de frontera,
 \begin{equation}
     \vect{u}(0,x) = g(x), x\in \Omega,
     \label{eq:initilCond}
@@ -296,11 +308,13 @@ los parámetros $\theta$ de la red pueden ser calculados de forma eficiente medi
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{pdeloss.jpeg}
+    \includegraphics[width=1\textwidth]{pdeloss.jpeg}
     \caption{Esquema de una red neuronal informada por la física (PINN).}
     \label{fig:pinn}
     \fuente{\cite{RAISSI2019686}}
 \end{figure}
+
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
+
 \subsection{Loss function and optimization for PINN}

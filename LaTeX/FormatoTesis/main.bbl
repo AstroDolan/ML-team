@@ -509,6 +509,199 @@
       \field{title}{Activation functions in artificial neural networks: A systematic overview}
       \field{year}{2021}
     \endentry
+    \entry{ruder2016overview}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b468248a20d75c52ee742f4592c2569f}{%
+           family={Ruder},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{fullhash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{fullhashraw}{b468248a20d75c52ee742f4592c2569f}
+      \strng{bibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorbibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authornamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorfullhash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorfullhashraw}{b468248a20d75c52ee742f4592c2569f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1609.04747}
+      \field{title}{An overview of gradient descent optimization algorithms}
+      \field{year}{2016}
+    \endentry
+    \entry{rumelhart1986learning}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=55cd5380bb5b15032a6d5a2015f56e3f}{%
+           family={Rumelhart},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima E},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=813bd95fe553e6079cd53a567b238287}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=6cbc29ad7fd57ffdb9ed4728418fd988}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Ronald\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{3c6614c24b144f1599c64619f275bade}
+      \strng{fullhash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{fullhashraw}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{bibnamehash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{authorbibnamehash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{authornamehash}{3c6614c24b144f1599c64619f275bade}
+      \strng{authorfullhash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{authorfullhashraw}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{nature}
+      \field{number}{6088}
+      \field{title}{Learning representations by back-propagating errors}
+      \field{volume}{323}
+      \field{year}{1986}
+      \field{pages}{533\bibrangedash 536}
+      \range{pages}{4}
+    \endentry
+    \entry{fotopoulos2024reviewnonconvexoptimizationmethod}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=1ffa3cb7bdce03bb196e9263cebd4c49}{%
+           family={Fotopoulos},
+           familyi={F\bibinitperiod},
+           given={Greg\bibnamedelima B},
+           giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=2f3fc00ff5d81f3052a138c21ebf4c54}{%
+           family={Popovich},
+           familyi={P\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f08ea480a28ff33486ec6abd4b2a6f4e}{%
+           family={Papadopoulos},
+           familyi={P\bibinitperiod},
+           given={Nicholas\bibnamedelima Hall},
+           giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{720c54134a8306e0e164dad615aae8e7}
+      \strng{fullhash}{60f551ce1651a9b6ca7188bb8b5521a4}
+      \strng{fullhashraw}{60f551ce1651a9b6ca7188bb8b5521a4}
+      \strng{bibnamehash}{60f551ce1651a9b6ca7188bb8b5521a4}
+      \strng{authorbibnamehash}{60f551ce1651a9b6ca7188bb8b5521a4}
+      \strng{authornamehash}{720c54134a8306e0e164dad615aae8e7}
+      \strng{authorfullhash}{60f551ce1651a9b6ca7188bb8b5521a4}
+      \strng{authorfullhashraw}{60f551ce1651a9b6ca7188bb8b5521a4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Review Non-convex Optimization Method for Machine Learning}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2410.02017
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2410.02017
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2410.02017
+      \endverb
+    \endentry
+    \entry{andrychowicz2016learning}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=0d8b72cabbd1b548097b4a7b81a0f335}{%
+           family={Andrychowicz},
+           familyi={A\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8a2a310cc5bd33d36b7e82bf952e3597}{%
+           family={Denil},
+           familyi={D\bibinitperiod},
+           given={Misha},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e8415fb291f9e3c068ab0b9c1fda809e}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5801ad316a5bf18aa79d78594de86800}{%
+           family={Hoffman},
+           familyi={H\bibinitperiod},
+           given={Matthew\bibnamedelima W},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d4d433f1bc6bf06aecb4da73f2e81f0c}{%
+           family={Pfau},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a56e72b23778a835bdade7d0511e43a3}{%
+           family={Schaul},
+           familyi={S\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ed0349ba423c1288668d6860f818eaf3}{%
+           family={Shillingford},
+           familyi={S\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d3e79ae65fa8bce23be8a1187bcae1bb}{%
+           family={De\bibnamedelima Freitas},
+           familyi={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Nando},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed26427d8219011ddc4ccc2ef3237fa1}
+      \strng{fullhash}{678ef55c01badf51252c2ce1dd993404}
+      \strng{fullhashraw}{678ef55c01badf51252c2ce1dd993404}
+      \strng{bibnamehash}{ed26427d8219011ddc4ccc2ef3237fa1}
+      \strng{authorbibnamehash}{ed26427d8219011ddc4ccc2ef3237fa1}
+      \strng{authornamehash}{ed26427d8219011ddc4ccc2ef3237fa1}
+      \strng{authorfullhash}{678ef55c01badf51252c2ce1dd993404}
+      \strng{authorfullhashraw}{678ef55c01badf51252c2ce1dd993404}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Learning to learn by gradient descent by gradient descent}
+      \field{volume}{29}
+      \field{year}{2016}
+    \endentry
+    \entry{zhang2019gradient}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0410cb94d4b4e2a1f4aeeff35360b028}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jiawei},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0410cb94d4b4e2a1f4aeeff35360b028}
+      \strng{fullhash}{0410cb94d4b4e2a1f4aeeff35360b028}
+      \strng{fullhashraw}{0410cb94d4b4e2a1f4aeeff35360b028}
+      \strng{bibnamehash}{0410cb94d4b4e2a1f4aeeff35360b028}
+      \strng{authorbibnamehash}{0410cb94d4b4e2a1f4aeeff35360b028}
+      \strng{authornamehash}{0410cb94d4b4e2a1f4aeeff35360b028}
+      \strng{authorfullhash}{0410cb94d4b4e2a1f4aeeff35360b028}
+      \strng{authorfullhashraw}{0410cb94d4b4e2a1f4aeeff35360b028}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1903.03614}
+      \field{title}{Gradient descent based optimization algorithms for deep learning models training}
+      \field{year}{2019}
+    \endentry
     \entry{wang2023expert}{article}{}{}
       \name{author}{4}{}{%
         {{hash=15db674b3efc6848f40514aa0034717a}{%
@@ -540,8 +733,8 @@
       \strng{authornamehash}{ef1ca3afbde4b19c973486cc8a12bc89}
       \strng{authorfullhash}{1b49b5b93e091647434d31cd34f2625e}
       \strng{authorfullhashraw}{1b49b5b93e091647434d31cd34f2625e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2308.08468}
@@ -572,8 +765,8 @@
       \strng{authornamehash}{77366ceff7089ab546dc44d384ee46ac}
       \strng{authorfullhash}{77366ceff7089ab546dc44d384ee46ac}
       \strng{authorfullhashraw}{77366ceff7089ab546dc44d384ee46ac}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Evaluating derivatives: principles and techniques of algorithmic differentiation}
@@ -605,8 +798,8 @@
       \strng{authornamehash}{38cf3149596a29a18976b23d267bacc7}
       \strng{authorfullhash}{a17a0649dc8bad70026488d4ea37c508}
       \strng{authorfullhashraw}{a17a0649dc8bad70026488d4ea37c508}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We introduce physics-informed neural networks – neural networks that are trained to solve supervised learning tasks while respecting any given laws of physics described by general nonlinear partial differential equations. In this work, we present our developments in the context of solving two main classes of problems: data-driven solution and data-driven discovery of partial differential equations. Depending on the nature and arrangement of the available data, we devise two distinct types of algorithms, namely continuous time and discrete time models. The first type of models forms a new family of data-efficient spatio-temporal function approximators, while the latter type allows the use of arbitrarily accurate implicit Runge–Kutta time stepping schemes with unlimited number of stages. The effectiveness of the proposed framework is demonstrated through a collection of classical problems in fluids, quantum mechanics, reaction–diffusion systems, and the propagation of nonlinear shallow-water waves.}
@@ -784,8 +977,8 @@
       \strng{editornamehash}{19c193db2952de12daf8fdd8305c75af}
       \strng{editorfullhash}{19c193db2952de12daf8fdd8305c75af}
       \strng{editorfullhashraw}{19c193db2952de12daf8fdd8305c75af}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Explosive volcanic eruptions inject variable amounts of particles of variable size, shape, and composition (i.e., tephra) into the atmosphere. Tephra dispersal and sedimentation mostly depends on particle characteristics, atmospheric conditions, and plume dynamics, with the potential of affecting the environment and society at multiple scales. In particular, thinning trends of tephra deposits mostly depend on particle Reynolds number, which defines different fallout regimes. Nonetheless, particle–particle interactions (e.g., particle aggregation) and gravitational instabilities can strongly affect the particle residence time in the atmosphere promoting premature fallout of the finest fraction (<100 μm). Several analytical and numerical models have been developed to describe both particle transport and settling with the intent of better understanding dispersal dynamics, quantifying the associated hazards, and determining the main eruption source parameters by solving inverse problems. A full characterization of tephra dispersal and sedimentation can only be achieved through a critical synergy of multiple approaches.}
@@ -862,8 +1055,8 @@
       \strng{editornamehash}{b599492f774f363df6182f19abe135e5}
       \strng{editorfullhash}{17be8c296de38a5a8636f3558865d6a0}
       \strng{editorfullhashraw}{17be8c296de38a5a8636f3558865d6a0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Encyclopedia of Volcanoes}
@@ -923,8 +1116,8 @@
       \strng{editornamehash}{b599492f774f363df6182f19abe135e5}
       \strng{editorfullhash}{17be8c296de38a5a8636f3558865d6a0}
       \strng{editorfullhashraw}{17be8c296de38a5a8636f3558865d6a0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Encyclopedia of Volcanoes}
@@ -958,8 +1151,8 @@
       \strng{authornamehash}{caf6eb872ee9a62057292b7b0c0df90d}
       \strng{authorfullhash}{caf6eb872ee9a62057292b7b0c0df90d}
       \strng{authorfullhashraw}{caf6eb872ee9a62057292b7b0c0df90d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Volcanic hazards, risks and disasters}
@@ -1224,8 +1417,8 @@
       \strng{authornamehash}{3efd9dba5da7cecac3db5d1e1831f627}
       \strng{authorfullhash}{d625051488e95a6823aaf188c2395ae7}
       \strng{authorfullhashraw}{d625051488e95a6823aaf188c2395ae7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The geology of Chile}
@@ -1255,8 +1448,8 @@
       \strng{authornamehash}{52b11d9180369acca2b95d3e3e740e79}
       \strng{authorfullhash}{52b11d9180369acca2b95d3e3e740e79}
       \strng{authorfullhashraw}{52b11d9180369acca2b95d3e3e740e79}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista de Estudios Latinoamericanos sobre Reducción del Riesgo de Desastres REDER}
@@ -1283,8 +1476,8 @@
       \strng{authornamehash}{a3703b12215525e200476e0c16ca6cf3}
       \strng{authorfullhash}{a3703b12215525e200476e0c16ca6cf3}
       \strng{authorfullhashraw}{a3703b12215525e200476e0c16ca6cf3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista geológica de Chile}
@@ -1340,8 +1533,8 @@
       \strng{authornamehash}{3d7480e23206a16a93187097410e93f9}
       \strng{authorfullhash}{9b802d78051dff63f7c2f37b424f7d4f}
       \strng{authorfullhashraw}{9b802d78051dff63f7c2f37b424f7d4f}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Geophysical Research: Solid Earth}

@@ -498,6 +498,7 @@
 
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{booktabs}
 
 % Bibliografía
 \RequirePackage{csquotes}%
