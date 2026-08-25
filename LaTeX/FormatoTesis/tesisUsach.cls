@@ -441,7 +441,7 @@
 
 %PDF
 \usepackage[dvipsnames]{xcolor}
-\PassOptionsToPackage{bookmarks,pdfpagelabels,hidelinks,spanish,colorlinks=true,linkcolor=blue,citecolor=Aquamarine}{hyperref}%
+\PassOptionsToPackage{bookmarks,pdfpagelabels,hidelinks,spanish,colorlinks=true,linkcolor=blue,citecolor=blue, urlcolor=blue}{hyperref}%
 \RequirePackage[a-3b]{pdfx}%
 \RequirePackage{pdfpages}%
 

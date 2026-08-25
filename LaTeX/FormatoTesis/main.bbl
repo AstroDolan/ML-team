@@ -19,6 +19,389 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{szeliski2011computer}{book}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=f2e556c93256e7d70895d67702e14f1a}{%
+           family={Szeliski},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{ee938c94eeb8b0c66018c7def0d93d3b}
+      \strng{fullhash}{ee938c94eeb8b0c66018c7def0d93d3b}
+      \strng{fullhashraw}{ee938c94eeb8b0c66018c7def0d93d3b}
+      \strng{bibnamehash}{ee938c94eeb8b0c66018c7def0d93d3b}
+      \strng{authorbibnamehash}{ee938c94eeb8b0c66018c7def0d93d3b}
+      \strng{authornamehash}{ee938c94eeb8b0c66018c7def0d93d3b}
+      \strng{authorfullhash}{ee938c94eeb8b0c66018c7def0d93d3b}
+      \strng{authorfullhashraw}{ee938c94eeb8b0c66018c7def0d93d3b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computer vision: algorithms and applications}
+      \field{volume}{1}
+      \field{year}{2011}
+    \endentry
+    \entry{hirschberg2015advances}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f5cb368011303fe22ab5c7141448c62d}{%
+           family={Hirschberg},
+           familyi={H\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2214edb8305f7ccd7cdc310b3a8ae1b4}{%
+           family={Manning},
+           familyi={M\bibinitperiod},
+           given={Christopher\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{418fafa7ed74b0d3e2dff25e7421ffe1}
+      \strng{fullhash}{418fafa7ed74b0d3e2dff25e7421ffe1}
+      \strng{fullhashraw}{418fafa7ed74b0d3e2dff25e7421ffe1}
+      \strng{bibnamehash}{418fafa7ed74b0d3e2dff25e7421ffe1}
+      \strng{authorbibnamehash}{418fafa7ed74b0d3e2dff25e7421ffe1}
+      \strng{authornamehash}{418fafa7ed74b0d3e2dff25e7421ffe1}
+      \strng{authorfullhash}{418fafa7ed74b0d3e2dff25e7421ffe1}
+      \strng{authorfullhashraw}{418fafa7ed74b0d3e2dff25e7421ffe1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{6245}
+      \field{title}{Advances in natural language processing}
+      \field{volume}{349}
+      \field{year}{2015}
+      \field{pages}{261\bibrangedash 266}
+      \range{pages}{6}
+    \endentry
+    \entry{billard2025roadmap}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=3cd4f444d840eee2580ddf886f20b1c8}{%
+           family={Billard},
+           familyi={B\bibinitperiod},
+           given={Aude},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c6c266907563f15ef956ed5ec44d2436}{%
+           family={Albu-Schaeffer},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Alin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3dd53ac30b09d0130d3ee99f06833a82}{%
+           family={Beetz},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=98f4ab1bc2ac191d8f8a0651315ce9c0}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c0e503339314930d140b67b5e7c55c3e}{%
+           family={Corke},
+           familyi={C\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=05f830e9e30d3f051d38ebd34989e8ac}{%
+           family={Ciocarlie},
+           familyi={C\bibinitperiod},
+           given={Matei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=efd93d403b47bf3815bbffbce6e5e1f6}{%
+           family={Dahiya},
+           familyi={D\bibinitperiod},
+           given={Ravinder},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d8a72b3bd29e9244932e7c10628e6b03}{%
+           family={Kragic},
+           familyi={K\bibinitperiod},
+           given={Danica},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1776deb0a86da5a75d0800ae967f4bd6}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2560c027c1fa184105e02c67f78711e7}{%
+           family={Nagai},
+           familyi={N\bibinitperiod},
+           given={Yukie},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{471b984e3fd497819037c337a3913eb1}
+      \strng{fullhash}{dda2eccae6700523c4a9e9effe9fb7ea}
+      \strng{fullhashraw}{dda2eccae6700523c4a9e9effe9fb7ea}
+      \strng{bibnamehash}{471b984e3fd497819037c337a3913eb1}
+      \strng{authorbibnamehash}{471b984e3fd497819037c337a3913eb1}
+      \strng{authornamehash}{471b984e3fd497819037c337a3913eb1}
+      \strng{authorfullhash}{dda2eccae6700523c4a9e9effe9fb7ea}
+      \strng{authorfullhashraw}{dda2eccae6700523c4a9e9effe9fb7ea}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Machine Intelligence}
+      \field{number}{6}
+      \field{title}{A roadmap for AI in robotics}
+      \field{volume}{7}
+      \field{year}{2025}
+      \field{pages}{818\bibrangedash 824}
+      \range{pages}{7}
+    \endentry
+    \entry{li2022research}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=ae5924168d520748a098db1454fe265b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yinglong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ae5924168d520748a098db1454fe265b}
+      \strng{fullhash}{ae5924168d520748a098db1454fe265b}
+      \strng{fullhashraw}{ae5924168d520748a098db1454fe265b}
+      \strng{bibnamehash}{ae5924168d520748a098db1454fe265b}
+      \strng{authorbibnamehash}{ae5924168d520748a098db1454fe265b}
+      \strng{authornamehash}{ae5924168d520748a098db1454fe265b}
+      \strng{authorfullhash}{ae5924168d520748a098db1454fe265b}
+      \strng{authorfullhashraw}{ae5924168d520748a098db1454fe265b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 IEEE 2nd international conference on power, electronics and computer applications (ICPECA)}
+      \field{title}{Research and application of deep learning in image recognition}
+      \field{year}{2022}
+      \field{pages}{994\bibrangedash 999}
+      \range{pages}{6}
+    \endentry
+    \entry{bahdanau2014neural}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6d80adec79a13a33e73215c5f46f1605}{%
+           family={Bahdanau},
+           familyi={B\bibinitperiod},
+           given={Dzmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3da7501a79d9346572c7fd6e41b615df}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Kyunghyun},
+           giveni={K\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{a19bd16ae98706ae8eced6dfd6ca3a14}
+      \strng{fullhash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{fullhashraw}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{bibnamehash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{authorbibnamehash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{authornamehash}{a19bd16ae98706ae8eced6dfd6ca3a14}
+      \strng{authorfullhash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{authorfullhashraw}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1409.0473}
+      \field{title}{Neural machine translation by jointly learning to align and translate}
+      \field{year}{2014}
+    \endentry
+    \entry{grigorescu2020survey}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=31b973d2d170d0a739b5fa7263cf576a}{%
+           family={Grigorescu},
+           familyi={G\bibinitperiod},
+           given={Sorin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0bf95200606473c5e88edf2d229212ed}{%
+           family={Trasnea},
+           familyi={T\bibinitperiod},
+           given={Bogdan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e3098ac31977e6d9d3351750874ae05b}{%
+           family={Cocias},
+           familyi={C\bibinitperiod},
+           given={Tiberiu},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fbadbacf683156beb785ab9402f6483c}{%
+           family={Macesanu},
+           familyi={M\bibinitperiod},
+           given={Gigel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{c742ac2075f483a17f76e476c42f585a}
+      \strng{fullhash}{72237f988c4e23f3ea8892f2aea0ef76}
+      \strng{fullhashraw}{72237f988c4e23f3ea8892f2aea0ef76}
+      \strng{bibnamehash}{72237f988c4e23f3ea8892f2aea0ef76}
+      \strng{authorbibnamehash}{72237f988c4e23f3ea8892f2aea0ef76}
+      \strng{authornamehash}{c742ac2075f483a17f76e476c42f585a}
+      \strng{authorfullhash}{72237f988c4e23f3ea8892f2aea0ef76}
+      \strng{authorfullhashraw}{72237f988c4e23f3ea8892f2aea0ef76}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of field robotics}
+      \field{number}{3}
+      \field{title}{A survey of deep learning techniques for autonomous driving}
+      \field{volume}{37}
+      \field{year}{2020}
+      \field{pages}{362\bibrangedash 386}
+      \range{pages}{25}
+    \endentry
+    \entry{brunton2020machine}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=572af75cb67759c9684ffbb4d11cddf8}{%
+           family={Brunton},
+           familyi={B\bibinitperiod},
+           given={Steven\bibnamedelima L},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=6011c3915ad8a4919693d991e4c15b4f}{%
+           family={Noack},
+           familyi={N\bibinitperiod},
+           given={Bernd\bibnamedelima R},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=d0a18518b57cef85c32665e92ec3dea1}{%
+           family={Koumoutsakos},
+           familyi={K\bibinitperiod},
+           given={Petros},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{0fad786a7579967c867ca8b4b61f167c}
+      \strng{fullhash}{badd0a36684ee812601268e86af05eb6}
+      \strng{fullhashraw}{badd0a36684ee812601268e86af05eb6}
+      \strng{bibnamehash}{badd0a36684ee812601268e86af05eb6}
+      \strng{authorbibnamehash}{badd0a36684ee812601268e86af05eb6}
+      \strng{authornamehash}{0fad786a7579967c867ca8b4b61f167c}
+      \strng{authorfullhash}{badd0a36684ee812601268e86af05eb6}
+      \strng{authorfullhashraw}{badd0a36684ee812601268e86af05eb6}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual review of fluid mechanics}
+      \field{number}{1}
+      \field{title}{Machine learning for fluid mechanics}
+      \field{volume}{52}
+      \field{year}{2020}
+      \field{pages}{477\bibrangedash 508}
+      \range{pages}{32}
+    \endentry
+    \entry{duraisamy2019turbulence}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=652768fc415935cb81439f4c2d4ec6b6}{%
+           family={Duraisamy},
+           familyi={D\bibinitperiod},
+           given={Karthik},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f4fc3ea06f405e9a60f3950ebbdc575e}{%
+           family={Iaccarino},
+           familyi={I\bibinitperiod},
+           given={Gianluca},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e50d2f7cfc7f2aea3adfbf6ed8952990}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Heng},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{a96ce1c6b635ce1adcf83bf293b72381}
+      \strng{fullhash}{47449c5993a31cff981bb6edfeb801c6}
+      \strng{fullhashraw}{47449c5993a31cff981bb6edfeb801c6}
+      \strng{bibnamehash}{47449c5993a31cff981bb6edfeb801c6}
+      \strng{authorbibnamehash}{47449c5993a31cff981bb6edfeb801c6}
+      \strng{authornamehash}{a96ce1c6b635ce1adcf83bf293b72381}
+      \strng{authorfullhash}{47449c5993a31cff981bb6edfeb801c6}
+      \strng{authorfullhashraw}{47449c5993a31cff981bb6edfeb801c6}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual review of fluid mechanics}
+      \field{number}{1}
+      \field{title}{Turbulence modeling in the age of data}
+      \field{volume}{51}
+      \field{year}{2019}
+      \field{pages}{357\bibrangedash 377}
+      \range{pages}{21}
+    \endentry
+    \entry{RAISSI2019686}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a3194cb4f8e3959e569236521aa2fd86}{%
+           family={Raissi},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c2e8423b7b49343a85abf9af92ee2a82}{%
+           family={Perdikaris},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1c2f5930e36485e8d38a87746769fdcc}{%
+           family={Karniadakis},
+           familyi={K\bibinitperiod},
+           given={G.E.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{38cf3149596a29a18976b23d267bacc7}
+      \strng{fullhash}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{fullhashraw}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{bibnamehash}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{authorbibnamehash}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{authornamehash}{38cf3149596a29a18976b23d267bacc7}
+      \strng{authorfullhash}{a17a0649dc8bad70026488d4ea37c508}
+      \strng{authorfullhashraw}{a17a0649dc8bad70026488d4ea37c508}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce physics-informed neural networks – neural networks that are trained to solve supervised learning tasks while respecting any given laws of physics described by general nonlinear partial differential equations. In this work, we present our developments in the context of solving two main classes of problems: data-driven solution and data-driven discovery of partial differential equations. Depending on the nature and arrangement of the available data, we devise two distinct types of algorithms, namely continuous time and discrete time models. The first type of models forms a new family of data-efficient spatio-temporal function approximators, while the latter type allows the use of arbitrarily accurate implicit Runge–Kutta time stepping schemes with unlimited number of stages. The effectiveness of the proposed framework is demonstrated through a collection of classical problems in fluids, quantum mechanics, reaction–diffusion systems, and the propagation of nonlinear shallow-water waves.}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations}
+      \field{volume}{378}
+      \field{year}{2019}
+      \field{pages}{686\bibrangedash 707}
+      \range{pages}{22}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jcp.2018.10.045
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0021999118307125
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0021999118307125
+      \endverb
+      \keyw{Data-driven scientific computing,Machine learning,Predictive modeling,Runge–Kutta methods,Nonlinear dynamics}
+    \endentry
     \entry{https://doi.org/10.1029/2018GC007692}{article}{}{}
       \name{author}{17}{}{%
         {{hash=721fc1a513c91e2a3344ddc52f15d625}{%
@@ -115,8 +498,8 @@
       \strng{authornamehash}{69586344e3a7d144d9db3266199e2545}
       \strng{authorfullhash}{f3d7bc098c574ff678c7dd061e50e6e7}
       \strng{authorfullhashraw}{f3d7bc098c574ff678c7dd061e50e6e7}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Abstract Volcanic gas emissions are intimately linked to the dynamics of magma ascent and outgassing and, on geological time scales, constitute an important source of volatiles to the Earth's atmosphere. Measurements of gas composition and flux are therefore critical to both volcano monitoring and to determining the contribution of volcanoes to global geochemical cycles. However, significant gaps remain in our global inventories of volcanic emissions, (particularly for CO2, which requires proximal sampling of a concentrated plume) for those volcanoes where the near-vent region is hazardous or inaccessible. Unmanned Aerial Systems (UAS) provide a robust and effective solution to proximal sampling of dense volcanic plumes in extreme volcanic environments. Here we present gas compositional data acquired using a gas sensor payload aboard a UAS flown at Volcán Villarrica, Chile. We compare UAS-derived gas time series to simultaneous crater rim multi-GAS data and UV camera imagery to investigate early plume evolution. SO2 concentrations measured in the young proximal plume exhibit periodic variations that are well correlated with the concentrations of other species. By combining molar gas ratios (CO2/SO2 = 1.48–1.68, H2O/SO2 = 67–75, and H2O/CO2 = 45–51) with the SO2 flux (142 ± 17 t/day) from UV camera images, we derive CO2 and H2O fluxes of ~150 t/day and ~2,850 t/day, respectively. We observe good agreement between time-averaged molar gas ratios obtained from simultaneous UAS- and ground-based multi-GAS acquisitions. However, the UAS measurements made in the young, less diluted plume reveal additional short-term periodic structure that reflects active degassing through discrete, audible gas exhalations.}
@@ -140,6 +523,184 @@
       \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018GC007692
       \endverb
       \keyw{unmanned aerial system,drone,Villarrica,volcanic emissions,degassing}
+    \endentry
+    \entry{romero2022pre}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=dd4c2ee2fc478c4a6721ebbab214611d}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Jorge\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=870a0b749f4c374f9425c2181611190b}{%
+           family={Morgado},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=79730b5338501f54c1fee45d3eb598a6}{%
+           family={Pisello},
+           familyi={P\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5f5f00f5b031ce1600d3ea9459b6b9e3}{%
+           family={Boschetty},
+           familyi={B\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9770a30d621abf12bf775754d657841b}{%
+           family={Petrelli},
+           familyi={P\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1ff1bbd254bb0604a088352c7fe4d597}{%
+           family={Cáceres},
+           familyi={C\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=14468c9bb301a03374a67d14aa06fd20}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Mohammad\bibnamedelima Ayaz},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=585b90af5cfb3c90c51e0688bb6d0102}{%
+           family={Polacci},
+           familyi={P\bibinitperiod},
+           given={Margherita},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d1267b59997dc56300feb827d696846e}{%
+           family={Palma},
+           familyi={P\bibinitperiod},
+           given={José\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=dbd8458f54ef18c510c18c02b9cb79d0}{%
+           family={Arzilli},
+           familyi={A\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{497185b22262af0a16a1f65b32150c71}
+      \strng{fullhash}{bdac6c3fb6823b491086bde2ef570d01}
+      \strng{fullhashraw}{bdac6c3fb6823b491086bde2ef570d01}
+      \strng{bibnamehash}{497185b22262af0a16a1f65b32150c71}
+      \strng{authorbibnamehash}{497185b22262af0a16a1f65b32150c71}
+      \strng{authornamehash}{497185b22262af0a16a1f65b32150c71}
+      \strng{authorfullhash}{bdac6c3fb6823b491086bde2ef570d01}
+      \strng{authorfullhashraw}{bdac6c3fb6823b491086bde2ef570d01}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of Volcanology}
+      \field{number}{1}
+      \field{title}{Pre-eruptive conditions of the 3 march 2015 lava fountain of Villarrica volcano (southern Andes)}
+      \field{volume}{85}
+      \field{year}{2022}
+      \field{pages}{2}
+      \range{pages}{1}
+    \endentry
+    \entry{rivera2015recent}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=fee1a49ad95888a67c7a9684bfd5c321}{%
+           family={Rivera},
+           familyi={R\bibinitperiod},
+           given={Andrés},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1567d2cef7d18fffe4fba84ec11f1477}{%
+           family={Zamora},
+           familyi={Z\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3bacd55dc39227409c1e3d5454803941}{%
+           family={Uribe},
+           familyi={U\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2519691b10d9b40315e7815810f08421}{%
+           family={Wendt},
+           familyi={W\bibinitperiod},
+           given={Anja},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eeb3ba09a5c5a9299af5a68437a10b1d}{%
+           family={Oberreuter},
+           familyi={O\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b4e080138f8640ccb44ba3c84c60af0c}{%
+           family={Cisternas},
+           familyi={C\bibinitperiod},
+           given={Sebastián},
+           giveni={S\bibinitperiod}}}%
+        {{hash=08fc9ebc9ab0548e4d57717010511a72}{%
+           family={Gimeno},
+           familyi={G\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b16f4831ab91ed2ce86c03ace263a3bb}{%
+           family={Clavero},
+           familyi={C\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{fd5b3b4332336631637a413db839694a}
+      \strng{fullhash}{64e2723e0535279ceb87b75d7e9cd5f3}
+      \strng{fullhashraw}{64e2723e0535279ceb87b75d7e9cd5f3}
+      \strng{bibnamehash}{fd5b3b4332336631637a413db839694a}
+      \strng{authorbibnamehash}{fd5b3b4332336631637a413db839694a}
+      \strng{authornamehash}{fd5b3b4332336631637a413db839694a}
+      \strng{authorfullhash}{64e2723e0535279ceb87b75d7e9cd5f3}
+      \strng{authorfullhashraw}{64e2723e0535279ceb87b75d7e9cd5f3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Natural Hazards}
+      \field{number}{1}
+      \field{title}{Recent changes in total ice volume on Volcán Villarrica, Southern Chile}
+      \field{volume}{75}
+      \field{year}{2015}
+      \field{pages}{33\bibrangedash 55}
+      \range{pages}{23}
+    \endentry
+    \entry{lara2004villarrica}{book}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=1de9691da1d08a9248c5415cd14aeb30}{%
+           family={Lara},
+           familyi={L\bibinitperiod},
+           given={Luis\bibnamedelima E},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=b16f4831ab91ed2ce86c03ace263a3bb}{%
+           family={Clavero},
+           familyi={C\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Servicio Nacional de Geología y Minería}%
+      }
+      \strng{namehash}{fb5c81b77f300b66030504d621f03b29}
+      \strng{fullhash}{fb5c81b77f300b66030504d621f03b29}
+      \strng{fullhashraw}{fb5c81b77f300b66030504d621f03b29}
+      \strng{bibnamehash}{fb5c81b77f300b66030504d621f03b29}
+      \strng{authorbibnamehash}{fb5c81b77f300b66030504d621f03b29}
+      \strng{authornamehash}{fb5c81b77f300b66030504d621f03b29}
+      \strng{authorfullhash}{fb5c81b77f300b66030504d621f03b29}
+      \strng{authorfullhashraw}{fb5c81b77f300b66030504d621f03b29}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Villarrica Volcano (39.5 S), Southern Andes, Chile}
+      \field{year}{2004}
     \endentry
     \entry{krenker2011introduction}{article}{}{}
       \name{author}{3}{}{%
@@ -167,8 +728,8 @@
       \strng{authornamehash}{935a19d7d94ab22b2a299e6c41111d52}
       \strng{authorfullhash}{0f9a6ffbaf596d822e6bfccc8f0dc1f2}
       \strng{authorfullhashraw}{0f9a6ffbaf596d822e6bfccc8f0dc1f2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Artificial Neural Networks: Methodological Advances and Biomedical Applications. InTech}
@@ -196,8 +757,8 @@
       \strng{authornamehash}{fe9466dc3b4419a67b0463ea66e0da9d}
       \strng{authorfullhash}{fe9466dc3b4419a67b0463ea66e0da9d}
       \strng{authorfullhashraw}{fe9466dc3b4419a67b0463ea66e0da9d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Encyclopedia of Information Science and Technology, Fourth Edition}
@@ -230,8 +791,8 @@
       \strng{authornamehash}{816477c5724040789c6fe02e3968dc62}
       \strng{authorfullhash}{816477c5724040789c6fe02e3968dc62}
       \strng{authorfullhashraw}{816477c5724040789c6fe02e3968dc62}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The bulletin of mathematical biophysics}
@@ -266,8 +827,8 @@
       \strng{authornamehash}{f968b9b832afff664e9091b43ab3040e}
       \strng{authorfullhash}{f968b9b832afff664e9091b43ab3040e}
       \strng{authorfullhashraw}{f968b9b832afff664e9091b43ab3040e}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Ecological model types}
@@ -305,8 +866,8 @@
       \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
       \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
       \strng{authorfullhashraw}{3ae53fe582e8a815b118d26947eaa326}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Deep Learning}
@@ -344,8 +905,8 @@
       \strng{authornamehash}{a8d7f46f242b5a2ff80ecb656326c2de}
       \strng{authorfullhash}{31166c18fa8ee825c1eb4693189f9e2a}
       \strng{authorfullhashraw}{31166c18fa8ee825c1eb4693189f9e2a}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper rigorously establishes that standard multilayer feedforward networks with as few as one hidden layer using arbitrary squashing functions are capable of approximating any Borel measurable function from one finite dimensional space to another to any desired degree of accuracy, provided sufficiently many hidden units are available. In this sense, multilayer feedforward networks are a class of universal approximators.}
@@ -433,8 +994,8 @@
       \strng{authornamehash}{74716e6158e47506b13dcc385f9eb7b8}
       \strng{authorfullhash}{37065766f46d4cb23db895ce6a0ad8da}
       \strng{authorfullhashraw}{37065766f46d4cb23db895ce6a0ad8da}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Towards Data Sci}
@@ -474,8 +1035,8 @@
       \strng{authornamehash}{e21078fa0443e36a485a115550c64cb3}
       \strng{authorfullhash}{82262550a40dbc6f066e7d2314dd824e}
       \strng{authorfullhashraw}{82262550a40dbc6f066e7d2314dd824e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Neurocomputing}
@@ -501,8 +1062,8 @@
       \strng{authornamehash}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
       \strng{authorfullhash}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
       \strng{authorfullhashraw}{c45f4a5d7a4dc8d0be4b3b63990aea9e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2101.09957}
@@ -525,8 +1086,8 @@
       \strng{authornamehash}{b468248a20d75c52ee742f4592c2569f}
       \strng{authorfullhash}{b468248a20d75c52ee742f4592c2569f}
       \strng{authorfullhashraw}{b468248a20d75c52ee742f4592c2569f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1609.04747}
@@ -562,8 +1123,8 @@
       \strng{authornamehash}{3c6614c24b144f1599c64619f275bade}
       \strng{authorfullhash}{fd75cea68d6982b503a0cd84f7cc7b51}
       \strng{authorfullhashraw}{fd75cea68d6982b503a0cd84f7cc7b51}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{nature}
@@ -733,8 +1294,8 @@
       \strng{authornamehash}{ef1ca3afbde4b19c973486cc8a12bc89}
       \strng{authorfullhash}{1b49b5b93e091647434d31cd34f2625e}
       \strng{authorfullhashraw}{1b49b5b93e091647434d31cd34f2625e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2308.08468}
@@ -765,61 +1326,12 @@
       \strng{authornamehash}{77366ceff7089ab546dc44d384ee46ac}
       \strng{authorfullhash}{77366ceff7089ab546dc44d384ee46ac}
       \strng{authorfullhashraw}{77366ceff7089ab546dc44d384ee46ac}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Evaluating derivatives: principles and techniques of algorithmic differentiation}
       \field{year}{2008}
-    \endentry
-    \entry{RAISSI2019686}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=a3194cb4f8e3959e569236521aa2fd86}{%
-           family={Raissi},
-           familyi={R\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c2e8423b7b49343a85abf9af92ee2a82}{%
-           family={Perdikaris},
-           familyi={P\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=1c2f5930e36485e8d38a87746769fdcc}{%
-           family={Karniadakis},
-           familyi={K\bibinitperiod},
-           given={G.E.},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{38cf3149596a29a18976b23d267bacc7}
-      \strng{fullhash}{a17a0649dc8bad70026488d4ea37c508}
-      \strng{fullhashraw}{a17a0649dc8bad70026488d4ea37c508}
-      \strng{bibnamehash}{a17a0649dc8bad70026488d4ea37c508}
-      \strng{authorbibnamehash}{a17a0649dc8bad70026488d4ea37c508}
-      \strng{authornamehash}{38cf3149596a29a18976b23d267bacc7}
-      \strng{authorfullhash}{a17a0649dc8bad70026488d4ea37c508}
-      \strng{authorfullhashraw}{a17a0649dc8bad70026488d4ea37c508}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We introduce physics-informed neural networks – neural networks that are trained to solve supervised learning tasks while respecting any given laws of physics described by general nonlinear partial differential equations. In this work, we present our developments in the context of solving two main classes of problems: data-driven solution and data-driven discovery of partial differential equations. Depending on the nature and arrangement of the available data, we devise two distinct types of algorithms, namely continuous time and discrete time models. The first type of models forms a new family of data-efficient spatio-temporal function approximators, while the latter type allows the use of arbitrarily accurate implicit Runge–Kutta time stepping schemes with unlimited number of stages. The effectiveness of the proposed framework is demonstrated through a collection of classical problems in fluids, quantum mechanics, reaction–diffusion systems, and the propagation of nonlinear shallow-water waves.}
-      \field{issn}{0021-9991}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{title}{Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations}
-      \field{volume}{378}
-      \field{year}{2019}
-      \field{pages}{686\bibrangedash 707}
-      \range{pages}{22}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.jcp.2018.10.045
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0021999118307125
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0021999118307125
-      \endverb
-      \keyw{Data-driven scientific computing,Machine learning,Predictive modeling,Runge–Kutta methods,Nonlinear dynamics}
     \endentry
     \entry{ortiz1995danos}{article}{}{}
       \name{author}{2}{}{%
@@ -842,8 +1354,8 @@
       \strng{authornamehash}{fc26d1b33f922b1ad65434f3c3d4f6d8}
       \strng{authorfullhash}{fc26d1b33f922b1ad65434f3c3d4f6d8}
       \strng{authorfullhashraw}{fc26d1b33f922b1ad65434f3c3d4f6d8}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Riesgo Volcánico: Cabildo de Lanzarote, Serie Casa de los Volcanes}
@@ -875,8 +1387,8 @@
       \strng{authornamehash}{07e4f2edf66eebbbb57ef46d2a246383}
       \strng{authorfullhash}{07e4f2edf66eebbbb57ef46d2a246383}
       \strng{authorfullhashraw}{07e4f2edf66eebbbb57ef46d2a246383}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Volcanic Hazards: A Sourcebook on the Effects of Eruptions}
@@ -921,8 +1433,8 @@
       \strng{editornamehash}{b599492f774f363df6182f19abe135e5}
       \strng{editorfullhash}{17be8c296de38a5a8636f3558865d6a0}
       \strng{editorfullhashraw}{17be8c296de38a5a8636f3558865d6a0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{edition}{2nd}
@@ -1116,8 +1628,8 @@
       \strng{editornamehash}{b599492f774f363df6182f19abe135e5}
       \strng{editorfullhash}{17be8c296de38a5a8636f3558865d6a0}
       \strng{editorfullhashraw}{17be8c296de38a5a8636f3558865d6a0}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Encyclopedia of Volcanoes}
@@ -1151,8 +1663,8 @@
       \strng{authornamehash}{caf6eb872ee9a62057292b7b0c0df90d}
       \strng{authorfullhash}{caf6eb872ee9a62057292b7b0c0df90d}
       \strng{authorfullhashraw}{caf6eb872ee9a62057292b7b0c0df90d}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Volcanic hazards, risks and disasters}
@@ -1182,8 +1694,8 @@
       \strng{authornamehash}{cf27c9c9b2df269a410b0d2fdce4a4f3}
       \strng{authorfullhash}{cf27c9c9b2df269a410b0d2fdce4a4f3}
       \strng{authorfullhashraw}{cf27c9c9b2df269a410b0d2fdce4a4f3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Geophysical Research}
@@ -1233,8 +1745,8 @@
       \strng{authornamehash}{420ea599f97500e5b2c998b26ae18bcd}
       \strng{authorfullhash}{7b1df4698caedc98b928a38e955b5fba}
       \strng{authorfullhashraw}{7b1df4698caedc98b928a38e955b5fba}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Applied Volcanology}
@@ -1266,8 +1778,8 @@
       \strng{authornamehash}{ea006404d40729baa521a39c9e46c137}
       \strng{authorfullhash}{ea006404d40729baa521a39c9e46c137}
       \strng{authorfullhashraw}{ea006404d40729baa521a39c9e46c137}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Bulletin of the International Association of Engineering Geology-Bulletin de l'Association Internationale de Géologie de l'Ingénieur}
@@ -1322,8 +1834,8 @@
       \strng{authornamehash}{744a5d076434f1fd7eab0fc589540d9b}
       \strng{authorfullhash}{49eb5783785a6ac1f858a8bf8a319e87}
       \strng{authorfullhashraw}{49eb5783785a6ac1f858a8bf8a319e87}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature}
@@ -1353,8 +1865,8 @@
       \strng{authornamehash}{6759dc7661767a5c65fcf88b2930eaee}
       \strng{authorfullhash}{6759dc7661767a5c65fcf88b2930eaee}
       \strng{authorfullhashraw}{6759dc7661767a5c65fcf88b2930eaee}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Encyclopedia of volcanoes}
@@ -1533,8 +2045,8 @@
       \strng{authornamehash}{3d7480e23206a16a93187097410e93f9}
       \strng{authorfullhash}{9b802d78051dff63f7c2f37b424f7d4f}
       \strng{authorfullhashraw}{9b802d78051dff63f7c2f37b424f7d4f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Geophysical Research: Solid Earth}
@@ -1581,8 +2093,9 @@
       \strng{authornamehash}{5ed022fe4eeee71b7f5adcde58caed82}
       \strng{authorfullhash}{9c3e8439d6cc712debd592a90854963f}
       \strng{authorfullhashraw}{9c3e8439d6cc712debd592a90854963f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{05}
@@ -1628,8 +2141,8 @@
       \strng{authornamehash}{5f4e8239f680b97a073adcbec6faaeea}
       \strng{authorfullhash}{b128ec969784ef1fd19857da2b293db8}
       \strng{authorfullhashraw}{b128ec969784ef1fd19857da2b293db8}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{10}
@@ -1660,8 +2173,8 @@
       \strng{authornamehash}{a0fe955731f28c58094a8482d1232232}
       \strng{authorfullhash}{a0fe955731f28c58094a8482d1232232}
       \strng{authorfullhashraw}{a0fe955731f28c58094a8482d1232232}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Geophysical Research Letters}
@@ -1686,8 +2199,8 @@
       \strng{authornamehash}{01258c198a0198bcfa3c31c2eeb06925}
       \strng{authorfullhash}{01258c198a0198bcfa3c31c2eeb06925}
       \strng{authorfullhashraw}{01258c198a0198bcfa3c31c2eeb06925}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Red Nacional de Vigilancia Volcánica, OVDAS, Servicio Nacional de Geología y Minería}
@@ -1710,8 +2223,8 @@
       \strng{authornamehash}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
       \strng{authorfullhash}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
       \strng{authorfullhashraw}{f0cd49d469ad49bdaf2e3bb2cb183cb1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{10}
@@ -1749,8 +2262,8 @@
       \strng{authornamehash}{9602c77fb922d201d4973cd07314461a}
       \strng{authorfullhash}{fdcfe834241608bea041686e78a55cec}
       \strng{authorfullhashraw}{fdcfe834241608bea041686e78a55cec}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{03}

@@ -2,4 +2,5 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1.1}{\ignorespaces List of losses analysed in this paper. $\mathbf {y}$ is true label as one-hot encoding, $\hat {\mathbf {y}}$ is true label as $+1/-1$ encoding, $\mathbf {o}$ is the output of the last layer of the network, $\cdot ^{(j)}$ denotes $j$-th dimension of a given vector, and $\sigma (\cdot )$ denotes probability estimate.}}{11}{table.caption.11}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces List of losses analysed in this paper. $\mathbf {y}$ is true label as one-hot encoding, $\hat {\mathbf {y}}$ is true label as $+1/-1$ encoding, $\mathbf {o}$ is the output of the last layer of the network, $\cdot ^{(j)}$ denotes $j$-th dimension of a given vector, and $\sigma (\cdot )$ denotes probability estimate.}}{13}{table.caption.12}%
 \addvspace {10\p@ }

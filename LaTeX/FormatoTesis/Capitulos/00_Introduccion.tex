@@ -2,9 +2,21 @@
 \label{cap:intro}
 \addcontentsline{toc}{chapter}{\introductionname}
 
-El aprendizaje automático ha avanzado significativamente a traves de los años. Áreas como la vision por computador, el procesamiento de lenguaje natural y la robótica han experimentado mejoras 
+El aprendizaje automático ha avanzado significativamente a traves de los años. Áreas como la vision computacional \cite{szeliski2011computer}, el procesamiento de lenguaje natural \cite{hirschberg2015advances} y la robótica \cite{billard2025roadmap} han experimentado mejoras 
 notables gracias a la aplicación de técnicas de aprendizaje profundo. Estas técnicas permiten a los modelos aprender representaciones complejas de datos, lo que ha llevado a avances en tareas 
-como el reconocimiento de imágenes, la traducción automática y la conducción autónoma. Sin embargo las redes neuronales no son la bala de plata para todos los problemas. En particular, el modelamiento de fenómenos
-físicos complejos la mecánica de fluidos sigue siendo un desafío debido a su naturaleza no lineal y la alta dimensionalidad de los sistemas involucrados. En este contexto, las redes neuronales informadas por la física (PINNs) han surgido 
-como una herramienta prometedora para abordar estos desafíos, integrando principios físicos directamente en el proceso de aprendizaje.
-El volcán Villarica, ubicado a 2847 m sobre el nivel del mar, es un estratovolcán parcialmente glaciado dentro de la Zona Volcánica del Sur (SVZ) de los Andes de Chile \cite{https://doi.org/10.1029/2018GC007692}.
+como el reconocimiento de imágenes \cite{li2022research}, la traducción automática \cite{bahdanau2014neural} y la conducción autónoma \cite{grigorescu2020survey}. Sin embargo las redes neuronales no son la bala de plata para todos los problemas. 
+En particular, el modelamiento de fenómenos físicos complejos, como es el caso de la mecánica de fluidos sigue siendo un desafío debido a su naturaleza no lineal y la alta dimensionalidad de los sistemas involucrados \cite{brunton2020machine,duraisamy2019turbulence}. 
+En este contexto, las redes neuronales informadas por la física (PINNs) han surgido como una herramienta prometedora para abordar estos desafíos, integrando principios físicos directamente en el proceso de aprendizaje \cite{RAISSI2019686}.
+
+Es bien sabido a día de hoy que los métodos de aprendizaje automático tradicionales, como lo son las redes neuronales, requieren una gran cantidad de datos para poder entrenar modelos con una alta precisión. Sin embargo, en muchos escenarios del mundo real
+la recopilación de información puede ser costosa, difícil o directamente imposible de realizar. Por otra parte, las PINNs incorporan el conocimiento de las leyes físicas que rigen el fenómeno a modelar, lo que permite que el modelo generalice mejor
+aún con una escasez de información. Esta característica de las redes neuronales informadas por la física repercute directamente en una eficiencia de entrenamiento superior para el modelamiento de lahares.
+
+El volcán Villarrica tambien conocido como Rukapillan ($35.9 S$, ubicado a $2847\ m$ sobre el nivel del mar) es un estratovolcán parcialmente glaciado dentro de la Zona Volcánica del Sur (SVZ) de los Andes de Chile \cite{https://doi.org/10.1029/2018GC007692}. Siendo el volcán de mayor 
+riesgo de Chile\footnote{El riesgo volcánico se compone del peligro volcánico más la exposición de la población circundante} y uno de los más activos de America del Sur, este estratovolcán ha presentado gran frecuencia eruptiva durante los años, afectando
+a poblados cercanos, como lo es la ciudad de Pucón \cite{romero2022pre,rivera2015recent}. Dada una gran cobertura glaciar con un alcance de aproximadamente $40\ km$ y un volumen de hielo de $\sim 8\ km^3$, equivalente a $\sim 6.5\ km^3$, 
+lo convierte en una fuente recurrente de lahares en episodios eruptivos.
+Los lahares, flujos de agua y sedimentos que se desplazan por el edificio cónico de un volcán, son uno de los fenómenos más destructivos asociados a los peligros volcánicos. Flujos laháricos tanto antiguos como recientes han invadido los sistemas 
+de drenajes del Volcán Villarrica, provocando daños significativos a la infraestructura de las poblaciones aledañas a este. Eventos históricos como los lahares de $1908,1964$ y $1971$ suman más de $100$ fatalidades 
+y un número desconocido de personas desaparecidas \cite{lara2004villarrica}. El evento eruptivo del $3$ de marzo de $2015$ generó un lahar que descendió más de $20\ km$ por varios esteros y ríos, evacuando a miles de personas y generando daños en puentes cercanos.
+Estos eventos convierten al Volcán Villarrica en un caso de estudio para analizar la morfodinámica de lahares mediante un enfoque basado en PINNs.
