@@ -17,6 +17,7 @@ de la neurona se encuentra la función de activación, la cual es una función n
     \centering
     \includegraphics[width=0.9\textwidth]{esquema_neurona.jpeg}
     \caption{Esquema de trabajo de una neurona artificial.}
+    \fuente{Construcción propia basada en \cite{krenker2011introduction}.}
     \label{fig:neurona}
     %\fuente{\cite{krenker2011introduction}}
 \end{figure}
@@ -62,16 +63,16 @@ Las ecuaciones gobernantes no introducen la no linealidad de la red neuronal, si
 %involucradas. Entre las funciones de activación más utilizadas se encuentran la función sigmoide, la tangente hiperbólica y la unidad lineal rectificada (ReLU), cada una con propiedades distintas en cuanto a suavidad, 
 %rango de salida y comportamiento del gradiente durante el entrenamiento; estas se discutirán con mayor detalle en las secciones siguientes, en el contexto de la arquitectura completa de la red \cite{goodfellow2016deep}.
 
-Es importante notar que si bien la analogía biológica resulta útil como aproximación conceptual, la neurona artificial descrita por las Ecuaciones ~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} es sólo
+Es importante notar que si bien la analogía biológica resulta útil como aproximación conceptual, la neurona artificial descrita por las ecuaciones ~\eqref{eq:entrada_neta} y~\eqref{eq:salida_neurona} es sólo
 un modelo matemático de aproximación de funciones. La limitancia computacional de usar una sola neurona corresponde a su restringida capacidad de transformaciones lineales simples de sus entradas.
 Las redes neuronales consiguen su potencia a partir de la interconexión de múltiples neuronas organizadas en una arquitecturas basadas en capas, creando así al perceptrón multicapa.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{neurona.jpeg}
+    \includegraphics[width=0.85\textwidth]{neurona.jpeg}
     \caption{Esquema de una neurona artificial con $n$ entradas ponderadas, un sesgo y una función de activación.}
     \label{fig:neuronartificial}
-    \fuente{Construcción propia. Basada en \cite{park2025artificial}}
+    \fuente{Construcción propia basada en \cite{park2025artificial}.}
 \end{figure}
 
 %////////////////////////////////////////////////////////////////////////////////////
@@ -84,10 +85,10 @@ desde la capa de entrada hasta la capa de salida y el valor de salida de la neur
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.9\textwidth]{feedforward.jpeg}
-    \caption{Red neuronal \textit{feedforward} de tres capas con una capa de entrada, una (o más) capa(s) oculta(s) y una capa de salida.}
+    \includegraphics[width=1.1\textwidth]{feedforward.jpeg}
+    \caption{Red neuronal feedforward de tres capas con una capa de entrada, una (o más) capa(s) oculta(s) y una capa de salida.}
     \label{fig:feedforwardneuralnetwork}
-    \fuente{Construcción propia. Basada en \cite{park2025artificial}}
+    \fuente{Construcción propia basada en \cite{park2025artificial}.}
 \end{figure}
 
 Las capas que no se conectan directamente con la entrada o la salida se denominan capas ocultas. La presencia de estas capas permite a la red aprender representaciones intermedias de los datos, capturando patrones 
@@ -137,7 +138,7 @@ Durante los años se han explorado y creado variedad de FA. Dentro de ellas, alg
 Cada una de estas funciones tiene propiedades matemáticas particulares que las hacen más o menos adecuadas para diferentes tipos de problemas \cite{lederer2021activation}. En este capítulo se describen dos funciones de interés para este trabajo.
 
 \subsection{ReLU}
-ReLU viene del inglés \textit{Rectified Linear Unit}, el cual significa \"{}Unidad lineal rectificada\"{}. Esta función también es conocida como función parte-positiva, ya que, para los valores positivos de entrada, la salida es igual a la entrada (función identidad), mientras
+ReLU viene del inglés \textit{Rectified Linear Unit}, el cual significa \"{}Unidad lineal rectificada\"{}. Esta función también es conocida como función parte-positiva, ya que, como se puede observar en la figura \ref{fig:relu}, para los valores positivos de entrada, la salida es igual a la entrada (función identidad), mientras
 que para las entradas negativas o nulas, la salida es igual a $0$ \cite{lederer2021activation}. Esta definida como,
 \begin{equation}
     f(x) = \max(0,x)
@@ -158,13 +159,13 @@ Si se analiza la ecuación \ref{diffs_relu}, se puede observar que la segunda de
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{relu.png}
-    \caption{Función ReLU y su derivada.}
+    \caption{Función ReLU.}
     \label{fig:relu}
     %\fuente{\cite{lederer2021activation}}
 \end{figure}
 
 \subsection{Sigmoide}
-Una función sigmoide es una función matemática suave que se caracteriza por su forma en "S". Esta es continua y diferenciable, y sus valores de salida se encuentran en el rango $(0,1)$. 
+Una función sigmoide es una función matemática suave que se caracteriza por su forma en "S". La figura \ref{fig:sigmoide} muestra que esta función es continua y diferenciable, y sus valores de salida se encuentran en el rango $(0,1)$. 
 Es función de activación muy usadas en el aprendizaje profundo para predecir probabilidades y salidas binarias. Se define como,
 \begin{equation}
     f(x) = \frac{1}{1 + e^{-x}}
@@ -182,7 +183,7 @@ provocando que el gradiente se propague en diferentes direcciones \cite{nwankpa2
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{sigmoid.png}
-    \caption{Función sigmoide y su derivada.}
+    \caption{Función sigmoide.}
     \label{fig:sigmoide}
     %\fuente{\cite{nwankpa2018activation}}
 \end{figure}
@@ -193,24 +194,25 @@ funciones de activación ampliamente usadas en la literatura y que pueden ser de
 
 \begin{table}[htbp]
     \centering
-    \caption{List of losses analysed in this paper. $\mathbf{y}$ is true label as one-hot encoding, $\hat{\mathbf{y}}$ is true label as $+1/-1$ encoding, $\mathbf{o}$ is the output of the last layer of the network, $\cdot^{(j)}$ denotes $j$-th dimension of a given vector, and $\sigma(\cdot)$ denotes probability estimate.}
+    \caption{Resumen de funciones de activación comúnmente usadas en redes neuronales.}
+    \fuente{Modificado de \cite{janocha2017loss}.}
     \label{tab:funciones_de_activacion}
     \begin{tabular}{lll}
         \toprule
-        symbol & name & equation \\
+        símbolo & nombre & ecuación \\
         \midrule
-        $\mathcal{L}_1$ & $\mathrm{L}_1$ loss & $\|\mathbf{y} - \mathbf{o}\|_1$ \\
-        $\mathcal{L}_2$ & $\mathrm{L}_2$ loss & $\|\mathbf{y} - \mathbf{o}\|_2^2$ \\
-        $\mathcal{L}_1 \circ \sigma$ & expectation loss & $\|\mathbf{y} - \sigma(\mathbf{o})\|_1$ \\
-        $\mathcal{L}_2 \circ \sigma$ & regularised expectation loss\footnotemark & $\|\mathbf{y} - \sigma(\mathbf{o})\|_2^2$ \\
-        $\mathcal{L}_\infty \circ \sigma$ & Chebyshev loss & $\max_j |\sigma(\mathbf{o})^{(j)} - \mathbf{y}^{(j)}|$ \\
-        $\text{hinge}$ & hinge [13] (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)$ \\
-        $\text{hinge}^2$ & squared hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^2$ \\
-        $\text{hinge}^3$ & cubed hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^3$ \\
-        $\log$ & log (cross entropy) loss & $-\sum_j \mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}$ \\
-        $\log^2$ & squared log loss & $-\sum_j [\mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}]^2$ \\
-        $\text{tan}$ & Tanimoto loss & $\displaystyle \frac{-\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2^2 + \|\mathbf{y}\|_2^2 - \sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}$ \\
-        $\text{D}_{\text{CS}}$ & Cauchy-Schwarz Divergence [3] & $\displaystyle -\log \frac{\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2 \|\mathbf{y}\|_2}$ \\
+        $\mathcal{L}_1$ & pérdida $\mathrm{L}_1$  & $\|\mathbf{y} - \mathbf{o}\|_1$ \\
+        $\mathcal{L}_2$ & pérdida$\mathrm{L}_2$  & $\|\mathbf{y} - \mathbf{o}\|_2^2$ \\
+        %$\mathcal{L}_1 \circ \sigma$ & expectation loss & $\|\mathbf{y} - \sigma(\mathbf{o})\|_1$ \\
+        %$\mathcal{L}_2 \circ \sigma$ & regularised expectation loss\footnotemark & $\|\mathbf{y} - \sigma(\mathbf{o})\|_2^2$ \\
+        %$\mathcal{L}_\infty \circ \sigma$ & Chebyshev loss & $\max_j |\sigma(\mathbf{o})^{(j)} - \mathbf{y}^{(j)}|$ \\
+        %$\text{hinge}$ & hinge [13] (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)$ \\
+        %$\text{hinge}^2$ & squared hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^2$ \\
+        %$\text{hinge}^3$ & cubed hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^3$ \\
+        $\log$ & pérdida logarítmica (entropía cruzada)  & $-\sum_j \mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}$ \\
+        $\log^2$ & pérdida logarítmica cuadrada & $-\sum_j [\mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}]^2$ \\
+        %$\text{tan}$ & Tanimoto loss & $\displaystyle \frac{-\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2^2 + \|\mathbf{y}\|_2^2 - \sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}$ \\
+        $\text{D}_{\text{CS}}$ & Divergencia de Cauchy-Schwarz [3] & $\displaystyle -\log \frac{\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2 \|\mathbf{y}\|_2}$ \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -219,7 +221,27 @@ funciones de activación ampliamente usadas en la literatura y que pueden ser de
 %////////////////////////////////////////////////////////////////////////////////////
 
 \section{Funciones de pérdida}
-Las funciones de pérdida o de costo son funciones matemáticas que cuantifican la diferencia entre una predicción del modelo y el valor real.
+En el aprendizaje profundo, uno de los componentes más importantes es la elección de la función de pérdida y la métrica de rendimiento adecuada para entrenar y evaluar el modelo. 
+Las funciones de pérdida o de costo son funciones matemáticas que cuantifican la diferencia entre una predicción del modelo y el valor real. Mientras que las métricas de rendimiento son funciones que evalúan la calidad de las predicciones del modelo
+sobre datos que el modelo no ha visto durante el entrenamiento \cite{terven2025comprehensive}.
+
+La elección de ambas funciones depende principalmente de la naturaleza de la tarea. Para problemas de clasificación, donde la salida representa una distribución o "elección" sobre categorías discretas, las pérdidas de tipo entropía cruzada son mandatorias. 
+Para problemas de regresión, donde la salida corresponde a uno o más valores numéricos, se aplican funciones basadas en la diferencia del residuo entre la predicción y el valor esperado \cite{wang2021understanding,terven2025comprehensive}. 
+
+Dentro de las pérdidas de regresión, las dos formulaciones más utilizadas son el error absoluto medio (MAE o pérdida $\mathrm{L}_1$) y el error cuadrático medio (MSE o pérdida $\mathrm{L}_2$). Se definen respectivamente como
+\begin{equation}
+    \mathcal{L}_{1}(\boldsymbol{\theta}) = \frac{1}{N}\sum_{i=1}^{N} \left\lVert \vect{y}^i - F_{\boldsymbol{\theta}}(\vect{x}^i) \right\rVert_{1}
+    \label{eq:mae}
+\end{equation}
+
+\begin{equation}
+    \mathcal{L}_{2}(\boldsymbol{\theta}) = \frac{1}{N}\sum_{i=1}^{N} \left\lVert \vect{y}^i - F_{\boldsymbol{\theta}}(\vect{x}^i) \right\rVert_{2}^{2}
+    \label{eq:mse}
+\end{equation}
+
+Ambas funciones presentan propiedades distintas. El error cuadrático medio penaliza proporcionalmente al tamaño del cuadrado del residuo, esto otorga un peso considerablemente mayor a las desviaciones grandes y produce una función suave y diferenciable 
+en todo su dominio \cite{janocha2017loss}. Por otra parte, esta misma sensibilidad puede causar la aparición de valores atípicos. El error absoluto medio, por su parte, resulta más robusto frente a dichos valores, pero no es diferenciable en el origen \cite{terven2025comprehensive}.
+
 
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
@@ -245,32 +267,32 @@ $\mathcal{L}:\mathbb{R}\rightarrow\mathbb{R}$ una función diferenciable. El gra
     \label{eq:gd}
 \end{equation}
 
-Dado que se deben calcular los gradientes respecto a todos los parámetros de todo el conjunto, este método puede ser computacionalmente alto, lento e incluso no computable para conjuntos de datos que no caben en memoria \cite{ruder2016overview, zhang2019gradient}. 
+Dado que se deben calcular los gradientes respecto a todos los parámetros de todo el conjunto, este método puede ser computacionalmente costoso, lento e incluso no computable para conjuntos de datos que no caben en memoria \cite{ruder2016overview, zhang2019gradient}. 
 
-\subsection{Optimizadores}
-\begin{table}[htbp]
-    \centering
-    \caption{List of losses analysed in this paper. $\mathbf{y}$ is true label as one-hot encoding, $\hat{\mathbf{y}}$ is true label as $+1/-1$ encoding, $\mathbf{o}$ is the output of the last layer of the network, $\cdot^{(j)}$ denotes $j$-th dimension of a given vector, and $\sigma(\cdot)$ denotes probability estimate.}
-    \label{tab:losses}
-    \begin{tabular}{lll}
-        \toprule
-        symbol & name & equation \\
-        \midrule
-        $\mathcal{L}_1$ & $\mathrm{L}_1$ loss & $\|\mathbf{y} - \mathbf{o}\|_1$ \\
-        $\mathcal{L}_2$ & $\mathrm{L}_2$ loss & $\|\mathbf{y} - \mathbf{o}\|_2^2$ \\
-        $\mathcal{L}_1 \circ \sigma$ & expectation loss & $\|\mathbf{y} - \sigma(\mathbf{o})\|_1$ \\
-        $\mathcal{L}_2 \circ \sigma$ & regularised expectation loss\footnotemark & $\|\mathbf{y} - \sigma(\mathbf{o})\|_2^2$ \\
-        $\mathcal{L}_\infty \circ \sigma$ & Chebyshev loss & $\max_j |\sigma(\mathbf{o})^{(j)} - \mathbf{y}^{(j)}|$ \\
-        $\text{hinge}$ & hinge [13] (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)$ \\
-        $\text{hinge}^2$ & squared hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^2$ \\
-        $\text{hinge}^3$ & cubed hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^3$ \\
-        $\log$ & log (cross entropy) loss & $-\sum_j \mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}$ \\
-        $\log^2$ & squared log loss & $-\sum_j [\mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}]^2$ \\
-        $\text{tan}$ & Tanimoto loss & $\displaystyle \frac{-\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2^2 + \|\mathbf{y}\|_2^2 - \sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}$ \\
-        $\text{D}_{\text{CS}}$ & Cauchy-Schwarz Divergence [3] & $\displaystyle -\log \frac{\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2 \|\mathbf{y}\|_2}$ \\
-        \bottomrule
-    \end{tabular}
-\end{table}
+%\subsection{Optimizadores}
+%\begin{table}[htbp]
+%    \centering
+%    \caption{LISTA DE OPTIMIZADORES AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA}
+%    \label{tab:losses}
+%    \begin{tabular}{lll}
+%        \toprule
+%        symbol & name & equation \\
+%        \midrule
+%        $\mathcal{L}_1$ & $\mathrm{L}_1$ loss & $\|\mathbf{y} - \mathbf{o}\|_1$ \\
+%        $\mathcal{L}_2$ & $\mathrm{L}_2$ loss & $\|\mathbf{y} - \mathbf{o}\|_2^2$ \\
+%        $\mathcal{L}_1 \circ \sigma$ & expectation loss & $\|\mathbf{y} - \sigma(\mathbf{o})\|_1$ \\
+%        $\mathcal{L}_2 \circ \sigma$ & regularised expectation loss\footnotemark & $\|\mathbf{y} - \sigma(\mathbf{o})\|_2^2$ \\
+%        $\mathcal{L}_\infty \circ \sigma$ & Chebyshev loss & $\max_j |\sigma(\mathbf{o})^{(j)} - \mathbf{y}^{(j)}|$ \\
+%        $\text{hinge}$ & hinge [13] (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)$ \\
+%        $\text{hinge}^2$ & squared hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^2$ \\
+%        $\text{hinge}^3$ & cubed hinge (margin) loss & $\sum_j \max\left(0, \frac{1}{2} - \hat{\mathbf{y}}^{(j)}\mathbf{o}^{(j)}\right)^3$ \\
+%        $\log$ & log (cross entropy) loss & $-\sum_j \mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}$ \\
+%        $\log^2$ & squared log loss & $-\sum_j [\mathbf{y}^{(j)} \log \sigma(\mathbf{o})^{(j)}]^2$ \\
+%        $\text{tan}$ & Tanimoto loss & $\displaystyle \frac{-\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2^2 + \|\mathbf{y}\|_2^2 - \sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}$ \\
+%        $\text{D}_{\text{CS}}$ & Cauchy-Schwarz Divergence [3] & $\displaystyle -\log \frac{\sum_j \sigma(\mathbf{o})^{(j)}\mathbf{y}^{(j)}}{\|\sigma(\mathbf{o})\|_2 \|\mathbf{y}\|_2}$ \\
+%        \bottomrule
+%    \end{tabular}
+%\end{table}
 
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
@@ -292,7 +314,8 @@ Consideramos una ecuación diferencial no lineal y parametrizada en su forma gen
     \label{eq:nonlinearDiffEq}
 \end{equation}
 
-donde $u(t,x)$ denota la solución latente\footnote{Explica esto}, $\mathcal{N}[\cdot]$ es un operador diferencial lineal o no lineal y $\Omega$ es un subconjunto de $\mathbb{R}^d$. Sujeto a las condiciones iniciales y de frontera,
+donde $u(t,x)$ denota la solución latente\footnote{Referente a la solución o trayectoria computada representada dentro de una dimensión espacial comprimida oculta (espacio latente) más que en el espacio físico real \cite{nockolds2025lilanlinearlatentnetwork}.}, 
+$\mathcal{N}[\cdot]$ es un operador diferencial lineal o no lineal y $\Omega$ es un subconjunto de $\mathbb{R}^d$. Sujeto a las condiciones iniciales y de frontera,
 \begin{equation}
     \vect{u}(0,x) = g(x), x\in \Omega,
     \label{eq:initilCond}
@@ -314,14 +337,14 @@ Dadas las ecuaciones anteriores, es posible entrenar un modelo informado por la 
 \begin{equation}
     \mathcal{L}(\theta) = \lambda_1 \mathcal{L}_{ic}(\theta) + \lambda_2 \mathcal{L}_{bc}(\theta) + \lambda_3 \mathcal{L}_{r}(\theta)
     \label{eq:compositeLossFn}
-\end{equation} donde
+\end{equation} donde,
 \begin{equation}
-        \mathcal{L}_{ic}(\theta) = \frac{1}{N_{ic}}\sum_{i=1}^{N_{ic}} \left\lvert \vect{u}_\theta(0,\vect{x}_{ic}^i) - g(\vect{x}_{ic}^i) \right\rvert^2
+        \mathcal{L}_{ic}(\theta) = \frac{1}{N_{ic}}\sum_{i=1}^{N_{ic}} \left\lvert \vect{u}_\theta(0,\vect{x}_{ic}^i) - g(\vect{x}_{ic}^i) \right\rvert^2,
     \label{eq:initCondLoss}
 \end{equation}
 
 \begin{equation}
-    \mathcal{L}_{bc}(\theta) = \frac{1}{N_{bc}}\sum_{i=1}^{N_{bc}} \left\lvert \mathcal{B}[\vect{u}_\theta](t_{bc}^i,\vect{x}_{`bc}^i) \right\rvert^2
+    \mathcal{L}_{bc}(\theta) = \frac{1}{N_{bc}}\sum_{i=1}^{N_{bc}} \left\lvert \mathcal{B}[\vect{u}_\theta](t_{bc}^i,\vect{x}_{`bc}^i) \right\rvert^2,
     \label{eq:boundaryCondLoss}
 \end{equation}
 
@@ -332,17 +355,16 @@ Dadas las ecuaciones anteriores, es posible entrenar un modelo informado por la 
 
 De esta forma, $\{x_{ic}^i\}_{i=1}^{N_{ic}}$ representan los puntos de datos iniciales, $\{x_{bc}^i\}_{i=1}^{N_{bc}}$ los puntos de datos de frontera y $\{x_{r}^i\}_{i=1}^{N_{r}}$ los puntos de datos residuales. Estos datos pueden
 ser vertices de mallas fijas o puntos aleatoriamente distribuidos en cada iteración del algoritmo del gradiente descendente. Obsérvese que cada gradiente con respecto a las variables de entrada o a
-los parámetros $\theta$ de la red pueden ser calculados de forma eficiente mediante la diferenciación automática. \cite{wang2023expert, griewank2008evaluating, RAISSI2019686}.
+los parámetros $\theta$ de la red pueden ser calculados de forma eficiente mediante la diferenciación automática. \cite{wang2023expert, griewank2008evaluating, RAISSI2019686}. La figura \ref{fig:pinn} 
+muestra un esquema de una red neuronal informada por la física (PINN) con su función de pérdida compuesta de la ecuación \ref{eq:compositeLossFn}.
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{pdeloss.jpeg}
-    \caption{Esquema de una red neuronal informada por la física (PINN).}
+    \caption{Esquema de una red neuronal informada por la física (PINN) con su sistema compuesto de funciones de pérdida y EDPs.}
     \label{fig:pinn}
-    \fuente{\cite{RAISSI2019686}}
+    \fuente{Creación propia basada en \cite{RAISSI2019686}.}
 \end{figure}
 
 %////////////////////////////////////////////////////////////////////////////////////
 %////////////////////////////////////////////////////////////////////////////////////
-
-\subsection{Loss function and optimization for PINN}

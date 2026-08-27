@@ -1,22 +1,165 @@
+%\chapter*{\introductionname}
+%\label{cap:intro}
+%\addcontentsline{toc}{chapter}{\introductionname}
+%
+%El aprendizaje automático ha avanzado significativamente a través de los años. Áreas como la visión computacional \cite{szeliski2011computer}, el procesamiento de lenguaje natural \cite{hirschberg2015advances} y la robótica \cite{billard2025roadmap} han experimentado mejoras 
+%notables gracias a la aplicación de técnicas de aprendizaje profundo. Estas técnicas permiten a los modelos aprender representaciones complejas de datos, lo que ha llevado a avances en tareas 
+%como el reconocimiento de imágenes \cite{li2022research}, la traducción automática \cite{bahdanau2014neural} y la conducción autónoma \cite{grigorescu2020survey}. Todos estos avances presentan
+%un elemento común, que son las redes neuronales artificiales (RNA). Estas son modelos computacionales compuestos por capas de neuronas artificiales, las cuales simulan
+%a la neurona biológica y son capaces de procesar y aproximar relaciones no lineales entre variables. Gracias al teorema de aproximación universal, una red simple de al menos una capa y un número 
+%mínimo de neuronas puede aproximar cualquier función continua en un dominio \cite{HORNIK1989359}.
+%
+%Sin embargo, las redes neuronales no son inequívocas para todos los problemas. La correcta convergencia de una red neuronal artificial es fuertemente dependiente del volumen de datos utilizados, de la calidad de estos 
+%y su nivel de representación del fenómeno a modelar, por ejemplo, si el conjunto de datos presenta datos ruidosos la red puede que no sea capaz de representar correctamente el fenómeno.
+%En particular, el modelamiento de fenómenos físicos complejos, como es el caso de la mecánica de fluidos sigue siendo un desafío debido a su naturaleza no lineal y la alta dimensionalidad de los sistemas involucrados \cite{brunton2020machine,duraisamy2019turbulence}.
+%Un modelo basado puramente en datos observados puede converger a una solución, y a la vez violar principios fundamentales de la física, como pueden ser las leyes de conservación de masa, momento, entre otros.  
+%En este contexto, las redes neuronales informadas por la física (PINNs) han surgido como una herramienta prometedora para abordar estos desafíos, integrando principios físicos directamente en el proceso de aprendizaje \cite{RAISSI2019686}.
+%
+%Como se mencionó anteriormente, los métodos de aprendizaje automático tradicionales, como lo son las redes neuronales, requieren una gran cantidad de datos para poder entrenar modelos con una alta precisión. Sin embargo, en muchos escenarios del mundo cotidiano
+%la recopilación de información puede ser costosa y difícil de realizar. Por otra parte, las PINNs incorporan el conocimiento de las leyes físicas que gobiernan el fenómeno a modelar, lo que permite una mejor generalización del modelo
+%aún con una escasez de información. Este enfoque consiste en utilizar una red neuronal artificial como un aproximador de una ecuación diferencial parcial (EDP), incorporando su residuo como un término adicional
+%a la función de pérdida de dicha RNA. Es de esta manera que al entrenar la red, esta no sólo penaliza el error de los datos, sino también el grado de lejanía física de la solución con la realidad, evaluado en puntos de colocación.
+%La Tabla \ref{tab:ann_vs_pinn} resume las principales diferencias entre ambos enfoques mencionados. 
+%
+%Estas propiedades de las PINNs resultan particularmente valiosas al modelar fenómenos de baja frecuencia y difícil alcance instrumental, donde los registros son de difícil acceso y costosos tanto en tiempo como monetario, pero sí 
+%incluyen un modelo físico que describa su comportamiento. Esta característica de las redes neuronales informadas por la física repercute directamente en una eficiencia de entrenamiento superior para el modelamiento de lahares y peligros volcánicos.
+%
+%El modelamiento matemático de la morfodinámica de un lahar implicar resolver un sistema de ecuaciones diferenciales parciales no lineales que describen la evolución de un flujo que mezcla agua
+%y sedimento sobre una topografía. Tradicionalmente, esta tarea se resuelve utilizando simuladores basados en métodos numéricos. Dentro de los modelos computacionales más conocidos se encuentran:
+%a) LAHARZ, que es un modelo computacional que utiliza descripciones estadísticas de áreas inundadas por eventos pasados de flujo masivo para pronosticar áreas que probablemente serán inundadas por eventos hipotéticos futuros \cite{schilling2008using};
+%b) D-Claw, siendo una biblioteca de software para la simulación de flujos granulares densos sobre topografía espacialmente variable \cite{george2025d};
+%c) LaharFlow, que es un software de dinámica de lahares, diseñado en la Universidad de Bristol, que modela el flujo de lahar como una mezcla de agua y granos sólidos, basado en tres principios de conservación. 
+%Estos son conservación de la masa, momentum y transporte de material sólido \cite{woodhouseshallow}.
+%Si bien han sido de utilidad en la creación de mapas de peligro, presentan limitaciones como costos computacionales elevados junto con
+%altos tiempos de respuesta en escenarios donde una respuesta rápida es mandatoria. Considerando las limitancias de métodos tradicionales y las ventajas de los métodos vanguardistas, es precisamente en donde las PINNs surgen como estudio de interés para problemas de volcanología.
+%
+%El volcán Villarrica tambien conocido como Rukapillan ($\sim39.5 S$, ubicado a $2847\ m$ sobre el nivel del mar) es un estratovolcán parcialmente glaciado dentro de la Zona Volcánica del Sur (SVZ) de los Andes de Chile \cite{https://doi.org/10.1029/2018GC007692}. Siendo el volcán de mayor 
+%riesgo de Chile\footnote{El riesgo volcánico se compone del peligro volcánico más la exposición de la población circundante} y uno de los más activos de America del Sur, este estratovolcán ha presentado gran frecuencia eruptiva durante los años, afectando
+%a poblados cercanos, como lo es la ciudad de Pucón \cite{romero2022pre,rivera2015recent}. Dada una gran cobertura glaciar con un alcance de aproximadamente $40\ km$ y un volumen de hielo de $\sim 8\ km^3$, equivalente a $\sim 6.5\ km^3$, 
+%lo convierte en una fuente recurrente de lahares en episodios eruptivos.
+%Los lahares, flujos de agua y sedimentos que se desplazan por el edificio cónico de un volcán, son uno de los fenómenos más destructivos asociados a los peligros volcánicos. Flujos laháricos tanto antiguos como recientes han invadido los sistemas 
+%de drenajes del Volcán Villarrica, provocando daños significativos a la infraestructura de las poblaciones aledañas a este. Eventos históricos como los lahares de $1908,1964$ y $1971$ suman más de $100$ fatalidades 
+%y un número desconocido de personas desaparecidas \cite{lara2004villarrica}. El evento eruptivo del $3$ de marzo de $2015$ generó un lahar que descendió más de $20\ km$ por el drenaje del Estero Correntoso-Turbio, Estero Zanjón-Seco y Río Pedregoso, entre otros, 
+%evacuando a miles de personas y generando daños en puentes cercanos.
+%Estos eventos convierten al Volcán Villarrica en un caso de estudio para analizar la morfodinámica de lahares mediante un enfoque basado en PINNs.
+%
+%Si bien, en la literatura existen trabajos que han aplicado PINNs al modelamiento de flujos de aguas someras y flujos de masa, no se han encontrado una aplicación de este tipo de enfoque a modelamiento de fenómenos laháricos y volcanológicos.
+%Este trabajo considera el uso de un sistema de ecuaciones diferenciales parciales que describen la dinámica de flujos mixtos de agua y sedimento, conservaciones de masa y momentum, advección-difusión y presión de poros.
+%
+%\begin{table}[htbp]
+%    \centering
+%    \caption{Comparación entre redes neuronales artificiales convencionales y redes neuronales informadas por la física (PINN).}
+%    \label{tab:ann_vs_pinn}
+%    \begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} 
+%                    >{\raggedright\arraybackslash}p{0.32\textwidth} 
+%                    >{\raggedright\arraybackslash}p{0.32\textwidth}}
+%        \toprule
+%        \textbf{Características} & \textbf{RNA convencional} & \textbf{PINN} \\
+%        \midrule
+%        Fuente de aprendizaje & Únicamente datos etiquetados & Datos etiquetados y EDPs \\[0.5em]
+%        Volumen de datos & Alto & Reducido \\[0.5em]
+%        Consistencia física & No garantizada & Garantizada por la EDP \\[0.5em]
+%        Función de pérdida & Error sobre los datos & Datos, condiciones iniciales/borde y residuo físico \\[0.5em]
+%        Extrapolación y generalización & Limitada a la distribución de los datos & Mayor robustez al estar restringida por el modelo físico \\[0.5em]
+%        Interpretabilidad & Opera como caja negra & La solución satisface leyes físicas conocidas \\
+%        \bottomrule
+%    \end{tabular}
+%\end{table}
+%
+%%\section*{Alcances y limitaciones}
+%%\addcontentsline{toc}{section}{Alcances y limitaciones}
+%%
+%%% TODO: completar según las decisiones metodológicas definitivas.
+%%El presente trabajo se centra en el desarrollo y evaluación de un modelo computacional, y no contempla la implementación de un sistema de alerta temprana operativo ni su despliegue en tiempo real. El modelamiento físico se restringe al sistema de ecuaciones seleccionado en el Capítulo~\ref{cap:capitulo1}, bajo los supuestos que allí se detallan, por lo que los resultados obtenidos deben interpretarse en el marco de dichas simplificaciones. Asimismo, la validación del modelo se encuentra condicionada por la disponibilidad y resolución de los datos existentes para los eventos laháricos documentados del volcán Villarrica.
+%%
+%%\section*{Estructura del documento}
+%%\addcontentsline{toc}{section}{Estructura del documento}
+%%
+%%El presente documento se organiza de la siguiente manera. El Capítulo~\ref{cap:capitulo1} presenta los fundamentos teóricos que sustentan este trabajo, abarcando desde la neurona artificial y el perceptrón multicapa hasta las funciones de activación, los algoritmos de optimización y la formulación de las redes neuronales informadas por la física. El Capítulo~\ref{cap:capitulo2} describe el contexto geográfico y geológico de los peligros volcánicos, con énfasis en los lahares y en la caracterización del volcán Villarrica como caso de estudio. % TODO: completar con los capítulos restantes (metodología, resultados, conclusiones) una vez definidos.
+%
+
 \chapter*{\introductionname}
 \label{cap:intro}
 \addcontentsline{toc}{chapter}{\introductionname}
 
-El aprendizaje automático ha avanzado significativamente a traves de los años. Áreas como la vision computacional \cite{szeliski2011computer}, el procesamiento de lenguaje natural \cite{hirschberg2015advances} y la robótica \cite{billard2025roadmap} han experimentado mejoras 
+El aprendizaje automático ha avanzado significativamente a través de los años. Áreas como la visión computacional \cite{szeliski2011computer}, el procesamiento de lenguaje natural \cite{hirschberg2015advances} y la robótica \cite{billard2025roadmap} han experimentado mejoras 
 notables gracias a la aplicación de técnicas de aprendizaje profundo. Estas técnicas permiten a los modelos aprender representaciones complejas de datos, lo que ha llevado a avances en tareas 
-como el reconocimiento de imágenes \cite{li2022research}, la traducción automática \cite{bahdanau2014neural} y la conducción autónoma \cite{grigorescu2020survey}. Sin embargo las redes neuronales no son la bala de plata para todos los problemas. 
-En particular, el modelamiento de fenómenos físicos complejos, como es el caso de la mecánica de fluidos sigue siendo un desafío debido a su naturaleza no lineal y la alta dimensionalidad de los sistemas involucrados \cite{brunton2020machine,duraisamy2019turbulence}. 
+como el reconocimiento de imágenes \cite{li2022research}, la traducción automática \cite{bahdanau2014neural} y la conducción autónoma \cite{grigorescu2020survey}. Todos estos avances presentan
+un elemento común, que son las redes neuronales artificiales (RNA). Estas son modelos computacionales compuestos por capas de neuronas artificiales, las cuales simulan
+a la neurona biológica y son capaces de procesar y aproximar relaciones no lineales entre variables. Gracias al teorema de aproximación universal, una red simple de al menos una capa y un número 
+mínimo de neuronas puede aproximar cualquier función continua en un dominio \cite{HORNIK1989359}.
+
+Sin embargo, las redes neuronales no son una solución universal para todos los problemas. La correcta convergencia de una red neuronal artificial es fuertemente dependiente del volumen de datos utilizados, de la calidad de estos 
+y su nivel de representación del fenómeno a modelar, por ejemplo, si el conjunto de datos presenta datos ruidosos es posible que la red pueda no representar correctamente el fenómeno. La recopilación de datos de alta calidad puede ser costosa y de dificil acceso,
+especialmente en áreas como la volcanología, donde los eventos son de baja frecuencia y la instrumentación es limitada \cite{brown2015global}, la oceanografía, donde la recopilación se limita en gran parte a teledetección satelital , la astrofísica, la medicina, entre otros \cite{sonnewald2021bridging,kumari2024data,ball2010data}.
+En particular, el modelamiento de fenómenos físicos complejos, como es el caso de la mecánica de fluidos sigue siendo un desafío debido a su naturaleza no lineal y la alta dimensionalidad de los sistemas involucrados \cite{brunton2020machine,duraisamy2019turbulence}.
+Un modelo basado puramente en datos observados puede converger a una solución, y a la vez violar principios fundamentales de la física, como pueden ser las leyes de conservación de masa, momento, entre otros.
+
 En este contexto, las redes neuronales informadas por la física (PINNs) han surgido como una herramienta prometedora para abordar estos desafíos, integrando principios físicos directamente en el proceso de aprendizaje \cite{RAISSI2019686}.
+Mientras que los métodos de aprendizaje automático tradicionales requieren una gran cantidad de datos para poder entrenar modelos con una alta precisión, en muchos escenarios del mundo cotidiano
+la recopilación de información puede ser costosa y difícil de realizar. Por otra parte, las PINNs incorporan el conocimiento de las leyes físicas que gobiernan el fenómeno a modelar, lo que permite una mejor generalización del modelo
+aún con una escasez de información. Este enfoque consiste en utilizar una red neuronal artificial como un aproximador de la solución de una ecuación diferencial parcial (EDP), incorporando su residuo como un término adicional
+a la función de pérdida de dicha RNA. Es de esta manera que al entrenar la red, esta no sólo penaliza el error de los datos, sino también el grado de lejanía de la solución respecto a las ecuaciones que gobiernan el fenómeno, evaluado en puntos de colocación.
+La Tabla \ref{tab:ann_vs_pinn} resume las principales diferencias entre ambos enfoques mencionados. 
 
-Es bien sabido a día de hoy que los métodos de aprendizaje automático tradicionales, como lo son las redes neuronales, requieren una gran cantidad de datos para poder entrenar modelos con una alta precisión. Sin embargo, en muchos escenarios del mundo real
-la recopilación de información puede ser costosa, difícil o directamente imposible de realizar. Por otra parte, las PINNs incorporan el conocimiento de las leyes físicas que rigen el fenómeno a modelar, lo que permite que el modelo generalice mejor
-aún con una escasez de información. Esta característica de las redes neuronales informadas por la física repercute directamente en una eficiencia de entrenamiento superior para el modelamiento de lahares.
 
-El volcán Villarrica tambien conocido como Rukapillan ($35.9 S$, ubicado a $2847\ m$ sobre el nivel del mar) es un estratovolcán parcialmente glaciado dentro de la Zona Volcánica del Sur (SVZ) de los Andes de Chile \cite{https://doi.org/10.1029/2018GC007692}. Siendo el volcán de mayor 
-riesgo de Chile\footnote{El riesgo volcánico se compone del peligro volcánico más la exposición de la población circundante} y uno de los más activos de America del Sur, este estratovolcán ha presentado gran frecuencia eruptiva durante los años, afectando
-a poblados cercanos, como lo es la ciudad de Pucón \cite{romero2022pre,rivera2015recent}. Dada una gran cobertura glaciar con un alcance de aproximadamente $40\ km$ y un volumen de hielo de $\sim 8\ km^3$, equivalente a $\sim 6.5\ km^3$, 
+Estas propiedades de las PINNs resultan particularmente valiosas al modelar fenómenos de baja frecuencia de ocurrencia y difícil instrumentación, donde los registros son de difícil acceso y costosos tanto en tiempo como monetario, pero sí 
+incluyen un modelo físico que describa su comportamiento. Los lahares, flujos de agua y sedimentos que se desplazan por el edificio cónico de un volcán, son uno de los fenómenos más destructivos asociados a los peligros volcánicos, y constituyen
+un ejemplo representativo de esta situación.
+
+El modelamiento matemático de la morfodinámica de un lahar implica resolver un sistema de ecuaciones diferenciales parciales no lineales que describen la evolución de un flujo que mezcla agua
+y sedimento sobre una topografía. Tradicionalmente, esta tarea se resuelve utilizando simuladores basados en métodos numéricos. Dentro de los modelos computacionales más conocidos se encuentran:
+a) LAHARZ, que es un modelo computacional que utiliza descripciones estadísticas de áreas inundadas por eventos pasados de flujo masivo para pronosticar áreas que probablemente serán inundadas por eventos hipotéticos futuros \cite{schilling2008using};
+b) D-Claw, siendo una biblioteca de software para la simulación de flujos granulares densos sobre topografía espacialmente variable \cite{george2025d};
+c) LaharFlow, que es un software de dinámica de lahares, diseñado en la Universidad de Bristol, que modela el flujo de lahar como una mezcla de agua y granos sólidos, basado en tres principios de conservación. 
+Estos son conservación de la masa, momentum y transporte de material sólido \cite{woodhouseshallow}.
+Si bien han sido de utilidad en la creación de mapas de peligro, presentan limitaciones como costos computacionales elevados junto con
+altos tiempos de respuesta en escenarios donde una respuesta rápida es mandatoria. Considerando las limitancias de métodos tradicionales y las ventajas de los métodos vanguardistas, es precisamente en donde las PINNs surgen como estudio de interés para problemas de volcanología.
+
+Si bien, en la literatura existen trabajos que han aplicado PINNs al modelamiento de flujos de aguas someras y flujos de masa, no se han encontrado una aplicación de este tipo de enfoque a modelamiento de fenómenos laháricos y volcanológicos.
+Este trabajo considera el uso de un sistema de ecuaciones diferenciales parciales que describen la dinámica de flujos mixtos de agua y sedimento, conservaciones de masa y momentum, advección-difusión y presión de poros.
+
+El volcán Villarrica también conocido como Rukapillan ($\sim39.5^\circ S$, ubicado a $2847\ m$ sobre el nivel del mar) es un estratovolcán parcialmente glaciado dentro de la Zona Volcánica del Sur (SVZ) de los Andes de Chile \cite{https://doi.org/10.1029/2018GC007692}. Siendo el volcán de mayor 
+riesgo de Chile\footnote{El riesgo volcánico se compone del peligro volcánico más la exposición de la población circundante} y uno de los más activos de América del Sur, este estratovolcán ha presentado gran frecuencia eruptiva durante los años, afectando
+a poblados cercanos, como lo es la ciudad de Pucón \cite{romero2022pre,rivera2015recent}. Dada una gran cobertura glaciar con un alcance de aproximadamente $40\ km^2$ y un volumen de hielo de $\sim 8\ km^3$, equivalente a $\sim 6.5\ km^3$ de agua, 
 lo convierte en una fuente recurrente de lahares en episodios eruptivos.
-Los lahares, flujos de agua y sedimentos que se desplazan por el edificio cónico de un volcán, son uno de los fenómenos más destructivos asociados a los peligros volcánicos. Flujos laháricos tanto antiguos como recientes han invadido los sistemas 
+Flujos laháricos tanto antiguos como recientes han invadido los sistemas 
 de drenajes del Volcán Villarrica, provocando daños significativos a la infraestructura de las poblaciones aledañas a este. Eventos históricos como los lahares de $1908,1964$ y $1971$ suman más de $100$ fatalidades 
-y un número desconocido de personas desaparecidas \cite{lara2004villarrica}. El evento eruptivo del $3$ de marzo de $2015$ generó un lahar que descendió más de $20\ km$ por varios esteros y ríos, evacuando a miles de personas y generando daños en puentes cercanos.
+y un número desconocido de personas desaparecidas \cite{lara2004villarrica}. El evento eruptivo del $3$ de marzo de $2015$ generó un lahar que descendió más de $20\ km$ por el drenaje del Estero Correntoso-Turbio, Estero Zanjón-Seco y Río Pedregoso, entre otros, 
+evacuando a miles de personas y generando daños en puentes cercanos.
 Estos eventos convierten al Volcán Villarrica en un caso de estudio para analizar la morfodinámica de lahares mediante un enfoque basado en PINNs.
+
+El objetivo general de este trabajo es desarrollar un modelo de lahares basado en Redes Neuronales Informadas por la Física (PINNs), aplicado al evento eruptivo de 2015 del volcán Villarica, Chile, incorporando ecuaciones acopladas de flujo somero, concentración sólida y presión de poros. 
+Los objetivos específicos consisten en $1)$ Formular un sistema acoplado de Ecuaciones Diferenciales Parciales (PDEs) que modelen la morfodinámica de un lahar, incorporando conservación de masa, momento, concentración sólida y presión de poros.
+$2)$ Construir una Red Neuronal Informada por la Física, basada en un sistema de ecuaciones diferenciales y parámetros geológicos, con la finalidad de predecir el comportamiento real de un flujo de sedimento.
+$3)$ Diagnosticar patologías de desvanecimiento y decaimiento de los gradientes e incorporar técnicas de estabilización y optimización avanzadas para mejorar la convergencia del modelo.
+$4)$ Predecir la morfodinámica de manera realista y acorde a la física para exportar un mapa de peligro volcánico que entregue datos de evacuación según el riesgo calculado por la red neuronal.
+
+
+La hipótesis para este estudio es que las Redes Neuronales Informadas por la Física (PINNs) pueden modelar de manera efectiva la morfodinámica de los lahares, entregando predicciones precisas y consistentes con las leyes físicas. 
+Este trabajo propone un enfoque novedoso para el estudio de la morfodinámica de lahares al aplicar redes neuronales informadas por la física a un fenómeno donde, hasta donde se ha revisado, este tipo de metodología no ha sido explorada.
+Se espera que este enfoque permita superar los resultados de los métodos tradicionales, ofreciendo predicciones más precisas gracias a los sistemas acoplados de EDPs y la incorporación de la física.
+Asimismo, se espera permita una mejor comprensión del comportamiento de los lahares y contribuya a la mitigación de riesgos en áreas propensas a estos fenómenos. 
+
+El cuerpo de esta tesis se organiza de la siguiente manera. El Capítulo~\ref{cap:capitulo1} presenta los fundamentos teóricos computacionales que sustentan este trabajo, abarcando desde la neurona artificial y el perceptrón multicapa hasta las funciones de activación, los algoritmos de optimización y la formulación de las redes neuronales informadas por la física. 
+El Capítulo~\ref{cap:capitulo2} describe el contexto geográfico y geológico de los peligros volcánicos, con énfasis en los lahares y en la caracterización del volcán Villarrica como caso de estudio. % TODO: completar con los capítulos restantes (metodología, resultados, conclusiones) una vez definidos.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Comparación entre redes neuronales artificiales convencionales y redes neuronales informadas por la física (PINN).}
+    \label{tab:ann_vs_pinn}
+    \begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} 
+                    >{\raggedright\arraybackslash}p{0.32\textwidth} 
+                    >{\raggedright\arraybackslash}p{0.32\textwidth}}
+        \toprule
+        \textbf{Características} & \textbf{RNA convencional} & \textbf{PINN} \\
+        \midrule
+        Fuente de aprendizaje & Únicamente datos etiquetados & Datos etiquetados y EDPs \\[0.5em]
+        Volumen de datos & Alto & Reducido \\[0.5em]
+        Consistencia física & No garantizada & Garantizada por la EDP \\[0.5em]
+        Función de pérdida & Error sobre los datos & Datos, condiciones iniciales/borde y residuo físico \\[0.5em]
+        Extrapolación y generalización & Limitada a la distribución de los datos & Mayor robustez al estar restringida por el modelo físico \\[0.5em]
+        Interpretabilidad & Opera como caja negra & La solución satisface leyes físicas conocidas \\
+        \bottomrule
+    \end{tabular}
+\end{table}

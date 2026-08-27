@@ -1,6 +1,6 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
+\contentsline {table}{\numberline {1}{\ignorespaces Comparación entre redes neuronales artificiales convencionales y redes neuronales informadas por la física (PINN).}}{4}{table.caption.5}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces List of losses analysed in this paper. $\mathbf {y}$ is true label as one-hot encoding, $\hat {\mathbf {y}}$ is true label as $+1/-1$ encoding, $\mathbf {o}$ is the output of the last layer of the network, $\cdot ^{(j)}$ denotes $j$-th dimension of a given vector, and $\sigma (\cdot )$ denotes probability estimate.}}{11}{table.caption.11}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces List of losses analysed in this paper. $\mathbf {y}$ is true label as one-hot encoding, $\hat {\mathbf {y}}$ is true label as $+1/-1$ encoding, $\mathbf {o}$ is the output of the last layer of the network, $\cdot ^{(j)}$ denotes $j$-th dimension of a given vector, and $\sigma (\cdot )$ denotes probability estimate.}}{13}{table.caption.12}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Resumen de funciones de activación comúnmente usadas en redes neuronales.}}{13}{table.caption.11}%
 \addvspace {10\p@ }

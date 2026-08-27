@@ -499,6 +499,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
+\usepackage{array}
+\usepackage{siunitx}
 
 % Bibliografía
 \RequirePackage{csquotes}%
@@ -559,7 +561,7 @@
 	}%
 }{%
 	\ifdefstring{\@norma}{ieee}{%
-		\RequirePackage[backend=biber,style=ieee]{biblatex}
+		\RequirePackage[backend=biber,style=ieee,citestyle=ieee-comp]{biblatex}
 	}{%
 		\ifdefstring{\@norma}{phys}{%
 			\RequirePackage[backend=biber,style=phys]{biblatex}

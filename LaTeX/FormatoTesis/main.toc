@@ -1,37 +1,25 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{Introducción}{1}{chapter*.5}%
-\contentsline {chapter}{\numberline {1}Redes neuronales artificiales}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Redes Neuronales Artificiales}{3}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Neurona Artificial}{3}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Perceptrón Multicapa}{5}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Funciones de activación}{8}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}ReLU}{8}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Sigmoide}{9}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Otras funciones de activación}{10}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Funciones de pérdida}{11}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Gradiente Descendente y algoritmos de optimización}{11}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Gradiente Descendiente (\textit {Batch Gradient Descent})}{12}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Optimizadores}{12}{subsection.1.4.2}%
-\contentsline {section}{\numberline {1.5}Redes Neuronales Informadas por la Física (PINNs)}{12}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Loss function and optimization for PINN}{14}{subsection.1.5.1}%
-\contentsline {chapter}{\numberline {2}Contexto geológico}{16}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introducción a los peligros volcánicos}{16}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Lahares}{18}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Zonas Volcánicas de Chile}{19}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Volcán Villarrica}{20}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Contexto geográfico y geológico}{20}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Evento eruptivo del Volcán Villarrica del 3 de marzo del 2015}{21}{subsection.2.3.2}%
-\contentsline {chapter}{Conclusiones}{23}{chapter*.17}%
-\contentsline {chapter}{Glosario}{24}{chapter*.17}%
-\contentsline {chapter}{Referencias}{25}{chapter*.18}%
-\setcounter {tocdepth}{0}
-\contentsline {chapter}{Anexos}{31}{section*.19}%
-\contentsline {section}{\numberline {Anexo~1:}Primer anexo}{31}{section.1.Alph0.1}%
-\contentsline {section}{\numberline {Anexo~2:}Segundo anexo}{31}{section.1.Alph0.2}%
-\setcounter {tocdepth}{3}
-\setcounter {tocdepth}{0}
-\contentsline {chapter}{Apéndices}{32}{section*.21}%
-\contentsline {section}{\numberline {Apéndice~1:}Primer apéndice}{32}{section.2.Alph0.1}%
-\contentsline {section}{\numberline {Apéndice~2:}Segundo apéndice}{32}{section.2.Alph0.2}%
-\setcounter {tocdepth}{3}
+\contentsline {chapter}{Introducción}{1}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Redes neuronales artificiales}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Redes Neuronales Artificiales}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Neurona Artificial}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Perceptrón Multicapa}{7}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Funciones de activación}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}ReLU}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Sigmoide}{11}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Otras funciones de activación}{12}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Funciones de pérdida}{13}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Gradiente Descendente y algoritmos de optimización}{14}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Gradiente Descendiente (\textit {Batch Gradient Descent})}{15}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}Redes Neuronales Informadas por la Física (PINNs)}{15}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Contexto geológico}{18}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introducción a los peligros volcánicos}{18}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Lahares}{20}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Zonas Volcánicas de Chile}{21}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Volcán Villarrica}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Contexto geográfico y geológico}{22}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Evento eruptivo del Volcán Villarrica del $3$ de marzo del $2015$}{23}{subsection.2.3.2}%
+\contentsline {chapter}{Conclusiones}{25}{chapter*.16}%
+\contentsline {chapter}{Glosario}{26}{chapter*.16}%
+\contentsline {chapter}{Referencias}{27}{chapter*.17}%
