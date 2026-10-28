@@ -1,0 +1,46 @@
+{
+  "LAMBDAS": {
+    "masa": 100.0,
+    "mom_x": 1.0,
+    "mom_y": 1.0,
+    "C": 1.0,
+    "p": 1.0,
+    "BC": 1.0,
+    "h_neg": 10.0,
+    "vol_total": 1000.0,
+    "vel": 1.0,
+    "vol_rio": 100.0
+  },
+  "pesos_por_termino": {
+    "masa": 100.0,
+    "mom_x": 1.0,
+    "mom_y": 1.0,
+    "C": 1.0,
+    "p": 1.0,
+    "BC": 1.0,
+    "h_neg": 10.0,
+    "vol_total": 1000.0,
+    "vel_Correntoso": 1.0,
+    "vel_Pedregoso": 1.0,
+    "vel_Turbio": 1.0,
+    "vol_Correntoso": 100.0,
+    "vol_Pedregoso": 100.0
+  },
+  "N_EPOCHS": 5000,
+  "CURRICULUM_HOLD_FRAC": 0.3,
+  "T_HOLD": 600.0,
+  "CURRICULUM_FRAC": 0.4,
+  "epocas_entrenadas": 5000,
+  "PDE_DRY_W": 0.05,
+  "SRC_VOLUME": 1500000.0,
+  "SAMPLE_FRAC": {
+    "fuente": 0.25,
+    "cauces": 0.25,
+    "bordes": 0.1
+  },
+  "SAMPLE_T_WIN": {
+    "fuente": 300.0,
+    "bordes": 300.0,
+    "cauces": 3000.0
+  }
+}
