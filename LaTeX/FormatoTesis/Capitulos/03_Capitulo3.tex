@@ -1,0 +1,538 @@
+% ==========================================================================
+% CAPÍTULO 3 — MARCO METODOLÓGICO (ESQUELETO)
+% Agregar en main.tex, después de 02_Capitulo2:
+%     \include{Capitulos/03_Capitulo3}
+% Los comentarios (%) indican qué escribir en cada sección. Bórralos al redactar.
+% ==========================================================================
+
+\chapter{Marco metodológico}%
+\label{cap:capitulo3}%
+
+% --------------------------------------------------------------------------
+% Párrafo de apertura (sin \section): 1 párrafo.
+% - Qué se va a encontrar el lector en este capítulo.
+% - Recordar en una frase el objetivo general (de la Introducción) y cómo
+%   la metodología lo operacionaliza.
+% - Puente con los capítulos anteriores: el Cap. 1 entregó la formulación
+%   general de una PINN (Ec. \ref{eq:nonlinearDiffEq}-\ref{eq:residualLoss})
+%   y el Cap. 2 el fenómeno físico; aquí ambos se unen.
+% --------------------------------------------------------------------------
+
+
+% ==========================================================================
+\section{Enfoque general de la investigación}
+\label{sec:enfoque}
+% --------------------------------------------------------------------------
+% - Tipo de investigación: cuantitativa, experimental-computacional.
+% - Diagrama de flujo de la metodología completa (figura recomendada):
+%   modelo físico -> adimensionalización -> datos/dominio -> arquitectura
+%   PINN -> entrenamiento -> validación -> análisis.
+% - Explicar que la metodología es INCREMENTAL: se valida primero en
+%   problemas simples con solución conocida antes de abordar el lahar
+%   completo (ver Sec. \ref{sec:estrategia_validacion}). Esto además
+%   justifica por qué en este documento se presentan resultados
+%   preliminares.
+% --------------------------------------------------------------------------
+
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=\textwidth]{diagrama_metodologia.png}
+%     \caption{Diagrama de flujo de la metodología propuesta.}
+%     \label{fig:metodologia}
+%     \fuente{Creación propia.}
+% \end{figure}
+
+
+\section{Modelo físico del flujo lahárico}
+\label{sec:modelo_fisico}
+% --------------------------------------------------------------------------
+% Aquí el operador genérico N[u] del Cap. 1 se vuelve concreto.
+% En la Introducción declaraste: conservación de masa, momentum,
+% advección-difusión (transporte de sólidos) y presión de poros.
+% --------------------------------------------------------------------------
+% ==========================================================================
+% Sección: Modelo físico del flujo lahárico
+% Va dentro de 03_Capitulo3.tex, reemplazando el esqueleto de esa sección.
+% Basada en el modelo de Iverson y George (D-Claw). Los % TODO marcan datos
+% que debes confirmar con tu profesora guía o completar con tu implementación.
+% ==========================================================================
+
+Para que una PINN sea capaz de aprender la morfodinámica de un lahar bajando por un estatrovolcán, es necesaria la definición explícita del operador diferencial $\mathcal{N}[\cdot]$ mencionado en la ecuación~Ecuación~\eqref{eq:nonlinearDiffEq},
+es decir, el sistema de ecuaciones parciales diferenciales que gobierna el fenómeno. Este modelo se construye a partir del modelo de flujo de detritos promediado en la profundidad \cite{iverson2014depth,george2014depth}, mismo modelo en el cual
+se basa D-Claw \cite{george2025d}. La elección de este modelo se debe a que describe el flujo como una mezcla de partículas sólidas y fluido e incorpora de manera explícita la evolución de la presión de poros.
+De esta forma el modelo tiene el potencial de controlar la resistencia friccional de los sólidos en el flujo y de esta forma, su movilidad durante el evento. En este trabajo se incluyen además los factores de cálculo numérico de LaharFlow \cite{woodhouseshallow},
+que permiten modelar el flujo basado en tres principios de conservación: conservación de masa, conservación de momentum y transporte de la fracción de sólidos. 
+%La presión de poros basal se modela como una variable dependiente del tiempo y del espacio, que evoluciona según la dilatancia de la mezcla y la resistencia basal.
+% --------------------------------------------------------------------------
+\subsection{Supuestos del modelo}
+\label{subsec:supuestos}
+
+El modelo se construye a partir de los siguientes supuestos \cite{iverson2014depth}:
+
+\begin{enumerate}
+    \item \textbf{Aproximación de aguas someras:} el espesor del flujo es pequeño en comparación con su extensión horizontal, de modo que las variables pueden promediarse en la vertical y el problema tridimensional se reduce a uno bidimensional en el plano $(x,y)$.
+    \item \textbf{Mezcla de dos fases:} el flujo se compone de granos sólidos de densidad $\rho_s$ y de un fluido intersticial de densidad $\rho_f$. Ambas fases se desplazan con la misma velocidad promediada en la vertical.
+    \item \textbf{Presión de poros basal:} la presión del fluido intersticial se representa mediante su valor en la base del flujo, $p_b$, que puede diferir de la presión hidrostática y evoluciona en el tiempo.
+    \item \textbf{Dilatancia:} la mezcla puede expandirse o contraerse según el estado de empaquetamiento de los granos, lo que modifica la fracción de sólidos $m$ y, en consecuencia, la presión de poros.
+    \item \textbf{Fricción basal de tipo Coulomb:} la resistencia en la base del flujo depende del esfuerzo normal efectivo, es decir, del peso del material menos la presión de poros.
+\end{enumerate}
+
+% TODO: si tu implementación omite procesos del modelo completo (por ejemplo,
+% erosión y arrastre de material del lecho, segregación de partículas, o si
+% trabajas en 1D a lo largo del cauce), agrégalos aquí como supuestos
+% adicionales. Es lo primero que preguntará la comisión.
+
+% --------------------------------------------------------------------------
+\subsection{Variables de estado}
+\label{subsec:variables}
+
+El estado del flujo en cada punto $(x,y)$ y en cada instante $t$ queda descrito por cinco variables: 
+\begin{enumerate}
+    \item Espesor del flujo $h(x,y,t) (m)$
+    \item Componentes de las velocidades promediadas en profundidad $u(x,y,t)\,$ y $\,v(x,y,t)\,(m/s)$
+    \item Concentración volumétrica de sólidos $C(x,y,t)\, (adimensional, 0 \leq C \leq 1???)$
+    \item Presión de poros basal $p(x,y,t)\, (Pa)$
+\end{enumerate}
+
+Siguiendo la formulación de D-Claw, estas variables se agrupan en el vector de estado
+\begin{equation}
+    \vect{q}(x,y,t) = \left(h,\; hu,\; hv,\; hC,\; p\right)^{\top}.
+    \label{eq:vector_estado}
+\end{equation}
+
+La densidad de la mezcla no es constante, sino que depende de la fracción de sólidos según
+\begin{equation}
+    \rho = \rho_s C + (1-C)\rho_f.
+    \label{eq:densidad_mezcla}
+\end{equation}
+
+% --------------------------------------------------------------------------
+\subsection{Sistema de ecuaciones gobernantes}
+\label{subsec:ecuaciones}
+
+El sistema está compuesto por cinco ecuaciones diferenciales parciales acopladas, que expresan la conservación de masa, la conservación de momentum en ambas direcciones horizontales, el transporte de la fracción de sólidos y la evolución de la presión de poros \cite{iverson2014depth,george2025d}.
+
+\paragraph{Conservación de masa.}
+\begin{equation}
+      \frac{\partial h}{\partial t} + \nabla\cdot(h\mathbf{u}) = S_h(x,y,t),
+    \qquad \mathbf{u} = (u, v).
+    %\frac{\partial h}{\partial t} + \frac{\partial (hu)}{\partial x} + \frac{\partial (hv)}{\partial y} = S_m(x,y,t) Version inicial
+    \label{eq:masa}
+\end{equation}
+donde $S_m(x,y,t)$ representa un término fuente de masa (aporte por lluvia intensa, aporte desde el cráter, entradas laterales por quebradas, etc.). Para un prototipo sin aporte adicional consideramos,
+\begin{equation}
+    S_m(x,y,t) = 0
+    \label{eq:smcero}
+\end{equation}
+
+\paragraph{Conservación de momentum.}
+%\begin{equation}
+%    \frac{\partial (hu)}{\partial t} + \frac{\partial (hu^2)}{\partial x} + \frac{\partial (huv)}{\partial y} = g\frac{\partial (hu+z_b)}{\partial x} + k_f u= 0
+%    \label{eq:momentum_x}
+%\end{equation}
+%\begin{equation}
+%    \frac{\partial (hv)}{\partial t} + \frac{\partial (huv)}{\partial x} + \frac{\partial (hv^2)}{\partial y} = g\frac{\partial (hv+z_b)}{\partial y} + k_f v= 0
+%    \label{eq:momentum_y}
+%\end{equation} %Version inicial de momentum con solo friccion basal
+
+\begin{align}
+  \frac{\partial u}{\partial t} + u\frac{\partial u}{\partial x}
+    + v\frac{\partial u}{\partial y} + g\frac{\partial H}{\partial x}
+    + \frac{\tau_{bx}}{\rho_m h} &= 0, \label{eq:momento_x} \\
+  \frac{\partial v}{\partial t} + u\frac{\partial v}{\partial x}
+    + v\frac{\partial v}{\partial y} + g\frac{\partial H}{\partial y}
+    + \frac{\tau_{by}}{\rho_m h} &= 0. \label{eq:momento_y}
+\end{align}
+
+Donde la tensión basal se parametriza como:
+\begin{equation}
+  \boldsymbol{\tau}_b = \tau_b\,\frac{\mathbf{u}}{\|\mathbf{u}\| + \varepsilon},
+  \qquad
+  \tau_b = \mu_{\mathrm{eff}}(C,p)\,\rho_m g h \cos\theta,
+  \label{eq:tension_basal}
+\end{equation}
+y $\varepsilon$ evita singularidad numérica cuando $\|\mathbf{u}\| \to 0$.
+
+La pendiente local se aproxima por:
+\begin{equation}
+  \cos\theta \approx \frac{1}{\sqrt{1 + \|\nabla z_b\|^2}}.
+  \label{eq:cos_theta}
+\end{equation}
+ 
+Un modelo reducido pero físicamente interpretable para fricción efectiva:
+\begin{equation}
+  \mu_{\mathrm{eff}}(C,p) = \mu_0\left(1 + \alpha_C\,(C - C_0)\right)
+  \exp\!\left(-\alpha_p\,\frac{p}{\rho_m g h + p_{\mathrm{ref}}}\right),
+  \label{eq:mu_eff}
+\end{equation}
+donde $C_0$ es una concentración de referencia y $p_{\mathrm{ref}}$ estabiliza la
+razón. Este término representa: (i)~mayor fricción con mayor carga sólida, y
+(ii)~menor fricción efectiva cuando el exceso de presión de poros es alto
+(disminuye el esfuerzo efectivo).
+
+
+\subsection{Transporte de concentración sólida con difusión y relajación}
+\label{sec:concentracion}
+ 
+Una ecuación advección--difusión con término de relajación hacia un equilibrio
+(opcional):
+\begin{equation}
+  \frac{\partial C}{\partial t} + \mathbf{u}\cdot\nabla C
+  = \nabla\cdot\left(\kappa_C \nabla C\right) + \frac{C_{\mathrm{eq}}(x,y) - C}{\tau_C}.
+  \label{eq:concentracion}
+\end{equation}
+En prototipo sintético se puede fijar $\tau_C \to \infty$ (sin relajación) o
+definir $C_{\mathrm{eq}}$ como mayor en cauces y menor en planicies.
+ 
+% ==========================================================================
+\paragraph{Evolución de presión de poros (variable interna)}
+\label{sec:presion_poros}
+ 
+Se usa una ecuación de advección con relajación:
+\begin{equation}
+  \frac{\partial p}{\partial t} + \mathbf{u}\cdot\nabla p
+  = \frac{p_{\mathrm{eq}}(h, C, \|\mathbf{u}\|) - p}{\tau_p}.
+  \label{eq:presion}
+\end{equation}
+Un ejemplo simple para equilibrio de presión:
+\begin{equation}
+  p_{\mathrm{eq}} = \chi_p\, \rho_m g h\, \phi(C)\, \frac{\|\mathbf{u}\|}{\|\mathbf{u}\| + u_*},
+  \qquad
+  \phi(C) = \frac{C}{C + C_*},
+  \label{eq:peq}
+\end{equation}
+que aumenta con espesor y con concentración, y satura con velocidad. Esto
+captura cualitativamente el aumento de presión por mezcla densa y cizalle.
+ 
+% ==========================================================================
+\paragraph{Morfodinámica del lecho: ecuación de Exner}
+\label{sec:exner}
+ 
+\begin{equation}
+  \frac{\partial z_b}{\partial t} + \frac{1}{1 - \lambda_p}\,\nabla\cdot\mathbf{q}_s = E - D,
+  \label{eq:exner}
+\end{equation}
+donde $\mathbf{q}_s$ es el flujo sólido superficial ($\mathrm{m^2/s}$) y $E, D$
+($\mathrm{m/s}$) son erosión y deposición. Para un modelo reducido, se puede usar:
+\begin{equation}
+  \mathbf{q}_s = \gamma_s\, h\, C\, \mathbf{u}.
+  \label{eq:qs}
+\end{equation}
+y un cierre simple para erosión/deposición (prototipo):
+\begin{equation}
+  E - D = \beta_e\, \|\mathbf{u}\| - \beta_d\, C,
+  \label{eq:erosion_deposicion}
+\end{equation}
+con $\beta_e, \beta_d$ ajustables. En escenarios iniciales, muchas veces se fija
+$E - D = 0$ para congelar el lecho y validar primero la dinámica; luego se activa
+Exner.
+
+% TODO: confirmar cómo entra la topografía del Villarrica (elevación del
+% terreno b(x,y)) en tu implementación: a través de las componentes de g
+% en coordenadas alineadas con la pendiente, o como término fuente -g h ∂b/∂x.
+% Escribirlo explícitamente aquí.
+
+% --------------------------------------------------------------------------
+\subsection{Relaciones constitutivas}
+\label{subsec:constitutivas}
+
+El sistema anterior se cierra mediante un conjunto de relaciones constitutivas que vinculan la presión de poros, la dilatancia y la resistencia basal \cite{iverson2014depth,george2025d}.
+
+\paragraph{Tasa de dilatación.} La tasa de dilatación integrada en la profundidad, $D$, es proporcional al exceso de presión de poros respecto de la presión hidrostática:
+\begin{equation}
+    D = -\frac{2k}{h\mu}\left(p_b - \rho_f g_z h\right),
+    \label{eq:dilatacion}
+\end{equation}
+donde $\mu$ es la viscosidad efectiva del fluido intersticial y $k$ la permeabilidad hidráulica de la mezcla, que depende de la fracción de sólidos:
+\begin{equation}
+    k = k_r \exp\!\left(\frac{m-m_r}{0{,}04}\right),
+    \label{eq:permeabilidad}
+\end{equation}
+con $k_r$ y $m_r$ valores de referencia.
+
+\paragraph{Esfuerzo normal efectivo.} Corresponde a la fracción del peso del flujo que es soportada por el contacto entre granos, y no por el fluido:
+\begin{equation}
+    \sigma_e = \rho g_z h - p_b.
+    \label{eq:esfuerzo_efectivo}
+\end{equation}
+Esta relación explica la alta movilidad de los lahares: cuando la presión de poros se aproxima al peso total del material, $\sigma_e$ tiende a cero y la fricción entre granos prácticamente desaparece.
+
+\paragraph{Resistencia basal.} La resistencia en la base se compone de un término asociado a los sólidos, de tipo Coulomb, y otro asociado al fluido, de tipo viscoso:
+\begin{equation}
+    \vect{\tau}_s = \sigma_e \tan(\phi+\psi)\,\frac{(u,v)^{\top}}{\left\lVert (u,v)^{\top}\right\rVert},
+    \qquad
+    \vect{\tau}_f = \frac{2\mu(1-m)}{h}\,(u,v)^{\top},
+    \label{eq:resistencia_basal}
+\end{equation}
+donde $\phi$ es el ángulo de fricción granular y $\psi$ el ángulo de dilatancia.
+
+\paragraph{Ángulo de dilatancia.} El ángulo $\psi$ mide qué tan lejos se encuentra la mezcla de su estado crítico de empaquetamiento:
+\begin{equation}
+    c_1\tan\psi = m - \frac{m_{\mathrm{crit}}}{1+\sqrt{N}},
+    \qquad
+    N = \frac{\mu\dot{\gamma}}{\rho_s\dot{\gamma}^2\delta^2 + \sigma_e},
+    \label{eq:dilatancia}
+\end{equation}
+donde $m_{\mathrm{crit}}$ es la fracción de sólidos en el estado crítico, $\dot{\gamma}$ la tasa de corte, $\delta$ una escala de longitud característica de las colisiones entre granos y $c_1$ una constante adimensional, usualmente igual a $1$.
+
+\paragraph{Compresibilidad.} Finalmente, la compresibilidad elástica de la mezcla se define como
+\begin{equation}
+    \alpha = \frac{a}{m\left(\rho g_z h - p_b + \sigma_0\right)},
+    \label{eq:compresibilidad}
+\end{equation}
+con $a$ y $\sigma_0$ constantes del modelo.
+
+% --------------------------------------------------------------------------
+\subsection{Parámetros del modelo}
+\label{subsec:parametros}
+
+La Tabla~\ref{tab:parametros_modelo} resume los parámetros físicos que intervienen en el sistema.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Parámetros del modelo físico de flujo lahárico.}
+    \label{tab:parametros_modelo}
+    \begin{tabular}{>{\raggedright\arraybackslash}p{0.10\textwidth}
+                    >{\raggedright\arraybackslash}p{0.40\textwidth}
+                    >{\raggedright\arraybackslash}p{0.14\textwidth}
+                    >{\raggedright\arraybackslash}p{0.22\textwidth}}
+        \toprule
+        \textbf{Símbolo} & \textbf{Descripción} & \textbf{Unidad} & \textbf{Valor} \\
+        \midrule
+        $\rho_s$ & Densidad de los sólidos & kg\,m$^{-3}$ & Por definir \\
+        $\rho_f$ & Densidad del fluido intersticial & kg\,m$^{-3}$ & Por definir \\
+        $\mu$ & Viscosidad efectiva del fluido & Pa\,s & Por definir \\
+        $\phi$ & Ángulo de fricción granular & $^\circ$ & Por definir \\
+        $k_r$ & Permeabilidad de referencia & m$^2$ & Por definir \\
+        $m_r$ & Fracción de sólidos de referencia & -- & Por definir \\
+        $m_{\mathrm{crit}}$ & Fracción de sólidos en estado crítico & -- & Por definir \\
+        $\delta$ & Escala de colisión entre granos & m & Por definir \\
+        $a$ & Constante de compresibilidad & -- & $0{,}01$--$0{,}3$ \cite{george2025d} \\
+        $\sigma_0$ & Constante de compresibilidad & Pa & $1000$ \cite{george2025d} \\
+        $\kappa$ & Coeficiente de presión lateral & -- & $1$ \cite{george2025d} \\
+        $c_1$ & Constante de dilatancia & -- & $1$ \cite{george2025d} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% TODO: completar los valores "Por definir" con los usados en el proyecto
+% de tu profesora guía, citando de dónde salen (calibraciones previas,
+% literatura de lahares, mediciones del evento de 2015, etc.).
+
+% --------------------------------------------------------------------------
+\subsection{Formulación compacta y relación con la PINN}
+\label{subsec:forma_compacta}
+
+El sistema de Ecuaciones~\eqref{eq:masa}--\eqref{eq:presion_poros} puede escribirse en la forma compacta
+\begin{equation}
+    \frac{\partial \vect{q}}{\partial t}
+    + \frac{\partial \vect{F}(\vect{q})}{\partial x}
+    + \frac{\partial \vect{G}(\vect{q})}{\partial y}
+    + \mathbf{B}(\vect{q})\,\nabla\vect{q}
+    = \vect{S}(\vect{q}),
+    \label{eq:forma_compacta}
+\end{equation}
+donde $\vect{F}$ y $\vect{G}$ agrupan los flujos en las direcciones $x$ e $y$, $\mathbf{B}(\vect{q})\,\nabla\vect{q}$ reúne los términos no conservativos (como los productos $u\,\partial p_b/\partial x$ de la Ecuación~\eqref{eq:presion_poros}) y $\vect{S}$ contiene los términos fuente asociados a la gravedad, la dilatancia y la resistencia basal.
+
+Comparando con la Ecuación~\eqref{eq:nonlinearDiffEq}, se identifica la solución latente con el vector de estado, $\vect{u} \equiv \vect{q}$, y el operador diferencial como
+\begin{equation}
+    \mathcal{N}[\vect{q}] = \frac{\partial \vect{F}(\vect{q})}{\partial x} + \frac{\partial \vect{G}(\vect{q})}{\partial y} + \mathbf{B}(\vect{q})\,\nabla\vect{q} - \vect{S}(\vect{q}).
+    \label{eq:operador_lahar}
+\end{equation}
+
+De este modo, la PINN aproxima las cinco componentes de $\vect{q}$ a partir de las coordenadas $(t,x,y)$, y el residuo $\mathcal{R}_{\boldsymbol{\theta}}$ definido en el Capítulo~\ref{cap:capitulo1} queda compuesto por cinco términos, uno por cada ecuación del sistema. Cada uno de ellos contribuye a la pérdida residual $\mathcal{L}_r$ de la Ecuación~\eqref{eq:residualLoss}.
+
+% --------------------------------------------------------------------------
+\subsection{Consideraciones para su resolución mediante PINNs}
+\label{subsec:consideraciones_pinn}
+
+La estructura de este sistema introduce dificultades específicas para su resolución con una PINN, que condicionan las decisiones de diseño descritas en la Sección~\ref{sec:diseno_pinn}:
+
+\begin{itemize}
+    \item \textbf{Singularidades en zonas secas:} varios términos dividen por el espesor $h$, como la tasa de dilatación (Ecuación~\eqref{eq:dilatacion}), la resistencia viscosa (Ecuación~\eqref{eq:resistencia_basal}) y el coeficiente $\zeta$ (Ecuación~\eqref{eq:coef_aux}). En las regiones donde el lahar aún no ha llegado, $h \to 0$ y estos términos divergen, por lo que requieren un tratamiento especial.
+    \item \textbf{Restricciones físicas sobre las salidas:} el espesor debe ser no negativo ($h \geq 0$) y la fracción de sólidos debe permanecer acotada ($0 \leq m \leq 1$). Una red sin restricciones no garantiza estas condiciones.
+    \item \textbf{Escalas dispares:} la presión de poros (del orden de miles de pascales), el espesor (metros) y la fracción de sólidos (adimensional y menor que uno) difieren en varios órdenes de magnitud. Esto desbalancea los términos de la función de pérdida \cite{wang2021understanding} y motiva la adimensionalización del sistema descrita en la Sección~\ref{subsec:adimensionalizacion}.
+    \item \textbf{Frentes abruptos:} el frente de un lahar presenta gradientes muy pronunciados, que las redes neuronales con funciones de activación suaves tienden a representar de forma difusa.
+\end{itemize}
+
+% --------------------------------------------------------------------------
+\subsection{Condiciones iniciales y de frontera}
+\label{subsec:condiciones}
+
+% TODO: completar según tu configuración. Propuesta de redacción:
+Para el evento del 3 de marzo de 2015, el dominio se define sobre los cauces de los ríos Correntoso, Pedregoso y Turbio. Como condición inicial se considera el cauce seco, es decir, $h(0,x,y) = 0$ fuera de la zona de origen del flujo. El lahar ingresa al dominio a través de la frontera aguas arriba, donde se impone un hidrograma de entrada que especifica el espesor, la velocidad y la fracción de sólidos en función del tiempo. En los bordes laterales del cauce se impone flujo nulo a través de la frontera, y en la frontera aguas abajo una condición de salida libre. Estas condiciones definen la función $g$ de la Ecuación~\eqref{eq:initilCond} y el operador $\mathcal{B}$ de la Ecuación~\eqref{eq:boundaryCond}.
+
+% --------------------------------------------------------------------------
+\subsection{Adimensionalización}
+\label{subsec:adimensionalizacion}
+
+% TODO: completar con tus escalas. Estructura sugerida:
+% - Definir escalas características: longitud L, espesor H, velocidad
+%   U = sqrt(g H), tiempo T = L/U, presión P = rho_f g H.
+% - Escribir las variables adimensionales: x* = x/L, h* = h/H, etc.
+% - Indicar qué números adimensionales aparecen al reescribir el sistema.
+% - Justificar: todas las variables y residuos quedan de orden uno, lo que
+%   mejora el entrenamiento de la PINN \cite{wang2021understanding}.
+
+\subsection{Supuestos del modelo}
+% - Aproximación de aguas someras (profundidad << extensión horizontal),
+%   promediado en la vertical, mezcla agua-sedimento, etc.
+% - Lista explícita de supuestos: es lo primero que te preguntará un
+%   evaluador ("¿qué despreciaste?").
+
+\subsection{Sistema de ecuaciones}
+% - Escribir cada ecuación con su significado físico, en este orden:
+%   1) conservación de masa (espesor h),
+%   2) conservación de momentum (velocidades hu, hv),
+%   3) transporte de la concentración de sólidos (advección-difusión),
+%   4) evolución de la presión de poros.
+% - Citar la fuente de la formulación (p. ej. el modelo de LaharFlow
+%   \cite{woodhouseshallow} o D-Claw \cite{george2025d}, según cuál sigas).
+% - Tabla de variables y parámetros: símbolo, significado, unidades,
+%   valor usado y fuente del valor.
+% - Cerrar mostrando cómo este sistema se escribe en la forma
+%   u_t + N[u] = 0 de la Ec. \ref{eq:nonlinearDiffEq}, identificando u y N.
+
+\subsection{Términos de fricción y reología}
+% - Ley de fricción usada (Manning, Voellmy, Coulomb, etc.) y por qué.
+% - Si hay parámetros calibrables, dejarlo dicho aquí (conecta con
+%   problema inverso, si lo abordas).
+
+\subsection{Condiciones iniciales y de frontera}
+% - Definir concretamente g(x) y B[u] de las Ec. \ref{eq:initilCond} y
+%   \ref{eq:boundaryCond}: hidrograma de entrada o volumen liberado,
+%   flujo nulo en paredes, salida libre, etc.
+
+\subsection{Adimensionalización}
+% - Escalas características (longitud, velocidad, tiempo, espesor).
+% - Por qué importa en PINNs: variables con magnitudes muy distintas
+%   desbalancean los términos de la pérdida \cite{wang2021understanding}.
+
+
+% ==========================================================================
+\section{Área de estudio y datos}
+\label{sec:datos}
+% --------------------------------------------------------------------------
+% Conecta con el Cap. 2 (Villarrica, evento 3 de marzo de 2015).
+% --------------------------------------------------------------------------
+
+\subsection{Dominio computacional}
+% - Qué drenaje(s) se modelan (p. ej. Correntoso-Turbio) y por qué.
+% - Extensión espacial y temporal del dominio, sistema de coordenadas.
+% - Figura con el dominio sobre el mapa.
+
+\subsection{Topografía}
+% - Fuente del modelo de elevación digital (DEM): nombre, resolución,
+%   año. Preprocesamiento: recorte, reproyección, suavizado, cálculo de
+%   pendientes (la PINN necesita z(x,y) y sus derivadas).
+
+\subsection{Datos observacionales del evento de 2015}
+% - Qué datos reales existen y de dónde salen: alcance (>20 km), duración
+%   (~2,5 h), velocidad del frente (~38 m/s) \cite{johnson2015lahar},
+%   volumen (~1e6 m^3) \cite{romero2016overview}, depósitos, etc.
+% - Cómo se usan: ¿como datos de entrenamiento, o solo como validación?
+%   Debe quedar explícito. Si son pocos, decirlo: es justamente la
+%   motivación de usar PINNs.
+
+\subsection{Muestreo de puntos de entrenamiento}
+% - Cómo generas los conjuntos {x_ic}, {x_bc}, {x_r} de la
+%   Ec. \ref{eq:residualLoss}: aleatorio uniforme, Latin Hypercube,
+%   remuestreo por iteración, refinamiento adaptativo por residuo.
+% - Cantidades N_ic, N_bc, N_r usadas.
+
+
+% ==========================================================================
+\section{Diseño de la red neuronal informada por la física}
+\label{sec:diseno_pinn}
+
+\subsection{Arquitectura}
+% - Entradas (t, x, y) y salidas (h, u, v, concentración, presión de poros).
+% - Profundidad, ancho, función de activación (justificar con la
+%   Sec. de funciones de activación del Cap. 1: suavidad para derivadas
+%   de segundo orden, descarte de ReLU).
+% - Inicialización de pesos (p. ej. Xavier/Glorot).
+% - Técnicas para restringir salidas físicas (h >= 0, concentración en
+%   [0,1]): softplus, sigmoide en la capa de salida, etc.
+
+\subsection{Función de pérdida}
+% - Instanciar la Ec. \ref{eq:compositeLossFn} con tus términos concretos:
+%   un residuo por ecuación del sistema, pérdida de condición inicial,
+%   de frontera y, si aplica, de datos observados.
+% - Estrategia de pesos lambda_i: fijos (indicar valores) o adaptativos
+%   \cite{wang2021understanding}.
+
+\subsection{Entrenamiento}
+% - Optimizador(es): Adam y, si corresponde, refinamiento con L-BFGS.
+% - Tasa de aprendizaje y su calendario, número de iteraciones,
+%   tamaño de lote, criterio de detención.
+% - Tabla de hiperparámetros (recomendado).
+
+
+% ==========================================================================
+\section{Estrategia de validación}
+\label{sec:estrategia_validacion}
+% --------------------------------------------------------------------------
+% Sección clave: define cómo sabrás si el modelo funciona.
+% Propuesta de validación por etapas (de menor a mayor complejidad):
+%   Etapa 1: caso con solución analítica (p. ej. rotura de presa 1D
+%            sobre fondo plano, solución de Ritter) -> verifica que la
+%            implementación de la PINN es correcta.
+%   Etapa 2: caso 2D con topografía sintética -> verifica el manejo del
+%            término de pendiente y la fricción.
+%   Etapa 3: caso real, drenaje del volcán Villarrica, evento 2015.
+% --------------------------------------------------------------------------
+
+\subsection{Métricas de evaluación}
+% - Error L2 relativo frente a solución analítica o de referencia.
+% - Magnitud del residuo físico en puntos no usados en entrenamiento.
+% - Para el caso real: alcance del flujo, tiempo de llegada del frente,
+%   área inundada, comparados con lo observado en 2015.
+% - Conservación de masa global (volumen total en el tiempo).
+
+\subsection{Modelo de referencia}
+% - Contra qué se compara: solución analítica, un solver numérico
+%   (LaharFlow / D-Claw / volúmenes finitos propio), o datos de campo.
+% - Si se mide tiempo de cómputo, dejar claro qué se compara:
+%   costo de entrenamiento vs. costo de inferencia.
+
+
+% ==========================================================================
+\section{Entorno de implementación}
+\label{sec:implementacion}
+% - Lenguaje y bibliotecas (Python + PyTorch/JAX/TensorFlow/DeepXDE, etc.)
+%   con versiones.
+% - Hardware: CPU/GPU, memoria, y si se usó un clúster.
+% - Repositorio de código (si será público) y semillas aleatorias usadas,
+%   para reproducibilidad.
+
+
+% ==========================================================================
+\section{Resultados preliminares}
+\label{sec:resultados_preliminares}
+% --------------------------------------------------------------------------
+% Solo lo que efectivamente ya tienes corriendo. Estructura sugerida por
+% cada experimento:
+%   1) qué caso es (etapa de la Sec. \ref{sec:estrategia_validacion}),
+%   2) configuración usada (remitir a la tabla de hiperparámetros),
+%   3) figura: solución PINN vs. referencia + mapa de error,
+%   4) figura: curva de pérdida por término (L_ic, L_bc, L_r) vs. iteración,
+%   5) tabla con las métricas,
+%   6) interpretación breve y honesta (qué funciona, qué no todavía).
+% --------------------------------------------------------------------------
+
+\subsection{Caso de verificación}
+% Etapa 1 (o la etapa más avanzada que tengas lista).
+
+\subsection{Discusión preliminar}
+% - Qué permiten concluir estos resultados (y qué no).
+% - Dificultades encontradas (desbalance de pérdidas, frentes abruptos
+%   del flujo, h -> 0 en zonas secas, convergencia lenta, etc.).
+% - Cómo afectan el plan de trabajo restante.
+
+
+% ==========================================================================
+\section{Trabajo futuro y plan de actividades}
+\label{sec:trabajo_futuro}
+% - Pasos pendientes hasta llegar al caso real de Villarrica.
+% - Carta Gantt o tabla de actividades con fechas (si tu programa lo pide
+%   en esta etapa de la tesis).

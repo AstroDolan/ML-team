@@ -20,6 +20,50 @@
 \contentsline {section}{\numberline {2.3}Volcán Villarrica}{22}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Contexto geográfico y geológico}{22}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Evento eruptivo del Volcán Villarrica del $3$ de marzo del $2015$}{23}{subsection.2.3.2}%
-\contentsline {chapter}{Conclusiones}{25}{chapter*.16}%
-\contentsline {chapter}{Glosario}{26}{chapter*.16}%
-\contentsline {chapter}{Referencias}{27}{chapter*.17}%
+\contentsline {chapter}{\numberline {3}Marco metodológico}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Enfoque general de la investigación}{25}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Modelo físico del flujo lahárico}{25}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Supuestos del modelo}{25}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Variables de estado}{26}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Sistema de ecuaciones gobernantes}{27}{subsection.3.2.3}%
+\contentsline {paragraph}{Conservación de masa.}{27}{subsection.3.2.3}%
+\contentsline {paragraph}{Conservación de momentum.}{27}{equation.3.4}%
+\contentsline {subsection}{\numberline {3.2.4}Transporte de concentración sólida con difusión y relajación}{28}{subsection.3.2.4}%
+\contentsline {paragraph}{Evolución de presión de poros (variable interna)}{28}{equation.3.10}%
+\contentsline {paragraph}{Morfodinámica del lecho: ecuación de Exner}{28}{equation.3.12}%
+\contentsline {subsection}{\numberline {3.2.5}Relaciones constitutivas}{29}{subsection.3.2.5}%
+\contentsline {paragraph}{Tasa de dilatación.}{29}{subsection.3.2.5}%
+\contentsline {paragraph}{Esfuerzo normal efectivo.}{29}{equation.3.17}%
+\contentsline {paragraph}{Resistencia basal.}{30}{equation.3.18}%
+\contentsline {paragraph}{Ángulo de dilatancia.}{30}{equation.3.19}%
+\contentsline {paragraph}{Compresibilidad.}{30}{equation.3.20}%
+\contentsline {subsection}{\numberline {3.2.6}Parámetros del modelo}{30}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Formulación compacta y relación con la PINN}{30}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Consideraciones para su resolución mediante PINNs}{31}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.9}Condiciones iniciales y de frontera}{32}{subsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.2.10}Adimensionalización}{33}{subsection.3.2.10}%
+\contentsline {subsection}{\numberline {3.2.11}Supuestos del modelo}{33}{subsection.3.2.11}%
+\contentsline {subsection}{\numberline {3.2.12}Sistema de ecuaciones}{33}{subsection.3.2.12}%
+\contentsline {subsection}{\numberline {3.2.13}Términos de fricción y reología}{33}{subsection.3.2.13}%
+\contentsline {subsection}{\numberline {3.2.14}Condiciones iniciales y de frontera}{33}{subsection.3.2.14}%
+\contentsline {subsection}{\numberline {3.2.15}Adimensionalización}{33}{subsection.3.2.15}%
+\contentsline {section}{\numberline {3.3}Área de estudio y datos}{33}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Dominio computacional}{33}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Topografía}{33}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Datos observacionales del evento de 2015}{33}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Muestreo de puntos de entrenamiento}{33}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Diseño de la red neuronal informada por la física}{33}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Arquitectura}{33}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Función de pérdida}{33}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Entrenamiento}{33}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Estrategia de validación}{33}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Métricas de evaluación}{33}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Modelo de referencia}{33}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Entorno de implementación}{33}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Resultados preliminares}{33}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Caso de verificación}{33}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Discusión preliminar}{33}{subsection.3.7.2}%
+\contentsline {section}{\numberline {3.8}Trabajo futuro y plan de actividades}{33}{section.3.8}%
+\contentsline {chapter}{Conclusiones}{34}{chapter*.17}%
+\contentsline {chapter}{Glosario}{35}{chapter*.17}%
+\contentsline {chapter}{Referencias}{36}{chapter*.18}%

@@ -2890,6 +2890,78 @@
       \verb 10.13140/RG.2.2.18802.40643
       \endverb
     \endentry
+    \entry{iverson2014depth}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=32e0244c50d0c9f124960792298c6a1e}{%
+           family={Iverson},
+           familyi={I\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c8c661dbdb9ef7ccbe66f87ebb7607cc}{%
+           family={George},
+           familyi={G\bibinitperiod},
+           given={David\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5528ea7343154bf6e0b95207b32108c5}
+      \strng{fullhash}{5528ea7343154bf6e0b95207b32108c5}
+      \strng{fullhashraw}{5528ea7343154bf6e0b95207b32108c5}
+      \strng{bibnamehash}{5528ea7343154bf6e0b95207b32108c5}
+      \strng{authorbibnamehash}{5528ea7343154bf6e0b95207b32108c5}
+      \strng{authornamehash}{5528ea7343154bf6e0b95207b32108c5}
+      \strng{authorfullhash}{5528ea7343154bf6e0b95207b32108c5}
+      \strng{authorfullhashraw}{5528ea7343154bf6e0b95207b32108c5}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{2170}
+      \field{title}{A Depth-Averaged Debris-Flow Model that Includes the Effects of Evolving Dilatancy. {I}. Physical Basis}
+      \field{volume}{470}
+      \field{year}{2014}
+      \field{pages}{20130819}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rspa.2013.0819
+      \endverb
+    \endentry
+    \entry{george2014depth}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c8c661dbdb9ef7ccbe66f87ebb7607cc}{%
+           family={George},
+           familyi={G\bibinitperiod},
+           given={David\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=32e0244c50d0c9f124960792298c6a1e}{%
+           family={Iverson},
+           familyi={I\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d384c6d09bd85945258ec77ac79d5b52}
+      \strng{fullhash}{d384c6d09bd85945258ec77ac79d5b52}
+      \strng{fullhashraw}{d384c6d09bd85945258ec77ac79d5b52}
+      \strng{bibnamehash}{d384c6d09bd85945258ec77ac79d5b52}
+      \strng{authorbibnamehash}{d384c6d09bd85945258ec77ac79d5b52}
+      \strng{authornamehash}{d384c6d09bd85945258ec77ac79d5b52}
+      \strng{authorfullhash}{d384c6d09bd85945258ec77ac79d5b52}
+      \strng{authorfullhashraw}{d384c6d09bd85945258ec77ac79d5b52}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{2170}
+      \field{title}{A Depth-Averaged Debris-Flow Model that Includes the Effects of Evolving Dilatancy. {II}. Numerical Predictions and Experimental Tests}
+      \field{volume}{470}
+      \field{year}{2014}
+      \field{pages}{20130820}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rspa.2013.0820
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
