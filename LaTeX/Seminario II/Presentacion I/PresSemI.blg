@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99e (TeX Live 2026/Homebrew)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: PresSemI.aux
+The style file: ieeetr.bst
+Database file #1: BibTesis.bib
+Warning--can't use both author and editor fields in Vallance2024
+Warning--empty school in phdthesis
+Warning--empty year in woodhouseshallow
+You've used 12 entries,
+            1876 wiz_defined-function locations,
+            551 strings with 5797 characters,
+and the built_in function-call counts, 3128 in all, are:
+= -- 299
+> -- 135
+< -- 0
++ -- 50
+- -- 38
+* -- 224
+:= -- 451
+add.period$ -- 15
+call.type$ -- 12
+change.case$ -- 9
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 155
+empty$ -- 294
+format.name$ -- 38
+if$ -- 754
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 12
+newline$ -- 42
+num.names$ -- 12
+pop$ -- 46
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 102
+stack$ -- 0
+substring$ -- 192
+swap$ -- 64
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 27
+width$ -- 14
+write$ -- 112
+(There were 3 warnings)

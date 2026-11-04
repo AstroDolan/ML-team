@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {1}{Introducción}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Lahares}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Physics-Informed Neural Networks (PINNs)}{6}{0}{1}
+\beamer@sectionintoc {2}{Topografía}{8}{0}{2}
+\beamer@sectionintoc {3}{Modelo físico}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{Variables y parámetros}{13}{0}{3}
+\beamer@subsectionintoc {3}{2}{Sistema acoplado de PDEs}{15}{0}{3}
+\beamer@sectionintoc {4}{Red neuronal como aproximador}{21}{0}{4}
+\beamer@sectionintoc {5}{Red neuronal como aproximador}{25}{0}{5}

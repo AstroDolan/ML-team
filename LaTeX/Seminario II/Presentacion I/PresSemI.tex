@@ -1,0 +1,230 @@
+\documentclass{beamer}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usefonttheme[onlymath]{serif}
+\usepackage[spanish,provide=*]{babel}
+% Cargar apacite después de babel para citas autor-año correctas
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
+\usepackage{graphicx,listings,stackengine}
+% Manejo robusto de nombres de archivo con espacios y rutas de imágenes
+\usepackage{grffile}
+%\graphicspath{{pic/}}
+
+
+\title[Modelamiento de Lahares mediante PINNs]{\large Modelamiento de Lahares mediante Redes Neuronales Informadas por la Física (PINNs): Aplicación
+al evento eruptivo de 2015 del volcán Villarica, Chile}
+
+\author[Dylan Jara]{
+    \textbf{\small Dylan Jara Carvajal} \\
+    \vspace{0.2cm}
+    {\scriptsize
+    \begin{tabular}{c c c}
+        Profesor Guía & Profesor Co-Guía & Profesor Informante \\
+        \textbf{Felipe Herrera} & \textbf{Johan Triana} & \textbf{Yuvineza Gomez-Leyton}
+    \end{tabular}
+    }
+}
+\institute[DMCC - USACH]{\small
+    Departamento de Matemática y Ciencia de la Computación\\
+    Universidad de Santiago de Chile
+}
+\date{\small\today}
+\usepackage{./Ritsumeikan}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{ccnuMainColor}{RGB}{57,64,73}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{ccnuMainColor},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \vspace*{-0.6cm}
+    \begin{figure}
+        \begin{center}
+                % Ajuste de tamaño más visible y uso de \graphicspath
+                \includegraphics[keepaspectratio, width=0.25\textwidth]{./Pics/Usach S1.png}
+
+        \end{center}
+    \end{figure}
+\end{frame}
+
+% Restaurar la tabla de contenidos y corregir el problema de 'Referencias32'
+\begin{frame}
+    \tableofcontents[sectionstyle=show, subsectionstyle=show/shaded/hide]
+\end{frame}
+
+%//////////////////////////////////////////////////////%
+\section{Introducción}
+\subsection{Lahares}
+\begin{frame}{Qué son los lahares?}
+    \begin{itemize}
+        \item Flujos de sedimentos volcánicos que se originan en volcanes potencialmente activos se llaman lahares \cite{Vallance2024}.
+    \end{itemize}
+
+        \begin{figure}
+        \centering
+        \includegraphics[width=10cm,height=6cm]{.//Pics//lahar.png}
+        \caption{Lahar (dark deposit on snow) on Mount Saint Helens after the March 19, 1982, eruption.\cite{article}}
+    \end{figure}
+\end{frame}
+
+
+\subsection{Physics-Informed Neural Networks (PINNs)}
+\begin{frame}{Qué son las PINNs?}
+\begin{itemize}
+    \item Las redes neuronales basadas en la física son redes neuronales entrenadas para resolver tareas de aprendizaje supervisado respetando
+    cualquier ley física dada descrita por ecuaciones diferenciales parciales no lineales generales \cite{RAISSI2019686}.
+    \item $\mathcal{L} = \mathcal{L}_{data} + \lambda \mathcal{L}_{physics}$, donde $\mathcal{L}_{data}$ mide el error en los datos y $\mathcal{L}_{physics}$ mide el incumplimiento de las PDEs.
+\end{itemize}
+\end{frame}
+
+%/////////////////////////////////////////////%
+%/////////////////////////////////////////////%
+
+\section{Topografía}
+\begin{frame}{DEM ALOS PALSAR 12.5M}
+\end{frame}
+
+\begin{frame}{Cauces del evento eruptivo del 2015}
+
+\end{frame}
+
+\begin{frame}{Datos de campo de la literatura}
+    
+\end{frame}
+
+%/////////////////////////////////////////////%
+%/////////////////////////////////////////////%
+\section{Modelo físico}
+\subsection{Variables y parámetros}
+\begin{frame}{Variables y parámetros}
+\begin{itemize}
+    \item $h(x, y, z, t)$: espesor de la mezcla $(m)$,
+    \item $u(x, y, z, t), v(x, y, z, t)$: velocidades promediadas en profundidad $(m/s)$,
+    \item $C(x, y, z, t)$: concentración volumétrica de sólidos $(\text{adimensional}, 0 \leq C \leq 1)$,
+    \item $z_b(x, y, z, t)$: elevación del lecho $(m)$.
+\end{itemize}
+\end{frame}
+
+
+\subsection[Sistema PDEs]{Sistema acoplado de PDEs}
+\begin{frame}{Conservacion de Masa y Momentum}
+    Conservacion de masa con fuente de masa: 
+    \begin{align}
+    {\partial h \over \partial t} + \nabla \cdot (h \vec{u}) = S_h(x,y,t), && u=(u,v)
+    \end{align}
+    Conservacion de momentum 2D con friccion basal modulada:
+    \begin{align}
+    {{\partial u} \over{\partial t}}+u{{\partial u} \over{\partial x}}+v{{\partial u} \over{\partial y}}+g{{\partial H} \over{\partial x}}+{{\tau_{bx}} \over{\rho_mh}} = 0 \\
+    {{\partial v} \over{\partial t}}+u{{\partial v} \over{\partial x}}+v{{\partial v} \over{\partial y}}+g{{\partial H} \over{\partial y}}+{{\tau_{by}} \over{\rho_mh}} = 0
+    \end{align}
+    Donde la tension basal es parametrizada como 
+    \begin{align}
+    \tau_{b} = \tau_{b}\frac{u}{\|u\|+\epsilon},&&\tau_{b}=\mu_{eff}(C,p)\rho_mgh \cos\theta
+    \end{align}
+\end{frame}
+
+\begin{frame}{Conservación de Momentum}
+    La pendiente se aproxima por:
+    \begin{align}
+        \cos\theta\approx \frac{1}{\sqrt{1+\|\nabla z_b\|^2}}
+    \end{align}
+    Un modelo reducido pero físicamente interpretable para fricción efectiva:
+    \begin{align}
+        \mu_{eff}(C,p) = \mu_0(1+\alpha_C(C-C_0))\exp(-\alpha \frac{p}{\rho_mgh+p_{ref}})
+    \end{align}
+    donde C0 es una concentración de referencia y pref estabiliza la razón. Este término representa: (i) mayor fricción con mayor carga sólida, y 
+    (ii) menor fricción efectiva cuando el exceso de presión de poros es alto (disminuye el esfuerzo efectivo).
+
+\end{frame}
+
+\begin{frame}{Ecuación de transporte de solidos (Advección-difusión)}
+    Ecuación advección–difusión con término de relajación hacia un equilibrio
+    \begin{align}
+    {\partial C \over \partial t} + u\cdot \nabla C = \nabla \cdot (k_C\nabla C) + \frac{C_{eq}(x,y)-C}{\tau_C}
+    \end{align}
+    En prototipo sintético se puede fijar $\tau C \rightarrow \infty$ (sin relajación) o definir $C_{eq}$ como mayor en cauces y menor en planicies.
+\end{frame}
+
+
+\begin{frame}{Evolución de presión de poros}
+    \begin{figure}
+    \centering
+    \includegraphics[width=10cm,height=6cm,keepaspectratio]{.//Pics//porepressure.png}
+    \caption{Diagram illustrating the effective stress principle in a saturated cohesionless soil \cite{phdthesis}}
+    \end{figure}
+\end{frame}
+\begin{frame}{Evolución de presión de poros}
+    Se usa una ecuación de advección con relajación:
+    \begin{align}
+    {\partial p \over \partial t} + u\cdot \nabla p = \frac{p_{eq}(h,C,\|u\|)-p}{\tau_p}
+    \end{align}
+    Un ejemplo simple para equilibrio de presión:
+    \begin{align}
+        p_{eq}=\chi_p\rho_m gh\phi(C)\frac{\|u\|}{\|u\|+u_*}, && \phi(C)=\frac{C}{C+C_*}
+    \end{align}
+    que aumenta con espesor y con concentración, y satura con velocidad. Esto captura cualitativamente el aumento de presión por mezcla densa y cizalle.
+ 
+\end{frame}
+
+%/////////////////////////////////////////////%
+%/////////////////////////////////////////////%
+
+\section{Red neuronal como aproximador}
+\begin{frame}{Arquitectura}
+    
+\end{frame}
+
+\begin{frame}{Condiciones iniciales y fronteras}
+    
+\end{frame}
+
+\begin{frame}{Variantes}
+    
+\end{frame}
+
+
+%/////////////////////////////////////////////%
+%/////////////////////////////////////////////%
+
+\section{Red neuronal como aproximador}
+
+
+
+
+%/////////////////////////////////////////////%
+%/////////////////////////////////////////////%
+
+
+
+\begin{frame}[allowframebreaks]{Referencias}
+    \tiny
+    % Esto cambia el ícono de documento por los números [1], [2] del estilo IEEE
+    \setbeamertemplate{bibliography item}[text] 
+    
+    \nocite{*} % Muestra todas las referencias de tu archivo BibTesis.bib
+    \bibliographystyle{ieeetr}
+    \bibliography{BibTesis} % Asegúrate de que tu archivo se llame BibTesis.bib
+\end{frame}
+
+\end{document}
