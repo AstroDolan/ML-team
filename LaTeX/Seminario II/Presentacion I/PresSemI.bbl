@@ -10,10 +10,6 @@ L.~Jing, F.~Kwok, A.~Leung, Z.~Zhang, and L.~Dai, ``Runout scaling and deposit m
 \bibitem{RAISSI2019686}
 M.~Raissi, P.~Perdikaris, and G.~Karniadakis, ``Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations,'' {\em Journal of Computational Physics}, vol.~378, pp.~686--707, 2019.
 
-\bibitem{phdthesis}
-R.~Green, {\em Finite Element Modeling of a Suction Caisson Subject to Monotonic Tensile Loading}.
-\newblock PhD thesis, 03 2019.
-
 \bibitem{porfido2020new}
 S.~Porfido, G.~Alessio, G.~Gaudiosi, and R.~Nappi, ``New perspectives in the definition/evaluation of seismic hazard through analysis of the environmental effects induced by earthquakes,'' 2020.
 
@@ -26,6 +22,10 @@ S.~Cai, Z.~Mao, Z.~Wang, M.~Yin, and G.~E. Karniadakis, ``Physics-informed neura
 
 \bibitem{woodhouseshallow}
 M.~Woodhouse, A.~Hogg, and J.~Phillips, ``A shallow-layer model for lahars: formulation and phenomenology,'' {\em JGR-Earth Surface}.
+
+\bibitem{phdthesis}
+R.~Green, {\em Finite Element Modeling of a Suction Caisson Subject to Monotonic Tensile Loading}.
+\newblock PhD thesis, 03 2019.
 
 \bibitem{schilling2008using}
 S.~Schilling, J.~Griswold, and R.~Iverson, ``Using laharz to forecast inundation from lahars, debris flows, and rock avalanches: Confidence limits on prediction,'' in {\em AGU Fall Meeting Abstracts}, vol.~2008, pp.~H51F--0891, 2008.
