@@ -7,15 +7,15 @@ J.~W. Vallance, {\em Lahars: Origins, Behavior and Hazards}, pp.~347--382.
 \bibitem{article}
 L.~Jing, F.~Kwok, A.~Leung, Z.~Zhang, and L.~Dai, ``Runout scaling and deposit morphology of rapid mudflows,'' {\em Journal of Geophysical Research: Earth Surface}, vol.~123, 07 2018.
 
-\bibitem{RAISSI2019686}
-M.~Raissi, P.~Perdikaris, and G.~Karniadakis, ``Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations,'' {\em Journal of Computational Physics}, vol.~378, pp.~686--707, 2019.
-
 \bibitem{porfido2020new}
 S.~Porfido, G.~Alessio, G.~Gaudiosi, and R.~Nappi, ``New perspectives in the definition/evaluation of seismic hazard through analysis of the environmental effects induced by earthquakes,'' 2020.
 
 \bibitem{ortiz1996riesgo}
 R.~Ortiz, {\em Riesgo volc{\'a}nico}, vol.~5.
 \newblock Servicio de Publicaciones, Excmo. Cabildo de Lanzarote, 1996.
+
+\bibitem{RAISSI2019686}
+M.~Raissi, P.~Perdikaris, and G.~Karniadakis, ``Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations,'' {\em Journal of Computational Physics}, vol.~378, pp.~686--707, 2019.
 
 \bibitem{cai2021physics}
 S.~Cai, Z.~Mao, Z.~Wang, M.~Yin, and G.~E. Karniadakis, ``Physics-informed neural networks (pinns) for fluid mechanics: A review,'' {\em Acta Mechanica Sinica}, vol.~37, no.~12, pp.~1727--1738, 2021.

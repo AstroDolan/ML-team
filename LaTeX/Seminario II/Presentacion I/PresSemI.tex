@@ -82,9 +82,9 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
         \item Flujos de sedimentos volcánicos que se originan en volcanes potencialmente activos se llaman lahares \cite{Vallance2024}.
     \end{itemize}
 
-        \begin{figure}
+    \begin{figure}
         \centering
-        \includegraphics[width=9cm]{.//Pics//lahar.png}
+        \includegraphics[width=8cm]{.//Pics//lahar.png}
         \caption{Lahar (dark deposit on snow) on Mount Saint Helens after the March 19, 1982, eruption.\cite{article}}
     \end{figure}
 \end{frame}
@@ -92,11 +92,11 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 
 \subsection{Physics-Informed Neural Networks (PINNs)}
 \begin{frame}{Qué son las PINNs?}
-\begin{itemize}
-    \item Las redes neuronales basadas en la física son redes neuronales entrenadas para resolver tareas de aprendizaje supervisado respetando
-    cualquier ley física dada descrita por ecuaciones diferenciales parciales no lineales generales \cite{RAISSI2019686}.
-    \item $\mathcal{L} = \mathcal{L}_{data} + \lambda \mathcal{L}_{physics}$, donde $\mathcal{L}_{data}$ mide el error en los datos y $\mathcal{L}_{physics}$ mide el incumplimiento de las PDEs.
-\end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=10cm]{Pics/graficapinn.jpeg}
+        \caption{Componentes, ventajas y desafíos de las PINNs.}
+    \end{figure}
 \end{frame}
 
 %/////////////////////////////////////////////%
@@ -122,7 +122,8 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 
 \begin{frame}{Cauces del evento eruptivo del 2015}
     \begin{figure}
-        \includegraphics[width=9cm]{Pics/VolcanVillarrica.png}
+        \centering
+        \includegraphics[width=8cm]{Pics/VolcanVillarrica.png}
         \caption{Cauces del evento eruptivo del 2015 en el Volcán Villarrica}
     \end{figure}
 \end{frame}
@@ -176,109 +177,20 @@ Volumen emitido & $4{,}7\pm1{,}0\times10^{6}$ m$^3$ & Tefra + depósitos proxima
 \section{Modelo físico}
 \subsection{Variables y parámetros}
 \begin{frame}{Variables y parámetros}
-\begin{itemize}
-    \item $h(x, y, t)$: espesor de la mezcla $(m)$,
-    \item $u(x, y, t), v(x, y, t)$: velocidades promediadas en profundidad $(m/s)$,
-    \item $C(x, y, t)$: concentración volumétrica de sólidos $(\text{adimensional}, 0 \leq C \leq 1)$,
-    \item $p(x, y, t)$: presión de poros $(Pa)$,
-    \item $z_b(x, y, t)$: elevación del lecho $(m)$.
-\end{itemize}
+    \centering
+    \begin{figure}
+        \includegraphics[width=11cm]{Pics/graficaeqs.jpeg}
+        \caption{Sistema de ecuaciones diferenciales parciales acopladas.}
+    \end{figure}
 \end{frame}
 
-
-%\subsection[Sistema PDEs]{Sistema acoplado de PDEs}
-%\begin{frame}{Conservacion de Masa y Momentum}
-%    Conservacion de masa con fuente de masa: 
-%    \begin{align}
-%    {\partial h \over \partial t} + \nabla \cdot (h \vec{u}) = S_h(x,y,t), && u=(u,v)
-%    \end{align}
-%    Conservacion de momentum 2D con friccion basal modulada:
-%    \begin{align}
-%    {{\partial u} \over{\partial t}}+u{{\partial u} \over{\partial x}}+v{{\partial u} \over{\partial y}}+g{{\partial H} \over{\partial x}}+{{\tau_{bx}} \over{\rho_mh}} = 0 \\
-%    {{\partial v} \over{\partial t}}+u{{\partial v} \over{\partial x}}+v{{\partial v} \over{\partial y}}+g{{\partial H} \over{\partial y}}+{{\tau_{by}} \over{\rho_mh}} = 0
-%    \end{align}
-%    Donde la tension basal es parametrizada como 
-%    \begin{align}
-%    \tau_{b} = \tau_{b}\frac{u}{\|u\|+\epsilon},&&\tau_{b}=\mu_{eff}(C,p)\rho_mgh \cos\theta
-%    \end{align}
-%\end{frame}
-%
-%\begin{frame}{Conservación de Momentum}
-%    La pendiente se aproxima por:
-%    \begin{align}
-%        \cos\theta\approx \frac{1}{\sqrt{1+\|\nabla z_b\|^2}}
-%    \end{align}
-%    Un modelo reducido pero físicamente interpretable para fricción efectiva:
-%    \begin{align}
-%        \mu_{eff}(C,p) = \mu_0(1+\alpha_C(C-C_0))\exp(-\alpha \frac{p}{\rho_mgh+p_{ref}})
-%    \end{align}
-%    donde C0 es una concentración de referencia y pref estabiliza la razón. Este término representa: (i) mayor fricción con mayor carga sólida, y 
-%    (ii) menor fricción efectiva cuando el exceso de presión de poros es alto (disminuye el esfuerzo efectivo).
-%
-%\end{frame}
-%
-%\begin{frame}{Ecuación de transporte de solidos (Advección-difusión)}
-%    Ecuación advección–difusión con término de relajación hacia un equilibrio
-%    \begin{align}
-%    {\partial C \over \partial t} + u\cdot \nabla C = \nabla \cdot (k_C\nabla C) + \frac{C_{eq}(x,y)-C}{\tau_C}
-%    \end{align}
-%    En prototipo sintético se puede fijar $\tau C \rightarrow \infty$ (sin relajación) o definir $C_{eq}$ como mayor en cauces y menor en planicies.
-%\end{frame}
-%
-%
-%\begin{frame}{Evolución de presión de poros}
-%    \begin{figure}
-%    \centering
-%    \includegraphics[width=10cm,height=6cm,keepaspectratio]{.//Pics//porepressure.png}
-%    \caption{Diagram illustrating the effective stress principle in a saturated cohesionless soil \cite{phdthesis}}
-%    \end{figure}
-%\end{frame}
-%\begin{frame}{Evolución de presión de poros}
-%    Se usa una ecuación de advección con relajación:
-%    \begin{align}
-%    {\partial p \over \partial t} + u\cdot \nabla p = \frac{p_{eq}(h,C,\|u\|)-p}{\tau_p}
-%    \end{align}
-%    Un ejemplo simple para equilibrio de presión:
-%    \begin{align}
-%        p_{eq}=\chi_p\rho_m gh\phi(C)\frac{\|u\|}{\|u\|+u_*}, && \phi(C)=\frac{C}{C+C_*}
-%    \end{align}
-%    que aumenta con espesor y con concentración, y satura con velocidad. Esto captura cualitativamente el aumento de presión por mezcla densa y cizalle.
-% 
-%\end{frame}
-
-%/////////////////////////////////////////////%
-%/////////////////////////////////////////////%
-
-%\subsection{Red neuronal como aproximador}
-%\begin{frame}{Arquitectura}
-%    \begin{itemize}
-%        \item La arquitectura de la red neuronal es un MLP (Multi-Layer Perceptron) con cinco capas ocultas, cada una con 192 neuronas.
-%        \item Cada capa oculta utiliza la función de activación $swish$.
-%        \item Variables de entrada: $h, C, p, z_b\, (Variable futura)$ 
-%    \end{itemize}
-%\end{frame}
-
-%\begin{frame}{Condiciones iniciales y fronteras}
-%    \begin{itemize}
-%        \item Ansatz IC Crater
-%        \item BC Dirichlet y Neumann
-%    \end{itemize}
-%\end{frame}
-
-%\begin{frame}{Variantes}
-%    \begin{itemize}
-%        \item Rahaman Spectral Bias
-%        \item $z_b$ como variable de entrada
-%        \item curriculum learning
-%    \end{itemize}
-%\end{frame}
-%
-%\begin{frame}{trabajos futuros}
-%    \begin{itemize}
-%        \item Lambda adaptativo
-%        \item seqtoseq
-%    \end{itemize}
-%\end{frame}
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=11cm]{Pics/grafica1.jpeg}
+        \caption{Ejemplo de solución numérica del sistema de PDEs.}
+    \end{figure}
+\end{frame}
 
 
 %/////////////////////////////////////////////%
@@ -288,7 +200,8 @@ Volumen emitido & $4{,}7\pm1{,}0\times10^{6}$ m$^3$ & Tefra + depósitos proxima
 \section{Topografía}
 \begin{frame}{DEM ALOS PALSAR 12.5M}
     \begin{figure}
-        \includegraphics[width=12cm]{Pics/DEMALOSPres.png}
+        \centering
+        \includegraphics[width=11cm]{Pics/DEMALOSPres.png}
         \caption{Digital Elevation Model (DEM) ALOS PALSAR 12.5M del Volcán Villarrica}
     \end{figure}
 \end{frame}
