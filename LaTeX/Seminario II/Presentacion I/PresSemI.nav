@@ -30,40 +30,32 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {2}{0}{4}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@sectionpages {8}{11}}
-\headcommand {\beamer@subsectionpages {8}{11}}
-\headcommand {\sectionentry {3}{Modelo físico}{12}{Modelo físico}{0}}
-\headcommand {\slideentry {3}{0}{1}{12/12}{}{0}}
+\headcommand {\slideentry {2}{0}{5}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{13}{Variables y parámetros}}
-\headcommand {\slideentry {3}{1}{1}{13/13}{Variables y parámetros}{0}}
+\headcommand {\beamer@sectionpages {8}{12}}
+\headcommand {\beamer@subsectionpages {8}{12}}
+\headcommand {\sectionentry {3}{Modelo físico}{13}{Modelo físico}{0}}
+\headcommand {\slideentry {3}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {3}{1}{2}{14/14}{Variables y parámetros}{0}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{Variables y parámetros}}
+\headcommand {\slideentry {3}{1}{1}{14/14}{Variables y parámetros}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionpages {13}{14}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{15}{Red neuronal como aproximador}}
-\headcommand {\slideentry {3}{2}{1}{15/15}{Red neuronal como aproximador}{0}}
+\headcommand {\slideentry {3}{1}{2}{15/15}{Variables y parámetros}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {3}{2}{2}{16/16}{Red neuronal como aproximador}{0}}
+\headcommand {\beamer@sectionpages {13}{15}}
+\headcommand {\beamer@subsectionpages {14}{15}}
+\headcommand {\sectionentry {4}{Topografía}{16}{Topografía}{0}}
+\headcommand {\slideentry {4}{0}{1}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{2}{3}{17/17}{Red neuronal como aproximador}{0}}
+\headcommand {\slideentry {4}{0}{2}{17/17}{}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{2}{4}{18/18}{Red neuronal como aproximador}{0}}
+\headcommand {\slideentry {4}{0}{3}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@sectionpages {12}{18}}
-\headcommand {\beamer@subsectionpages {15}{18}}
-\headcommand {\sectionentry {4}{Topografía}{19}{Topografía}{0}}
-\headcommand {\slideentry {4}{0}{1}{19/19}{}{0}}
-\headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {4}{0}{2}{20/20}{}{0}}
-\headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {4}{0}{3}{21/21}{}{0}}
-\headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {4}{0}{3}{21/22}{}{0}}
-\headcommand {\beamer@framepages {21}{22}}
-\headcommand {\beamer@partpages {1}{22}}
-\headcommand {\beamer@subsectionpages {19}{22}}
-\headcommand {\beamer@sectionpages {19}{22}}
-\headcommand {\beamer@documentpages {22}}
-\headcommand {\gdef \inserttotalframenumber {22}}
+\headcommand {\slideentry {4}{0}{3}{18/19}{}{0}}
+\headcommand {\beamer@framepages {18}{19}}
+\headcommand {\beamer@partpages {1}{19}}
+\headcommand {\beamer@subsectionpages {16}{19}}
+\headcommand {\beamer@sectionpages {16}{19}}
+\headcommand {\beamer@documentpages {19}}
+\headcommand {\gdef \inserttotalframenumber {19}}

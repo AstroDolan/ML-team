@@ -3,6 +3,7 @@
 \usepackage{bookmark}
 \usepackage{amsmath}
 \usepackage[T1]{fontenc}
+\usepackage{tabularx}
 \usefonttheme[onlymath]{serif}
 \usepackage[spanish,provide=*]{babel}
 % Cargar apacite después de babel para citas autor-año correctas
@@ -103,10 +104,15 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 
 \section{Objetivo general y motivación}
 \begin{frame}
-    \begin{itemize}
-        \item Obj general
-        \item por que usamos las pinns para esto
-    \end{itemize}
+    \begin{block}{Objetivo general}
+        \small Desarrollar un modelo de lahares basado en Redes Neuronales Informadas por la Física (PINNs), aplicado al evento eruptivo de 2015 del volcán Villarica, Chile, incorporando ecuaciones acopladas de flujo somero, concentración sólida y presión de poros.
+    \end{block}
+    \begin{enumerate}
+        \item \scriptsize Formular un sistema acoplado de Ecuaciones Diferenciales Parciales (PDEs) que modelen la morfodinámica de un lahar, incorporando conservación de masa, momento, concentración sólida y presión de poros.
+        \item \scriptsize Construir una Red Neuronal Informada por la Física, basada en un sistema de ecuaciones diferenciales y parámetros geológicos, con la finalidad de predecir el comportamiento real de un flujo de sedimento. 
+        \item \scriptsize Diagnosticar patologías de desvanecimiento y decaimiento de los gradientes e incorporar técnicas de estabilización y optimización avanzadas para mejorar la convergencia del modelo.
+        \item \scriptsize Predecir la morfodinámica de manera realista y acorde a la física para exportar un mapa de peligro volcánico que entregue datos de evacuación según el riesgo calculado por la red neuronal.
+    \end{enumerate}
 \end{frame}
 
 
@@ -122,7 +128,47 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 \end{frame}
 
 \begin{frame}{Datos de campo de la literatura}
-    
+    \scriptsize
+    \renewcommand{\arraystretch}{1.05}
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabularx}{\textwidth}{@{}l l >{\raggedright\arraybackslash}X l@{}}
+    \toprule
+    \textbf{Magnitud} & \textbf{Valor} & \textbf{Método / observación} & \textbf{Fuente} \\
+    \midrule
+    \multicolumn{4}{@{}l}{\textbf{Correntoso}} \\
+    Volumen     & $3\times10^{5}$ m$^3$     & Mínimo; nieve/hielo & Vera et al. (2017) \\
+    Volumen     & $0{,}9\times10^{5}$ m$^3$ & Depósitos                                     & \textit{Origen, transporte\ldots}$^{a}$ \\
+    Velocidad   & 12,36--20,45 m/s          & Secciones P2--P5                              & Tesis UdeC, p.\,86$^{a}$ \\
+    Caudal máx. & 414--6\,139 m$^3$/s       & secciones P3--P10    & Tesis UdeC, p.\,86$^{a}$ \\
+    \midrule
+    \multicolumn{4}{@{}l}{\textbf{Pedregoso}} \\
+    Volumen       & $4\times10^{5}$ m$^3$     & Mínimo; nieve/hielo & Vera et al. (2017) \\
+    Volumen$^{b}$ & $1{,}9\times10^{5}$ m$^3$ & Pedregoso + Turbio                   & \textit{Origen, transporte\ldots}$^{a}$ \\
+    \midrule
+    \multicolumn{4}{@{}l}{\textbf{Turbio}} \\
+    Velocidad & 38 m/s (promedio)          & Pulso inicial, 2--12 km del cráter (infrasonido) & Johnson y Palma (2015) \\
+    Velocidad & $\leq$ 38 m/s              & Cerca de la fuente                               & Vera et al. (2017) \\
+    Duración  & $\approx$ 2,5 h; $>$ 20 km & Duración y alcance del lahar                     & Johnson y Palma (2015) \\
+    \bottomrule
+    \end{tabularx}
+
+    \vspace{0.4em}
+\end{frame}
+
+% ---------- Diapositiva 2: otros cauces y totales ----------
+\begin{frame}{Lahares 2015: Zanjón Seco y volúmenes totales}
+\scriptsize
+\renewcommand{\arraystretch}{1.05}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}l l >{\raggedright\arraybackslash}X l@{}}
+\toprule
+\textbf{Magnitud} & \textbf{Valor} & \textbf{Método / observación} & \textbf{Fuente} \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Total}} \\
+Volumen         & $\approx 1\times10^{6}$ m$^3$     & Sedimentos de dos de los lahares         & Romero et al. (2016) \\
+Volumen emitido & $4{,}7\pm1{,}0\times10^{6}$ m$^3$ & Tefra + depósitos proximales (no lahar)  & Bertin et al. (2015) \\
+\bottomrule
+\end{tabularx}
 \end{frame}
 
 %/////////////////////////////////////////////%
@@ -203,14 +249,14 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 %/////////////////////////////////////////////%
 %/////////////////////////////////////////////%
 
-\subsection{Red neuronal como aproximador}
-\begin{frame}{Arquitectura}
-    \begin{itemize}
-        \item La arquitectura de la red neuronal es un MLP (Multi-Layer Perceptron) con cinco capas ocultas, cada una con 192 neuronas.
-        \item Cada capa oculta utiliza la función de activación $swish$.
-        \item Variables de entrada: $h, C, p, z_b\, (Variable futura)$ 
-    \end{itemize}
-\end{frame}
+%\subsection{Red neuronal como aproximador}
+%\begin{frame}{Arquitectura}
+%    \begin{itemize}
+%        \item La arquitectura de la red neuronal es un MLP (Multi-Layer Perceptron) con cinco capas ocultas, cada una con 192 neuronas.
+%        \item Cada capa oculta utiliza la función de activación $swish$.
+%        \item Variables de entrada: $h, C, p, z_b\, (Variable futura)$ 
+%    \end{itemize}
+%\end{frame}
 
 %\begin{frame}{Condiciones iniciales y fronteras}
 %    \begin{itemize}
@@ -219,31 +265,30 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 %    \end{itemize}
 %\end{frame}
 
-\begin{frame}{Variantes}
-    \begin{itemize}
-        \item Rahaman Spectral Bias
-        \item $z_b$ como variable de entrada
-        \item curriculum learning
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{trabajos futuros}
-    \begin{itemize}
-        \item Lambda adaptativo
-        \item seqtoseq
-    \end{itemize}
-\end{frame}
+%\begin{frame}{Variantes}
+%    \begin{itemize}
+%        \item Rahaman Spectral Bias
+%        \item $z_b$ como variable de entrada
+%        \item curriculum learning
+%    \end{itemize}
+%\end{frame}
+%
+%\begin{frame}{trabajos futuros}
+%    \begin{itemize}
+%        \item Lambda adaptativo
+%        \item seqtoseq
+%    \end{itemize}
+%\end{frame}
 
 
 %/////////////////////////////////////////////%
 %/////////////////////////////////////////////%
 
-%\section{Red neuronal como aproximador}
 
 \section{Topografía}
 \begin{frame}{DEM ALOS PALSAR 12.5M}
     \begin{figure}
-        \includegraphics[width=10cm,height=4cm]{Pics/DEMALOSPres.png}
+        \includegraphics[width=12cm]{Pics/DEMALOSPres.png}
         \caption{Digital Elevation Model (DEM) ALOS PALSAR 12.5M del Volcán Villarrica}
     \end{figure}
 \end{frame}
