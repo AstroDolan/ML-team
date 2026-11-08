@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.10)  6 NOV 2026 03:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.10)  6 NOV 2026 09:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1023,7 +1023,7 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 70.
  (c:/texlive/2026/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<./Pics/Usach S1.png, id=69, 1103.12125pt x 348.30125pt>
+<./Pics/Usach S1.png, id=67, 1103.12125pt x 348.30125pt>
 File: ./Pics/Usach S1.png Graphic file (type png)
 <use ./Pics/Usach S1.png>
 Package pdftex.def Info: ./Pics/Usach S1.png  used on input line 70.
@@ -1037,7 +1037,7 @@ Package pdftex.def Info: ./Pics/Usach S1.png  used on input line 70.
 ] (./PresSemI.toc) [4
 
 ]
-<.//Pics//lahar.png, id=401, 1193.20781pt x 753.5653pt>
+<.//Pics//lahar.png, id=390, 1193.20781pt x 753.5653pt>
 File: .//Pics//lahar.png Graphic file (type png)
 <use .//Pics//lahar.png>
 Package pdftex.def Info: .//Pics//lahar.png  used on input line 90.
@@ -1051,7 +1051,7 @@ Overfull \vbox (13.28291pt too high) detected at line 90
  <.//Pics//lahar.png>] (./PresSemI.toc) [6
 
 ]
-<Pics/graficapinn.jpeg, id=556, 1027.84pt x 651.43375pt>
+<Pics/graficapinn.jpeg, id=541, 1027.84pt x 651.43375pt>
 File: Pics/graficapinn.jpeg Graphic file (type jpg)
 <use Pics/graficapinn.jpeg>
 Package pdftex.def Info: Pics/graficapinn.jpeg  used on input line 100.
@@ -1067,7 +1067,7 @@ Overfull \vbox (7.96944pt too high) detected at line 100
 ] [9
 
 ]
-<Pics/VolcanVillarrica.png, id=774, 844.95676pt x 597.432pt>
+<Pics/VolcanVillarrica.png, id=753, 844.95676pt x 597.432pt>
 File: Pics/VolcanVillarrica.png Graphic file (type png)
 <use Pics/VolcanVillarrica.png>
 Package pdftex.def Info: Pics/VolcanVillarrica.png  used on input line 129.
@@ -1076,60 +1076,62 @@ Package pdftex.def Info: Pics/VolcanVillarrica.png  used on input line 129.
 
  <./Pics/VolcanVillarrica.png>] [11
 
-] [12
+] (./PresSemI.toc) [12
 
 ] (./PresSemI.toc) [13
 
-] (./PresSemI.toc) [14
-
 ]
-<Pics/graficaeqs.jpeg, id=1148, 1606.0pt x 687.56876pt>
+<Pics/graficaeqs.jpeg, id=1048, 1606.0pt x 687.56876pt>
 File: Pics/graficaeqs.jpeg Graphic file (type jpg)
 <use Pics/graficaeqs.jpeg>
-Package pdftex.def Info: Pics/graficaeqs.jpeg  used on input line 185.
+Package pdftex.def Info: Pics/graficaeqs.jpeg  used on input line 169.
 (pdftex.def)             Requested size: 312.9803pt x 133.99667pt.
 
-Overfull \hbox (5.69043pt too wide) in paragraph at lines 185--185
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 169--169
  [] 
+ []
+
+[14
+
+ <./Pics/graficaeqs.jpeg>]
+<Pics/grafica1.jpeg, id=1117, 1606.0pt x 819.06pt>
+File: Pics/grafica1.jpeg Graphic file (type jpg)
+<use Pics/grafica1.jpeg>
+Package pdftex.def Info: Pics/grafica1.jpeg  used on input line 177.
+(pdftex.def)             Requested size: 312.9803pt x 159.62231pt.
+
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 177--177
+ [] 
+ []
+
+
+Overfull \vbox (0.8591pt too high) detected at line 177
  []
 
 [15
 
- <./Pics/graficaeqs.jpeg>]
-<Pics/grafica1.jpeg, id=1219, 1606.0pt x 819.06pt>
-File: Pics/grafica1.jpeg Graphic file (type jpg)
-<use Pics/grafica1.jpeg>
-Package pdftex.def Info: Pics/grafica1.jpeg  used on input line 193.
-(pdftex.def)             Requested size: 312.9803pt x 159.62231pt.
-
-Overfull \hbox (5.69043pt too wide) in paragraph at lines 193--193
- [] 
- []
-
-[16
-
- <./Pics/grafica1.jpeg>] (./PresSemI.toc) [17
+ <./Pics/grafica1.jpeg>] (./PresSemI.toc) [16
 
 ]
-<Pics/DEMALOSPres.png, id=1366, 1252.4391pt x 621.522pt>
+<Pics/DEMALOSPres.png, id=1260, 1252.4391pt x 621.522pt>
 File: Pics/DEMALOSPres.png Graphic file (type png)
 <use Pics/DEMALOSPres.png>
-Package pdftex.def Info: Pics/DEMALOSPres.png  used on input line 207.
+Package pdftex.def Info: Pics/DEMALOSPres.png  used on input line 191.
 (pdftex.def)             Requested size: 312.9803pt x 155.31374pt.
 
-Overfull \hbox (5.69043pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 191--191
  [] 
  []
 
 
-Overfull \vbox (5.00655pt too high) detected at line 207
+Overfull \vbox (5.00655pt too high) detected at line 191
  []
 
-[18
+[17
 
- <./Pics/DEMALOSPres.png>] (./PresSemI.bbl) [19
+ <./Pics/DEMALOSPres.png>] (./PresSemI.bbl) [18
 
-] [20
+] [19
 
 
 ]
@@ -1149,18 +1151,18 @@ L3 programming layer <2026-09-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 31435 strings out of 467050
- 628112 string characters out of 5410543
- 1036350 words of memory out of 5000000
- 60170 multiletter control sequences out of 15000+600000
+ 31431 strings out of 467050
+ 628077 string characters out of 5410543
+ 1036351 words of memory out of 5000000
+ 60168 multiletter control sequences out of 15000+600000
  643840 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,123p,580b,829s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsi0600.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsi0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on PresSemI.pdf (20 pages, 53987384 bytes).
+Output written on PresSemI.pdf (19 pages, 53983883 bytes).
 PDF statistics:
- 1646 PDF objects out of 1728 (max. 8388607)
- 1100 compressed objects within 11 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 1537 PDF objects out of 1728 (max. 8388607)
+ 1034 compressed objects within 11 object streams
+ 58 named destinations out of 1000 (max. 500000)
  164 words of extra memory for PDF output out of 10000 (max. 10000000)
 

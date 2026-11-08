@@ -1,24 +1,24 @@
 # Fdb version 4
-["bibtex PresSemI"] 1793944841.50616 "PresSemI.aux" "PresSemI.bbl" "PresSemI" 1793944871.1691 0
+["bibtex PresSemI"] 1793966613.97168 "PresSemI.aux" "PresSemI.bbl" "PresSemI" 1793966621.46802 0
   "./BibTesis.bib" 1793758241 7084 7c8d2a7cf7dd76ee3a4c3edd6e8082d9 ""
-  "PresSemI.aux" 1793944870 8169 8f00b1a4c2a1f0d6fef38fc907682cb0 "pdflatex"
+  "PresSemI.aux" 1793966620 8244 36e6c98905ebcdc7bc5174a0d9e92b9d "pdflatex"
   "c:/texlive/2026/texmf-dist/bibtex/bst/base/ieeetr.bst" 1791667507 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
   (generated)
   "PresSemI.bbl"
   "PresSemI.blg"
   (rewritten before read)
-["pdflatex"] 1793944864.40319 "PresSemI.tex" "PresSemI.pdf" "PresSemI" 1793944871.16961 0
+["pdflatex"] 1793966614.30887 "PresSemI.tex" "PresSemI.pdf" "PresSemI" 1793966621.46846 0
   "Pics/DEMALOSPres.png" 1793766150 1276270 9001ec7c087d5c9b57917de614797003 ""
   "Pics/Usach S1.png" 1793758241 30155 f79879a0b9ea1acf5eb17b350da9222a ""
   "Pics/VolcanVillarrica.png" 1791588021 38264574 c8c17aef3e36cc204e6cc3c21ae619be ""
   "Pics/grafica1.jpeg" 1793941401 302558 3edc7033fd0946c7629f99ce387c8294 ""
   "Pics/graficaeqs.jpeg" 1793942067 281639 fc6e33b34d21a75f1ba994bea27959c0 ""
   "Pics/graficapinn.jpeg" 1793941412 112039 a72135f19a703e07faa6b61b5883941b ""
-  "PresSemI.aux" 1793944870 8169 8f00b1a4c2a1f0d6fef38fc907682cb0 "pdflatex"
-  "PresSemI.bbl" 1793944841 2546 6fbaa62ca7423d29037b78f17f917da1 "bibtex PresSemI"
-  "PresSemI.nav" 1793944870 3238 28ad2e54ed466c6bed9736828d31cb53 "pdflatex"
-  "PresSemI.tex" 1793944863 8985 5986c7c18fadd31ab42eedb13b9c5d43 ""
-  "PresSemI.toc" 1793944870 441 d242fc25b25589bb7865f32c83b5365b "pdflatex"
+  "PresSemI.aux" 1793966620 8244 36e6c98905ebcdc7bc5174a0d9e92b9d "pdflatex"
+  "PresSemI.bbl" 1793966614 2546 6fbaa62ca7423d29037b78f17f917da1 "bibtex PresSemI"
+  "PresSemI.nav" 1793966620 3176 d0818006deda03570233e632d7b381ff "pdflatex"
+  "PresSemI.tex" 1793966605 8297 19c29d61dab5676394735d95846bc89a ""
+  "PresSemI.toc" 1793966620 456 d4217de8ecfabf32c56c18676953d54b "pdflatex"
   "Ritsumeikan.sty" 1793758241 3686 6744405656ec3565a6e6bc37339a0924 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1791667915 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1791669056 3524 cb3e574dea2d1052e39280babc910dc8 ""
