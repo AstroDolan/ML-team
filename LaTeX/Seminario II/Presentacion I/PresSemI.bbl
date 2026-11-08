@@ -1,42 +1,219 @@
-\begin{thebibliography}{10}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{Vallance2024}
-J.~W. Vallance, {\em Lahars: Origins, Behavior and Hazards}, pp.~347--382.
-\newblock Cham: Springer International Publishing, 2024.
+\datalist[entry]{none/global//global/global/global}
+  \entry{Vallance2024}{inbook}{}{}
+    \name{author}{1}{}{%
+      {{hash=VJW}{%
+         family={Vallance},
+         familyi={V\bibinitperiod},
+         given={James\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=JM}{%
+         family={Jakob},
+         familyi={J\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={McDougall},
+         familyi={M\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Santi},
+         familyi={S\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{VJW1}
+    \strng{fullhash}{VJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Volcanic debris flows that originate at potentially active volcanoes are called lahars. Lahars are like debris flows in non-volcanic terrain but can most notably differ in origin and size. Primary lahars occur during eruptions and may have novel origins such as turbulent mixing of hot rock moving across ice- and snow-clad volcanoes and eruptions through crater lakes. Lahars range in volume to more than a cubic kilometer (109 m3), with the biggest ones caused by huge deep-seated flank collapses of water-saturated edifice rock. Because they can be so voluminous, can have high water contents, and commonly can be clay rich, these lahars can travel tens to even hundreds of kilometers. Long transport causes evolution of flow types from flood flow to hyperconcentrated flow to debris flow. Lahars capable of traveling far downstream are commonly sufficiently liquefied that they drape valley slopes and leave behind thin deposits as they pass downstream. Only in valley bottoms are lahars likely to emplace thick deposits, and even there the deposits are apt to be much thinner than peak flow depths. Flows with long transport change character with time and distance downstream. Deposits, especially those in valley bottoms, can accrete during intervals that represent a significant proportion of the time it takes the flow to pass (typically minutes). The combination of flows changing character and their progressive accretion imposes distinctive characteristics on their deposits such as normal and inverse grading. Historically, lahars have caused thousands of fatalities and destroyed entire towns. Perhaps the most disastrous known lahar occurred in 1985 at Nevado del Ruiz in Colombia and killed more than 23,000 people. Since that disaster, an increasing awareness of lahar hazards has led to efforts to mitigate them. In recent decades, improved land-use decisions, monitoring and communication have improved hazard responses and saved many lives. Lahar hazard maps and development of lahar inundation models have helped planners and people at risk to better understand the nature of the risk owing to lahars.%
+    }
+    \field{booktitle}{Advances in Debris-flow Science and Practice}
+    \verb{doi}
+    \verb 10.1007/978-3-031-48691-3_12
+    \endverb
+    \field{isbn}{978-3-031-48691-3}
+    \field{pages}{347\bibrangedash 382}
+    \field{title}{Lahars: Origins, Behavior and Hazards}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-031-48691-3_12
+    \endverb
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \field{year}{2024}
+  \endentry
 
-\bibitem{article}
-L.~Jing, F.~Kwok, A.~Leung, Z.~Zhang, and L.~Dai, ``Runout scaling and deposit morphology of rapid mudflows,'' {\em Journal of Geophysical Research: Earth Surface}, vol.~123, 07 2018.
+  \entry{article}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=JL}{%
+         family={Jing},
+         familyi={J\bibinitperiod},
+         given={Lu},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Kwok},
+         familyi={K\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Leung},
+         familyi={L\bibinitperiod},
+         given={Andy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=DL}{%
+         family={Dai},
+         familyi={D\bibinitperiod},
+         given={Lutao},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JL+1}
+    \strng{fullhash}{JLKFLAZZDL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1029/2018JF004667
+    \endverb
+    \field{title}{Runout Scaling and Deposit Morphology of Rapid Mudflows}
+    \field{volume}{123}
+    \field{journaltitle}{Journal of Geophysical Research: Earth Surface}
+    \field{month}{07}
+    \field{year}{2018}
+  \endentry
 
-\bibitem{porfido2020new}
-S.~Porfido, G.~Alessio, G.~Gaudiosi, and R.~Nappi, ``New perspectives in the definition/evaluation of seismic hazard through analysis of the environmental effects induced by earthquakes,'' 2020.
+  \entry{unknownvera}{misc}{}{}
+    \name{author}{4}{}{%
+      {{hash=VF}{%
+         family={Vera},
+         familyi={V\bibinitperiod},
+         given={Franco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Palma},
+         familyi={P\bibinitperiod},
+         given={Jose},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FN}{%
+         family={Flores},
+         familyi={F\bibinitperiod},
+         given={Nayaret},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VF+1}
+    \strng{fullhash}{VFPJJJFN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.13140/RG.2.2.18802.40643
+    \endverb
+    \field{title}{Lahares generados por avalanchas mixtas durante la erupción del 03 de Marzo de 2015 en el Volcán Villarrica}
+    \field{month}{03}
+    \field{year}{2017}
+  \endentry
 
-\bibitem{ortiz1996riesgo}
-R.~Ortiz, {\em Riesgo volc{\'a}nico}, vol.~5.
-\newblock Servicio de Publicaciones, Excmo. Cabildo de Lanzarote, 1996.
+  \entry{flores2018erupcion}{thesis}{}{}
+    \name{author}{1}{}{%
+      {{hash=FPNA}{%
+         family={Flores\bibnamedelima P{\'e}rez},
+         familyi={F\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Nayaret\bibnamedelima Aracelis},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FPNA1}
+    \strng{fullhash}{FPNA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Erupci{\'o}n del 3 de marzo de 2015 en el volc{\'a}n Villarrica: caracterizaci{\'o}n del lahar del estero Correntoso y cuantificaci{\'o}n de emisiones post-eruptivas de $\text{SO}_2$}
+    \verb{url}
+    \verb https://repositorio.udec.cl/items/bf6c6449-0c3c-4880-a867-3a8903111aa
+    \verb 6
+    \endverb
+    \list{location}{1}{%
+      {Concepci{\'o}n, Chile}%
+    }
+    \list{institution}{1}{%
+      {Universidad de Concepci{\'o}n}%
+    }
+    \field{type}{Tesis de Pregrado}
+    \field{year}{2018}
+  \endentry
 
-\bibitem{RAISSI2019686}
-M.~Raissi, P.~Perdikaris, and G.~Karniadakis, ``Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations,'' {\em Journal of Computational Physics}, vol.~378, pp.~686--707, 2019.
-
-\bibitem{cai2021physics}
-S.~Cai, Z.~Mao, Z.~Wang, M.~Yin, and G.~E. Karniadakis, ``Physics-informed neural networks (pinns) for fluid mechanics: A review,'' {\em Acta Mechanica Sinica}, vol.~37, no.~12, pp.~1727--1738, 2021.
-
-\bibitem{woodhouseshallow}
-M.~Woodhouse, A.~Hogg, and J.~Phillips, ``A shallow-layer model for lahars: formulation and phenomenology,'' {\em JGR-Earth Surface}.
-
-\bibitem{phdthesis}
-R.~Green, {\em Finite Element Modeling of a Suction Caisson Subject to Monotonic Tensile Loading}.
-\newblock PhD thesis, 03 2019.
-
-\bibitem{schilling2008using}
-S.~Schilling, J.~Griswold, and R.~Iverson, ``Using laharz to forecast inundation from lahars, debris flows, and rock avalanches: Confidence limits on prediction,'' in {\em AGU Fall Meeting Abstracts}, vol.~2008, pp.~H51F--0891, 2008.
-
-\bibitem{george2025d}
-D.~L. George, K.~R. Barnhart, and R.~M. Iverson, ``D-claw-a library for the simulation of granular-fluid flows, v1. 0.0,'' {\em US Geological Survey (USGS) Software}, p.~34, 2025.
-
-\bibitem{krishnapriyan2021characterizing}
-A.~Krishnapriyan, A.~Gholami, S.~Zhe, R.~Kirby, and M.~W. Mahoney, ``Characterizing possible failure modes in physics-informed neural networks,'' {\em Advances in neural information processing systems}, vol.~34, pp.~26548--26560, 2021.
-
-\bibitem{raissi2024physics}
-M.~Raissi, P.~Perdikaris, N.~Ahmadi, and G.~E. Karniadakis, ``Physics-informed neural networks and extensions,'' {\em arXiv preprint arXiv:2408.16806}, 2024.
-
-\end{thebibliography}
+  \entry{johnson2015lahar}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=JJB}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Jeffrey\bibnamedelima B},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=PJL}{%
+         family={Palma},
+         familyi={P\bibinitperiod},
+         given={Jose\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{JJB+1}
+    \strng{fullhash}{JJBPJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{15}
+    \field{pages}{6324\bibrangedash 6325}
+    \field{title}{Lahar infrasound associated with Volc{\'a}n Villarrica's 3 March 2015 eruption}
+    \field{volume}{42}
+    \field{journaltitle}{Geophysical Research Letters}
+    \field{year}{2015}
+  \endentry
+\enddatalist
+\endinput

@@ -6,7 +6,6 @@
 \usepackage{tabularx}
 \usefonttheme[onlymath]{serif}
 \usepackage[spanish,provide=*]{babel}
-% Cargar apacite después de babel para citas autor-año correctas
 
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra, tcolorbox}
@@ -35,6 +34,70 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 }
 \date{\small\today}
 \usepackage{./Ritsumeikan}
+
+% ---------- Bibliografía con biblatex (backend bibtex: no requiere biber) ----------
+\usepackage{tikz}
+\usepackage[backend=bibtex,style=numeric,sorting=none,maxcitenames=1,mincitenames=1,
+            maxbibnames=1,minbibnames=1]{biblatex}
+\addbibresource{BibTesis.bib}
+
+% Formato "solo primera página": p. 347
+\DeclareFieldFormat{primerapagina}{p.~\mkfirstpage{#1}}
+
+% Formato corto, definido UNA sola vez: Autor, Journal, primera página, fecha
+\newbibmacro{cita:corta}{%
+  \printnames{labelname}%
+  \setunit{\addcomma\space}%
+  \iffieldundef{journaltitle}{\printfield{booktitle}}{\printfield{journaltitle}}%
+  \setunit{\addcomma\space}%
+  \printfield[primerapagina]{pages}%
+  \setunit{\addcomma\space}%
+  \printdate}
+
+% Recuadro de la esquina: usa el formato corto, una fuente por línea
+\DeclareCiteCommand{\citaesquina}{}{\usebibmacro{cita:corta}}{\par}{}
+
+% Bibliografía: cada tipo de entrada también usa el formato corto
+\newcommand{\drivercorto}[1]{%
+  \DeclareBibliographyDriver{#1}{\usebibmacro{cita:corta}\finentry}}
+\forcsvlist{\drivercorto}{article,book,inbook,incollection,inproceedings,misc,thesis,online,report}
+
+% Lista de referencias sin números [1], [2]
+\defbibenvironment{bibnonum}
+  {\list{}{\setlength{\leftmargin}{\bibhang}%
+           \setlength{\itemindent}{-\leftmargin}%
+           \setlength{\itemsep}{\bibitemsep}%
+           \setlength{\parsep}{\bibparsep}}}
+  {\endlist}
+  {\item}
+
+% \cite no imprime nada en el texto (ni [1] ni el espacio previo):
+% solo registra la clave para el recuadro de la esquina.
+\DeclareCiteCommand{\cite}{\unskip}{}{}{}
+
+% Cada \cite de la diapositiva guarda su clave; al dibujar el pie de página
+% se imprime un recuadro en la esquina inferior derecha y la lista se vacía.
+\makeatletter
+\gdef\esq@lista{}% lista etoolbox (para no repetir claves)
+\gdef\esq@csv{}%   las mismas claves separadas por comas (para \citaesquina)
+\AtEveryCitekey{%
+  \edef\esq@clave{\thefield{entrykey}}%
+  \xifinlist{\esq@clave}{\esq@lista}{}{%
+    \listxadd\esq@lista{\esq@clave}%
+    \ifdefempty{\esq@csv}%
+      {\xdef\esq@csv{\esq@clave}}%
+      {\xdef\esq@csv{\esq@csv,\esq@clave}}}}
+\addtobeamertemplate{footline}{%
+  \ifdefempty{\esq@csv}{}{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south east, draw=ritsumeikan, fill=white, rounded corners=2pt,
+            inner sep=2pt, text width=4.8cm, align=left, font=\tiny]
+        at ([xshift=-2mm,yshift=7.5mm]current page.south east)
+        {\expandafter\citaesquina\expandafter{\esq@csv}};
+    \end{tikzpicture}%
+    \gdef\esq@lista{}\gdef\esq@csv{}}%
+}{}
+\makeatother
 
 % defs
 \def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
@@ -84,8 +147,8 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 
     \begin{figure}
         \centering
-        \includegraphics[width=8cm]{.//Pics//lahar.png}
-        \caption{Lahar (dark deposit on snow) on Mount Saint Helens after the March 19, 1982, eruption.\cite{article}}
+        \includegraphics[width=6cm]{.//Pics//lahar.png}
+        \caption{Lahar en la Montaña Saint Helens después de la erupción del 19 de marzo de 1982.\cite{article}}
     \end{figure}
 \end{frame}
 
@@ -137,19 +200,19 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
     \textbf{Magnitud} & \textbf{Valor} & \textbf{Método / observación} & \textbf{Fuente} \\
     \midrule
     \multicolumn{4}{@{}l}{\textbf{Correntoso}} \\
-    Volumen     & $3\times10^{5}$ m$^3$     & Mínimo; nieve/hielo & Vera et al. (2017) \\
+    Volumen     & $3\times10^{5}$ m$^3$     & Mínimo; nieve/hielo & Vera et al. (2017) \cite{unknownvera} \\
     Volumen     & $0{,}9\times10^{5}$ m$^3$ & Depósitos                                     & \textit{Origen, transporte\ldots}$^{a}$ \\
-    Velocidad   & 12,36--20,45 m/s          & Secciones P2--P5                              & Tesis UdeC, p.\,86$^{a}$ \\
-    Caudal máx. & 414--6\,139 m$^3$/s       & secciones P3--P10    & Tesis UdeC, p.\,86$^{a}$ \\
+    Velocidad   & 12,36--20,45 m/s          & Secciones P2--P5                              & Flores (2015), p.\,86\cite{flores2018erupcion} \\
+    Caudal máx. & 414--6\,139 m$^3$/s       & secciones P3--P10    & Flores (2015), p.\,86\cite{flores2018erupcion}\\
     \midrule
     \multicolumn{4}{@{}l}{\textbf{Pedregoso}} \\
     Volumen       & $4\times10^{5}$ m$^3$     & Mínimo; nieve/hielo & Vera et al. (2017) \\
-    Volumen$^{b}$ & $1{,}9\times10^{5}$ m$^3$ & Pedregoso + Turbio                   & \textit{Origen, transporte\ldots}$^{a}$ \\
+    Volumen & $1{,}9\times10^{5}$ m$^3$ & Pedregoso + Turbio                   & \textit{Origen, transporte\ldots}$^{a}$ \\
     \midrule
     \multicolumn{4}{@{}l}{\textbf{Turbio}} \\
-    Velocidad & 38 m/s (promedio)          & Pulso inicial, 2--12 km del cráter (infrasonido) & Johnson y Palma (2015) \\
+    Velocidad & 38 m/s (promedio)          & Pulso inicial, infrasonido & Johnson y Palma (2015) \cite{johnson2015lahar}\\
     Velocidad & $\leq$ 38 m/s              & Cerca de la fuente                               & Vera et al. (2017) \\
-    Duración  & $\approx$ 2,5 h; $>$ 20 km & Duración y alcance del lahar                     & Johnson y Palma (2015) \\
+    Duración  & $\approx$ 2,5 h; $>$ 20 km & Duración y alcance                     & Johnson y Palma (2015) \\
     \bottomrule
     \end{tabularx}
 
@@ -195,16 +258,21 @@ al evento eruptivo de 2015 del volcán Villarica, Chile}
 %/////////////////////////////////////////////%
 %/////////////////////////////////////////////%
 
+\section{Resultados preliminares}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=8cm]{Pics/DEMALOSPres.png}
+        \centering
+        \caption{Prediccion preliminar del lahar con una PINN $5x256$}
+    \end{figure}
+\end{frame}
+
 
 
 \begin{frame}[allowframebreaks]{Referencias}
     \tiny
-    % Esto cambia el ícono de documento por los números [1], [2] del estilo IEEE
-    \setbeamertemplate{bibliography item}[text] 
-    
     \nocite{*} % Muestra todas las referencias de tu archivo BibTesis.bib
-    \bibliographystyle{ieeetr}
-    \bibliography{BibTesis} % Asegúrate de que tu archivo se llame BibTesis.bib
+    \printbibliography[heading=none,env=bibnonum]
 \end{frame}
 
 \end{document}
